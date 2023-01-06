@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+#myTourSelectMain {
+  background: #ECE9E6;
+  width:100%;
+  height:100%;
+  margin:0;
+} 
+
+div.myTourSelectContainer {
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 650px 1fr;
+  gap:10px;
+}
+.upcomming {
+  grid-column:1/4;
+  padding:20px;
+}
+.myTourSelectContainer .item {
+  grid-column: 2/3;
+  width: 650px;
+  height: 250px;
+  display:inline-block;
+  padding: 0 20px;
+  /* background: #ECE9E6; */
+  background: #fff;
+  opacity: 0.57;
+  overflow: hidden;
+  margin: 10px auto;
+  position : relative;
+}
+.myTourSelectContainer .item:hover{
+   cursor: pointer;
+}
+
+.myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
+  float: left;
+  padding: 20px; 
+}
+.myTourSelectContainer .item-right {
+  padding: 79px 50px;
+  margin-right: 20px;
+  width: 25%;
+  position: relative;
+  height: 150px;
+}
+.myTourSelectContainer .item-right .up-border, .myTourSelectContainer .item-right .down-border {
+    padding: 14px 15px;
+    background-color: #ECE9E6;
+    border-radius: 50%;
+    position: absolute;
+}
+.myTourSelectContainer .item-right .up-border {
+  top: -8px;
+  right: -35px;
+}
+.myTourSelectContainer .item-right .down-border {
+  bottom: -13px;
+  right: -35px;
+}
+.myTourSelectContainer .item-right .num {
+  font-size: 60px;
+  text-align: center;
+  color: #111;
+}
+.myTourSelectContainer .item-right .day, .myTourSelectContainer .item-left .event {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 9px;
+}
+.myTourSelectContainer .item-right .day {
+  text-align: center;
+  font-size: 25px;
+}
+.myTourSelectContainer .item-left {
+  width: 71%;
+  padding: 34px 0px 19px 46px;
+  border-left: 3px dotted #999;
+} 
+.myTourSelectContainer .item-left .title {
+  color: #111;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+.myTourSelectContainer .item-left .sce {
+  margin-top: 5px;
+  display: block;
+}
+.myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .sce p, .myTourSelectContainer .item-left .tn .icon, .myTourSelectContainer .item-left .tn p,
+.myTourSelectContainer .item-left .loc .icon, .myTourSelectContainer .item-left .loc p, .myTourSelectContainer .item-left .ticketNumber .icon, .myTourSelectContainer .item-left .ticketNumber p{
+    float:left;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .loc .icon, .myTourSelectContainer .item-left .ticketNumber .icon{
+  margin-right: 10px;
+  font-size: 20px;
+  color: #666;
+}
+.myTourSelectContainer .item-left .loc, .myTourSelectContainer .item-left .ticketNumber {display: block}
+.fix {clear: both}
+
+
+
+@media (min-width: 768px) {
+   .myTourSelectContainer .item button {
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+   }
+}
+
+@media only screen and (max-width: 1150px) {
+  .myTourSelectContainer .item {
+    width: 100%;
+    margin-right: 20px;
+  }
+  div.myTourSelectContainer {
+    margin: 0 20px auto;
+  }
+}
+
+/*버튼------------------------------------*/
+#btnPlan{
+	width : 600px;
+	height : 100px;
+	background-color : #fff;
+	border : 4px solid rgb(234, 175, 166);
+	border-radius : 5px;
+	font-size : 35px;
+	font-weight : bold;
+	color : rgb(234, 175, 166);
+	text-align : center;
+	margin : 10px;
+	grid-column : 2/3;
+	margin-left: 30px;
+}
+
+#btnPlan:hover{
+	background-color : rgb(234, 175, 166);
+	color : #fff;
+	cursor : pointer;
+	font-size : 37px;
+}
+/*티켓 안에 로고*/
+img{
+	float : left;
+	width : 170px;
+	height : 150px;
+	position : absolute;
+	top : 8vh;
+	left : 0.1vh;
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+#restaurants{
+	width : 100%;
+	height : 180px;
+	border : 2px solid #ddd;
+}
+img{
+	float : right;
+	width : 250px;
+	height : 100%;
+}
+#restaurants div{
+	margin : 10px;
+}
+
+#restaurants #title{
+	font-size : 20px;
+	font-weight : bold;
+}
+#restaurants #location{
+	font-size : 17px;
+}
+#restaurants {
+	font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}

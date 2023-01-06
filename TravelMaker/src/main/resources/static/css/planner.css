@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+#plannerZone {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	overflow:auto;
+	height:800px;
+}
+
+
+/* Left Side */
+#plannerZone>#MapBucketZone{
+	
+	display:flex;
+	width:45%;
+	
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+#MapBucketZone>#MapZone{
+	height:0;
+	flex-basis:55%;
+	
+}
+
+#MapBucketZone>#planBucketListZone{
+	border-radius:10px;
+	
+	height:0;
+	flex-basis:40%;
+	
+}
+
+#planBucketListZone>#planBucketListMenu{
+	display:flex;
+	flex-direction:row;
+	
+}
+
+
+
+#planBucketListMenu>div.planBucketMenuItem{
+	flex-basis: 25%;
+	padding:5px;
+	border:1px solid #fff;
+	border-radius: 10px 10px 0 0;
+	background-color: #F78181;
+	text-align:center;
+}
+
+#planBucketListMenu>div.planBucketMenuItem:hover{
+	cursor:pointer;
+}
+
+#planBucketListMenu>div#BucketMenuActive{
+	background-color: tomato;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	color:#fff;
+	font-weight: bold;
+}
+
+#planBucketListZone>#planBucketList{
+	height:90%;
+	overflow-y: auto;
+	border-radius:0 0 10px 10px;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, 
+				rgba(0, 0, 0, 0.07) 0px 2px 2px, 
+				rgba(0, 0, 0, 0.07) 0px 4px 4px, 
+				rgba(0, 0, 0, 0.07) 0px 8px 8px, 
+				rgba(0, 0, 0, 0.07) 0px 16px 16px;
+			
+}
+
+
+#planBucketList>div.planBucketItem{
+	height:60px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+#planBucketList>div.planBucketItem:hover{
+	cursor:pointer;
+	background-color: #F78181;
+	color:#fff;
+}
+
+.planBucketItem>span{
+	display:inline-block;
+	padding:3px;
+}
+
+.planBucketItem>span.planBucketItemTitle{
+	font-size:1.5rem;
+}
+.planBucketItem>span.planBucketItemType{
+	
+}
+.planBucketItem>span.planBucketItemAddr{
+}
+.planBucketItem>span.planBucketItemIcon{
+	float:right;
+}
+
+.planBucketItem>span.planBucketItemIcon:hover{
+	color:tomato;
+}
+
+#planBucketXicon {
+	position:relative;
+	right:15px;
+	bottom:15px;
+}
+
+
+/* Right Side */
+#plannerZone>#planListZone {
+	display:flex;
+	width:45%;
+	flex-direction:column;
+	justify-content: center;
+	
+}
+
+#planListZone>#planListMenu{
+	display:flex;
+	position:relative;
+	flex-direction:row;
+	height:5%;
+}
+
+#planListMenu div.planListMenuItem:nth-child(1){
+	position:relative;
+	z-index:4;
+}
+
+#planListMenu div.planListMenuItem:nth-child(2){
+	position:relative;
+	right:50px;
+	z-index:3;
+}
+
+#planListMenu div.planListMenuItem:nth-child(3){
+	position:relative;
+	right:100px;
+	z-index:2;
+}
+
+#planListMenu div.planListMenuItem:nth-child(4){
+	position:relative;
+	right:150px;
+	z-index:1;
+}
+
+
+#planListMenu>div.planListMenuItem{
+	flex-basis:0;
+	flex-grow:1;
+	flex-shrink:1;
+	padding:5px;
+	border:1px solid #fff;
+	border-radius: 10px 80px 0 5px;
+	background-color: #F78181;
+	text-align:center;
+	line-height:1.5;
+}
+
+#planListMenu>div.planListMenuItem{
+	cursor:pointer;
+}
+
+#planListMenu>div#PlanMenuActive{
+	background-color: tomato;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	color:#fff;
+	font-weight: bold;
+}
+
+#planListZone>#planList{
+	height:93%;
+	overflow:auto;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, 
+				rgba(0, 0, 0, 0.07) 0px 2px 2px, 
+				rgba(0, 0, 0, 0.07) 0px 4px 4px, 
+				rgba(0, 0, 0, 0.07) 0px 8px 8px, 
+				rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+#planList>div.planItem{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	height:80px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+#planList>div.planItem:hover{
+	cursor:pointer;
+	background-color: #F78181;
+	color:#fff;
+}
+
+.planItem>div.planItemDataZone{
+	width:70%;
+	
+}
+.planItem>div.planItemMemoZone{
+	width:30%;
+}
+
+
+.planItem span{
+	display:inline-block;
+	margin-top:20px;
+	padding:3px;
+}
+
+.planItemDataZone>span.planItemOrder{
+	width:30px;
+	height:30px;
+	margin-left:5px;
+	text-align:center;
+	font-weight:bold;
+	background-color:tomato;
+	border-radius:50%;
+	color:#fff;
+}
+.planItemDataZone>span.planItemName{
+	font-size:1.5rem;
+}
+.planItemDataZone>span.planItemDate{
+	
+}
+
+.planItemMemoZone>span{
+	float:right;
+	margin-right:5px;
+}
+
+.planItemMemoZone input[type=button]{
+	background-color: tomato;
+	border-radius:5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding:5px;
+	width:80px;
+	border:none;
+	color:#fff;
+}
+
+.planItemMemoZone>span.planItemIcon:hover{
+	color:tomato;
+}
+
+.planItemMemoZone input[type=button]:hover{
+	cursor:pointer;
+}
+
+
+/* PlannerModal */
+
+.plannerModal{
+	position:absolute;
+	background-color:#fff;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	z-index:201;
+	text-align:center;
+}
+
+.modalXicon{
+	color:#fff;
+	padding:5px;
+	position:relative;
+	bottom:5px;
+}
+
+.modalXicon:hover{
+	cursor:pointer;
+}
+
+.modalTitle{
+	font-size:2rem;
+	font-weight:bold;
+	color:#fff;
+}
+
+#modal-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:200;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modalHeader{
+	background-color:tomato;
+	border-radius:10px;
+	padding:10px;
+	
+}
+
+.modalBody span{
+	display:inline-block;
+	margin:0 auto;
+	font-size:2rem;
+}
+
+.modalBody input[type=text]{
+	border:none;
+	height:40px;
+	background-color:#eee;
+}
+
+.modalFooter{
+	height:30%;
+}
+
+.modalFooter>input[type=button]{
+	background-color: tomato;
+	border-radius:5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding:5px;
+	width:80px;
+	margin-top:30px;
+	border:none;
+	color:#fff;
+}
+
+.modalFooter>input[type=button]:hover{
+	cursor:pointer;
+}
+
+
+#plannerDateModal{
+	width:500px;
+	height:300px;
+	top:35%;
+	left:30%;
+}
+
+#plannerDateModalBody span{
+	padding:3px;
+	margin-top:20px;
+}
+
+#plannerDateModalBody select{
+	width:200px;
+	font-size:2rem;
+	border:none;
+	height:40px;
+	background-color:#eee;
+}
+
+
+#plannerModifyModal{
+	width:500px;
+	height:400px;
+	top:25%;
+	left:30%;
+}
+
+#plannerModifyModalBody span{
+	margin-top:15px;
+}
+
+#plannerModifyModalBody select{
+	width:200px;
+	font-size:2rem;
+	border:none;
+	height:40px;
+	background-color:#eee;
+}
+
+#plannerMemoModal{
+	width:500px;
+	height:350px;
+	top:30%;
+	left:30%;
+}
+
+#plannerMemoModalBody textarea{
+	margin-top:20px;
+	background-color:#eee;
+	width:300px;
+	height:150px;
+	border:none;
+	height:150;
+}
+
+#plannerMemoModalBody textarea::placeholder{
+	padding:5px;
+}
+
+
+/* bucketWindow */
+.bucketWindow{
+	width:350px;
+}
+
+.bucketWindowHeader{
+	background-color:tomato;
+	padding:4px;
+	text-align:center;
+}
+
+.bucketWindowHeader>span{
+	font-size:2rem;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+.bucketWindowBody{
+	display:flex;
+	flex-direction: row;
+	
+}
+
+
+
+.bucketWindowBody>.bwOverView{
+	flex:1;
+}
+
+.bwImgZone>.bwImg{
+	widht:100px;
+	height:100px;
+}
+
+.bucketWindowFooter{
+	background-color:tomato;
+	padding:5px;
+	text-align:center;
+	
+}
+
+.bucketWindowFooter>span.bwPlusIcon{
+	display:inline-block;
+	font-size:2rem;
+	color:#fff;
+}
+
+.bucketWindowFooter>span.bwPlusIcon:hover{
+	cursor:pointer;
+	transform: scale(1.5);
+  	transition-duration: 0.3s;
+}
+
+/*customOverlay */
+.customOverlay{
+	background-color: tomato;
+	border-radius: 50%;
+	text-align:center;
+	width:70px;
+	height:70px;
+	color:#fff;
+	font-weight:bold;
+	font-size:2rem;
+	padding-top:15px;
+}
+
+/* 후기목록으로 가기 */
+#goReview{
+	border-radius:50%;
+	line-height:4;
+	width:100px;
+	height:100px;
+	text-align:center;
+	font-weight:bold;
+	font-size:1.5rem;
+	position :fixed;
+	z-index:500;
+	right:5%;
+	bottom:5%;
+	color:#fff;
+	background-color:tomato;
+}
+
+
+
