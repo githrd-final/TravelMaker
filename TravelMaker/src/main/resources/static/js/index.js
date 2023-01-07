@@ -58,24 +58,6 @@ $('.btnMyInfo').on('click',function(){
 }
 navigo()
 
-
-
-
-
-var width_size = window.outerWidth;
-if(width_size<=450){
-
-	 $('.btnLogin').on('click',function(){
-	    $('#content').load('/mplan/mPlanner');
-	    console.log(width_size);
-	    
-	})
-	    }else{
-	 $('.btnLogin').on('click',function(){
-	    $('#content').load('/planner/planner');
-	    
- })}
-
 function div(){
 	const header = document.querySelector('header');
 	const empty = document.querySelector('#empty');
