@@ -123,3 +123,25 @@ img{
 .koreap{
 	margin-top : 10em;
 }
+
+@media screen and (max-width: 450px) {
+
+	#modal{
+		z-index: 150;
+	}
+	#modal .modal-window {
+		width: 80%;
+		height: 80%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#modal{
+		z-index: 150;
+	}
+	#modal .modal-window {
+		width: 80%;
+		height: 80%;
+	}
+}

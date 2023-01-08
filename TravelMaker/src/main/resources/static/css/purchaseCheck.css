@@ -121,3 +121,130 @@ border: 1px solid #000000;
 #btnBuy :active {
   top: 2px;
 }
+li{
+	list-style : none;
+}
+
+
+	.preReview{
+	display : inline-block;
+	}
+	.preReview span{
+	display : inline-block;
+	margin : 2px;
+	text-align : center;
+	}
+	
+	.preReviewUser{
+	font-size : 15px;
+	width : 100px;
+	text-align : center;
+	font-weight : bold;
+	border-bottom: 2px solid #ddd;
+	
+	}
+	 .preReviewUserName{
+	 
+	width : 100px;
+	text-align : center;
+	
+	}
+	
+	.preReviewTitle{
+	font-size : 15px;
+	width : 600px;
+	text-align : center;
+	font-weight : bold;
+	border-bottom: 2px solid #ddd;
+	}
+	
+	.preReviewDoc{
+	
+	width : 600px;
+	text-align : center;
+	}
+	
+
+@media (max-width: 450px){
+	.one{
+	display : inline-block;
+	width: 450px;
+	height: 600px;
+	margin : 10px auto;
+	touch-action: pan-y;
+	border:1px solid #fff;
+	}
+	
+	
+	#two{
+	width: 400px;
+	height: 356px;
+	margin : 5px auto;
+	left: 25px;
+	border:1px solid #fff;
+	user-select:none;
+	}
+	
+	#three{
+	top : 400px;
+	left: 25px;
+	width : 400px;
+	border:1px solid #fff;
+	}
+	
+	#four{
+	top : 800px;
+	width : 400px;
+	left : 25px;
+	border:1px solid #ddd;
+	border-radius : 7px;
+	height: 100px;
+	padding : 5px;
+	}
+	
+	
+	
+	/*후기---------------------------*/
+	.preReview{
+	display : inline-block;
+	}
+	.preReview span{
+	display : inline-block;
+	margin : 2px;
+	}
+	
+	.preReviewUser{
+	font-size : 15px;
+	width : 80px;
+	text-align : center;
+	font-weight : bold;
+	border-bottom: 2px solid #ddd;
+	
+	}
+	 .preReviewUserName{
+	 
+	width : 80px;
+	text-align : center;
+	
+	}
+	
+	.preReviewTitle{
+	font-size : 15px;
+	width : 295px;
+	text-align : center;
+	font-weight : bold;
+	border-bottom: 2px solid #ddd;
+	}
+	
+	.preReviewDoc{
+	
+	width : 295px;
+	text-align : center;
+	}
+	
+	
+/*footer 위 여백------------------------*/	
+	.blank{
+	height:200px;
+	}
+}

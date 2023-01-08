@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel='stylesheet' href='./css/purchaseTicket.css'/>
+<link rel='stylesheet' href='./css/purchasedTicket.css'/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
 <script defer src='./js/purchasedTicket.js'></script>
 <title>TICKET 구매내역</title>
@@ -68,7 +68,7 @@
   </div> <!-- end item -->
 	
 		<button type="button" id='btnPlan'>여행 일정 만들러 가기</button>
-	
+	<div id='blank'></div>
 </div> 
 </main>
 </body>
