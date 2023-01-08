@@ -133,9 +133,12 @@ img{
 		width: 80%;
 		height: 80%;
 	}
+	.item-detailBtnGroup-modal{
+		margin-top : 5vh;
+	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width : 451px) and (max-width: 800px) {
 
 	#modal{
 		z-index: 150;
@@ -143,5 +146,9 @@ img{
 	#modal .modal-window {
 		width: 80%;
 		height: 80%;
+	}
+
+	.item-detailBtnGroup-modal{
+		margin-top : 5vh;
 	}
 }
