@@ -15,3 +15,9 @@ Git commit -m "blah blah"
 Git push -u origin 방금 만든 브랜치 이름
 하시면 깃헙 레포에 브랜치 생기고 거기에 올라갈거에요 
 그러면 이제 작업 했는데 반영 안된거나 나중에 작업하신거 계속 푸쉬하시면 됩니다~~
+
+푸쉬하실 때는
+git add 작업한 파일
+git commit -m "변경 내용"
+git push -u origin 내 브랜치
+하시면 됩니다
