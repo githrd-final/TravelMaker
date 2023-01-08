@@ -35,26 +35,6 @@
 	cursor: pointer;
 }
 
-/*
-.nickname{
-	margin-top : 11vh;
-	text-align : center;
-}
-
-.nickname span{
-	position : relative;
-	text-align : left;
-}
-
-.nickname input{
-	position : relative;
-	text-align : right;
-}
-
-.intro{
-	margin-top : 7vh;
-}
-*/
 .profileImage{
 	margin-top : 11vh;
 }
@@ -205,23 +185,87 @@
 .input:focus ~ .placeholder {
   color: #dc2f55;
 }
-/*
-.submit {
-  background-color: #08d;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  cursor: pointer;
-  font-size: 18px;
-  height: 50px;
-  margin-top: 38px;
-  // outline: 0;
-  text-align: center;
-  width: 100%;
+
+@media screen and (max-width: 450px) {
+
+    .btnProfileSelect{
+        font-size: 1em;
+        width: 15%;
+        height : 5vh;
+    }
+
+    .btnSubmit{
+        font-size: 3em;
+        width: 40%;
+    }
+
+    .ic1 {
+        margin-top: 7vh;
+        width : 50vw;
+        margin-left : 25vw;
+    }
+
+    .ic2 {
+        margin-top: 7vh;
+        width : 50vw;
+        margin-left : 25vw;
+    }
+
+
 }
 
-.submit:active {
-  background-color: #06b;
+@media screen and (min-width: 451px) and (max-width: 800px) {
+
+    .btnCheck{
+        font-size: 0.6em;
+    }
+
+    .btnProfileSelect{
+        font-size: 0.8em;
+        width: 15%;
+        height : 5vh;
+    }
+
+    .btnSubmit{
+        font-size: 2.2em;
+        width: 40%;
+    }
+
+    .ic1 {
+        margin-top: 7vh;
+        width : 50vw;
+        margin-left : 25vw;
+    }
+
+    .ic2 {
+        margin-top: 7vh;
+        width : 50vw;
+        margin-left : 25vw;
+    }
 }
-*/
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+
+    .btnProfileSelect{
+        font-size: 1em;
+        width: 15%;
+        height : 5vh;
+    }
+
+    .btnSubmit{
+        font-size: 2.5em;
+        width: 40%;
+    }
+
+    .ic1 {
+        margin-top: 7vh;
+        width : 50vw;
+        margin-left : 25vw;
+    }
+
+    .ic2 {
+        margin-top: 7vh;
+        width : 50vw;
+        margin-left : 25vw;
+    }
+}
