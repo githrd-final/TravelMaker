@@ -13,7 +13,7 @@
 <title>상세보기</title>
 </head>
 <body>
-<li><button type='submit' id='btnTicket'>구매내역</button></li>
+
 <div class = 'one'>
 <div id = 'two'></div>
 
@@ -51,16 +51,37 @@
 	
 	<div id='btnZone'>
 		<button type='submit' id='btnBuy' onclick="requestPay()" >결제하기</button>
+		<li><button type='submit' id='btnTicket'>구매내역</button></li>
 	</div>
 	
 </div>
 
+<!-- 후기 -->
 
+<div id = 'four'>
+	<div class = 'preReview'>
+		<span class='preReviewUser'>작성자</span>
+		<span class='preReviewTitle'>제목</span>
+		<br/>
+		<span class='preReviewUserName'>채찌</span>
+		<span class='preReviewDoc'>두번째 이용입니다. 만족스러워요 ...</span>
+	</div>
 
-<div id = 'four'>후기</div>
-
+	<div class = 'preReview'>
+		<span class='preReviewUserName'>지1</span>
+		<span class='preReviewDoc'>누가 노잼지역이라고 했지 여길</span>
+	</div>
+	
+	<div class = 'preReview'>
+		<span class='preReviewUserName'>OVOIN</span>
+		<span class='preReviewDoc'>내돈내산 솔직후기</span>
+	</div>
 
 
 </div>
+
+</div>
+
+<div class='blank'></div>
 </body>
 </html>
