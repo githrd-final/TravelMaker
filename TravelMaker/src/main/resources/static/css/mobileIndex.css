@@ -37,7 +37,7 @@ html {
 	gap:1vw;
 	display:grid;
 	align-items:center;
-	grid-template-columns: 1vw auto 1fr 1vw;
+	grid-template-columns: 1fr;
 	padding: 4vh 1vw 0;
 	opacity:0;
 	animation: fadeIn 1s  0.5s forwards ease-in;
@@ -48,7 +48,7 @@ html {
 #menu {
 	margin-right: -15px;
 	line-height:30px;
-	justify-self : end;
+	justify-self : center;
 }
 
 #menu>ul>li{
@@ -109,23 +109,24 @@ section:not(#hero):nth-child(even) {
 .btn {
 	border-radius:4px;
 	text-transform:uppercase;
-	background-color:#3751b5;
+	background-color:tomato;
 	opacity:1;
 	font-weight:bold;
 	color:#fff;
+	border:none;
 }
 
 #hero {
 	position:relative;
 	justify-content:center;
 	text-align:center;
-	min-height:50vh;
+	height:100%;
 	color:#fff;
 }
 
 #hero #hero-content{
 	width: 80vw;
-	min-height: 25vh;
+	min-height: 38vh;
 	background: #F59651;
 	font-size:0.6em;
 	opacity:0;
@@ -190,7 +191,7 @@ section:not(#hero):nth-child(even) {
 	cursor: pointer;
 	display: inline-block;
 	font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
-	height: 3vh;
+	height: 5vh;
 	line-height: 3vh;
 	outline: 0;
 	overflow: hidden;
@@ -256,7 +257,7 @@ section:not(#hero):nth-child(even) {
 
 #hero-content {
 	opacity:0;
-	margin-top:10px;
+	margin-top:6vh;
 	animation: slideIn 1s 1s forwards ease-in;
 }
 
@@ -277,7 +278,7 @@ section:not(#hero):nth-child(even) {
 hr {
 	width:250px;
 	height:3px;
-	background-color:#3f51b5;
+	background-color:tomato;
 	border:0;
 	margin:50px;
 }
@@ -348,18 +349,18 @@ section .sectionP {
 }
 
 .contact form .btn{
-	padding: 18px 42px;
+	padding: 1.5vh 3vw;
+    margin: 2vh auto;
 }
 
 .contact form input {
-	padding:15px;
-	margin-right:30px;
-	font-size:18px;
+	padding:2vh;
+	font-size:1.2rem;
 	color:#555;
 	flex:1;
 }
 
-#indexFooterContainer{
+#indexFooterContainer{ 
 	display:flex;
 	flex-direction:column;
 }

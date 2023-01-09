@@ -17,7 +17,7 @@
 		<%for(int i=0; i<10; i++){ %>
 			<div class="myTourSelectItem">
 				<div class="item-right">
-					<img class="logo" src='./images/LOGO.png'/>
+					<img class="logo" src='./images/LOGO5.png'/>
 					<span class="up-border"></span>
 					<span class="down-border"></span>
 				</div> <!-- end item-right -->

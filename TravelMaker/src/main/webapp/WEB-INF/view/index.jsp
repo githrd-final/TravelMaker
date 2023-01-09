@@ -21,7 +21,6 @@
 </head>
 <body>
 <header id='IndexHeader'>
-<div id='IndexHeader_blank'></div>
 <h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>	
 <div id='menu'>
 	<ul class='indexUl'>
@@ -39,7 +38,6 @@
 	</ul>		
 
 </div>
-<div id='IndexHeader_blank'></div>
 </header>
 <div id='empty'></div>
 <div id='content'>
@@ -109,13 +107,7 @@
 
 <div id='indexFooterContainer'>
 	<footer id='indexFooter'>
-		<p class='indexFooterP'>Images courtesy of <a href="http://www.photosforclass.com/"></a>Photos for Class</p>
 		<p class='indexFooterP'>Visit Goa and have a good time doing it, when you use one or more of our tours...</p>
-		<ul class='indexUl'>
-			<li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-			<li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
-		</ul>
 	</footer>
 </div>
 														 
