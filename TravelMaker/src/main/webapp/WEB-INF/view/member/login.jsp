@@ -15,16 +15,18 @@
 <body>
 <div class='login-main'>
 	<img src="/images/logo-narrow.png" alt="로고" class='logo'>
+
+	<div class="loginMent">Travel Maker와 여행을 떠날<br/>준비가 되셨나요?</div>
 	
 	<div class='logindiv'>
 		<a id="naverIdLogin_loginButton" href="javascript:void(0)">
-			<img src="/images/btnG_full.png" alt="네이버로그인" class='naverlogin'>
+			<img src="/images/naverLogin2.png" alt="네이버로그인" class='naverlogin'>
 		</a>
 	</div>
 	
 	<div class='logindiv'>
 		<a href="javascript:void(0)">
-			<img src="/images/kakao_login_medium_narrow.png" alt="카카오로그인" class='kakaologin'>
+			<img src="/images/kakaoLogin.png" alt="카카오로그인" class='kakaologin'>
 		</a>
 	</div>
 	<!-- 

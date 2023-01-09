@@ -1,224 +1,203 @@
+@charset "UTF-8";
+
 
 @charset "UTF-8";
 
 .signUpMain{
-	text-align:center;
+    margin-top : 5vh;
+    margin-bottom : 10vh;
 }
 
 .signUpH{
-	margin-top : 9vh;
-	text-align : center;
+    margin-top : 9vh;
+    margin-left : 20vw;
 }
 
-.btnCheck{
-	font-family: sans-serif;
-    text-align: center; 
-    position: relative;
-    color: white;
-    background-color : #303245;
-    padding: 0.5vh 0.5vh;  
-    border-radius: 12px;
-    float:right;
-    font-size: 0.8em;
-    width:20%;
-    margin-bottom: 3px;
-}
-
-.btnCheck:active{
-  top: 1px;
-  border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
-  position: relative;
-}
-
-.btnCheck:hover{
-	cursor: pointer;
+.signupContainer{
+    margin : 5vh auto 0 auto;
+    width: 60vw;
+    display : grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height : 60vh;
 }
 
 .profileImage{
-	margin-top : 11vh;
+    grid-column: 5 / 6;
+    grid-row: 1/4;
+    text-align: center;
 }
 
 .btnProfileSelect{
-	font-family: sans-serif;
-	margin-top : 4vh;
-	display: block;
-	width: 5%;
+    font-family: sans-serif;
+    margin-top : 3vh;
+    display: block;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; 
+    text-align: center;
     position: relative;
     border: 0;
     display: inline-block;
-    color: white;
-    background-color : #303245;
-    padding: 0.5vh 0.5vh;  
+    text-align: center;
+    color: black;
+    background-color : #bbbbbb;
+    padding: 0.5vh 0.5vh;
     font-size: 0.8em;
     border-radius: 12px;
 }
 
 .btnProfileSelect:active{
-  top: 1px;
-  border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
-  position: relative;
+    top: 1px;
+    border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    position: relative;
 }
 
-.btnProfileSelect:hover{
-	cursor: pointer;
-}
- 
-.btnMyInfoModify{
-	font-family: sans-serif;
-	margin-top : 11vh;
-	display: block;
-    width: 15%;
+.btnSubmit{
+    font-family: sans-serif;
+    margin-top : 16vh;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; 
+    text-align: center;
     position: relative;
     border: 0;
     padding: 15px 25px;
     display: inline-block;
-    color: white;
-    background-color : #303245;
+    text-align: center;
+    color: black;
+    background-color : #bbbbbb;
     font-size: 4vh;
     border-radius: 12px;
 }
 
-.btnMyInfoModify:active{
-  top: 1px;
-  border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
-  position: relative;
-}
-
-.btnMyInfoModify:hover{
-	cursor: pointer;
+.btnSubmit:active{
+    top: 1px;
+    border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    position: relative;
 }
 
 .img-box{
-	background-image: url("/images/G1.jpg");
-	background-position : center;
-	background-size : cover;
-	border-radius: 50%;
-	border : 1px solid #000000;
-	margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    background-image: url("/images/zha.jpeg");
+    background-position : center;
+    background-size : cover;
+    border-radius: 50%;
+    border : 1px solid #000000;
+    margin: 0 auto;
+    width: 15vw;
+    height: 15vw;
 }
 
 .input-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
+    height: 50px;
+    position: relative;
 }
 
 .ic1 {
-  margin-top: 11vh;
-  width : 30vw;
-  margin-left : 35vw;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
 }
 
 .ic2 {
-  margin-top: 7vh;
-  width : 30vw;
-  margin-left : 35vw;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    align-self: center;
 }
 
-.input {
-  background-color: #303245;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  font-size: 18px;
-  height: 100%;
-  outline: 0;
-  padding: 4px 20px 0;
-  width: 100%;
-}
-
-.cut {
-  background-color: #15172b;
-  border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;
-  text-align : center;
-}
-
-.cut-short {
-  width: 50px;
-}
-
-.input:focus ~ .cut,
-.input:not(:placeholder-shown) ~ .cut {
-  transform: translateY(8px);
+.input{
+    background-color: #bbbbbb;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
 }
 
 .placeholder {
-  color: #65657b;
-  font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
-  pointer-events: none;
-  position: absolute;
-  transform-origin: 0 50%;
-  transition: transform 200ms, color 200ms;
-  top: 20px;
-}
-
-.input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
-  color: #808097;
+    color: #808097;
 }
 
 .input:focus ~ .placeholder {
-  color: #dc2f55;
+    color: #dc2f55;
 }
 
 @media screen and (max-width: 450px) {
 
-    .btnProfileSelect{
-        font-size: 1em;
-        width: 15%;
-        height : 5vh;
+    .signUpMain{
+        text-align: center;
     }
 
-    .btnSubmit{
-        font-size: 3em;
-        width: 40%;
+    .signUpH{
+        margin-top : 9vh;
+        margin-left : 0;
+    }
+
+    .signupContainer{
+        margin : 5vh auto 0 auto;
+        width: 80vw;
+        display : grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height : 60vh;
     }
 
     .ic1 {
-        margin-top: 7vh;
-        width : 50vw;
-        margin-left : 25vw;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        align-self: center;
     }
 
     .ic2 {
-        margin-top: 7vh;
-        width : 50vw;
-        margin-left : 25vw;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        align-self: center;
     }
 
 
+    .profileImage{
+        grid-column: 2 / 3;
+        grid-row: 3 / 6;
+        text-align: center;
+    }
+
+    .img-box{
+        width: 30vw;
+        height : 30vw;
+    }
+
+    .btnProfileSelect{
+        font-size: 1rem;
+        width: 40%;
+        height : 3vh;
+    }
+
+    .btnSubmit{
+        font-size: 1.7rem;
+        width: 80%;
+        padding : 1vw;
+    }
 }
-
+/*
 @media screen and (min-width: 451px) and (max-width: 800px) {
-
-    .btnCheck{
-        font-size: 0.6em;
-    }
 
     .btnProfileSelect{
         font-size: 0.8em;
@@ -233,8 +212,8 @@
 
     .ic1 {
         margin-top: 7vh;
-        width : 50vw;
-        margin-left : 25vw;
+        width : 36vw;
+        margin-left : 32vw;
     }
 
     .ic2 {
@@ -259,8 +238,8 @@
 
     .ic1 {
         margin-top: 7vh;
-        width : 50vw;
-        margin-left : 25vw;
+        width : 30vw;
+        margin-left : 35vw;
     }
 
     .ic2 {
@@ -269,3 +248,4 @@
         margin-left : 25vw;
     }
 }
+ */
