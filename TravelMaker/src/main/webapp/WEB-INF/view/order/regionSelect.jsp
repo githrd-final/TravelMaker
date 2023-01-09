@@ -12,7 +12,7 @@
 </head>
 <body>
 	<main class='regionSelectMain'>
-		<h1 class='regionSelectH'>가고 싶은 지역이 있으신가요?</h1>
+		<div class='regionSelectH'>가고 싶은 지역이 있으신가요?</div>
 		<div class='regionSelectAll'><p class='koreap'>전 국</p></div>
 		<div class='regionSelectGang'><p>강원도</p></div>
 		<div class='regionSelectGyeong'><p>경상도</p></div>

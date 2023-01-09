@@ -18,7 +18,7 @@ html{
 	padding : 3vw;
 }
 #rs_title div:nth-child(1){
-	font-size : 2rem;
+	font-size : 1.5rem;
 	font-weight : bolder;
 }
 #rs_title div:nth-child(2){
@@ -64,17 +64,17 @@ html{
 #rs_filter_period{
 	height: 1.5vh;
 	line-height: 1.5vh;
-	font-size : 2rem;
+	font-size : 1.5rem;
 }
 #rs_filter_region{
 	height: 1.5vh;
 	line-height: 1.5vh;
-	font-size : 2rem;
+	font-size : 1.5rem;
 }
 #rs_filter_location{
 	height: 1.5vh;
 	line-height: 1.5vh;
-	font-size : 2rem;
+	font-size : 1.5rem;
 }
 
 #rs_search{
@@ -265,12 +265,12 @@ html{
 	justify-self : center;
 	display : grid;
 	width: 90vw;
-	grid-template-columns : repeat(9, 1fr);
+	grid-template-columns : 1.4fr 1.4fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1.4fr;
 	justify-items : center;
 	gap : 2px;
 }
 #rs_page_btn div{
-	width : 95%;
+	width : 100%;
 	text-align: center;
 }
 
@@ -289,7 +289,7 @@ html{
   line-height: 1.15385;
   margin: 0;
   outline: none;
-  padding: 8px .8em;
+  padding: 8px .5em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -331,7 +331,7 @@ html{
   line-height: 1.15385;
   outline: 0;
   overflow: hidden;
-  padding: 8px .8em;
+  padding: 8px .5em;
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
