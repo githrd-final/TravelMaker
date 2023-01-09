@@ -2,6 +2,7 @@
 		#mplanner{
 			display:grid;
 			grid-rows: 2fr 3fr;
+			min-height:55vh;
 			}
 		#map{
 			min-width:100vw;
@@ -29,7 +30,7 @@
 			border-right: black 1px solid;
 			border-bottom: black 1px solid;
 			overflow-y:auto;
-			height:35vh;
+			height:45vh;
 		}
 		.clickbtn{
 			background-color:tomato;
@@ -46,8 +47,14 @@
 		.mList::-webkit-scrollbar{
 			display:none;
 		}
-		/* ��ȣ�� �Է��ϴ� modal box */
+		/* modal box */
 
+.modalheader{
+	background-color: tomato;
+	color: white;
+	padding:1vh;
+	border-radius:10px 10px 0 0;
+}
 #modal, #modal2, #modal3{
 	position: fixed;
 	left: 0;
@@ -69,12 +76,12 @@
 }
 
 #modal>#content1, #modal2>#content2{
-	width: 80vw;
+	width: 70vw;
 	min-height:20vh;	
-	border-radius:30px;
+	border-radius:10px;
 	margin: 45vh auto;
 	z-index:101;
-	padding: 40px;
+	padding-bottom: 2vh;
 	position: relative;
 	text-align:center;
 	background-color: #fff;
@@ -82,27 +89,30 @@
 #modal3>#content3{
 	width: 80vw;
 	min-height:15vh;	
-	border-radius:30px;
-	margin: 50vh auto;
+	border-radius:10px;
+	margin: 45vh auto;
 	z-index:101;
-	padding: 40px;
+	padding-bottom: 2vh;
 	position: relative;
 	text-align:center;
 	background-color: #fff;
 }
-#modal>#content1>#btnClose, #modal2>#content2>#btnClose2, #modal3>#content3>#btnClose3{
+#modal>#content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
 	position: absolute;
-	font-size:2rem;
-	margin-right:30px;
-	margin-top:30px;
+	font-size:1.5rem;
+	margin-right:1vh;
+	color:white;
 	right:2px;
+	padding:0;
 	top:2px;
-	background-color: transparent;
-	border: 0;
+	height:fit-content;
+	background-color: tomato;
+	border: none;
+	float:right;
 }
 .locationTitle{
-	margin:10%;
-	font-size:2rem;
+	font-size:1.5rem;
+	font-weight:bold;
 	display:inline-block;
 }
 .UpdateSubTitle{
@@ -116,30 +126,45 @@
 .MemoArea{
 	height:10vh;
 	width:80%;
+	background-color:#eee;
+	border:none;
+}
+#modal .locationName, #modal2 .locationName, #modal3 .locationName{
+	font-size:1.5rem;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:15px;
 }
 #modal>#content1 select, #modal2>#content2 select{
 	margin-top:5%;
-	width: 60vw;
+	width: fit-content;
 	font-size:1rem;
 	margin-bottom:10%;	
 }
 #modal>#content1 #btnCheck, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
-	width: 60vw;
+	width: 50vw;
 	font-size:1rem;
+	margin-top:2vh;
+	padding:2%;
 	background-color:tomato;
 	color:white;
-	border-radius:10px;
-	margin-bottom:10%;	
+	border:none;
+	margin-bottom:1vh;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+		
 }
 
+
 	.Bucketitem{
-		padding:1%;
+		padding:1vh;
+		border-bottom:1px solid lightgray;
 		display:grid;
-		grid-template-columns:2fr 1fr 1fr 1fr;
+		grid-template-columns:1.5fr 2fr 1fr 1fr;
 	}
 	
 	.bucketImg{
 		width:100%;
+		border-radius:10%;
 	}
 	.bucketInfo{
 		padding-left:1vh;
@@ -241,18 +266,22 @@
 	#goReview{
 	border-radius:50%;
 	line-height:4;
-	width:10vw;
-	height:10vw;
+	width:13vw;
+	height:13vw;
 	text-align:center;
 	font-weight:bold;
-	font-size:0.5rem;
+	font-size:1rem;
 	text-decoration:none;
 	position :fixed;
 	z-index:500;
 	right:5%;
-	bottom:35vh;
+	bottom:20vh;
 	color:#fff;
 	background-color:tomato;
+}
+#goReview>span{
+	height:1.5vh;
+	display:block;
 }
 .customoverlay{
 	text-align:center;

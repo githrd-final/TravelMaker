@@ -27,7 +27,6 @@
 				<div class="planMemoWrapper">
 					<div class="PlanMemo">
 						<input type="image" src="img/edit.png" class="PlanMemoItem" onclick='modalView3(this)'>
-						<div>메모 남기기</div>
 					</div>
 				</div>
 		</div>
@@ -46,7 +45,7 @@
 				<div class="planMemoWrapper">
 					<div class="PlanMemo">
 						<input type="image" src="img/edit.png" class="PlanMemoItem" onclick='modalView3(this)'>
-						<div>메모 남기기</div>
+						
 					</div>
 				</div>
 		</div>
