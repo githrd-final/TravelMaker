@@ -31,6 +31,7 @@ var kakaoMap = (function(){
 
 	
 	var map = null;
+	var bounds = new kakao.maps.LatLngBounds();  
 	var bucketMarkers = [];  // 마커객체들이 담긴 배열
 	var linePath = [];		 // polyline 연결할 마커의 좌표들이 담긴 배열
 	var customOverlays = []; // cunstomOverlay객체들이 담긴 배열
@@ -114,11 +115,20 @@ var kakaoMap = (function(){
 		mapY = Y;
 	}
 	
+	function setBounds(bounds){
+		
+		for(var i=0; i<linePath.length; i++){
+			bounds.extend(linePath[i]);
+		}
+		map.setBounds(bounds);
+	}
+	
 	function setMarkers(positions){
 		bucketMarkers = [];
 		
 		for(var i = 0; i<positions.length; i++){
 			linePath.push(positions[i].latlng);
+			
 			
 			var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
 		    markerPosition = linePath[i]; // 마커가 표시될 위치입니다
@@ -146,7 +156,7 @@ var kakaoMap = (function(){
 		
 		initMap(container,options);
 		setMarkers(positions);
-		
+		setBounds(bounds);
 		
 		$('#planBucketList').load('/planner/planBucketList',function(data){
 			
@@ -183,7 +193,7 @@ var kakaoMap = (function(){
 			    strokeStyle: 'solid' // 선의 스타일입니다
 			});
 				
-			var bounds = new kakao.maps.LatLngBounds();  
+			bounds = new kakao.maps.LatLngBounds();  
 				
 			
 			$('.planListMenuItem').on('click',function(){
@@ -210,7 +220,7 @@ var kakaoMap = (function(){
 				}; // end of for
 				
 				polyline.setMap(map);
-				map.setBounds(bounds);
+				setBounds(bounds);
 				
 			}); // end of onclick
 				

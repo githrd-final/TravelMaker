@@ -239,6 +239,7 @@ body{
 }
 .planItem>div.planItemMemoZone{
 	width:30%;
+	padding-right:20px;
 }
 
 
