@@ -31,7 +31,9 @@ var kakaoMap = (function(){
 
 	
 	var map = null;
-	var bucketMarkers = [];
+	var bucketMarkers = [];  // 마커객체들이 담긴 배열
+	var linePath = [];		 // polyline 연결할 마커의 좌표들이 담긴 배열
+	var customOverlays = []; // cunstomOverlay객체들이 담긴 배열
 	
 	var mapX = 37.51424591;
 	var mapY = 127.1040305;
@@ -71,6 +73,11 @@ var kakaoMap = (function(){
         removable : removeable 
     });
 	
+	var imageSrc = './images/food.png', // 마커이미지의 주소입니다    
+	    imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+	    imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+	
+	var polyline = null;
 	
 	var positions = [
 		 
@@ -97,7 +104,6 @@ var kakaoMap = (function(){
 	    }
 	];
 	
-	var linePath = [];
 	
 	function initMap(container,options){
 		map = new kakao.maps.Map(container,options)
@@ -109,15 +115,23 @@ var kakaoMap = (function(){
 	}
 	
 	function setMarkers(positions){
+		bucketMarkers = [];
+		
 		for(var i = 0; i<positions.length; i++){
+			linePath.push(positions[i].latlng);
+			
+			var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+		    markerPosition = linePath[i]; // 마커가 표시될 위치입니다
+			
 			var marker = new kakao.maps.Marker({
 			     map: map, // 마커를 표시할 지도
 			     position: positions[i].latlng, // 마커를 표시할 위치
 			     title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+			     image: markerImage // 마커이미지 설정
 			 });
 			
 			bucketMarkers.push(marker);
-			linePath.push(positions[i].latlng);
+			
 		}
 	}
 	
@@ -137,7 +151,23 @@ var kakaoMap = (function(){
 		$('#planBucketList').load('/planner/planBucketList',function(data){
 			
 			$('.planBucketItem').on('click',function(){
-				bucketWindow.open(map,bucketMarkers[0])
+				if(polyline != null){
+					polyline.setMap(null);
+				}
+				
+				if(customOverlays.length != 0){
+					for(var i=0; i<customOverlays.length; i++){
+						
+						customOverlays[i].setMap(null);
+					}
+				}
+				
+				for(var i=0; i<bucketMarkers.length; i++){
+					bucketMarkers[i].setMap(map);
+				}
+				
+				bucketWindow.open(map,bucketMarkers[0]);
+				
 			})
 			
 			
@@ -145,13 +175,16 @@ var kakaoMap = (function(){
 		});
 		
 		$('#planList').load('/planner/planList',function(data){
-			var polyline = new kakao.maps.Polyline({
+				polyline = new kakao.maps.Polyline({
 			    path: linePath, // 선을 구성하는 좌표배열 입니다
 			    strokeWeight: 8, // 선의 두께 입니다
 			    strokeColor: 'tomato', // 선의 색깔입니다
 			    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 			    strokeStyle: 'solid' // 선의 스타일입니다
 			});
+				
+			var bounds = new kakao.maps.LatLngBounds();  
+				
 			
 			$('.planListMenuItem').on('click',function(){
 				
@@ -167,11 +200,17 @@ var kakaoMap = (function(){
 					});
 					
 					customOverlay.setMap(map);
+					customOverlays.push(customOverlay);
+					console.log(bucketMarkers[i]);
 					bucketMarkers[i].setMap(null);
+					bucketWindow.close();
+					
+					bounds.extend(linePath[i]);
 					
 				}; // end of for
 				
 				polyline.setMap(map);
+				map.setBounds(bounds);
 				
 			}); // end of onclick
 				
