@@ -25,8 +25,11 @@
 	<div id='modal'>
 		<div id="modalBack"></div>
 		<div id='content1'>
-			<input type='button' id='btnClose' value='X'/>
-			<span class="locationTitle">섬진강</span><br/>
+			<div class="modalheader">
+				<span class="locationTitle">일정추가</span>
+				<input type='button' id='btnClose' value='X'/>			
+			</div>
+			<div class="locationName">섬진강</div>
 			<select>
 			    <option value="1" selected>1일자</option>
 			    <option value="2">2일자</option>
@@ -38,8 +41,11 @@
 	<div id='modal2'>
 		<div id="modalBack2"></div>
 		<div id='content2'>
-			<input type='button' id='btnClose2' value='X'/>
-			<span class="locationTitle">섬진강</span><br/>
+			<div class="modalheader">
+				<span class="locationTitle">일정수정</span>
+				<input type='button' id='btnClose2' value='X'/>
+			</div>
+			<div class="locationName">섬진강</div>
 			<span class="UpdateSubTitle">순번</span>
 			<input type="text" value="1" class="UpdatePlanSerial"><br/>
 			<select>
@@ -53,13 +59,16 @@
 	<div id='modal3'>
 		<div id="modalBack3"></div>
 		<div id='content3'>
-			<input type='button' id='btnClose3' value='X'/>
-			<span class="UpdateSubTitle">메모</span><br/>
+			<div class="modalheader">
+				<span class="locationTitle">메모</span>
+				<input type='button' id='btnClose3' value='X'/>
+			</div>
+			<div class="locationName">섬진강</div>
 			<textarea class="MemoArea"></textarea><br/>
 			<input type='button' value='수정' id='btnCheck3'onclick="memoInsert(this)"/>
 		</div>
 	</div>
 	
-	<a href="#" id="goReview">여행목록</a>
+	<a href="#" id="goReview"><span>여행</span><span>목록</span></a>
 </body>
 </html>

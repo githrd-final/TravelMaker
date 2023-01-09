@@ -11,19 +11,16 @@
 <body>
 	<c:forEach var = 'i' begin='1' end='15'>
 		<div class="planItem">
-			<div class='planItemDataZone'>
+			<div class='planItemDataZone' onclick="openModifyModal()">
 				<span class="planItemOrder">${i}</span>
 				<span class="planItemName">가나돈까스</span>
 				<span class="planItemDate">2023-01-0${i}</span>
 			</div>
-			<div class="planItemMemoZone">
+			<div class="planItemMemoZone" onclick="openMemoModal()">
 				<span class="planItemIcon"><i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i></span>
 				<span><input type="button" value="메모 작성" class="btnInsertMemo"/></span>
 			</div>
 		</div>
 	</c:forEach>
 </body>
-<script type="module">
-		import "/js/plannerModal.js"
-</script>
 </html>

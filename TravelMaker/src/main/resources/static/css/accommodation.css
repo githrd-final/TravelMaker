@@ -27,6 +27,27 @@ img{
     text-overflow: ellipsis;
     display: inline-block;
 }
+/*체크박스------------------------------------*/
+
+/* 색상 변경 */
+.check input, .check progress {
+  accent-color: tomato;
+  margin : 7px;
+}
+input[type="checkbox"]{
+	width: 20px; /*Desired width*/
+	height: 20px; /*Desired height*/
+	cursor: pointer;
+	margin : 5px;
+}
+label{
+	font-size : 1.2rem;
+	font-weight : bold;
+}
+.check{
+	float : right;
+	margin-bottom: 8%;
+}
 
 #modal.modal-overlay {
 	width: 100%;
@@ -61,24 +82,16 @@ img{
 	background-color : white;
 }
 
-.asd098{
-	background-color : #ff6347;
-	width : 100%;
-	height : 15%;
-	font-size : 2.5rem;
-	text-align : center;
-}
-
 .item-detail-modal{
 	width: 100%;
 	height: 60%;
 	text-align: center;
 	margin : auto;
-	margin-bottom : 10%;
+	margin-bottom : 10vh;
 }
 
 .item-name{
-	margin-top : 5vh;
+	margin-top : 3vh;
 	font-size: 2.5em;
 	font-weight: bold;
 }
@@ -104,7 +117,7 @@ img{
 }
 
 .item-homepage a{
-	font-color: black;
+	color: black;
 
 }
 
@@ -112,6 +125,7 @@ img{
 	width: 100%;
 	height: 40%;
 	text-align: center;
+	margin : auto;
 }
 
 .item-detailBtnGroup-modal input{
@@ -126,6 +140,9 @@ img{
 .koreap{
 	margin-top : 10em;
 }
+#accommodation:hover{
+	cursor : pointer;
+}
 
 @media screen and (max-width: 450px) {
 
@@ -136,12 +153,50 @@ img{
 		width: 80%;
 		height: 80%;
 	}
-	.item-detailBtnGroup-modal{
-		margin-top : 5vh;
+	
+	#accommodation #title{
+		font-size : 1.5rem;
 	}
+	#accommodation #location{
+		font-size : 1.2rem;
+	}
+	#accommodation #doc{
+		font-size : 1rem;
+	}
+	img{
+		float : right;
+		width : 30vw;
+		height : 100%;
+	}
+	#accommodation{
+		width : 100%;
+		height : 110px;
+		border : 2px solid #ddd;
+	}
+/*체크박스------------------------------------*/
+
+/* 색상 변경 */
+.check input, .check progress {
+  accent-color: tomato;
+  margin : 7px;
+}
+input[type="checkbox"]{
+	width: 20px; /*Desired width*/
+	height: 20px; /*Desired height*/
+	cursor: pointer;
+	margin : 5px;
+}
+label{
+	font-size : 1.2rem;
+	font-weight : bold;
+}
+.check{
+	float : right;
+	margin-bottom: 8%;
 }
 
-@media screen and (min-width : 451px) and (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
 
 	#modal{
 		z-index: 150;
@@ -150,8 +205,5 @@ img{
 		width: 80%;
 		height: 80%;
 	}
-
-	.item-detailBtnGroup-modal{
-		margin-top : 5vh;
-	}
+}
 }

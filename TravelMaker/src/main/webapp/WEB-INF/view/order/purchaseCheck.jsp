@@ -20,7 +20,7 @@
 <!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
 <div id = 'three'>
 	<div>
-		<label>지역 : </label>
+		<label>선택지역 : </label>
 		<span>전라도</span>
 	</div>
 	<div>
@@ -30,17 +30,17 @@
 	<div>
 		<label>가는날</label>	
 		 <label>
-		    <input type="radio" name="Day" value="오전"/>
+		    <input type="radio" name="startTime" value="오전"/>
 		    <span>오전</span>
-		    <input type="radio" name="NIGHT" value="오후" checked/>
+		    <input type="radio" name="startTime" value="오후" checked/>
 		    <span>오후</span>
 	  	</label>
 	  	<br/>
 	  	<label>오는날</label>	
 		 <label>
-		    <input type="radio" name="Day" value="오전" checked/>
+		    <input type="radio" name="endTime" value="오전" checked/>
 		    <span>오전</span>
-		    <input type="radio" name="NIGHT" value="오후"/>
+		    <input type="radio" name="endTime" value="오후"/>
 		    <span>오후</span>
 	  	</label>
 	</div>
@@ -57,30 +57,41 @@
 </div>
 
 <!-- 후기 -->
-
 <div id = 'four'>
-	<div class = 'preReview'>
-		<span class='preReviewUser'>작성자</span>
-		<span class='preReviewTitle'>제목</span>
-		<br/>
-		<span class='preReviewUserName'>채찌</span>
-		<span class='preReviewDoc'>두번째 이용입니다. 만족스러워요 ...</span>
-	</div>
-
-	<div class = 'preReview'>
-		<span class='preReviewUserName'>지1</span>
-		<span class='preReviewDoc'>누가 노잼지역이라고 했지 여길</span>
-	</div>
+	<div class=reviewList>
+		<p class='preReviewTitleP'>이 지역을 다녀온 사람들</p>
+		<div class = 'preReview'>
+			<span class='preReviewUser'>NAME</span>
+			<span class='preReviewTitle'>TITLE</span>
+			<br/>
+			<span class='preReviewUserName'>채찌</span>
+			<span class='preReviewDoc'>두번째 구매(●'◡'●)</span>
+		</div>
 	
-	<div class = 'preReview'>
-		<span class='preReviewUserName'>OVOIN</span>
-		<span class='preReviewDoc'>내돈내산 솔직후기</span>
+		<div class = 'preReview'>
+			<span class='preReviewUserName'>지1</span>
+			<span class='preReviewDoc'>누가 노잼지역이라고 했지 여길</span>
+		</div>
+	
+		<div class = 'preReview'>
+			<span class='preReviewUserName'>OVOIN</span>
+			<span class='preReviewDoc'>내돈내산 솔직후기</span>
+		</div>
+	
+		<div class = 'preReview'>
+			<span class='preReviewUserName'>전..아현인데요</span>
+			<span class='preReviewDoc'>이게 되네요? </span>
+		</div>
+		
+		<div class = 'preReview'>
+			<span class='preReviewUserName'>야생의진우몬</span>
+			<span class='preReviewDoc'>흰 천과 트레블메이커만 있다면 어디든 갈 수 있어</span>
+		</div>
+
 	</div>
-
-
 </div>
 
-</div>
+</div> <!-- end of one -->
 
 <div class='blank'></div>
 </body>

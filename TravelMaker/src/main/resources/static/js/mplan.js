@@ -4,6 +4,7 @@
 $('.mList').load('/mplan/mPlanBucketList');	/* 메인화면 들어가자마자 바로 뿌려주게*/ 
  // A $( document ).ready() block.
 $( document ).ready(function() {
+	kakao.maps.disableHD();
     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 		var options = { //지도를 생성할 때 필요한 기본 옵션
 			center: new kakao.maps.LatLng(35, 125), //지도의 중심좌표.
@@ -40,10 +41,20 @@ $( document ).ready(function() {
 		var bounds = new kakao.maps.LatLngBounds();
 		var markers=[];    
 		var linepath = [];
+		var polyline;
+		var customoverlays=[];
 		
 		// 버킷버튼 클릭, 커스텀 출력 및 지도 범위 설정
 		BucketBtnClicked= function(){
-		
+			markers=[];
+			if(customoverlays.length!=0){
+				for(var i =0; i< customoverlays.length;i++){
+					customoverlays[i].setMap(null);	
+				}
+			}
+			if(polyline!= null){
+				polyline.setMap(null);
+			}
 			for (var i = 0; i < positions.length; i ++) {
 				 // 마커를 생성합니다
 				 var marker = new kakao.maps.Marker({
@@ -71,8 +82,9 @@ $( document ).ready(function() {
 		
 		// 일정버튼 클릭, 커스텀 출력 및 지도 범위 설정
 		PlanClicked= function(){
-		
-			for(var i =0;i<markers.length;i++){
+			polyline=null;
+			customoverlays=[];
+			for(var i =0;i<positions.length;i++){
 				
 				markers[i].setMap(null);
 				var content = '<div class ="customoverlay">'+ (i+1) +'</div>';
@@ -83,6 +95,7 @@ $( document ).ready(function() {
 				}); //end Customoverlay
 							
 			    map.setBounds(bounds);
+			    customoverlays.push(customOverlay);
 			    
 				// 커스텀 오버레이를 지도에 표시합니다
 				customOverlay.setMap(map);
@@ -90,7 +103,7 @@ $( document ).ready(function() {
 
 
 		//폴리라인 출력
-		var polyline = new kakao.maps.Polyline({
+		polyline = new kakao.maps.Polyline({
 		    path: linepath, // 선을 구성하는 좌표배열 입니다
 		    strokeWeight: 3, // 선의 두께 입니다
 		    strokeColor: 'tomato', // 선의 색깔입니다

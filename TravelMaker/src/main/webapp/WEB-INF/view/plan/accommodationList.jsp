@@ -11,7 +11,16 @@
 <title>숙소 추천 리스트</title>
 </head>
 <body>
+<div class='check'>
+	<input type="checkbox" id="cb1" name='cb' onclick='checkOnlyOne(this)'>
+	<label for="cb1" >거리순(역 기준)</label>
+			
+	<input type="checkbox" id="cb2" name='cb' onclick='checkOnlyOne(this)'>
+	<label for="cb2" >추천순</label>
+</div>
 <div id='accmmodationBack'>
+
+	 <br/>
 
 	<div id='accommodation' class='ex'>
 		<span><img src='./images/hotel.png'/></span>
