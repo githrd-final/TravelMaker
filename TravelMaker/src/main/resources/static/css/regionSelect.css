@@ -1,101 +1,220 @@
 
-.regionSelectMain{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	text-align : center;
-	min-height: 500px;
-	gap: 20px;
-	margin : 10vh 10vw;
-	grid-template-rows: auto;
-	/*grid-auto-rows: minmax(10vh, auto);
-	grid-auto-columns: minmax(10vh, auto);*/	
+@media screen and (min-width: 450px){
+	.regionSelectMain{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align : center;
+		gap: 20px;
+		margin : 10vh 10vh;
+		grid-template-rows: auto;
+		/*grid-auto-rows: minmax(10vh, auto);
+		grid-auto-columns: minmax(10vh, auto);*/	
+	}
+	
+	.regionSelectH{
+		margin-top : 1em;
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+		height : 5vh;
+		font-size : 1.5rem;
+		font-weight: bolder;
+	}
+	
+	.regionSelectAll{
+		height : 80vh;
+		margin-top : 1em;
+		grid-column: 1 / 2;
+		grid-row: 2 / 4;
+		background-image: url("/images/all.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectAll:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectGang{
+		margin-top : 1em;
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		background-image: url("/images/kangwon.jpg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectGang:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectGyeong{
+		margin-top : 1em;
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+		background-image: url("/images/gyeungsang.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectGyeong:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectJeolla{
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+		background-image: url("/images/jeolla.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectJeolla:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectChung{
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+		background-image: url("/images/chungcheong.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectChung:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+		
+	}
+
+	
 }
 
-.regionSelectH{
-	margin-top : 1em;
-	grid-column: 1 / 4;
-	grid-row: 1 / 2;
-	height : 10vh;
+@media screen and (max-width: 450px){
+	.regionSelectMain{
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align : center;
+		gap: 20px;
+		margin : 10vh 10vh;
+		grid-template-rows: auto;
+		/*grid-auto-rows: minmax(10vh, auto);
+		grid-auto-columns: minmax(10vh, auto);*/	
+	}
+	
+	.regionSelectH{
+		margin-top : 1em;
+		height : 5vh;
+		font-size : 1.5rem;
+		font-weight: bolder;
+	}
+	
+	.regionSelectAll{
+		margin-top : 1em;
+		background-image: url("/images/all.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectAll:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectGang{
+		margin-top : 1em;
+		background-image: url("/images/kangwon.jpg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectGang:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectGyeong{
+		margin-top : 1em;
+		background-image: url("/images/gyeungsang.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectGyeong:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectJeolla{
+		background-image: url("/images/jeolla.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectJeolla:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+	}
+	
+	.regionSelectChung{
+		background-image: url("/images/chungcheong.jpeg");
+		background-position : center;
+		background-size : cover;
+		filter: grayscale(70%);
+	}
+	
+	.regionSelectChung:hover{
+		filter: grayscale(0%);
+		cursor : pointer;
+		transition: transform 0.5s;
+		transform:scale(1.1);
+		
+	}
 }
-
-.regionSelectAll{
-	height : 80vh;
-	margin-top : 1em;
-	grid-column: 1 / 2;
-	grid-row: 2 / 4;
-	background-image: url("/images/all.jpeg");
-	background-position : center;
-	background-size : cover;
-	filter: grayscale(100%);
-}
-
-.regionSelectAll:hover{
-	filter: grayscale(0%);
-}
-
-.regionSelectGang{
-	margin-top : 1em;
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	background-image: url("/images/kangwon.jpg");
-	background-position : center;
-	background-size : cover;
-	filter: grayscale(100%);
-}
-
-.regionSelectGang:hover{
-	filter: grayscale(0%);
-}
-
-.regionSelectGyeong{
-	margin-top : 1em;
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-	background-image: url("/images/gyeungsang.jpeg");
-	background-position : center;
-	background-size : cover;
-	filter: grayscale(100%);
-}
-
-.regionSelectGyeong:hover{
-	filter: grayscale(0%);
-}
-
-.regionSelectJeolla{
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-	background-image: url("/images/jeolla.jpeg");
-	background-position : center;
-	background-size : cover;
-	filter: grayscale(100%);
-}
-
-.regionSelectJeolla:hover{
-	filter: grayscale(0%);
-}
-
-.regionSelectChung{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-	background-image: url("/images/chungcheong.jpeg");
-	background-position : center;
-	background-size : cover;
-	filter: grayscale(100%);
-}
-
-.regionSelectChung:hover{
-	filter: grayscale(0%);
-}
-
-p{
-	font-size: 3em;
+.regionSelectMain p{
+	font-size: 3.5rem;
 	font-family: sans-serif;
 	margin-top : 4em;
 	color : white;
 }
 
-<!-- modal -->
+
+.regionSelectMain div:hover p{
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	
+}
+
+
 #modal.modal-overlay {
 	width: 100%;
 	height: 100%;
@@ -163,7 +282,7 @@ p{
 }
 
 .item-homepage a{
-	font-color: black;
+	color: black;
 
 }
 

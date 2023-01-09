@@ -9,9 +9,7 @@
 	opacity : 0;
 	transition : all 2s;
 }
-#ci_blank_300px{
-	height:300px;
-}
+
 @keyframes flickerAnimation {
   0%   { opacity:1; }
   50%  { opacity:0; }
@@ -33,14 +31,14 @@
   100% { opacity:1; }
 }
 .ci_main div{
-	font-size : 3rem;
+	font-size : 1.5rem;
 	font-weight: bolder;
 	text-align: center
 }
 
 @media screen and (max-width: 450px){
 	.ci_main div{
-	font-size : 2rem;
+	font-size : 1.5rem;
 	font-weight: bolder;
 	text-align: center
 }
@@ -57,16 +55,16 @@
 #ci_down_icon{
 	background-image: url('../images/down-icon.png');
 	background-size: cover;
-	width: 10vw;
-	height: 10vw;
+	width: 5vw;
+	height: 5vw;
 	opacity : 0.8;
 	transition : 0.5s;
 }
-#ci_blank_1000px{
-	height:1000px;
+#ci_blank_50vh{
+	height:50vh;
 }
-#ci_blank_150px{
-	height:150px;
+#ci_blank_10vh{
+	height:10vh;
 }
 .ci_reason1, .ci_reason2, .ci_reason3{
 	display: grid;

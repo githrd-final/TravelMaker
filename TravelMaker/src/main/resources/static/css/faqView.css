@@ -17,7 +17,7 @@
 	#faq_title{width : 95% !important;}
 	.faq_content{width: 95% !important; margin: auto;}
 	#faq_title div:nth-child(1){
-	font-size : 2rem;
+	font-size : 1.5rem;
 	font-weight : bolder;
 	}
 	#faq_title div:nth-child(2){
