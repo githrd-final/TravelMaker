@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.title{
+	font-size : 1.5rem;
+}
+
 #listBack{
 	width : 100%;
 	height : 100%;
@@ -6,12 +10,19 @@
 	position : relative;
 }
 	
-	.btn-group button{
+.btn-group button{
+	background-color: rgb(235, 233, 230);;
+    border: 3px solid #FFF;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
 	display : inline-block;
 	text-align : center;
-	}
+	font-size : 1.5rem;
+	font-weight : bold;
+}
 	
-	.searchTxt {
+.searchTxt {
   padding: 0;
   background: none;
   border: none;
@@ -42,27 +53,6 @@
   margin : 10px;
 }
 
-/*체크박스------------------------------------*/
-
-/* 색상 변경 */
-.check input, .check progress {
-  accent-color: tomato;
-  margin : 7px;
-}
-input[type="checkbox"]{
-	width: 20px; /*Desired width*/
-	height: 20px; /*Desired height*/
-	cursor: pointer;
-	margin : 5px;
-}
-label{
-	font-size : 20px;
-	font-weight : bold;
-}
-.check{
-	position : absolute;
-	right : 10px;
-}
 
 
 /*퀵 버튼--------------------------------------*/
@@ -70,6 +60,7 @@ label{
 	position: absolute; 
 	right: 10px; 
 	top: 400px;
+	background-color : #fff;
 }
 .quickMenuBar{
 	border: 2px solid tomato;
@@ -106,4 +97,7 @@ label{
 	font-weight : bold;
 	font-size : 1rem;
 }
-	
+.btn-group button:focus {
+    background-color: tomato;
+    color : #fff;
+}

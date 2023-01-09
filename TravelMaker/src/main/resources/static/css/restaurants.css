@@ -26,3 +26,73 @@ img{
     text-overflow: ellipsis;
     display: inline-block;
 }
+
+
+/*체크박스------------------------------------*/
+
+/* 색상 변경 */
+.check input, .check progress {
+  accent-color: tomato;
+  margin : 7px;
+}
+input[type="checkbox"]{
+	width: 20px; /*Desired width*/
+	height: 20px; /*Desired height*/
+	cursor: pointer;
+	margin : 5px;
+}
+label{
+	font-size : 1.2rem;
+	font-weight : bold;
+}
+.check{
+	float : right;
+	margin-bottom: 8%;
+}
+
+
+
+/*모바일-------------------------------------*/
+@media screen and (max-width: 450px) {
+
+	#restaurants #title{
+		font-size : 1.5rem;
+	}
+	#restaurants #location{
+		font-size : 1.2rem;
+	}
+	#restaurants #doc{
+		font-size : 1rem;
+	}
+	img{
+		float : right;
+		width : 30vw;
+		height : 100%;
+	}
+	#restaurants{
+		width : 100%;
+		height : 110px;
+		border : 2px solid #ddd;
+	}
+/*체크박스------------------------------------*/
+
+/* 색상 변경 */
+.check input, .check progress {
+  accent-color: tomato;
+  margin : 7px;
+}
+input[type="checkbox"]{
+	width: 20px; /*Desired width*/
+	height: 20px; /*Desired height*/
+	cursor: pointer;
+	margin : 5px;
+}
+label{
+	font-size : 1.2rem;
+	font-weight : bold;
+}
+.check{
+	float : right;
+	margin-bottom: 8%;
+}
+}
