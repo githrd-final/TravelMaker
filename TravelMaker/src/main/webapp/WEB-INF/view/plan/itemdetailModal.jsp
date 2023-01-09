@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>viewdetail</title>
-    <!-- <link rel="stylesheet" href="css/itemdetailModal.css"/> -->
+    <script defer src='/js/accommodation.js'></script>
 </head>
 <body>
         <c:set var="item" value="${result}"/>
@@ -16,7 +16,7 @@
                 <div class="item-homepage">${item.homepage}</div>
             </div>
             <div class="item-detailBtnGroup-modal">
-                <input type="button" value="내 일정 보기" />
+                <input type="button" class= "itemModaltoMyPlan" value="내 일정 보기" />
                 <input type="button" value="일정에 추가" /> <!-- c:if 문으로 일정 추가 여부 확인 -->
             </div>
         </div>

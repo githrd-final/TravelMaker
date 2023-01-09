@@ -63,24 +63,10 @@
 		<div id='location'>전라북도 남원 소리길 120</div>
 		<div id='doc'>남원공용버스터미널에서 차로 단 2분 거리에 위치해 있습니다. 주변 관광지로는 광한루원이 차로 단 3분, 뱀사골계곡이 차로 40분 거리에 있으며, 춘향테마파크까지는 차로 단 1분이 소요됩니다. 남원에 위치한 편안하고 아늑한 이 모텔에서는 무선 인터넷과 금고 및 24시간 리셉션 등을 이용하실 수 있습니다. 또한 환전, 엘리베이터, 투어 데스크 등도 이용하실 수 있습니다</div>
 	</div>
-	
+
 	<div id="modal" class="modal-overlay">
-		<c:set var="item" value="${result}"/>
-		<div class="modal-window">
-			<div class="item-detail-modal">
-				<div class="item-name">${item.title}</div>
-				<div class="item-image" style="background-image: url('${item.firstImage}')"></div>
-				<div class="item-address">${item.addr1}</div>
-				<div class="item-tel">${item.tel}</div>
-				<div class="item-homepage">${item.homepage}</div>
-			</div>
-			<div class="item-detailBtnGroup-modal">
-				<input type="button" value="내 일정 보기" />
-				<input type="button" value="일정에 추가" /> <!-- c:if 문으로 일정 추가 여부 확인 -->
-			</div>
-		</div>
 	</div>
-	
+
 
 </div>
 </body>

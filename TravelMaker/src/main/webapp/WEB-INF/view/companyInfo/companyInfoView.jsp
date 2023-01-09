@@ -38,7 +38,7 @@
 			</div>
 			<div id='ci_blank_50vh'></div>
 			<div class='ci_purchase'>
-				지금 당장 Travel Make와 함께<br> 
+				지금 당장 Travel Maker와 함께<br>
 				여행을 떠나 보세요.
 			</div>
 			<div id='ci_blank_10vh'></div>
