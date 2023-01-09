@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+@media (max-width: 450px) {
+
+}
+.item-detail-modal{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.item-name{
+    margin-top : 7vh;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.item-image{
+    margin: 5vh auto 0 auto;
+    width: 30vh;
+    height: 30vw;
+}
+
+.item-address{
+    margin-top : 5vh;
+    font-size: 1.5em;
+}
+
+.item-tel{
+    margin-top : 5vh;
+}
+
+.item-homepage{
+    margin-top : 5vh;
+}
+
+.item-homepage a{
+    font-color: black;
+
+}
+
+.item-detailBtnGroup-modal{
+    margin-top: 5vh;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.item-detailBtnGroup-modal input{
+    text-align: center;
+    background-color: #aaaaaa;
+    font-size: 1.5em;
+    padding : 10px;
+    color : black;
+    border-radius: 10px;
+}
+
+.item-detailBtnGroup-modal input:hover{
+    background-color: #ff6347;
+    color : white;
+}

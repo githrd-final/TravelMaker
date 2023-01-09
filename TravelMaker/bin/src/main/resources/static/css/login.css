@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.login-main{
+	position : relative;
+	text-align : center;
+	width : 30vw;
+	margin : auto;
+	margin-bottom: 20vh;
+	height : 70vh;
+}
+.logo{
+	margin-top : 10vh;
+	width : 25vw;
+}
+.naverlogin{
+	margin-top : 6vh;
+	width : 25vw;
+}
+.kakaologin{
+	margin-top : 3vh;
+	width : 25vw;
+}
+
+.loginMent{
+	font-size : 1.5rem;
+}
