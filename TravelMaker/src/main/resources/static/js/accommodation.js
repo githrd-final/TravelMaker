@@ -29,3 +29,12 @@ $('.ex').on('click',function(){
     $('#modal').load('/plan/itemDetailModal/129156');
     $('#modal').css('display', 'flex');
 })
+
+if(width_size<=450){
+	$('.itemModaltoMyPlan').on('click',function(){
+		$('#content').load('/mplan/mPlanner');
+	})
+}else{
+	$('.itemModaltoMyPlan').on('click',function(){
+		$('#content').load('/planner/planner');
+	})}

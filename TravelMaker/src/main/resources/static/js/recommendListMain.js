@@ -55,3 +55,13 @@ $(window).scroll(function(){  //스크롤이 움직일때마다 이벤트 발생
       $('#Quick').stop().animate({top:position+"px"}, 400); //해당 오브젝트 위치값 재설정
    });
 });
+
+var width_size = window.outerWidth;
+if(width_size<=450){
+    $('#btnMyTravel').on('click',function(){
+        $('#content').load('/mplan/mPlanner');
+    })
+}else{
+    $('#btnMyTravel').on('click',function(){
+        $('#content').load('/planner/planner');
+    })}
