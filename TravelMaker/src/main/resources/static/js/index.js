@@ -16,15 +16,30 @@ $('.btnFAQ').on('click',function(){
 
 $('.btnCompanyInfo').on('click',function(){
 	$('#content').load('/companyInfo/companyInfoView');
-
 })
 /* 마이페이지-기본정보 연결 */
 $('.btnMyInfo').on('click',function(){
-	$('#content').load('/myInfo/myInfo');
+	var email = "<%=session.getAttribute('email')%>";
+
+	if(email == null){
+		alert("로그인이 필요한 서비스입니다.");
+		$('#content').load('/member/login');
+	}
+	else{
+		$('#content').load('/myInfo/myInfo');
+	}
 })
 /* 마이페이지-내여행 연결 */
 $('.btnMyTour').on('click',function(){
-	$('#content').load('/myTour/myTourSelect');
+	var email = "<%=session.getAttribute('email')%>";
+
+	if(email == null){
+		alert("로그인이 필요한 서비스입니다.");
+		$('#content').load('/member/login');
+	}
+	else {
+		$('#content').load('/myTour/myTourSelect');
+	}
 })
 
  function navigo (){
@@ -72,7 +87,15 @@ function div(){
 div();
 
 $('#btnSearch').on('click',function(){
-	$('#content').load('/order/regionSelect');
+	var email = "<%=session.getAttribute('email')%>";
+
+	if(email == null){
+		alert("로그인이 필요한 서비스입니다.");
+		$('#content').load('/member/login');
+	}
+	else{
+		$('#content').load('/order/regionSelect');
+	}
 })
 
 $('.btnLogin').on('click',function(){

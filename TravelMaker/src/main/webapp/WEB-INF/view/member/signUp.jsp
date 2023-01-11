@@ -10,7 +10,7 @@
 <body>
 	<main class='signUpMain'>
 		<h1 class='signUpH'>회원정보</h1>
-        <div class="signupContainer">
+        <form class="signupContainer" method="post" enctype="multipart/form-data">
             <div class="input-container ic1">
               <input id="nickname" class="input" type="text" placeholder="닉네임" onfocus="this.placeholder=''" onblur="this.placeholder='닉네임'"/>
             </div>
@@ -23,7 +23,7 @@
                 <br/>
                 <input type='button' class='btnSubmit' value='가입 완료'>
             </div>
-        </div>
+        </form>
 	</main>
 </body>
 </html>
