@@ -1,7 +1,12 @@
 /**
  * 
  */
-$('.mList').load('/mplan/mPlanBucketList');	/* 메인화면 들어가자마자 바로 뿌려주게*/ 
+var purchaseSerial = "purchaseSerial="+$('#purchaseSerial')[0].value;
+console.log(purchaseSerial);
+$.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
+            $('.mList').html(data);
+ })
+//$('.mList').load('/mplan/mPlanBucketList');	/* 메인화면 들어가자마자 바로 뿌려주게*/ 
  // A $( document ).ready() block.
 $( document ).ready(function() {
 	kakao.maps.disableHD();
@@ -114,11 +119,35 @@ $( document ).ready(function() {
 		// 지도에 선을 표시합니다
 		polyline.setMap(map);  
 	};
-})        
+	$('#mPlanSerial').value = "0"
+})
+
+	var bucketFilterBtnClicked = function(filterbtn){
+		var filterSerial;
+		if(filterbtn.value=="숙소"){
+			filterSerial="32";
+		}
+		else if(filterbtn.value=="관광지"){
+			filterSerial="12";
+		}
+		else if(filterbtn.value=="식당"){
+			filterSerial="39"
+		}
+		
+		var param="contenttypeId="+filterSerial+"&"+purchaseSerial;
+		console.log(param);
+		$.post("/mplan/mPlanBucketFilterList", param, function(data){
+            $('.mList').html(data);
+        })
+	}
+
+        
 	$('#mPlanBucketList').on('click', function(){
 		$('#mPlanBucketList').attr("class","clickbtn");
 		$('#mPlanList').attr("class","nonclickbtn");
-		$('.mList').load('/mplan/mPlanBucketList');	/* 메인화면 들어가자마자 바로 뿌려주게*/ 
+		$.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
+            $('.mList').html(data);
+ 		}) 
 	})
 	
 	$('#mPlanList').on('click', function(){
@@ -131,40 +160,38 @@ $( document ).ready(function() {
 		$('#content').load('/myTour/myTourSelect');
 	})
 	
+	$('.bucketThrow').on('click', function(){
+		var param = $('.frm_bucketList_test').serialize();
+		$.post('/mplan/mPlanBucketDelete', param, function(){
+	   		$('.mList').load('/mplan/mPlanBucketList', purchaseSerial);	 
+		});
+	})
+	
 	//modal
 	$('#modalBack').on('click', function(){
-			$('#modal').css('display', 'none');
-		
+			$('#BucketModal').css('display', 'none');
 	})	
 	
 	
 	$('#btnClose').on('click', function(){
-		$('#modal').css('display', 'none');
+		$('#BucketModal').css('display', 'none');
 		
 	})	
-		
-	var delForm;
-	modalView = function(frm){
-		delForm = frm;
-		$('#modal').css('display', 'block');
-		
-		
-	}
 	
 	//modal insert
 	$('#modalBack').on('click', function(){
-			$('#modal').css('display', 'none');
+			$('#BucketModal').css('display', 'none');
 		
 	})	
 	
 	
 	$('#btnClose').on('click', function(){
-		$('#modal').css('display', 'none');
+		$('#BucketModal').css('display', 'none');
 		
 	})	
 		
 	modalView = function(frm){
-		$('#modal').css('display', 'block');	
+		$('#BucketModal').css('display', 'block');	
 	}
 	
 	

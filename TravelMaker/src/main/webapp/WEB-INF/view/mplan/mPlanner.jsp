@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +16,8 @@
 	<div id="mplanner">
 		<div class="mListContainer">
 			<div id="button_container">
+				<input type="hidden" name="purchaseSerial" id="purchaseSerial" value="${purchaseSerial }"/>
+				<input type="hidden" name="purchaseLocation" id="purchaseLocation" value="${purchaseSerial }"/>
 				<input type='button' id="mPlanBucketList" class="clickbtn" value="Bucket" onclick="BucketBtnClicked()"/>
 				<input type='button' id="mPlanList" class="nonclickbtn" value="Plan" onclick="PlanClicked()"/>
 			</div>
@@ -22,14 +25,14 @@
 			</div>
 		</div>
 	</div>
-	<div id='modal'>
+	<div id='BucketModal'>
 		<div id="modalBack"></div>
 		<div id='content1'>
 			<div class="modalheader">
 				<span class="locationTitle">일정추가</span>
 				<input type='button' id='btnClose' value='X'/>			
 			</div>
-			<div class="locationName">섬진강</div>
+			<div class="locationName" id="modalLocationName">섬진강</div>
 			<select>
 			    <option value="1" selected>1일자</option>
 			    <option value="2">2일자</option>

@@ -55,7 +55,7 @@
 	padding:1vh;
 	border-radius:10px 10px 0 0;
 }
-#modal, #modal2, #modal3{
+#BucketModal, #modal2, #modal3{
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -75,7 +75,7 @@
 	z-index: 100;
 }
 
-#modal>#content1, #modal2>#content2{
+#BucketModal>#content1, #modal2>#content2{
 	width: 70vw;
 	min-height:20vh;	
 	border-radius:10px;
@@ -97,7 +97,7 @@
 	text-align:center;
 	background-color: #fff;
 }
-#modal>#content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
+#BucketModal>#content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
 	position: absolute;
 	font-size:1.5rem;
 	margin-right:1vh;
@@ -129,19 +129,19 @@
 	background-color:#eee;
 	border:none;
 }
-#modal .locationName, #modal2 .locationName, #modal3 .locationName{
+#BucketModal .locationName, #modal2 .locationName, #modal3 .locationName{
 	font-size:1.5rem;
 	font-weight:bold;
 	margin-top:20px;
 	margin-bottom:15px;
 }
-#modal>#content1 select, #modal2>#content2 select{
+#BucketModal>#content1 select, #modal2>#content2 select{
 	margin-top:5%;
 	width: fit-content;
 	font-size:1rem;
 	margin-bottom:10%;	
 }
-#modal>#content1 #btnCheck, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
+#BucketModal>#content1 #btnCheck, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
 	width: 50vw;
 	font-size:1rem;
 	margin-top:2vh;
@@ -174,6 +174,9 @@
 		margin-top:2vh;
 		margin-bottom:1vh;
 	}
+	.bucketTitle input{
+		display:none;
+	}
 	.bucketgubun{
 		font-size:1rem;
 		color: darkgray;
@@ -201,8 +204,10 @@
 		color:gray;
 		font-size:0.5rem;
 		margin-right: 10vw;
+		background-color:white;
+		border:none;
 	}
-
+	
 	.Planitem{
 		padding:1%;
 		display:grid;

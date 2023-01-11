@@ -8,37 +8,44 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%-- 	<c:forEach var='vo' items="${list}" varStatus='status'>
-		<div class='item'>
-			[${vo.nal }] <b>[${vo.id }]</b> <span>${vo.doc }</span>
-		</div>
-	</c:forEach> --%>
 	<div id="FiltersContainer">
 		<div id="bucketFilters">
-			<a class="bucketFilter">숙소</a>
-			<a class="bucketFilter">관광지</a>
-			<a class="bucketFilter">식당</a>
+			<input type="button" class="bucketFilter" value="숙소" onclick="bucketFilterBtnClicked(this)">
+			<input type="button" class="bucketFilter" value="관광지" onclick="bucketFilterBtnClicked(this)">
+			<input type="button" class="bucketFilter" value="식당" onclick="bucketFilterBtnClicked(this)">
 		</div>
 	</div>
-		<% for(int i=0;i<20;i++){ %>
+	
+	<c:forEach var='vo' items="${list}" varStatus='status'>
 		<div class='Bucketitem' onclick="ListClicked(this)">
-				<img src="img/testimage.jpg" class="bucketImg">
+<!--  			<form name='frm_bucketList_test' class='frm_bucketList_test'> -->
+				<img src="${vo.locationPhoto }" class="bucketImg">
 				<div class="bucketInfo">
-					<div class="bucketTitle">섬진강</div>
-					<div class="bucketgubun">관광지</div> 
+					<div class="bucketTitle">${vo.locationName}<input id='bucketTitleInput' value="${vo.locationName}" name="locationName"/> </div>
+					<div class="bucketgubun">${vo.contenttypeId} </div>		
 				</div>
 				<div></div>
 				<div class="bucketbtn">
 					<div></div>
 					<div>
-						<input type="image" src="img/plus.png" class="bucketToPlan" onclick='modalView(this)'>
-						<input type="image" src="img/minus.png" class="bucketThrow">
+						<input type="image" src="img/plus.png" class="bucketToPlan" value="${vo.locationName}"/>
+						<input type="image" src="img/minus.png" class="bucketThrow"/>
 					</div>
-					<div></div>
+					<div>	
+						<input type="hidden" value="${vo.planbucketSerial}" name="planbucketSerial">
+					</div>
 				</div>
+<!-- 			</form> -->
 		</div>
-		<%} %>
-
+	</c:forEach>
+	<script>
 	
+	$('.bucketToPlan').on('click', function(){
+		$('#BucketModal').css('display', 'block');
+		$('#modalLocationName').text(this.value);
+		console.log(this.form);
+	})
+	
+	</script>
 </body>
 </html>
