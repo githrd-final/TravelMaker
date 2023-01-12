@@ -11,8 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.simple.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RestController
 public class mPlannerController {
@@ -23,8 +27,8 @@ public class mPlannerController {
 	@RequestMapping("/mplan/mPlanner")
 	public ModelAndView mPlannerSelect() {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-		int travelDay = service.TravelDay("1234");
-		mv.addObject("purchaseSerial", "1234");
+		int travelDay = service.TravelDay("1235");
+		mv.addObject("purchaseSerial", "1235");
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
 		return mv;
@@ -38,6 +42,68 @@ public class mPlannerController {
 		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
 		return mv;
 	}
+	@RequestMapping("/mplan/mplanJson")
+	public void mPlanMapperJson(@RequestParam("purchaseSerial") String purchaseSerial, HttpServletResponse response, ObjectMapper objectMapper) {
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		List<BucketVo> list = service.bucketselect(purchaseSerial);
+		JSONArray jsonArray = new JSONArray();
+		
+		for(BucketVo vo:list) {
+			try {
+				String voStr = objectMapper.writeValueAsString(vo);
+				System.out.println("controller:" +voStr);
+				jsonArray.add(voStr);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		String json = jsonArray.toJSONString();
+		PrintWriter writer;
+		
+		try {
+			writer=response.getWriter();
+			writer.write(json);
+			writer.flush();
+			writer.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@RequestMapping("/mplan/mplanFilterJson")
+	public void mPlanFilterMapperJson(BucketVo bVo, HttpServletResponse response, ObjectMapper objectMapper) {
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		List<BucketVo> list = service.bucketDetailSelect(bVo);
+		JSONArray jsonArray = new JSONArray();
+		
+		for(BucketVo vo:list) {
+			try {
+				String voStr = objectMapper.writeValueAsString(vo);
+				System.out.println("controller:" +voStr);
+				jsonArray.add(voStr);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		String json = jsonArray.toJSONString();
+		PrintWriter writer;
+		
+		try {
+			writer=response.getWriter();
+			writer.write(json);
+			writer.flush();
+			writer.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	@RequestMapping("/mplan/mPlanBucketFilterList")
 	public ModelAndView mPlanBucketListFilterSelect(BucketVo bVo) {
 		ModelAndView mv = new ModelAndView();	//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
@@ -50,6 +116,7 @@ public class mPlannerController {
 	@RequestMapping("/mplan/mBucketToPlan")
 	public void mBucketToPlanList(BucketVo bVo) {
 		System.out.println("입력controller :" + bVo);
+		System.out.println("입력controller :" + bVo.getPurchaseSerial());
 		
 		service.bucketToPlanInsert(bVo);
 		mPlanBucketListSelect(bVo.getPurchaseSerial());
