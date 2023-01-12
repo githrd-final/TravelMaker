@@ -46,7 +46,8 @@
                             location.replace("http://localhost:9282");
                         } else if(result=='notRegistered') {
                             alert("awef");
-                            location.replace("http://localhost:9282/member/callSignUp");
+                            //location.replace("http://localhost:9282/member/callSignUp");
+                            $('#content').load('/member/signUp');
                         }
                         else {
                             alert("오류가 발생했습니다. 다시 시도해주세요.")

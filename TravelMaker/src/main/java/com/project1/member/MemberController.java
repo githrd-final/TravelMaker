@@ -63,4 +63,9 @@ public class MemberController {
         }
         return result;
     }
+
+    @RequestMapping("/member/logout")
+    public void logout(HttpSession session) {
+        session.invalidate();
+    }
 }

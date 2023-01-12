@@ -27,11 +27,16 @@
 		<li><a href="#" class='indexMyPage'>마이페이지</a>
 		<%
 			//로그인된 아이디가 있는지 읽어와보기
-			String email =(String)session.getAttribute("email");
+			String email = (String)session.getAttribute("email");
 		%>
 			<ul id='block' class='indexUl'>
+				<%if(email==null){%>
+				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTourB'>내여행</a></li>
+				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfoB'>기본정보</a></li>
+				<%}else{ %>
 				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTour'>내여행</a></li>
 				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfo'>기본정보</a></li>
+				<%} %>
 			</ul>
 		</li>
 		<li class='indexMenuLi'><a href="#" class='indexMenuA btnReviewBoard'>후기게시판</a></li>
@@ -40,7 +45,7 @@
 		<%if(email==null){%>
 		<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogin'>로그인</a>
 		<%}else{ %>
-		<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogout'>로그아웃</a>
+		<li class='indexMenuLi'><a href="/" class='indexMenuA btnLogout'>로그아웃</a>
 		<%} %>
 	</ul>
 </div>
@@ -68,7 +73,11 @@
 				<span id='people'>인원</span>
 				<input type='text' size='5' id='peopleSu'/>
 				</span>
-				<input type='button' id='btnSearch' class = 'indexMenuA' value='Search'/>
+				<%if(email==null){%>
+					<input type='button' id='btnSearchB' class = 'indexMenuA' value='Search'/>
+				<%}else{ %>
+					<input type='button' id='btnSearch' class = 'indexMenuA' value='Search'/>
+				<%} %>
 			</div>
 	</section>
 	

@@ -19,27 +19,19 @@ $('.btnCompanyInfo').on('click',function(){
 })
 /* 마이페이지-기본정보 연결 */
 $('.btnMyInfo').on('click',function(){
-	var email = "<%=session.getAttribute('email')%>";
-
-	if(email == null){
-		alert("로그인이 필요한 서비스입니다.");
-		$('#content').load('/member/login');
-	}
-	else{
 		$('#content').load('/myInfo/myInfo');
-	}
+})
+$('.btnMyInfoB').on('click',function(){
+	alert("로그인이 필요한 서비스입니다.");
+	$('#content').load('/member/login');
 })
 /* 마이페이지-내여행 연결 */
 $('.btnMyTour').on('click',function(){
-	var email = "<%=session.getAttribute('email')%>";
-
-	if(email == null){
-		alert("로그인이 필요한 서비스입니다.");
-		$('#content').load('/member/login');
-	}
-	else {
 		$('#content').load('/myTour/myTourSelect');
-	}
+})
+$('.btnMyTourB').on('click',function(){
+	alert("로그인이 필요한 서비스입니다.");
+	$('#content').load('/member/login');
 })
 
  function navigo (){
@@ -86,18 +78,19 @@ function div(){
 }
 div();
 
-$('#btnSearch').on('click',function(){
-	var email = "<%=session.getAttribute('email')%>";
+$('#btnSearch').on('click', function(){
+	$('#content').load('/order/regionSelect');
+})
 
-	if(email == null){
-		alert("로그인이 필요한 서비스입니다.");
-		$('#content').load('/member/login');
-	}
-	else{
-		$('#content').load('/order/regionSelect');
-	}
+$('#btnSearchB').on('click', function(){
+	alert("로그인이 필요한 서비스입니다.");
+	$('#content').load('/member/login');
 })
 
 $('.btnLogin').on('click',function(){
 	$('#content').load('/member/login');
+})
+
+$('.btnLogout').on('click', function () {
+	$('#content').load('/member/logout');
 })
