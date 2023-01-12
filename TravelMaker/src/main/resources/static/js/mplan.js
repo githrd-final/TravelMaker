@@ -23,7 +23,7 @@ $( document ).ready(function() {
 		
 			
 		// 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
-		var bounds = new kakao.maps.LatLngBounds();
+		var bounds;
 		var markers=[];    
 		var linepath = [];
 		var polyline;
@@ -31,6 +31,7 @@ $( document ).ready(function() {
 		
 		// 버킷버튼 클릭, 커스텀 출력 및 지도 범위 설정
 		BucketBtnClicked= function(positions){
+			bounds = new kakao.maps.LatLngBounds();
 			if(markers.length!=0){
 				for(var i =0; i< markers.length;i++){
 					markers[i].setMap(null);	
@@ -155,6 +156,23 @@ $( document ).ready(function() {
 		})
 	}
 
+	$('.bucketThrow').on('click', function(){
+		var jsoninsertplan =  JSON.parse(this.value);
+		console.log(jsoninsertplan);
+		$.ajax({
+			type:'post',
+			url:'/mplan/mplanJson',
+			data:jsoninsertplan,
+			dataType:'json',
+			async:false,
+			success:function(data){
+				BucketBtnClicked(data);
+			},
+			error : function(error){
+				alert("error:"+error);
+			}
+		})
+	})
         
 	$('#mPlanBucketList').on('click', function(){
 		$('#mPlanBucketList').attr("class","clickbtn");
@@ -191,6 +209,19 @@ $( document ).ready(function() {
 		$('#BucketModal').css('display', 'none');
 		$.post('/mplan/mBucketToPlan', param, function(){ 
 		});
+		$.ajax({
+			type:'post',
+			url:'/mplan/mplanJson',
+			data:param,
+			dataType:'json',
+			async:false,
+			success:function(data){
+				BucketBtnClicked(data);
+			},
+			error : function(error){
+				alert("error:"+error);
+			}
+		})
 	})
 		
 	
