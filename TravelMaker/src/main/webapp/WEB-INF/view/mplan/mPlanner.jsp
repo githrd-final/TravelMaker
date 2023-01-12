@@ -11,13 +11,14 @@
 	<script defer src='js/mplan.js'></script>
 </head>
 <body>
+<c:set var="totalTravelDay" value="${totalTravelDay}" />
 <div id="map"></div>
 
 	<div id="mplanner">
 		<div class="mListContainer">
 			<div id="button_container">
 				<input type="hidden" name="purchaseSerial" id="purchaseSerial" value="${purchaseSerial }"/>
-				<input type="hidden" name="purchaseLocation" id="purchaseLocation" value="${purchaseSerial }"/>
+				<input type="hidden" name="totalTravelDay" id="totalTravelDay" value="${totalTravelDay }"/>
 				<input type='button' id="mPlanBucketList" class="clickbtn" value="Bucket" onclick="BucketBtnClicked()"/>
 				<input type='button' id="mPlanList" class="nonclickbtn" value="Plan" onclick="PlanClicked()"/>
 			</div>
@@ -27,18 +28,26 @@
 	</div>
 	<div id='BucketModal'>
 		<div id="modalBack"></div>
-		<div id='content1'>
-			<div class="modalheader">
-				<span class="locationTitle">일정추가</span>
-				<input type='button' id='btnClose' value='X'/>			
+		<form name='frm_bucketToPlanInsert' class='frm_bucketToPlanInsert'>
+			<div id='content1'>
+				<div class="modalheader">
+					<span class="locationTitle">일정추가</span>
+					<input type='button' id='btnClose' value='X'/>			
+				</div>
+				<div class="locationName" id="modalLocationName">섬진강</div>
+				<select name="planDate">
+					<c:forEach var="i" begin="1" end="${totalTravelDay+1}">
+				    	<option value="${i }일자">${i }일자</option>
+				    </c:forEach>
+				</select><br/>
+				<input type='button' value='추가' id='btnBucketModalAdd'/>
 			</div>
-			<div class="locationName" id="modalLocationName">섬진강</div>
-			<select>
-			    <option value="1" selected>1일자</option>
-			    <option value="2">2일자</option>
-			</select><br/>
-			<input type='button' value='추가' id='btnCheck'/>
-		</div>
+			<input type="hidden" name="planbucketSerial" id="modalInputplanbucketSerial" value="">
+			<input type="hidden" name="mapX" id="modalInputmapX" value="">
+			<input type="hidden" name="mapY" id="modalInputmapY" value="">			
+			<input type="hidden" name="purchaseSerial" id="modalInputpurchaseSerial" value="">
+			<input type="hidden" name="locationName" id="modalInputLocationName" value=""/>
+		</form>
 	</div>
 	
 	<div id='modal2'>

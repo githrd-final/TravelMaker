@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +11,11 @@
 <body>
 	<div id="FiltersContainer">
 		<div id="planFilters">
-			<a class="planFilter">Day1</a>
-			<a class="planFilter">Day2</a>
+			<c:forEach var="i" begin="1" end="${totalTravelDay+1}">
+				    	<a class="planFilter">Day${i }</a>
+			</c:forEach>
+<!-- 			<a class="planFilter">Day1</a> -->
+<!-- 			<a class="planFilter">Day2</a> -->
 		</div>
 	</div>
 	<div class="planDays">

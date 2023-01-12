@@ -10,7 +10,14 @@ public class BucketVo {
 	String locationPhoto;
 	String overview;
 	String addr;
+	String planDate;
 	
+	public String getPlanDate() {
+		return planDate;
+	}
+	public void setPlanDate(String planDate) {
+		this.planDate = planDate;
+	}
 	public String getPlanbucketSerial() {
 		return planbucketSerial;
 	}

@@ -75,7 +75,7 @@
 	z-index: 100;
 }
 
-#BucketModal>#content1, #modal2>#content2{
+#BucketModal form #content1, #modal2>#content2{
 	width: 70vw;
 	min-height:20vh;	
 	border-radius:10px;
@@ -97,7 +97,7 @@
 	text-align:center;
 	background-color: #fff;
 }
-#BucketModal>#content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
+#BucketModal form #content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
 	position: absolute;
 	font-size:1.5rem;
 	margin-right:1vh;
@@ -135,13 +135,13 @@
 	margin-top:20px;
 	margin-bottom:15px;
 }
-#BucketModal>#content1 select, #modal2>#content2 select{
+#BucketModal form #content1 select, #modal2>#content2 select{
 	margin-top:5%;
 	width: fit-content;
 	font-size:1rem;
 	margin-bottom:10%;	
 }
-#BucketModal>#content1 #btnCheck, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
+#BucketModal form #content1 #btnBucketModalAdd, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
 	width: 50vw;
 	font-size:1rem;
 	margin-top:2vh;

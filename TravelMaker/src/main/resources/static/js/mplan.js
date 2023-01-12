@@ -2,7 +2,10 @@
  * 
  */
 var purchaseSerial = "purchaseSerial="+$('#purchaseSerial')[0].value;
+var totalTravelDay = $('#totalTravelDay')[0].value;
+
 console.log(purchaseSerial);
+console.log(totalTravelDay);
 $.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
             $('.mList').html(data);
  })
@@ -160,39 +163,25 @@ $( document ).ready(function() {
 		$('#content').load('/myTour/myTourSelect');
 	})
 	
-	$('.bucketThrow').on('click', function(){
-		var param = $('.frm_bucketList_test').serialize();
-		$.post('/mplan/mPlanBucketDelete', param, function(){
-	   		$('.mList').load('/mplan/mPlanBucketList', purchaseSerial);	 
-		});
+	//modal - +btn
+	$('#modalBack').on('click', function(){
+		$('#BucketModal').css('display', 'none');
+	})	
+	
+	
+	$('#btnClose').on('click', function(){
+		$('#BucketModal').css('display', 'none');
+		
 	})
 	
-	//modal
-	$('#modalBack').on('click', function(){
-			$('#BucketModal').css('display', 'none');
-	})	
-	
-	
-	$('#btnClose').on('click', function(){
+	$('#btnBucketModalAdd').on('click', function(){
+		var frm = $('.frm_bucketToPlanInsert')[0];
+		var param = $(frm).serialize();
 		$('#BucketModal').css('display', 'none');
+		$.post('/mplan/mBucketToPlan', param, function(){ 
+		});
+	})
 		
-	})	
-	
-	//modal insert
-	$('#modalBack').on('click', function(){
-			$('#BucketModal').css('display', 'none');
-		
-	})	
-	
-	
-	$('#btnClose').on('click', function(){
-		$('#BucketModal').css('display', 'none');
-		
-	})	
-		
-	modalView = function(frm){
-		$('#BucketModal').css('display', 'block');	
-	}
 	
 	
 	var memo=1;

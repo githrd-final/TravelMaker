@@ -11,6 +11,8 @@ import com.project1.planner.BucketVo;
 @Repository
 @Mapper
 public interface PlanBucketMapper {
+	//처음 로드시 날짜 출력
+	public int TravelDay(String purchaseSerial);
 	//구매고유번호로 출력할 버킷리스트
 	public List<BucketVo> bucketSelect(String purchaseSerial);
 	

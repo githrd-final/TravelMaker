@@ -23,15 +23,16 @@ public class mPlannerController {
 	@RequestMapping("/mplan/mPlanner")
 	public ModelAndView mPlannerSelect() {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-
-		mv.addObject("purchaseSerial", "1235");
+		int travelDay = service.TravelDay("1234");
+		mv.addObject("purchaseSerial", "1234");
+		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
 		return mv;
 	}
 	@RequestMapping("/mplan/mPlanBucketList")
 	public ModelAndView mPlanBucketListSelect(String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();	//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-		System.out.println(purchaseSerial);
+		System.out.println("controller:"+purchaseSerial);
 		List<BucketVo> list = service.bucketselect(purchaseSerial);
 		mv.addObject("list", list);
 		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
@@ -46,32 +47,29 @@ public class mPlannerController {
 		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
 		return mv;
 	}
-//	@RequestMapping("/mplan/mBucketToPlan")
-//	public void mBucketToPlanList(BucketVo bVo) {
-//		service.bucketToPlanInsert(bVo);
-//		mPlanBucketListSelect(bVo.getPurchaseSerial());
-//	}
+	@RequestMapping("/mplan/mBucketToPlan")
+	public void mBucketToPlanList(BucketVo bVo) {
+		System.out.println("입력controller :" + bVo);
+		
+		service.bucketToPlanInsert(bVo);
+		mPlanBucketListSelect(bVo.getPurchaseSerial());
+	}
 	@RequestMapping("/mplan/mPlanList")
 	public ModelAndView mPlanListSelect() {
-		ModelAndView mv = new ModelAndView();	//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
+		ModelAndView mv = new ModelAndView();
+		int travelDay = service.TravelDay("1234");
+		mv.addObject("totalTravelDay",travelDay);
+		//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
 		mv.setViewName("mplan/mPlanList");	//응답할 view(페이지)이름 설정
 		return mv;
 	}
-//	@RequestMapping("/mplan/mPlanBucketDelete")
-//	public void mPlanBucketDelete(String serial) {
-//		boolean b = service.delete(vo);
-//		
-//		try {
-//			PrintWriter out = resp.getWriter();
-//			if(!b) {
-//				out.print("<script>");
-//				out.print("   alert('삭제 중 오류 발생')");
-//				out.print("</script>");
-//			}
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
+	
+	@RequestMapping("/mplan/mPlanBucketDelete")
+	public void mPlanBucketDelete(BucketVo bVo, HttpServletResponse resp) {
+		System.out.println("삭제controller:" + bVo);
+		service.planBucketDelete(bVo);
+
+	}
 	/*
 	 * @RequestMapping("/kakao.do") public void kakao(HttpServletResponse resp) {
 	 * 

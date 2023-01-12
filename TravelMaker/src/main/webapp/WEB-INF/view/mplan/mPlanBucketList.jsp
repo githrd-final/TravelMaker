@@ -18,7 +18,6 @@
 	
 	<c:forEach var='vo' items="${list}" varStatus='status'>
 		<div class='Bucketitem' onclick="ListClicked(this)">
-<!--  			<form name='frm_bucketList_test' class='frm_bucketList_test'> -->
 				<img src="${vo.locationPhoto }" class="bucketImg">
 				<div class="bucketInfo">
 					<div class="bucketTitle">${vo.locationName}<input id='bucketTitleInput' value="${vo.locationName}" name="locationName"/> </div>
@@ -28,23 +27,39 @@
 				<div class="bucketbtn">
 					<div></div>
 					<div>
-						<input type="image" src="img/plus.png" class="bucketToPlan" value="${vo.locationName}"/>
-						<input type="image" src="img/minus.png" class="bucketThrow"/>
+						<input type="image" src="img/plus.png" class="bucketToPlan" value='{"locationName":"${vo.locationName}", "planbucketSerial":"${vo.planbucketSerial}","purchaseSerial":"${vo.purchaseSerial }", "mapX":"${vo.mapX }", "mapY":"${vo.mapY }"}'/>
+						<input type="image" src="img/minus.png" class="bucketThrow" style='cursor:hand;'value='{"planbucketSerial":"${vo.planbucketSerial}","purchaseSerial":"${vo.purchaseSerial }"}'/>
 					</div>
 					<div>	
-						<input type="hidden" value="${vo.planbucketSerial}" name="planbucketSerial">
+						<input type="hidden" value="${vo.planbucketSerial}" name="planbucketSerial" id="bucketListPlanbucketSerial">
 					</div>
 				</div>
-<!-- 			</form> -->
 		</div>
 	</c:forEach>
 	<script>
 	
 	$('.bucketToPlan').on('click', function(){
-		$('#BucketModal').css('display', 'block');
-		$('#modalLocationName').text(this.value);
-		console.log(this.form);
+ 		$('#BucketModal').css('display', 'block');
+		var jsoninsertplan =  JSON.parse(this.value);
+		console.log(jsoninsertplan);
+ 		$('#modalLocationName').text(jsoninsertplan["locationName"]);
+ 		
+		$('#modalInputpurchaseSerial').attr('value',jsoninsertplan["purchaseSerial"]);
+ 		$('#modalInputLocationName').attr('value',jsoninsertplan["locationName"]);
+ 		$('#modalInputplanbucketSerial').attr('value',jsoninsertplan["planbucketSerial"]);
+ 		$('#modalInputmapX').attr('value',jsoninsertplan["mapX"]);
+ 		$('#modalInputmapY').attr('value',jsoninsertplan["mapY"]);
 	})
+	
+	
+	$('.bucketThrow').on('click', function(){
+		var jsoninsertplan =  JSON.parse(this.value);
+		console.log(jsoninsertplan);
+		$.post('/mplan/mPlanBucketDelete', jsoninsertplan, function(){
+	   		$('.mList').load('/mplan/mPlanBucketList', purchaseSerial);	 
+		});
+	})
+	
 	
 	</script>
 </body>
