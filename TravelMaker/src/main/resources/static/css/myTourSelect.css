@@ -144,9 +144,8 @@
 /*페이징처리부분*/
 #ri_page_btn{
 	justify-self : center;
-	display : grid;
-	width: 80vh;
-	grid-template-columns : repeat(9, 1fr);
+	display : flex;
+	width: 20vh;
 	justify-items : center;
 	gap : 2px;
 	margin-top: 15vh;

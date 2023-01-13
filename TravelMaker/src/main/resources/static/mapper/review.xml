@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project1.mybatis.ReviewMapper">
+	<select id='totList' parameterType='com.project1.review.ReviewPageVo' resultType ="Integer">
+		select count(reviewSerial) totSize from review where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%')
+	</select>
+	
+	<select id='select' parameterType='com.project1.review.ReviewPageVo' resultType='com.project1.review.ReviewVo'>
+		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp from review r 
+		where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%') 
+			<if test='order!=null'>
+				<choose>
+					<when test='order=="최신순"'>
+						order by r.reviewSerial desc 
+					</when>
+					<when test='order=="과거순"'>
+						order by r.reviewSerial asc 
+					</when>
+				</choose>
+			</if>
+		limit ${startNo}, ${listSize}
+	</select>
+	<select id='selectRegion' parameterType='String' resultType="String">
+		select city from regionCity where region like '%${_parameter}%' order by city
+	</select>
+	<select id='view' parameterType="Integer" resultType="com.project1.review.ReviewVo">
+		select reviewSerial, city, nickName, postingDate, view, thumbsUp, reviewTitle, text, purchaseSerial from review where reviewSerial = #{_parameter}
+	</select>
+	<select id='chkUserLike' resultType='int'>
+		select count(*) from reviewLike where userEmail = #{userEmail} and reviewSerial = #{reviewSerial}
+	</select>
+	
+	<update id='viewUp' parameterType='Integer'>
+		update review set view = view + 1 where reviewSerial = #{_parameter}
+	</update>
+	
+	<select id='reviewModifyView' parameterType="Integer" resultType="com.project1.review.ReviewVo">
+		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, text, postingDate, period, purchaseSerial
+		from review where reviewSerial='${_parameter}'
+	</select>
+	<select id='reviewPlan' parameterType="String" resultType="com.project1.review.ReviewPlanVo">
+		select planDate, planOrder, locationName from plan 
+		where purchaseSerial=#{_parameter}
+		order by planDate, planOrder asc
+    </select>
+    <select id='datePlan' parameterType='String' resultType='String'>
+    	select left(planDate,1) planDate from plan
+		where purchaseSerial=#{_parameter}
+    	order by planDate desc 
+    	limit 1
+    </select>
+    
+    <update id="modify" parameterType="com.project1.review.ReviewVo">
+    	update review set reviewTitle=#{reviewTitle}, reviewStar=${reviewStar}, text=#{text}
+    	where reviewSerial=${reviewSerial}
+    </update>
+	
+	<delete id="delete" parameterType="com.project1.review.ReviewVo">
+		delete from review where reviewSerial=#{reviewSerial}
+	</delete>
+	<update id="myReviewUpdate" parameterType="String">
+		update purchase set myReview=0 where purchaseSerial=#{_parameter}; 
+	</update>
+	
+<!-- 	<select id='thumbsUpOrNot' parameterType="String" resultType="Integer"> -->
+<!-- 		select likeChk from reviewLike where userEmail = #{reviewSerial} and reviewSerial = #{reviewSerial}  -->
+<!-- 	</select>   -->
+<!-- 	<update id='thumbsUp' parameterType='Integer'> -->
+<!-- 		update review set thumbsUp = thumbsUp + 1 where reviewSerial = #{_parameter} -->
+<!-- 	</update> -->
+</mapper>

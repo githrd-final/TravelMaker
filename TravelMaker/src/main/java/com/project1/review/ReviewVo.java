@@ -1,41 +1,46 @@
 package com.project1.review;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ReviewVo {
-	String reviewSerial; //후기번호
-	String reviewTile;	//제목
+	int reviewSerial; //후기번호
+	String reviewTitle;	//제목
 	String nickName;	//닉네임
 	Double reviewStar;	//별점
 	String region;		//전국 or 도
 	String city;		//상세지역명
-	long text;			//작성글
-	String postingDate = LocalDate.now().toString();	//작성날짜
+	String text;		//작성글
+	String postingDate;	//작성날짜
 	String period;		//여행일수
 	int view;			//조회수
-	int thumbsUP;		//좋아요수
-	boolean myReview;	//내게시물여부
+	int thumbsUp;		//좋아요수
 	String purchaseSerial;	//구매고유번호
+	String sysPhoto;
 	
-	List<ReviewPhotoVo> attList = new ArrayList<ReviewPhotoVo>();
 
-	public String getReviewSerial() {
+	public String getSysPhoto() {
+		return sysPhoto;
+	}
+
+	public void setSysPhoto(String sysPhoto) {
+		this.sysPhoto = sysPhoto;
+	}
+
+	public int getReviewSerial() {
 		return reviewSerial;
 	}
 
-	public void setReviewSerial(String reviewSerial) {
+	public void setReviewSerial(int reviewSerial) {
 		this.reviewSerial = reviewSerial;
 	}
 
-	public String getReviewTile() {
-		return reviewTile;
+	public String getReviewTitle() {
+		return reviewTitle;
 	}
 
-	public void setReviewTile(String reviewTile) {
-		this.reviewTile = reviewTile;
+	public void setReviewTitle(String reviewTile) {
+		this.reviewTitle = reviewTile;
 	}
 
 	public String getNickName() {
@@ -70,11 +75,11 @@ public class ReviewVo {
 		this.city = city;
 	}
 
-	public long getText() {
+	public String getText() {
 		return text;
 	}
 
-	public void setText(long text) {
+	public void setText(String text) {
 		this.text = text;
 	}
 
@@ -102,28 +107,12 @@ public class ReviewVo {
 		this.view = view;
 	}
 
-	public int getThumbsUP() {
-		return thumbsUP;
+	public int getThumbsUp() {
+		return thumbsUp;
 	}
 
-	public void setThumbsUP(int thumbsUP) {
-		this.thumbsUP = thumbsUP;
-	}
-
-	public boolean isMyReview() {
-		return myReview;
-	}
-
-	public void setMyReview(boolean myReview) {
-		this.myReview = myReview;
-	}
-
-	public List<ReviewPhotoVo> getAttList() {
-		return attList;
-	}
-
-	public void setAttList(List<ReviewPhotoVo> attList) {
-		this.attList = attList;
+	public void setThumbsUp(int thumbsUp) {
+		this.thumbsUp = thumbsUp;
 	}
 
 	public String getPurchaseSerial() {

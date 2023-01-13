@@ -7,7 +7,21 @@ public class MyTourVo {
 	String endDate;			//오는날
 	int people;				//인원
 	String purchaseSerial;	//구매고유번호
+	boolean myReview;		//리뷰 작성 여부
+	int reviewSerial;		//리뷰번호
 	
+	public int getReviewSerial() {
+		return reviewSerial;
+	}
+	public void setReviewSerial(int reviewSerial) {
+		this.reviewSerial = reviewSerial;
+	}
+	public boolean isMyReview() {
+		return myReview;
+	}
+	public void setMyReview(boolean myReview) {
+		this.myReview = myReview;
+	}
 	public String getRegion() {
 		return region;
 	}

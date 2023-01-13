@@ -99,6 +99,12 @@
 #ri_content_plan{
 	grid-area: ri_content_plan;
 }
+
+.spanclass{
+	color:#fff;
+	display:none;
+}
+
 #summernote{
 	width:100%;
 }
