@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -25,20 +26,10 @@ public class OrderController {
     @RequestMapping(value="/order/regionSelect", method = RequestMethod.GET)
     public ModelAndView regionSelect(HttpServletRequest request, HttpServletResponse response, OrderDto orderDto) throws Exception {
         log.info("regionSelect");
-        log.info(request.getParameter("startDate").toString());
-        log.info(request.getParameter("people").toString());
         ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession();
-        orderDto.setEndDate(request.getParameter("endDate"));
-        orderDto.setPeople(request.getParameter("people"));
-        orderDto.setStartDateTime(request.getParameter("startDateTime"));
-        orderDto.setEndDateTime(request.getParameter("endDateTime"));
-        log.info(orderDto.toString());
-
         String email = session.getAttribute("email").toString();
         orderDto.setEmail(email);
-        log.info("email : " + email);
-        log.info(request.getParameter("people"));
         mv.setViewName("order/regionSelect");
         return mv;
     }
@@ -46,21 +37,18 @@ public class OrderController {
     @RequestMapping(value="/order/regionSelectB", method = RequestMethod.GET)
     public ModelAndView regionSelectB(HttpServletRequest request, OrderDto orderDto) throws Exception {
         log.info("regionSelect");
-        log.info(request.getParameter("startDate").toString());
-        log.info(request.getParameter("people").toString());
         ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession();
-        /*orderDto.setStartDate(request.getParameter("startDate"));
-        orderDto.setEndDate(request.getParameter("endDate"));
-        orderDto.setPeople(request.getParameter("people"));
-        orderDto.setStartDateTime(request.getParameter("startDateTime"));
-        orderDto.setEndDateTime(request.getParameter("endDateTime"));*/
-        log.info(orderDto.getEndDate());
 
         String email = session.getAttribute("email").toString();
         orderDto.setEmail(email);
+        log.info(orderDto.getEmail());
+        log.info(orderDto.getPeople());
+        log.info(orderDto.getStartDate());
+        log.info(orderDto.getEndDate());
+        log.info(orderDto.getStartDateTime());
+        log.info(orderDto.getEndDateTime());
         request.setAttribute("orderDto", orderDto);
-        log.info("email : " + email);
         log.info(request.getParameter("people"));
         mv.addObject("orderDto", orderDto);
         mv.setViewName("order/regionSelect");
@@ -71,9 +59,6 @@ public class OrderController {
     public ModelAndView purchaseCheck(HttpServletRequest request, OrderDto orderDto) throws Exception {
         log.info("purchaseCheck");
         ModelAndView mv = new ModelAndView();
-        log.info(request.getParameter("people"));
-        log.info(orderDto.getPeople());
-        log.info(orderDto.getRegion());
         orderDto.setRegion(request.getParameter("region"));
         mv.addObject("orderDto", orderDto);
         mv.setViewName("order/purchaseCheck");
@@ -81,11 +66,11 @@ public class OrderController {
     }
 
     @RequestMapping("/order/purchasedTicket")
-    public ModelAndView purchasedTicket(HttpRequest request, HttpResponse response, HttpSession session, OrderDto orderDto) {
+    public ModelAndView purchasedTicket(HttpServletRequest request, HttpSession session, OrderDto orderDto) {
         ModelAndView mv = new ModelAndView();
-        log.info("regionSelect");
-        session.getAttribute("email");
-        mv.setViewName("order/regionSelect");
+        log.info("purchasedTicket");
+        String purchaseNumber = orderService.purchaseTicket(orderDto);
+        mv.setViewName("order/purchasedTicket");
         return mv;
     }
 }

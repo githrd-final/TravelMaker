@@ -21,17 +21,20 @@
 %>
 
 <div class = 'one'>
-<div id = 'two'></div>
+<div id = 'two' style = "background-image: url('/images/${orderDto.region}.jpeg')"></div>
+<input type="text" id="email" value="${orderDto.email}" hidden>
+<input type="text" id="startDate" value="${orderDto.startDate}" hidden>
+<input type="text" id="endDate" value="${orderDto.endDate}" hidden>
 
 <!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
 <div id = 'three'>
 	<div>
 		<label>선택지역 : </label>
-		<span>${orderDto.region}</span>
+		<span name="region" value="${orderDto.region}">${orderDto.region}</span>
 	</div>
 	<div>
 		<label>인원수 : </label>
-		<span>${orderDto.people} 명</span>
+		<span name="people" value="${orderDto.people}">${orderDto.people} 명</span>
 	</div>
 	<div>
 		<label>가는날</label>	

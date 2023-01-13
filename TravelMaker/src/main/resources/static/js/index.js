@@ -80,17 +80,31 @@ div();
 
 $('#btnSearch').on('click', function(){
 
+	var people = $('#peopleSu').val();
+
 	var startDateTime = $('input[name="time1"]:checked').val(); // 체크된 값(checked value)
 	var endDateTime = $('input[name="time2"]:checked').val();
 	var startTimeCheck = $('input[name="time1"]').is(':checked'); // 체크 여부(checked)
 	var endTimeCheck = $('input[name="time2"]').is(':checked');
 
+	var startDate = $('#date1').val();
+	var endDate = $('#date2').val();
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = ('0' + (now.getMonth() + 1)).slice(-2);
+	var day = ('0' + now.getDate()).slice(-2);
+	var nowDate = year + '-' + month + '-' + day;
+	var startArrDate = startDate.split('-');
+	var endArrDate = endDate.split('-');
+	var startDateD = new Date(startArrDate[0], startArrDate[1], startArrDate[2]);
+	var endDateD = new Date(endArrDate[0], endArrDate[1], endArrDate[2]);
+	var btMs = endDateD.getTime() - startDateD.getTime();
+	var btDay = btMs / (1000 * 60 * 60 * 24);
+
 	if(startTimeCheck == false || endTimeCheck == false){
 		alert('시간을 선택해주세요');
 		return false;
 	}
-
-	var people = $('#peopleSu').val();
 	if(people == ''){
 		alert('인원을 선택해주세요');
 		return false;
@@ -99,19 +113,18 @@ $('#btnSearch').on('click', function(){
 		alert('인원은 1명부터 5명까지 가능합니다!');
 		return false;
 	}
-
-	var startDate = $('#date1').val();
-	var endDate = $('#date2').val();
 	if(startDate == '' || endDate == ''){
 		alert('날짜를 선택해주세요');
 		return false;
 	}
-	var startArrDate = startDate.split('-');
-	var endArrDate = endDate.split('-');
-	var startDateD = new Date(startArrDate[0], startArrDate[1], startArrDate[2]);
-	var endDateD = new Date(endArrDate[0], endArrDate[1], endArrDate[2]);
-	var btMs = endDateD.getTime() - startDateD.getTime();
-	var btDay = btMs / (1000 * 60 * 60 * 24);
+	if(startDate < nowDate || endDate < nowDate){
+		alert('오늘 이전 날짜는 선택할 수 없습니다!');
+		return false;
+	}
+	if(startDate > endDate){
+		alert('종료일이 시작일보다 빠릅니다!');
+		return false;
+	}
 	if(btDay == 1 || btDay == 2) {
 		$.ajax({
 			type: 'get',
@@ -128,7 +141,6 @@ $('#btnSearch').on('click', function(){
 	} else {
 		alert('여행은 1박 2일 혹은 2박 3일만 가능합니다!');
 	}
-
 })
 
 $('#btnSearchB').on('click', function(){
@@ -143,3 +155,8 @@ $('.btnLogin').on('click',function(){
 $('.btnLogout').on('click', function () {
 	$('#content').load('/member/logout');
 })
+
+var result = $('#result').val();
+if(result == 'unRegistered'){
+	$('#content').load('/member/signUp');
+}

@@ -2,6 +2,7 @@ package com.project1.member;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -76,4 +77,14 @@ public class MemberController {
         mv.setViewName("member/callBack");
         return mv;
     }
+
+    @RequestMapping("/{result}")
+    public ModelAndView goSignUp(@PathVariable("result") String result) {
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("result", result);
+        log.info("goSignUp");
+        mv.setViewName("member/signUp");
+        return mv;
+    }
+
 }

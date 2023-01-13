@@ -24,11 +24,11 @@
 		<div class='regionSelectChung'><p>충청도</p></div>
 	</main>
 
-	<input type="text" id="people" display="hidden" value="${orderDto.people}">${orderDto.people}</input>
-	<input type="text" class="startDate" display="hidden" value="${orderDto.startDate}">${orderDto.startDate}</input>
-	<input type="text" class="endDate" display="hidden" value="${orderDto.endDate}">${orderDto.endDate}</input>
-	<input type="text" class="startDateTime" display="hidden" value="${orderDto.startDateTime}">${orderDto.startDateTime}</input>
-	<input type="text" class="endDateTime" display="hidden" value="${orderDto.endDateTime}">${orderDto.endDateTime}</input>
+	<input type="text" id="people" display="none" value="${orderDto.people}">${orderDto.people}</input>
+	<input type="text" class="startDate" display="none" value="${orderDto.startDate}">${orderDto.startDate}</input>
+	<input type="text" class="endDate" display="none" value="${orderDto.endDate}">${orderDto.endDate}</input>
+	<input type="text" class="startDateTime" display="none" value="${orderDto.startDateTime}">${orderDto.startDateTime}</input>
+	<input type="text" class="endDateTime" display="none" value="${orderDto.endDateTime}">${orderDto.endDateTime}</input>
 </body>
 
 </html>

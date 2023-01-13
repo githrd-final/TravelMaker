@@ -28,6 +28,7 @@
 		<%
 			//로그인된 아이디가 있는지 읽어와보기
 			String email = (String)session.getAttribute("email");
+			String result = (String)request.getAttribute("result");
 		%>
 			<ul id='block' class='indexUl'>
 				<%if(email==null){%>
@@ -119,6 +120,8 @@
 		</form>	
 	</section>	
 </div>
+
+<input type="text" id="result" value="${result}" display="none"/>
 
 <div id='indexFooterContainer'>
 	<footer id='indexFooter'>

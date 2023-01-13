@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project1.mybatis.MemberMapper">
+
+    <select id="selectRegion" resultType="String" parameterType="com.project1.order.TicketDto">
+        SELECT ticketEndPoint FROM ticket where region = #{region} and ticketStartDate = #{ticketStartDate} and ticketEndDate = #{ticketEndDate}
+                                            and ticketStartDateTime = #{ticketStratDateTime} and ticketEndDateTime = #{ticketEndDateTime}
+    </select>
+
+    <select id="checkTicket" resultType="Integer" parameterType="Map">
+        SELECT count(ticketSerial) FROM ticket where ticketEndPoint = #{ticketEndPoint}
+                                                 and ticketStartDate = #{ticketStartDate} and ticketEndDate = #{ticketEndDate}
+                                                 and ticketStartDateTime = #{ticketStratDateTime} and ticketEndDateTime = #{ticketEndDateTime}
+    </select>
+
+    <select id="purchaseTicket" resultType="List" parameterType="Map">
+        select ticketSerial from ticket where ticketEndPoint = #{ticketEndPoint}
+                                          and ticketStartDate = #{ticketStartDate} and ticketEndDate = #{ticketEndDate}
+                                          and ticketStartDateTime = #{ticketStratDateTime} and ticketEndDateTime = #{ticketEndDateTime}
+    </select>
+
+</mapper>
