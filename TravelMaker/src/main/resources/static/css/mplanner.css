@@ -197,8 +197,10 @@
 		position:relative;
 	}
 	#bucketFilters{
-		position:absolute;
-		right:0;
+		position:fixed;
+		right:inherit;
+		background-color:white;
+		margin-right:1vw;
 	}
 	.bucketFilter{
 		color:gray;

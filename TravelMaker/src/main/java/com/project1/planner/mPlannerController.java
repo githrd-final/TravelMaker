@@ -36,7 +36,6 @@ public class mPlannerController {
 	@RequestMapping("/mplan/mPlanBucketList")
 	public ModelAndView mPlanBucketListSelect(String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();	//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-		System.out.println("controller:"+purchaseSerial);
 		List<BucketVo> list = service.bucketselect(purchaseSerial);
 		mv.addObject("list", list);
 		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
@@ -53,7 +52,6 @@ public class mPlannerController {
 		for(BucketVo vo:list) {
 			try {
 				String voStr = objectMapper.writeValueAsString(vo);
-				System.out.println("controller:" +voStr);
 				jsonArray.add(voStr);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -84,7 +82,6 @@ public class mPlannerController {
 		for(BucketVo vo:list) {
 			try {
 				String voStr = objectMapper.writeValueAsString(vo);
-				System.out.println("controller:" +voStr);
 				jsonArray.add(voStr);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -115,8 +112,6 @@ public class mPlannerController {
 	}
 	@RequestMapping("/mplan/mBucketToPlan")
 	public void mBucketToPlanList(BucketVo bVo) {
-		System.out.println("입력controller :" + bVo);
-		System.out.println("입력controller :" + bVo.getPurchaseSerial());
 		
 		service.bucketToPlanInsert(bVo);
 		mPlanBucketListSelect(bVo.getPurchaseSerial());
@@ -133,31 +128,7 @@ public class mPlannerController {
 	
 	@RequestMapping("/mplan/mPlanBucketDelete")
 	public void mPlanBucketDelete(BucketVo bVo, HttpServletResponse resp) {
-		System.out.println("삭제controller:" + bVo);
 		service.planBucketDelete(bVo);
 
 	}
-	/*
-	 * @RequestMapping("/kakao.do") public void kakao(HttpServletResponse resp) {
-	 * 
-	 * // tourAPI 위치기반정보검색 test를 위한 서울역의 x,y 좌표 String seoulStationX = "126.971042";
-	 * String seoulStationY = "37.5523812";
-	 * 
-	 * // 음식점,관광지,숙박별 정보검색 test를 위한 contentTypeId String foodContentTypeId = "39";
-	 * String spotContentTypeId = "12"; String hotelContentTypeId = "32";
-	 * 
-	 * // contentId의 리스트를 받아 공통정보 json을 종류구분없이 모두 반환해주는 메서드입니다. List<String>
-	 * detailJsonList = tourAPIParsingData.getDetailJsonDataList(contentIdList);
-	 * System.out.println("[detailJsonList by locationJson] : " +
-	 * detailJsonList.toString());
-	 * 
-	 * JSONArray jsonArray = new JSONArray();
-	 * 
-	 * for(String detailJson : detailJsonList) { jsonArray.add(detailJson); }
-	 * 
-	 * System.out.println(jsonArray.toJSONString()); PrintWriter writer; try {
-	 * writer = resp.getWriter(); writer.write(jsonArray.toJSONString());
-	 * writer.flush(); writer.close(); } catch (IOException e) { // TODO
-	 * Auto-generated catch block e.printStackTrace(); } }
-	 */
 }

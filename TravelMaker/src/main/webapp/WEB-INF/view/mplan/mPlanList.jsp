@@ -14,8 +14,6 @@
 			<c:forEach var="i" begin="1" end="${totalTravelDay+1}">
 				    	<a class="planFilter">Day${i }</a>
 			</c:forEach>
-<!-- 			<a class="planFilter">Day1</a> -->
-<!-- 			<a class="planFilter">Day2</a> -->
 		</div>
 	</div>
 	<div class="planDays">

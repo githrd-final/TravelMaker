@@ -10,6 +10,7 @@
 <body>
 	<div id="FiltersContainer">
 		<div id="bucketFilters">
+			<input type="button" id="TotalbucketListFilter" class="bucketFilter" value="전체" onclick="BucketBtnClicked(${vo.purchaseSerial })">
 			<input type="button" class="bucketFilter" value="숙소" onclick="bucketFilterBtnClicked(this)">
 			<input type="button" class="bucketFilter" value="관광지" onclick="bucketFilterBtnClicked(this)">
 			<input type="button" class="bucketFilter" value="식당" onclick="bucketFilterBtnClicked(this)">
@@ -17,7 +18,7 @@
 	</div>
 	
 	<c:forEach var='vo' items="${list}" varStatus='status'>
-		<div class='Bucketitem' onclick="ListClicked(this)">
+		<div class='Bucketitem' onclick="ListClicked(${vo.mapX},${vo.mapY})">
 				<img src="${vo.locationPhoto }" class="bucketImg">
 				<div class="bucketInfo">
 					<div class="bucketTitle">${vo.locationName}<input id='bucketTitleInput' value="${vo.locationName}" name="locationName"/> </div>
@@ -53,6 +54,7 @@
 	
 	
 	$('.bucketThrow').on('click', function(){
+		window.alert("삭제하시겠습니까?");
 		var jsoninsertplan =  JSON.parse(this.value);
 		console.log(jsoninsertplan);
 		$.post('/mplan/mPlanBucketDelete', jsoninsertplan, function(){
@@ -60,7 +62,11 @@
 		});
 	})
 	
-	
+	$('#TotalbucketListFilter').on('click', function(){
+		$.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
+            $('.mList').html(data);
+ 		}) 
+	})
 	</script>
 </body>
 </html>
