@@ -6,6 +6,7 @@ $('.btnProfileSelect').on('click',function(){
 })
 
 $('.btnSubmit').on('click',function(){
+    window.close();
 
-    $('#content').load('/member/login');
+    location.replace("http://localhost:9282");
 })

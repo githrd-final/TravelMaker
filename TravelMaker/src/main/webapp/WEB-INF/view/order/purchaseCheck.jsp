@@ -1,5 +1,8 @@
+<%@ page import="com.project1.order.OrderDto" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+		 pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="var" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +16,9 @@
 <title>상세보기</title>
 </head>
 <body>
+<%
+	OrderDto orderDto = (OrderDto)request.getAttribute("orderDto");
+%>
 
 <div class = 'one'>
 <div id = 'two'></div>
@@ -21,32 +27,32 @@
 <div id = 'three'>
 	<div>
 		<label>선택지역 : </label>
-		<span>전라도</span>
+		<span>${orderDto.region}</span>
 	</div>
 	<div>
 		<label>인원수 : </label>
-		<span>2명</span>
+		<span>${orderDto.people} 명</span>
 	</div>
 	<div>
 		<label>가는날</label>	
 		 <label>
-		    <input type="radio" name="startTime" value="오전"/>
+		    <input type="radio" name="startTime" value="오전" ${(orderDto.startDateTime eq 'am')? 'checked' : ''}/>
 		    <span>오전</span>
-		    <input type="radio" name="startTime" value="오후" checked/>
+		    <input type="radio" name="startTime" value="오후" ${(orderDto.startDateTime eq 'pm')? 'checked' : ''}/>
 		    <span>오후</span>
 	  	</label>
 	  	<br/>
 	  	<label>오는날</label>	
 		 <label>
-		    <input type="radio" name="endTime" value="오전" checked/>
+		    <input type="radio" name="endTime" value="오전" ${(orderDto.endDateTime eq 'am')? 'checked' : ''}/>
 		    <span>오전</span>
-		    <input type="radio" name="endTime" value="오후"/>
+		    <input type="radio" name="endTime" value="오후" ${(orderDto.endDateTime eq 'pm')? 'checked' : ''}/>
 		    <span>오후</span>
 	  	</label>
 	</div>
 	<div>
 		<label>총 금액 : </label>
-		<span>60,000원</span>
+		<span>${orderDto.people}*30000 원</span>
 	</div>
 	
 	<div id='btnZone'>

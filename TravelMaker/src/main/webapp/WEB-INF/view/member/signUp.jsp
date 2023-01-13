@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>signUp</title>
 <link rel='stylesheet' href='css/signUp.css'/>
+<script src='../../../js/signUp.js' defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
 	<main class='signUpMain'>

@@ -29,6 +29,9 @@ IMP.init("imp84346376"); // 예: imp00000000
     });
   }
 /*티켓 구매내역 미리띄울게 */
-   $('#btnTicket').on('click', function(){
+/*$('#btnTicket').on('click', function(){
             $('#content').load('/order/purchasedTicket');
-        })
+})*/
+$('#btnTicket').on('click', function(){
+    $('#content').load('/order/purchasedTicket');
+})

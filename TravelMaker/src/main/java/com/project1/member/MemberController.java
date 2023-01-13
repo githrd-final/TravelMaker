@@ -68,4 +68,12 @@ public class MemberController {
     public void logout(HttpSession session) {
         session.invalidate();
     }
+
+    @RequestMapping("/member/callCallBack")
+    public ModelAndView callCallBack() {
+        ModelAndView mv = new ModelAndView();
+        log.info("callCallBack");
+        mv.setViewName("member/callBack");
+        return mv;
+    }
 }

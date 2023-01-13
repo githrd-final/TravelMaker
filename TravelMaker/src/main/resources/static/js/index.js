@@ -79,7 +79,56 @@ function div(){
 div();
 
 $('#btnSearch').on('click', function(){
-	$('#content').load('/order/regionSelect');
+
+	var startDateTime = $('input[name="time1"]:checked').val(); // 체크된 값(checked value)
+	var endDateTime = $('input[name="time2"]:checked').val();
+	var startTimeCheck = $('input[name="time1"]').is(':checked'); // 체크 여부(checked)
+	var endTimeCheck = $('input[name="time2"]').is(':checked');
+
+	if(startTimeCheck == false || endTimeCheck == false){
+		alert('시간을 선택해주세요');
+		return false;
+	}
+
+	var people = $('#peopleSu').val();
+	if(people == ''){
+		alert('인원을 선택해주세요');
+		return false;
+	}
+	if(people < 1 || people > 5){
+		alert('인원은 1명부터 5명까지 가능합니다!');
+		return false;
+	}
+
+	var startDate = $('#date1').val();
+	var endDate = $('#date2').val();
+	if(startDate == '' || endDate == ''){
+		alert('날짜를 선택해주세요');
+		return false;
+	}
+	var startArrDate = startDate.split('-');
+	var endArrDate = endDate.split('-');
+	var startDateD = new Date(startArrDate[0], startArrDate[1], startArrDate[2]);
+	var endDateD = new Date(endArrDate[0], endArrDate[1], endArrDate[2]);
+	var btMs = endDateD.getTime() - startDateD.getTime();
+	var btDay = btMs / (1000 * 60 * 60 * 24);
+	if(btDay == 1 || btDay == 2) {
+		$.ajax({
+			type: 'get',
+			url: '/order/regionSelect',
+			data: {'startDate':startDate, 'endDate':endDate, 'people':people, 'startDateTime': startDateTime, 'endDateTime':endDateTime},
+			dataType: 'text',
+			success: function(result) {
+				$('#content').load('/order/regionSelectB?startDate='+startDate+'&endDate='+endDate+'&people='+people+'&startDateTime='+startDateTime+'&endDateTime='+endDateTime);
+			},
+			error: function(result) {
+				console.log('오류 발생')
+			}
+		})
+	} else {
+		alert('여행은 1박 2일 혹은 2박 3일만 가능합니다!');
+	}
+
 })
 
 $('#btnSearchB').on('click', function(){

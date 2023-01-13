@@ -33,8 +33,8 @@
 	var naverLogin = new naver.LoginWithNaverId(
 			{
 				clientId: "tmEd6oZsv0Z7hQ6aN3hg", //내 애플리케이션 정보에 cliendId를 입력해줍니다.
-				callbackUrl: "http://localhost:9282/member/callBack", // 내 애플리케이션 API설정의 Callback URL 을 입력해줍니다.
-				isPopup: false,
+				callbackUrl: "http://localhost:9282/member/callCallBack", // 내 애플리케이션 API설정의 Callback URL 을 입력해줍니다.
+				isPopup: true,
 				callbackHandle: true
 			}
 	);
