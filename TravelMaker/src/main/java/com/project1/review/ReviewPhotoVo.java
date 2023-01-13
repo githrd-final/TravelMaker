@@ -24,5 +24,4 @@ public class ReviewPhotoVo {
 		this.sysFile = sysFile;
 	}
 	
-	
 }

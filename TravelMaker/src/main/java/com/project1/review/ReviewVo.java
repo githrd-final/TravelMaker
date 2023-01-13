@@ -10,7 +10,7 @@ public class ReviewVo {
 	Double reviewStar;	//별점
 	String region;		//전국 or 도
 	String city;		//상세지역명
-	long text;			//작성글
+	String text;		//작성글
 	String postingDate;	//작성날짜
 	String period;		//여행일수
 	int view;			//조회수
@@ -75,11 +75,11 @@ public class ReviewVo {
 		this.city = city;
 	}
 
-	public long getText() {
+	public String getText() {
 		return text;
 	}
 
-	public void setText(long text) {
+	public void setText(String text) {
 		this.text = text;
 	}
 

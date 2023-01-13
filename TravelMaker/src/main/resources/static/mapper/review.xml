@@ -51,6 +51,34 @@
 		update review set view = view + 1 where reviewSerial = #{_parameter}
 	</update>
 	
+	<select id='reviewModifyView' parameterType="Integer" resultType="com.project1.review.ReviewVo">
+		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, text, postingDate, period, purchaseSerial
+		from review where reviewSerial='${_parameter}'
+	</select>
+	<select id='reviewPlan' parameterType="String" resultType="com.project1.review.ReviewPlanVo">
+		select planDate, planOrder, locationName from plan 
+		where purchaseSerial=#{_parameter}
+		order by planDate, planOrder asc
+    </select>
+    <select id='datePlan' parameterType='String' resultType='String'>
+    	select left(planDate,1) planDate from plan
+		where purchaseSerial=#{_parameter}
+    	order by planDate desc 
+    	limit 1
+    </select>
+    
+    <update id="modify" parameterType="com.project1.review.ReviewVo">
+    	update review set reviewTitle=#{reviewTitle}, reviewStar=${reviewStar}, text=#{text}
+    	where reviewSerial=${reviewSerial}
+    </update>
+	
+	<delete id="delete" parameterType="com.project1.review.ReviewVo">
+		delete from review where reviewSerial=#{reviewSerial}
+	</delete>
+	<update id="myReviewUpdate" parameterType="String">
+		update purchase set myReview=0 where purchaseSerial=#{_parameter}; 
+	</update>
+	
 	<insert id='thumbsUp'>
 		insert into reviewLike(likeNo, userEmail, reviewSerial, likeChk) values(0, #{userEmail}, ${reviewSerial}, true)
 	</insert>
@@ -63,7 +91,4 @@
 	<update id='thumbsDownR' parameterType='Integer'>
 		update review set thumbsUp = thumbsUp - 1 where reviewSerial = #{_parameter}
 	</update>
-<!-- 	<select id='thumbsUpOrNot' parameterType="String" resultType="Integer"> -->
-<!-- 		select likeChk from reviewLike where userEmail = #{reviewSerial} and reviewSerial = #{reviewSerial}  -->
-<!-- 	</select>   -->
 </mapper>

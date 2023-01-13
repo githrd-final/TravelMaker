@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project1.mybatis.ReviewTwoMapper">
+	<insert id="insert" parameterType="com.project1.review.ReviewVo">
+		insert into review(reviewTitle, nickName, reviewStar, region, city, postingDate, purchaseSerial, period, text) 
+		values(#{reviewTitle}, #{nickName}, #{reviewStar}, #{region}, #{city}, #{postingDate}, #{purchaseSerial}, #{period}, #{text})
+	</insert>
+	<update id="myReviewUpdate" parameterType="String">
+		update purchase set myReview=1 where purchaseSerial=#{_parameter}; 
+	</update>
+</mapper>

@@ -1,10 +1,6 @@
 /**
  * 
  */
-/* 수정하기 버튼 클릭 시 reviewView 연결 */
- $('.reviewModifyBtn').on('click',function(){
-	 $('#content').load('/review/reviewView');
- }) 
  
  /* 별점 */
 $( ".star_rating a" ).on('click',function(){
@@ -12,6 +8,17 @@ $( ".star_rating a" ).on('click',function(){
      $(this).addClass("on").prevAll("a").addClass("on");
      return false;
 });
+
+/* 수정하기 버튼 클릭 시 reviewView 연결 */
+ $('.reviewModifyBtn').on('click',function(){
+	var frm = $('.frm_summernote')[0];
+	frm.reviewStar.value=$(".on").length;
+    var param = $(frm).serialize();
+    console.log(param);
+    $.post("/review/reviewModify", param, function(data){
+		$('#content').html(data);
+    })
+ }) 
  
  /* 후기수정 페이지 써머노트 연결 */
 var fonts = [ '맑은 고딕', '돋움', '궁서', '굴림', '굴림체', '궁서체', '나눔 고딕', '바탕',

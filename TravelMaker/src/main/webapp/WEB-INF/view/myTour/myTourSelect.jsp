@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +14,13 @@
 <body>
 <main id='myTourSelectMain'>
 	<div class="myTourSelectContainer">
+		 <form class='myTourSelectFrm' method='post'>
+	      	<input type='hidden' name='nowPage' value='${pVo.nowPage }'/>
+	      	<input type='hidden' name='purchaseSerial' class='purchaseSerial' value='${vo.purchaseSerial }'/>
+	      	<input type='hidden' name='reviewSerial' class='reviewSerial' value='0'/>
+	     </form>
 		<h1 class="upcomming">내 여행</h1>
-		<%for(int i=0; i<10; i++){ %>
+		<c:forEach var='vo' items='${list }'>
 			<div class="myTourSelectItem">
 				<div class="item-right">
 					<img class="logo" src='./images/LOGO5.png'/>
@@ -23,40 +29,50 @@
 				</div> <!-- end item-right -->
 				
 				<div class="item-left">
-					<div class='TicketClick'>
-						<p class="event">예매번호 : 12345678 (2명)</p>
-						<h2 class="title">구례행</h2>
+					<div class='TicketClick' onclick="myTour.view('${vo.purchaseSerial}')">
+						<p class="event">예매번호 : ${vo.purchaseSerial } (${vo.people}명)</p>
+						<h2 class="title">${vo.city }행</h2>
 						
 						<div class="sce">
 							<div class="icon">
 								<i class="fa fa-table"></i>
 							</div>
-							<p>2023-01-01~2023-01-03</p>
+							<p>${vo.startDate }~${vo.endDate }</p>
 						</div>
 						<div class="fix"></div>
 						<div class="loc">
 							<div class="icon">
 								<i class="fa fa-map-marker"></i>
 							</div>
-							<p>전라도</p>
+							<p>${vo.region }</p>
+
 						</div>
 						<div class="fix"></div>
 					</div>
-					<input type='button' class="btnReview1" value='후기작성'/>
+					<c:choose>
+						<c:when test="${vo.myReview ne false}">
+							<input type='button' class='btnMyReview' value='내가 작성한 리뷰' onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
+						</c:when>
+						<c:otherwise>
+							<input type='button' class="btnReview1" value='후기작성' onclick="myTour.insert('${vo.purchaseSerial}')"/>
+						</c:otherwise>				
+					</c:choose>
 				</div> <!-- end item-left -->
 			</div> <!-- end item -->
-		<%} %>
+		</c:forEach>
   <!-- 페이징처리 -->
 	<div id='ri_page_btn'>
-		<div id='ri_page_begin'>처음</div>
-		<div id='ri_page_before'>이전</div>
-		<div id='ri_page_1'>1</div>
-		<div id='ri_page_2'>2</div>
-		<div id='ri_page_3'>3</div>
-		<div id='ri_page_4'>4</div>
-		<div id='ri_page_5'>5</div>
-		<div id='ri_page_after'>다음</div>
-		<div id='ri_page_end'>끝</div>
+		<c:if test="${pVo.startPage>1 }">
+			<div id='ri_page_begin' onclick='myTour.move(1)'>처음</div>
+			<div id='ri_page_before' onclick='myTour.move(${pVo.startPage-1})'>이전</div>
+		</c:if>
+		<c:forEach var='i' begin='${pVo.startPage }' end='${pVo.endPage }'>
+			<div id='ri_page_1' onclick='myTour.move(${i})'>${i }</div>
+		</c:forEach>
+		<c:if test="${pVo.totPage>pVo.endPage }">
+			<div id='ri_page_after' onclick='myTour.move(${pVo.endPage+1})'>다음</div>
+			<div id='ri_page_end' onclick='myTour.move(${pVo.totPage})'>끝</div>
+		</c:if>
 	</div>
 </div> 
 </main>

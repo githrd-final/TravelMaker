@@ -13,10 +13,11 @@
 <body>
 	<div id='rv_main'>
 		<div id='rv_blank_65px'></div>
-		<form id='rv_form'>
+		<form id='rv_form' class='rv_form'>
 			<input type='hidden' name = 'reviewSerial' value='${rVo.reviewSerial}'/>
 			<input type='hidden' name='thumbsUp' value='${rVo.thumbsUp}'>
-			<input type='hidden' name='chkUserLike' id='chkUserLike' value='${pVo.chkUserLike }'/>
+			<input type='hidden' name='purchaseSerial' value='${rVo.purchaseSerial }'/>
+			<input type='hidden' name='chkUserLike' value='${pVo.chkUserLike }'/>
 		</form>
 		<div id='rv_title'>
 				<div>후기 게시판</div>

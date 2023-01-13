@@ -18,6 +18,8 @@ import com.project1.mybatis.ReviewMapper;
 @Transactional
 public class ReviewService {
 	ReviewPageVo pVo;
+	List<ReviewPlanVo> rpList = null;;
+	String datePlan;
 	ReviewVo rVo;
 	
 	@Autowired
@@ -66,6 +68,60 @@ public class ReviewService {
 		
 		return chkUserLike;
 	}
+	
+	public ReviewVo reviewModifyView(int reviewSerial, String purchaseSerial) {
+		ReviewVo rVo = mapper.reviewModifyView(reviewSerial);
+		rpList = mapper.reviewPlan(purchaseSerial);
+		datePlan = mapper.datePlan(purchaseSerial);
+		
+		return rVo;
+	}
+	
+	public boolean modify(ReviewVo rVo){
+		boolean b = false;
+		status = manager.getTransaction(new DefaultTransactionDefinition());
+		savePoint = status.createSavepoint();
+		System.out.println("rVo text : "+rVo.getText());
+		System.out.println("rVo text : "+rVo.getReviewStar());
+		System.out.println("서비스 리뷰번호 : "+rVo.getReviewSerial());
+		int cnt = mapper.modify(rVo);
+		System.out.println("서비스 실행! cnt:"+cnt);
+		if(cnt>0) {
+			b = true;
+			manager.commit(status);
+			System.out.println("커밋완료!");
+		}else {
+			status.rollbackToSavepoint(savePoint);
+			System.out.println("롤백됨");
+		}
+		return b;
+	}
+	
+	public boolean delete(ReviewVo rVo) {
+		boolean b = false;
+		int cnt = mapper.delete(rVo);
+		if(cnt>0) {
+			b = true;
+			manager.commit(status);
+			System.out.println("커밋완료!");
+		}else {
+			status.rollbackToSavepoint(savePoint);
+			System.out.println("롤백됨");
+		}
+		return b;
+	}
+	
+	public void myReviewUpdate(String purchaseSerial) {
+		mapper.myReviewUpdate(purchaseSerial);
+	}
+	
+	public List<ReviewPlanVo> getRpList() {
+		return rpList;
+	}
+	public String getDatePlan() {
+		return datePlan;
+	}
+	
 	
 	public boolean thumbsUp(int reviewSerial, String userEmail) {
 		status = manager.getTransaction(new DefaultTransactionDefinition());

@@ -1,5 +1,4 @@
 package com.project1.review;
-
 public class ReviewPageVo {
 
     int totSize; //검색된 결과의 전체 건수
@@ -91,5 +90,4 @@ public class ReviewPageVo {
 	public void setRegion(String region) {this.region = region;}
 	public String getCity() {return city;}
 	public void setCity(String city) {this.city = city;}
-    
 }

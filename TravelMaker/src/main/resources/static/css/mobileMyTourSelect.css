@@ -11,7 +11,7 @@
   align-items: center;
   display: grid;
   grid-template-columns: 100%;
-  gap:1vh;
+  gap:2vh;
   margin:0vh auto;
    margin-top:0;
 }
@@ -142,9 +142,8 @@
 /*페이징처리부분*/
 #ri_page_btn{
 	justify-self : center;
-	display : grid;
-	width: 90vw;
-	grid-template-columns : 1.4fr 1.4fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1.4fr;
+	display : flex;
+	width: 30vw;
 	justify-items : center;
 	gap : 2px;
 	margin-top: 15vh;

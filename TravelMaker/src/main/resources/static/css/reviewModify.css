@@ -58,6 +58,11 @@
 	border-bottom-width: 0;
 }
 
+.spanclass{
+	color:#fff;
+	display:none;
+}
+
 #starForm{
 	grid-area:starForm;
 	justify-content: end;

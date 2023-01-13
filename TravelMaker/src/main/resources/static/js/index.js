@@ -5,7 +5,6 @@
 
  $('.btnReviewBoard').on('click', function(){
 	 $('#content').load('/review/reviewSelect')
-
  })
 /**FAQ 연결 */
 $('.btnFAQ').on('click',function(){

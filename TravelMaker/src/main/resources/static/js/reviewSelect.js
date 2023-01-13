@@ -187,7 +187,6 @@
 			}
 		},300)
 	})
-	
 	/** 조회순 정렬  */
 	$('#rs_contents_filter_view').on('click',function(){
 		$('#rs_order').val($('#rs_contents_filter_view').text());

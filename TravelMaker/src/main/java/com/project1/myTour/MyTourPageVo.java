@@ -8,17 +8,17 @@ public class MyTourPageVo {
     int endPage;
     int blockSize=5;
     int nowPage=1;
-    int listSize=10;
+    int listSize=5;
     int startNo;
     int endNo;
     
-    int    sno;
-    String findStr;
+	int    sno;
+    String email = "happilyah@naver.com";
     
     public MyTourPageVo() {}
     
     public void pageCompute() {
-        // 전체 건수를 사용하여 전체 페이지수 계산
+        // 전체 건수(totSize)를 사용하여 전체 페이지수 계산
         totPage = (int)Math.ceil(totSize/(double)listSize);
        
         // 현재 페이지(nowPage)를 사용하여 출력된 게시물의 끝번호와 시작번호 계산
@@ -30,7 +30,7 @@ public class MyTourPageVo {
        
         // 현재 페이지와 블럭사이즈를 사용하여 끝페이지와 시작 페이지 계산
         endPage = (int)Math.ceil(nowPage/(double)blockSize) * blockSize;
-        startPage = endPage-blockSize+1;
+        startPage = endPage - blockSize+1;
        
         // 계산된 끝 페이지가 전체 페이지수 보다 크면 끝페이지 값을 전체 페이지 값으로 보정
         if(endPage>totPage) endPage = totPage;
@@ -58,9 +58,14 @@ public class MyTourPageVo {
     public void setStartNo(int startNo) {this.startNo = startNo;    }
     public int getEndNo() {return endNo;    }
     public void setEndNo(int endNo) {this.endNo = endNo;    }
-    public String getFindStr() {return findStr;    }
-    public void setFindStr(String findStr) {this.findStr = findStr;    }
     public int getSno() {return sno;    }
     public void setSno(int sno) {this.sno = sno;    }
     
+    public String getEmail() {
+    	return email;
+    }
+    
+    public void setEmail(String email) {
+    	this.email = email;
+    }
 }
