@@ -9,12 +9,20 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 <body>
-	<c:forEach var = 'i' begin='1' end='15'>
+	<c:forEach var = 'vo' items='${list}'>
 		<div class="planItem">
-			<div class='planItemDataZone' onclick="openModifyModal()">
-				<span class="planItemOrder">${i}</span>
-				<span class="planItemName">가나돈까스</span>
-				<span class="planItemDate">2023-01-0${i}</span>
+			<div class='planItemDataZone' onclick="openModifyModal(this)">
+				<form>
+					<span class="planItemOrder">
+						<input type="hidden" name="planOrder" value="${vo.planOrder}"/>${vo.planOrder}
+					</span>
+					<span class="planItemName">${vo.locationName}</span>
+					<span class="planItemDate">
+						<input type="hidden" name="planDate" value="${vo.planDate}"/>${vo.planDate}
+					</span>
+					<input type="hidden" name="planbucketSerial" value="${vo.planbucketSerial}"/>
+					<input type="hidden" name="purchaseSerial" value="1234"/>
+				</form>
 			</div>
 			<div class="planItemMemoZone" onclick="openMemoModal()">
 				<span class="planItemIcon"><i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i></span>

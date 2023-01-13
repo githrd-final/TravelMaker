@@ -142,7 +142,7 @@ body{
 
 
 /* Right Side */
-#plannerZone>#planListZone {
+#plannerZone>div#planListZone {
 	margin-left:20px;
 	display:flex;
 	width:40%;
@@ -151,17 +151,17 @@ body{
 	
 }
 
-#planListZone>#planListMenu{
-	display:flex;
+#planListZone>div#planListMenu{ 
+ 	height:5%; 
+ 	display:flex;
 	position:relative;
 	flex-direction:row;
-	height:5%;
-}
+ } 
 
 
 
 
-#planListMenu>div.planListMenuItem{
+#planListMenu>div{
 	flex-basis:0;
 	flex-grow:1;
 	flex-shrink:1;
@@ -174,31 +174,31 @@ body{
 	cursor:pointer;
 }
 
-#planListMenu div.planListMenuItem:nth-child(1){
+#planListMenu div:nth-child(1){
 	position:relative;
 	z-index:4;
 }
 
-#planListMenu div.planListMenuItem:nth-child(2){
+#planListMenu div:nth-child(2){
 	position:relative;
 	right:40px;
 	z-index:3;
 }
 
-#planListMenu div.planListMenuItem:nth-child(3){
+#planListMenu div:nth-child(3){
 	position:relative;
 	right:80px;
 	z-index:2;
 }
 
-#planListMenu div.planListMenuItem:nth-child(4){
+#planListMenu div:nth-child(4){
 	position:relative;
 	right:120px;
 	z-index:1;
 }
 
 
-#planListMenu>div#PlanMenuActive{
+#planListMenu div#PlanMenuActive{
 	background-color: tomato;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 			    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -349,6 +349,7 @@ body{
 }
 
 .modalBody input[type=text]{
+	text-align:center;
 	border:none;
 	height:30px;
 	background-color:#eee;
@@ -416,6 +417,7 @@ body{
 	height:30px;
 	background-color:#eee;
 }
+
 
 #plannerMemoModal{
 	width:400px;
@@ -497,7 +499,6 @@ body{
 
 /*customOverlay */
 .customOverlay{
-	background-color: tomato;
 	border-radius: 50%;
 	border: 3px solid #fff;
 	text-align:center;
