@@ -63,9 +63,9 @@
 					<div id='rs_refresh'></div>
 					<div id='rs_contents_filter'>
 						<div id= 'rs_contents_filter_list'>
-							<div id='rs_contents_filter_recent'>최신순</div>
-							<div id='rs_contents_filter_view'>조회순</div>
-							<div id='rs_contents_filter_heart'>추천순</div>
+							<div id='rs_contents_filter_recent'>과거순</div>
+							<div id='rs_contents_filter_view'>조회 많은 순</div>
+							<div id='rs_contents_filter_heart'>추천 많은 순</div>
 						</div>
 					</div>
 					<div id='rs_contents_header_blank'></div>

@@ -3,7 +3,13 @@
  */
  (review = function(){
 	
-	
+	/**하트 1이상이면 빨간 하트  */
+	for(i=0; i<10; i++){
+		if(Math.abs($('.rs_content_heart_num').text()[i])!=0){
+			$('.rs_content_heart_icon').eq(i).css('background-image','url("../images/heart-icon-clicked.png")');
+		}
+		
+	}
 	/**필터 체크박스 처리(잘못한 것) */
 	/*
 	$('#rs_filter_period').on('click', function(){
@@ -177,6 +183,49 @@
 				console.log("a"+$('#rs_contents_filter_recent').text())
 			}else{
 				$('#rs_contents_filter_recent').text("최신순");
+				console.log("b"+$('#rs_contents_filter_recent').text())
+			}
+		},300)
+	})
+	/** 조회순 정렬  */
+	$('#rs_contents_filter_view').on('click',function(){
+		$('#rs_order').val($('#rs_contents_filter_view').text());
+		console.log("rs_order 밸류 값 "+$('#rs_order').val());
+		frm = $('#rs_header')[0];
+		param = $(frm).serialize();	
+		
+		$.post("/review/reviewSelect", param, function(data){
+			$('#content').html(data);
+		})
+		review.filter();
+		setTimeout(function(){
+			if($('#rs_order').val()=="조회 많은 순"){
+				$('#rs_contents_filter_view').text("조회 적은 순");
+				console.log("a"+$('#rs_contents_filter_recent').text())
+			}else{
+				$('#rs_contents_filter_view').text("조회 많은 순");
+				console.log("b"+$('#rs_contents_filter_recent').text())
+			}
+		},300)
+	})
+	
+	/** 추천순 정렬  */
+	$('#rs_contents_filter_heart').on('click',function(){
+		$('#rs_order').val($('#rs_contents_filter_heart').text());
+		console.log("rs_order 밸류 값 "+$('#rs_order').val());
+		frm = $('#rs_header')[0];
+		param = $(frm).serialize();	
+		
+		$.post("/review/reviewSelect", param, function(data){
+			$('#content').html(data);
+		})
+		review.filter();
+		setTimeout(function(){
+			if($('#rs_order').val()=="추천 많은 순"){
+				$('#rs_contents_filter_heart').text("추천 적은 순");
+				console.log("a"+$('#rs_contents_filter_recent').text())
+			}else{
+				$('#rs_contents_filter_heart').text("추천 많은 순");
 				console.log("b"+$('#rs_contents_filter_recent').text())
 			}
 		},300)

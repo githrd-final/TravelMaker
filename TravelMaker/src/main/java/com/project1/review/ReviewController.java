@@ -6,6 +6,12 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+import org.apache.catalina.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +22,6 @@ public class ReviewController {
 	
 	@Autowired
 	ReviewService service;
-	
 	@RequestMapping("/review/reviewSelect")
 	public ModelAndView reviewSelect(ReviewPageVo pVo) {
 		ModelAndView mv = new ModelAndView();
@@ -117,25 +122,26 @@ public class ReviewController {
 		}
 	}
 	
-	
-//	@RequestMapping("/review/reviewThumbsUp")
-//	public ModelAndView thumbsUp(ReviewVo rVo, ReviewPageVo pVo, HttpSession session){
-//		ModelAndView mv = new ModelAndView();
-//		session.setAttribute("email", "hihi@naver.com");
-//		String email = (String)session.getAttribute("email");
-//		boolean flag = service.thumbsUpOrNot(rVo.reviewSerial, email);
-//		boolean flag2 = service.thumbsUp(rVo.reviewSerial, email);
-//		
-//		if (flag) {
-//			rVo.setThumbsUp(rVo.thumbsUp+1);
-//			System.out.println("thumbUp : "+ rVo.thumbsUp);
-//		}
-//		
-//		mv.addObject("rVo", rVo);
-//		mv.addObject("pVo", pVo);
-//		mv.setViewName("/review/reviewView");
-//		
-//		
-//		return mv;
-//	}
+	@RequestMapping("/review/reviewThumbsUp")
+	public ModelAndView thumbsUp(ReviewVo rVo, ReviewPageVo pVo, HttpSession session){
+		ModelAndView mv = new ModelAndView();
+		String userEmail = (String)session.getAttribute("email");
+		System.out.println("chkUserLike : " + pVo.chkUserLike);
+		if(!pVo.chkUserLike) {
+			boolean flag = service.thumbsUp(rVo.reviewSerial, userEmail);
+			if(flag) rVo.setThumbsUp(rVo.thumbsUp + 1);
+		}else {
+			boolean flag = service.thumbsDown(rVo.reviewSerial, userEmail);
+			if(flag) rVo.setThumbsUp(rVo.thumbsUp -1 );
+		}
+		rVo = service.getrVo();
+		pVo = service.getpVo();
+		System.out.println(pVo.chkUserLike);
+		mv.addObject("rVo", rVo);
+		mv.addObject("pVo", pVo);
+		mv.setViewName("review/reviewView");
+		
+		
+		return mv;
+	}
 }

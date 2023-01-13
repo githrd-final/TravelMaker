@@ -61,6 +61,9 @@ html{
 	grid-template-columns: 1fr 1fr 1fr;
 	gap : 5px;
 }
+#rs_header_inner input[name=rs_filter]{
+	display: none;
+}
 #rs_filter_period{
 	height: 1.5vh;
 	line-height: 1.5vh;
@@ -262,15 +265,13 @@ html{
 	align-self : end;
 }
 #rs_page_btn{
-	justify-self : center;
-	display : grid;
+	
 	width: 90vw;
-	grid-template-columns : 1.4fr 1.4fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1.4fr;
-	justify-items : center;
-	gap : 2px;
+	text-align: center;
+	justify-self: center;
 }
-#rs_page_btn div{
-	width : 100%;
+#rs_page_btn input{
+	width : 10vw;
 	text-align: center;
 }
 
@@ -375,7 +376,7 @@ html{
   line-height: 1.15385;
   margin: 0;
   outline: none;
-  padding: 8px .8em;
+  padding: 8px .5em;
   position: relative;
   text-align: center;
   text-decoration: none;

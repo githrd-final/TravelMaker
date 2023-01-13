@@ -1,7 +1,5 @@
 package com.project1.review;
 
-import static org.hamcrest.CoreMatchers.nullValue;
-
 import java.util.List;
 import java.util.Map;
 
@@ -22,6 +20,7 @@ public class ReviewService {
 	ReviewPageVo pVo;
 	List<ReviewPlanVo> rpList = null;;
 	String datePlan;
+	ReviewVo rVo;
 	
 	@Autowired
 	PlatformTransactionManager manager;
@@ -124,21 +123,54 @@ public class ReviewService {
 	}
 	
 	
-//	public boolean thumbsUpOrNot(int reviewSerial, String email)
-//	public boolean thumbsUp(int reviewSerial, String email) {
-//		status = manager.getTransaction(new DefaultTransactionDefinition());
-//		savePoint = status.createSavepoint();
-//		
-//		boolean flag2 = true;
-//		
-//		int cnt = mapper.thumbsUp(reviewSerial, email);
-//		if(cnt<1) {
-//			status.rollbackToSavepoint(savePoint);
-//			flag2 = false;
-//		}else {
-//			manager.commit(status);
-//		}
-//		
-//		return flag2;
-//	}
+	public boolean thumbsUp(int reviewSerial, String userEmail) {
+		status = manager.getTransaction(new DefaultTransactionDefinition());
+		savePoint = status.createSavepoint();
+		
+		boolean flag = true;
+		int cnt = mapper.thumbsUp(reviewSerial, userEmail);
+		if(cnt<1) {
+			flag = false;
+			status.rollbackToSavepoint(savePoint);
+		}else {
+			int cnt2 = mapper.thumbsUpR(reviewSerial);
+			if(cnt2<1) {
+				flag = false;
+				status.rollbackToSavepoint(savePoint);
+			}else {
+				manager.commit(status);
+				rVo = mapper.view(reviewSerial);
+				pVo.setChkUserLike(true);
+			}
+		}
+		
+		return flag;
+	}
+	public boolean thumbsDown(int reviewSerial, String userEmail) {
+		status = manager.getTransaction(new DefaultTransactionDefinition());
+		savePoint = status.createSavepoint();
+		System.out.println("userEmail/ service / thumbsDown : " + userEmail);
+		boolean flag = true;
+		int cnt = mapper.thumbsDown(reviewSerial, userEmail);
+		if(cnt<1) {
+			flag = false;
+			status.rollbackToSavepoint(savePoint);
+		}else {
+			int cnt2 = mapper.thumbsDownR(reviewSerial);
+			if(cnt2<1) {
+				flag = false;
+				status.rollbackToSavepoint(savePoint);
+			}else {
+				manager.commit(status);
+				rVo = mapper.view(reviewSerial);
+				pVo.setChkUserLike(false);
+			}
+		}
+		return flag;
+	}
+	public ReviewVo getrVo() {
+		return rVo;
+	}
+	
+	
 	}

@@ -114,7 +114,6 @@ public class ReviewVo {
 	public void setThumbsUp(int thumbsUp) {
 		this.thumbsUp = thumbsUp;
 	}
-
 	public String getPurchaseSerial() {
 		return purchaseSerial;
 	}
