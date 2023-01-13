@@ -54,12 +54,16 @@
 	
 	
 	$('.bucketThrow').on('click', function(){
-		window.alert("삭제하시겠습니까?");
-		var jsoninsertplan =  JSON.parse(this.value);
-		console.log(jsoninsertplan);
-		$.post('/mplan/mPlanBucketDelete', jsoninsertplan, function(){
-	   		$('.mList').load('/mplan/mPlanBucketList', purchaseSerial);	 
-		});
+		//window.alert("삭제하시겠습니까?");
+		 if(confirm("정말 등록하시겠습니까 ?") == true){
+			var jsoninsertplan =  JSON.parse(this.value);
+			console.log(jsoninsertplan);
+			$.post('/mplan/mPlanBucketDelete', jsoninsertplan, function(){
+		   		$('.mList').load('/mplan/mPlanBucketList', purchaseSerial);	 
+			});
+		 }else{
+			 return;
+		 }
 	})
 	
 	$('#TotalbucketListFilter').on('click', function(){
