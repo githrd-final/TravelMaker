@@ -15,6 +15,7 @@
 	<div id='planner_title'>
 		<div>여행일정</div>
 		<div>여러분만의 일정을 계획해보세요.</div>
+		<div><input type="hidden" id="purchaseSerial" value="1234"/></div>
 	</div>
 	<div id="plannerZone">
 		<div id="MapBucketZone">
@@ -29,9 +30,9 @@
 					<span>일정을 추가할 날을 입력하세요.</span></br>
 					<span>
 						<select>
-							<option>1일차</option>
-							<option>2일차</option>
-							<option>3일차</option>
+							<option	value="1일자">1일차</option>
+							<option value="2일자">2일차</option>
+							<option value="3일자">3일차</option>
 						</select>
 					</span>
 				</div>
@@ -45,20 +46,27 @@
 					<span class="modalXicon"><i class="fa-solid fa-xmark fa-2xl" ></i></span>
 				</div>
 				<div class="modalBody" id="plannerModifyModalBody">
+				<form id = "planModifyFrm">
 					<span>순번</span></br>
-					<span><input type="text" size="10"/></span><br/>
+					<span>
+						<input type="text" size="10" name="planOrder"/></span><br/>
 					<span>날짜</span></br>
 					<span>
-						<select>
-								<option>1일차</option>
-								<option>2일차</option>
-								<option>3일차</option>
+						<select id="modifyPlanDate" name="planDate">
+							<option value="1일자">1일차</option>
+							<option value="2일자">2일차</option>
+							<option value="3일자">3일차</option>
 						</select>
 					</span>
+					<input type="hidden" name="prePlanOrder"/>
+					<input type="hidden" name="prePlanDate"/>
+					<input type="hidden" name="planbucketSerial"/>
+					<input type="hidden" name="purchaseSerial" value="1234"/>
+				</form>
 				</div>
 				<div class="modalFooter">
-					<input type="button" value="수정"/>
-					<input type="button" value="삭제"/>
+					<input type="button" value="수정" id="btnPlanModify"/>
+					<input type="button" value="삭제" id="btnPlanDelete"/>
 				</div>
 			</div>	
 			<div class="plannerModal" id="plannerMemoModal" style="display:none">
@@ -92,10 +100,14 @@
 		</div>
 		<div id="planListZone">
 			<div id="planListMenu">
-				<div class="planListMenuItem" id="PlanMenuActive">전체</div>
-				<div class="planListMenuItem">DAY1</div>
-				<div class="planListMenuItem">DAY2</div>
-				<div class="planListMenuItem">DAY3</div>
+				<div class="planListMenuItemAll" id="PlanMenuActive">전체</div>
+				<c:forEach var="i" begin="1" end="3">
+				<div class="planListMenuItem" onclick="planMenuClick(this)">
+					<form class="planListByDateForm">
+						<input type="hidden" name="planDate" value="${i}일자"/>DAY${i}
+					</form>	
+				</div>
+				</c:forEach>
 			</div>
 			<div id="planList">
 			</div>
@@ -103,6 +115,8 @@
 		<a href="#" id="goReview">여행목록</a>
 	</div>
 	<script>
+		
+		var planListItemFrm = null;
 		var currentModal = null;
 		var plannerDateModal = document.querySelector('#plannerDateModal');
 		var plannerModifyModal = document.querySelector('#plannerModifyModal');
@@ -113,10 +127,28 @@
 			modalWrap.style.display = 'block';
 			plannerDateModal.style.display = 'block';
 			currentModal = plannerDateModal;
-			
 		}
 		
-		function openModifyModal(){
+		function closeModal(){
+			modalWrap.style.display = 'none';
+			currentModal.style.display = 'none';
+		}
+		
+		function openModifyModal(node){
+			planListItemFrm = node.children[0];
+			
+			var planModifyFrm = document.querySelector('#planModifyFrm');
+			var planOrder = planListItemFrm.planOrder.value;
+			var planDate = planListItemFrm.planDate.value;
+			var planbucketSerial = planListItemFrm.planbucketSerial.value;
+
+			planModifyFrm.planOrder.value = planOrder;
+			planModifyFrm.prePlanOrder.value = planOrder;
+			planModifyFrm.prePlanDate.value = planDate;
+			planModifyFrm.planDate.value = planDate;
+			planModifyFrm.planbucketSerial.value = planbucketSerial;
+			$('#modifyPlanDate').val(planDate).attr("selected","selected");
+			
 			modalWrap.style.display = 'block';
 			plannerModifyModal.style.display = 'block';
 			currentModal = plannerModifyModal;
@@ -130,14 +162,11 @@
 		}
 		
 		$('.modalXicon').on('click',function(){
-			modalWrap.style.display = 'none';
-			currentModal.style.display = 'none';
-			
+			closeModal();
 		})
 		
 		$('#modal-wrap').on('click',function(){
-			modalWrap.style.display = 'none';
-			currentModal.style.display = 'none';
+			closeModal();
 		})
 	</script>
 </body>
