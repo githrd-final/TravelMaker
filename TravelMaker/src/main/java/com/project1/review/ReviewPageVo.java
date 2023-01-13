@@ -14,8 +14,31 @@ public class ReviewPageVo {
     
     int    sno;
     String findStr;
+    String period;
+    String region;
+    String city;
+    String order; //정렬기준 최신
+    boolean chkUserLike;
     
-    public ReviewPageVo() {}
+
+
+	public boolean isChkUserLike() {
+		return chkUserLike;
+	}
+
+	public void setChkUserLike(boolean chkUserLike) {
+		this.chkUserLike = chkUserLike;
+	}
+
+	public String getOrder() {
+		return order;
+	}
+
+	public void setOrder(String order) {
+		this.order = order;
+	}
+
+	public ReviewPageVo() {}
     
     public void pageCompute() {
         // 전체 건수를 사용하여 전체 페이지수 계산
@@ -27,7 +50,7 @@ public class ReviewPageVo {
        
         //전체 검색 건수보다 계산된 끝번호가 크면 전체 검색 건수로 값 보정
         if(endNo>totSize) endNo = totSize;
-       
+        
         // 현재 페이지와 블럭사이즈를 사용하여 끝페이지와 시작 페이지 계산
         endPage = (int)Math.ceil(nowPage/(double)blockSize) * blockSize;
         startPage = endPage-blockSize+1;
@@ -62,5 +85,11 @@ public class ReviewPageVo {
     public void setFindStr(String findStr) {this.findStr = findStr;    }
     public int getSno() {return sno;    }
     public void setSno(int sno) {this.sno = sno;    }
+    public String getPeriod() {return period;}
+	public void setPeriod(String period) {this.period = period;}
+	public String getRegion() {return region;}
+	public void setRegion(String region) {this.region = region;}
+	public String getCity() {return city;}
+	public void setCity(String city) {this.city = city;}
     
 }

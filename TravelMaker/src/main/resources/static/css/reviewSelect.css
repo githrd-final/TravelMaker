@@ -59,6 +59,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	gap : 5px;
 }
+
 #rs_filter_period{
 	height: 30px;
 	line-height: 30px;
@@ -177,7 +178,6 @@
 	gap: 5px;
 }
 #rs_content_user_photo{
-	background-image: url('../images/chaeji-profile-test.png');
 	background-size: cover;
 	width: 3vh;
 	height: 3vh;
@@ -255,15 +255,13 @@
 	align-self : end;
 }
 #rs_page_btn{
-	justify-self : center;
-	display : grid;
-	width: 80vh;
-	grid-template-columns : repeat(9, 1fr);
-	justify-items : center;
-	gap : 2px;
+	text-align: center;
+	width: 54vw;
+	justify-self: center;
+	
 }
-#rs_page_btn div{
-	width : 100%;
+#rs_page_btn input{
+	width : 6vw;
 	text-align: center;
 }
 

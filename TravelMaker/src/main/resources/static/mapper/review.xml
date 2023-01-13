@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project1.mybatis.ReviewMapper">
+	<select id='totList' parameterType='com.project1.review.ReviewPageVo' resultType ="Integer">
+		select count(reviewSerial) totSize from review where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%')
+	</select>
+	
+	<select id='select' parameterType='com.project1.review.ReviewPageVo' resultType='com.project1.review.ReviewVo'>
+		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, p.sysPhoto from review r join reviewphoto p on r.reviewSerial = p.reviewSerial 
+		where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%') 
+			
+			<if test='order==null'>
+				order by r.reviewSerial desc
+			</if>
+			<if test='order!=null'>
+				<choose>
+					<when test='order=="최신순"'>
+						order by r.reviewSerial desc 
+					</when>
+					<when test='order=="과거순"'>
+						order by r.reviewSerial asc 
+					</when>
+					<when test='order=="조회 많은 순"'>
+						order by r.view desc 
+					</when>
+					<when test='order=="조회 적은 순"'>
+						order by r.view asc 
+					</when>
+					<when test='order=="추천 많은 순"'>
+						order by r.thumbsUp desc 
+					</when>
+					<when test='order=="추천 적은 순"'>
+						order by r.thumbsUp asc 
+					</when>
+					
+				</choose>
+			</if>
+		limit ${startNo}, ${listSize}
+	</select>
+	<select id='selectRegion' parameterType='String' resultType="String">
+		select city from regionCity where region like '%${_parameter}%' order by city
+	</select>
+	<select id='view' parameterType="Integer" resultType="com.project1.review.ReviewVo">
+		select reviewSerial, city, nickName, postingDate, view, thumbsUp, reviewTitle, text, purchaseSerial from review where reviewSerial = #{_parameter}
+	</select>
+	<select id='chkUserLike' resultType='int'>
+		select count(*) from reviewLike where userEmail = #{userEmail} and reviewSerial = #{reviewSerial}
+	</select>
+	
+	<update id='viewUp' parameterType='Integer'>
+		update review set view = view + 1 where reviewSerial = #{_parameter}
+	</update>
+	
+	<insert id='thumbsUp'>
+		insert into reviewLike(likeNo, userEmail, reviewSerial, likeChk) values(0, #{userEmail}, ${reviewSerial}, true)
+	</insert>
+	<delete id='thumbsDown'>
+		delete from reviewLike where (userEmail = #{userEmail} and reviewSerial = ${reviewSerial})
+	</delete>
+	<update id='thumbsUpR' parameterType='Integer'>
+		update review set thumbsUp = thumbsUp + 1 where reviewSerial = #{_parameter}
+	</update>
+	<update id='thumbsDownR' parameterType='Integer'>
+		update review set thumbsUp = thumbsUp - 1 where reviewSerial = #{_parameter}
+	</update>
+<!-- 	<select id='thumbsUpOrNot' parameterType="String" resultType="Integer"> -->
+<!-- 		select likeChk from reviewLike where userEmail = #{reviewSerial} and reviewSerial = #{reviewSerial}  -->
+<!-- 	</select>   -->
+</mapper>
