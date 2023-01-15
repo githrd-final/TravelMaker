@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import com.project1.mybatis.PlanBucketMapper;
+import com.project1.mybatis.PlanMapper;
 
 @Service
 @Transactional
@@ -21,7 +22,6 @@ public class PlanBucketService {
 
 	@Autowired	//동일한 클래스명을 가져옴.
 	PlanBucketMapper pbmapper;
-	//planmapper 추가하기!
 	
 	
 	public int TravelDay(String purchaseSerial) {

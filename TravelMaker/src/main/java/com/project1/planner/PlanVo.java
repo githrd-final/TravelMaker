@@ -12,8 +12,15 @@ package com.project1.planner;
 		
 		String purchaseSerial;
 		String prePlanDate;
+		String contenttypeId;
 		int prePlanOrder = 0;  // 수정하기 이전의 순번
 		
+		public String getContenttypeId() {
+			return contenttypeId;
+		}
+		public void setContenttypeId(String contenttypeId) {
+			this.contenttypeId = contenttypeId;
+		}
 		public String getPlanDate() {
 			return planDate;
 		}

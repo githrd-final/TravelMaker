@@ -23,6 +23,8 @@ public class PlannerController {
 	@Autowired
 	PlanListService planService;
 	
+	@Autowired
+	PlanBucketService bucketService;
 	
 	@RequestMapping("/planner/planner")
 	public ModelAndView planner() {
@@ -31,12 +33,98 @@ public class PlannerController {
 		return mv;
 	}
 	
-	@RequestMapping("/planner/planBucketList")
-	public ModelAndView planBucketList() {
+	// -------------- bucket 부분 ------------------ //
+	@RequestMapping("/planner/bucketList")
+	public ModelAndView bucketList(@RequestParam("purchaseSerial") String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();
+		List<BucketVo> list = bucketService.bucketselect(purchaseSerial);
+		mv.addObject("list",list);
 		mv.setViewName("planner/planBucketList");
 		return mv;
 	}
+	
+	@RequestMapping("/planner/bucketJson")
+	public void bucketJson(@RequestParam("purchaseSerial") String purchaseSerial,
+							   HttpServletResponse response,
+							   ObjectMapper objectMapper) {
+		
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		List<BucketVo> list = bucketService.bucketselect(purchaseSerial);
+		JSONArray jsonArray = new JSONArray();
+		
+		for(BucketVo vo : list) {
+			try {
+				String voStr = objectMapper.writeValueAsString(vo);
+				jsonArray.add(voStr);
+			} catch (JsonProcessingException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		String json = jsonArray.toJSONString();
+		PrintWriter writer;
+		
+		try {
+			writer = response.getWriter();
+			writer.write(json);
+			writer.flush();
+			writer.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@RequestMapping("/planner/bucketListByType")
+	public ModelAndView bucketListByType(BucketVo bucketVo) {
+		ModelAndView mv = new ModelAndView();
+		List<BucketVo> list = bucketService.bucketDetailSelect(bucketVo);
+		mv.addObject("list",list);
+		mv.setViewName("planner/planBucketList");
+		return mv;
+	}
+	
+	@RequestMapping("/planner/bucketJsonByType")
+	public void bucketJsonByType(BucketVo bucketVo,
+							   HttpServletResponse response,
+							   ObjectMapper objectMapper) {
+		
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		List<BucketVo> list = bucketService.bucketDetailSelect(bucketVo);
+		JSONArray jsonArray = new JSONArray();
+		
+		for(BucketVo vo : list) {
+			try {
+				String voStr = objectMapper.writeValueAsString(vo);
+				jsonArray.add(voStr);
+			} catch (JsonProcessingException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		String json = jsonArray.toJSONString();
+		PrintWriter writer;
+		
+		try {
+			writer = response.getWriter();
+			writer.write(json);
+			writer.flush();
+			writer.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	// -------------- plan 부분 ------------------ //
+	
 	
 	@RequestMapping("/planner/planList")
 	public ModelAndView planList(@RequestParam("purchaseSerial") String purchaseSerial) {
@@ -162,6 +250,39 @@ public class PlannerController {
 		}
 		
 		return msg;
+	}
+	
+	@RequestMapping("/planner/memoUpdate")
+	public int memoUpdate(PlanVo planVo) {
+		boolean result = false;
+		int flag = 0;
+		
+		if(planVo.planNote.trim().equals("")) {
+			return flag;
+		}
+		
+		result = planService.updateMemo(planVo);
+		if(result) {
+			flag = 1;
+		} else {
+			flag = -1;
+		}
+		
+		return flag;
+	}
+	
+	@RequestMapping("/planner/memoShow")
+	public String memoShow(PlanVo planVo) {
+		String msg = "";
+		msg = planService.showMemo(planVo);
+		
+		return msg;
+	}
+	
+	@RequestMapping("/planner/memoReset")
+	public void memoReset(PlanVo planVo) {
+		planService.ResetMemo(planVo);
+		
 	}
 	
 	

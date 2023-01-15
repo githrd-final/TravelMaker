@@ -23,11 +23,17 @@ public class mPlannerController {
 
 	@Autowired
 	PlanBucketService service;
+
+	@Autowired
+	PlanListService planService;
+	
+	int travelDay;
 	
 	@RequestMapping("/mplan/mPlanner")
 	public ModelAndView mPlannerSelect() {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-		int travelDay = service.TravelDay("1234");
+		travelDay = service.TravelDay("1234");
+		System.out.println(travelDay);
 		mv.addObject("purchaseSerial", "1234");
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
@@ -41,6 +47,7 @@ public class mPlannerController {
 		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
 		return mv;
 	}
+	
 	@RequestMapping("/mplan/mplanJson")
 	public void mPlanMapperJson(@RequestParam("purchaseSerial") String purchaseSerial, HttpServletResponse response, ObjectMapper objectMapper) {
 		response.setCharacterEncoding("UTF-8");
@@ -110,20 +117,48 @@ public class mPlannerController {
 		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
 		return mv;
 	}
+	
 	@RequestMapping("/mplan/mBucketToPlan")
 	public void mBucketToPlanList(BucketVo bVo) {
 		
 		service.bucketToPlanInsert(bVo);
 		mPlanBucketListSelect(bVo.getPurchaseSerial());
 	}
+	
+	
 	@RequestMapping("/mplan/mPlanList")
-	public ModelAndView mPlanListSelect() {
+	public ModelAndView mPlanListSelect(@RequestParam("purchaseSerial") String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();
-		int travelDay = service.TravelDay("1234");
+		System.out.println("Controller travelDay:"+travelDay);
+		List<PlanVo> list = planService.selectAllPlan(purchaseSerial);
+		System.out.println(list);
+		System.out.println(travelDay);
+		mv.addObject("list",list);
 		mv.addObject("totalTravelDay",travelDay);
+		
 		//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
 		mv.setViewName("mplan/mPlanList");	//응답할 view(페이지)이름 설정
 		return mv;
+	}
+	
+	@RequestMapping("/mplan/mPlanFilterList")
+	public ModelAndView mPlanListFilterSelect(PlanVo pVo) {
+		ModelAndView mv = new ModelAndView();	//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
+		
+		List<PlanVo> list = planService.selectPlanByDate(pVo);
+		mv.addObject("list", list);
+		mv.addObject("totalTravelDay",travelDay);
+		
+		mv.setViewName("mplan/mPlanList");	//응답할 view(페이지)이름 설정
+		return mv;
+	}
+	
+	@RequestMapping("/mplan/planUpdate")
+	public void planUpdate(PlanVo planVo) {
+		boolean result = false;
+		System.out.println("UpdateController purchaseSerial:"+planVo.getPurchaseSerial()+" preplanorder:"+planVo.getPrePlanOrder()+" planOrder:"+planVo.getPlanOrder()+" planDate:"+planVo.getPlanDate()+" preplanDate:"+planVo.getPrePlanDate());
+		result = planService.updatePlan(planVo);
+		
 	}
 	
 	@RequestMapping("/mplan/mPlanBucketDelete")
@@ -131,4 +166,18 @@ public class mPlannerController {
 		service.planBucketDelete(bVo);
 
 	}
+	@RequestMapping("/mplan/planDelete")
+	public void mplanDelete(PlanVo planVo) {
+		boolean result = false;
+		result = planService.deletePlan(planVo);
+	
+	}
+
+	@RequestMapping("/mplan/memoUpdate")
+	public void memoUpdate(PlanVo planVo) {
+		
+		planService.updateMemo(planVo);
+		
+	}
+
 }

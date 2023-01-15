@@ -17,8 +17,8 @@
 	
 	
 	<insert id="bucketToPlanInsert" parameterType="com.project1.planner.BucketVo">
-		Insert into plan(planDate, planOrder , locationName, planBucketSerial, mapX, mapY, purchaseSerial) 
-		VALUES (#{planDate}, insertOrder(#{planDate}, #{purchaseSerial}), #{locationName},#{planbucketSerial},#{mapX},#{mapY}, #{purchaseSerial});
+		Insert into plan(planDate, planOrder , locationName, planBucketSerial, mapX, mapY, purchaseSerial, contenttypeId) 
+		VALUES (#{planDate}, insertOrder(#{planDate}, #{purchaseSerial}), #{locationName},#{planbucketSerial},#{mapX},#{mapY}, #{purchaseSerial}, #{contenttypeId});
 	</insert>
 	
 	<delete id="planBucketDelete" parameterType="String">
