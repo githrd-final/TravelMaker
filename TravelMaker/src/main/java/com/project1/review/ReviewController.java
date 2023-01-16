@@ -6,12 +6,6 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-
-import org.apache.catalina.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -45,11 +39,15 @@ public class ReviewController {
 		pVo.setChkUserLike(service.chkUserLike(userEmail, rVo.getReviewSerial()));
 		System.out.println("rs : " +rVo.getReviewSerial());
 		System.out.println("컨트롤 구고번호1: "+ rVo.getPurchaseSerial());
-		rVo = service.view(rVo.getReviewSerial(), "up");
+		rVo = service.reviewModifyView(rVo.getReviewSerial(), rVo.getPurchaseSerial());
+		rVo = service.view(rVo.getReviewSerial(),rVo.purchaseSerial,"up");
+		List<ReviewPlanVo> rpList = service.getRpList();
+		int datePlan = Integer.parseInt(service.getDatePlan());
 		
 		System.out.println("컨트롤 구고번호2: "+ rVo.getPurchaseSerial());
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
+		mv.addObject("rpList", rpList);
 		System.out.println("rVo---"+rVo);
 		System.out.println("city"+rVo.city);
 		mv.setViewName("review/reviewView");
@@ -128,7 +126,7 @@ public class ReviewController {
 		String userEmail = (String)session.getAttribute("email");
 		System.out.println("chkUserLike : " + pVo.chkUserLike);
 		if(!pVo.chkUserLike) {
-			boolean flag = service.thumbsUp(rVo.reviewSerial, userEmail);
+			boolean flag = service.thumbsUp(rVo.reviewSerial, userEmail, rVo.purchaseSerial);
 			if(flag) rVo.setThumbsUp(rVo.thumbsUp + 1);
 		}else {
 			boolean flag = service.thumbsDown(rVo.reviewSerial, userEmail);
@@ -136,9 +134,14 @@ public class ReviewController {
 		}
 		rVo = service.getrVo();
 		pVo = service.getpVo();
+		List<ReviewPlanVo> rpList = service.getRpList();
+		int datePlan = Integer.parseInt(service.getDatePlan());
+		
 		System.out.println(pVo.chkUserLike);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
+		mv.addObject("rpList", rpList);
+		mv.addObject("datePlan", datePlan);
 		mv.setViewName("review/reviewView");
 		
 		

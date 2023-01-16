@@ -97,6 +97,15 @@
 	cursor : pointer;
 	transform:scale(1.2);
 }
+#rv_to_list{
+	justify-self: end;
+	grid-column: 7/8;
+	align-self : start;
+}
+#rv_to_list:hover{
+	cursor : pointer;
+	transform:scale(1.2);
+}
 #rv_content_crud{
 	right: 10px;
 	background-image: url('../images/menu-icon.png');
@@ -104,7 +113,8 @@
 	width: 15px;
 	height: 15px;
 	justify-self:end;
-	grid-column: 7/8;
+	align-self: center;
+	grid-column: 8/9;
 }
 #rv_content_crud_list{
 	width : 40px;

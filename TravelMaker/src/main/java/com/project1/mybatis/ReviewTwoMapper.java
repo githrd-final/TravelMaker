@@ -9,5 +9,6 @@ import com.project1.review.ReviewVo;
 @Mapper
 public interface ReviewTwoMapper {
 	public int insert(ReviewVo vo);
+	public ReviewVo myReviewView(String purchaseSerial);
 	public void myReviewUpdate(String purchaseSerial);
 }

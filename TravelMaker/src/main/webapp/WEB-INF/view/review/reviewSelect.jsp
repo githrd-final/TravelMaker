@@ -23,9 +23,8 @@
 					<div id='rs_filter_period'>
 						<select name='period' id='rs_filter_period_combo'>
 							<option value=''>기간별</option>
-							<option value='1박 2일' >1박 2일</option>
-							<option value='2박 3일' >2박 3일</option>
-							<option value='3박 4일' >3박 4일</option>
+							<option value='2' >1박 2일</option>
+							<option value='3' >2박 3일</option>
 						</select>
 						<input id ="tempPeriod" value="${pVo.period }" style="display: none;">
 					</div>
@@ -75,7 +74,7 @@
 						<div class='rs_content_blank'></div>
 						<div class='rs_content_1'>
 							<div class='rs_content_user'>
-								<img id="rs_content_user_photo" src = '/images/${vo.sysPhoto }'/>
+								<img id="rs_content_user_photo" src = '/images/${vo.sysUserPhoto }'/>
 								<div id='rs_content_user_name'>${vo.nickName }</div>
 							</div>
 							<div class='rs_content_date'>${vo.postingDate }</div>
