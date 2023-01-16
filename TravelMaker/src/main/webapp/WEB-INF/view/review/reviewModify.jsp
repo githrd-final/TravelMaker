@@ -16,8 +16,10 @@
 				<h2 id='ri_InsertH'>후기 수정</h2>
 				<div id='ri_InsertDiv'>후기 수정 페이지입니다.</div>
 			</div>
+			<input type='hidden' name='view' value='${rVo.view }'/>
+			<input type='hidden' name='thumbsUp' value='${rVo.thumbsUp }'/>
 			<input type='hidden' name='reviewSerial' value='${rVo.reviewSerial }'/>
-			<input type='text' name='purchaseSerial' value='${rVo.purchaseSerial }'/>
+			<input type='hidden' name='purchaseSerial' value='${rVo.purchaseSerial }'/>
 			<span class='reviewInsertSpanDate'>작성날짜</span>
 			<input type='text' class='reviewInsertDate' name='postingDate' value='${rVo.postingDate }' readonly="readonly">
 			<span class='reviewInsertSpanRegion'>지  역</span>
@@ -32,7 +34,7 @@
 				    <c:forEach var='j' begin='1' end='${5-rVo.reviewStar }'>
 				    	<a href="#">⭐</a>
 				    </c:forEach>
-				    <input type='text' name='reviewStar' class='reviewStar' value='${rVo.reviewStar }'/>
+				    <input type='hidden' name='reviewStar' class='reviewStar' value='${rVo.reviewStar }'/>
 				</p>
 			</div>
 			<span class='reviewInsertSpanSubject'>제  목</span>

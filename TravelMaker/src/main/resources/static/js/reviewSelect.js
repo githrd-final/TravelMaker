@@ -2,7 +2,7 @@
  * 
  */
  (review = function(){
-	
+
 	/**하트 1이상이면 빨간 하트  */
 	for(i=0; i<10; i++){
 		if(Math.abs($('.rs_content_heart_num').text()[i])!=0){
@@ -232,6 +232,7 @@
 	})
 	/**상세 보기  */
 	review.view = function(reviewSerial){
+		console.log("hihi", reviewSerial);
 		frm = $('#rs_header')[0];
 		frm.reviewSerial.value = reviewSerial;
 		console.log('리뷰시리얼: ', reviewSerial);
@@ -240,4 +241,16 @@
 			$('#content').html(data);
 		})
 	}
-})()
+	setTimeout(function(){
+		frm.region.value = tempRegion;
+			param = "region="+tempRegion;
+			$.post("review/reviewRegion", param, function(data){
+				$('#rs_filter_location_combo').children('option:not(:first)').remove();
+				for(var i = 0; i<data.length; i++){
+					var option = "<option value='"+data[i]+"'>"+data[i]+"</option>";
+					$('#rs_filter_location_combo').append(option);
+				}
+		    })
+		review.filter();
+	},200)
+})();
