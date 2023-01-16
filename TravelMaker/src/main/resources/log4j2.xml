@@ -22,7 +22,7 @@
         <Logger name="com.project1.member" level="info">
             <AppenderRef ref="FileLog" />
         </Logger>
-        <Root level="debug">
+        <Root level="error">
             <AppenderRef ref="ConsoleLog" />
             <AppenderRef ref="FileLog" />
         </Root>
