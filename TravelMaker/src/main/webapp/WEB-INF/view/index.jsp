@@ -121,8 +121,6 @@
 	</section>	
 </div>
 
-<input type="text" id="result" value="${result}" display="none"/>
-
 <div id='indexFooterContainer'>
 	<footer id='indexFooter'>
 		<p class='indexFooterP'>Visit Goa and have a good time doing it, when you use one or more of our tours...</p>

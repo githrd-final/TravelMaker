@@ -233,6 +233,34 @@ public class TourAPIGetData {
 		return json.toString();
 	}
 
+	// 위치기반&카테고리 검색 조회
+	public String getLocationCategoryJsonData(String mapX,String mapY, String contentTypeId) {
+		StringBuffer json = new StringBuffer();
+
+		try {
+			String url = "http://apis.data.go.kr/B551011/KorService/locationBasedList?serviceKey=" + APIkey
+					+"&pageNo="+pageNo
+					+"&numOfRows="+numOfRows
+					+"&MobileOS="+ MobileOS
+					+"&MobileApp="+ MobileApp
+					+"&arrange=O"
+					+"&_type="+type
+					+"&cat1="+contentTypeId
+					+"&mapX="+mapX
+					+"&mapY="+mapY
+					+"&radius=20000";
+
+
+			json = readURL(url);
+
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+
+
+		return json.toString();
+	}
+
 	// 지역&분류 조회
 
 	public String getRegionCategoryJsonData(int areaCode, String cat1) {

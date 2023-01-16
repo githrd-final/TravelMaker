@@ -5,15 +5,16 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class OrderDto {
+public class PurchaseDto {
 
+    private String purchaseSerial;
+    private String email;
+    private int price;
+    private int people;
+    private String region;
     private String startDate;
     private String endDate;
-    private String people;
     private String startDateTime;
     private String endDateTime;
-    private String email;
-    private String region;
-    private String selectedRegion;
-    private int peopleInt;
+    private int regionInt;
 }

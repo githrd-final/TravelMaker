@@ -1,5 +1,7 @@
 package com.project1.mybatis;
 
+import com.project1.order.OrderDto;
+import com.project1.order.PurchaseDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -9,10 +11,16 @@ import java.util.List;
 @Mapper
 public interface OrderMapper {
 
-    public String selectRegion(String region);
+    public String selectRegion(OrderDto orderDto);
 
-    public Integer checkTicket(List<String> dateList);
+    public Integer checkTicketA(OrderDto orderDto);
+    public Integer checkTicketB(OrderDto orderDto);
 
-    public String purchaseTicket(String email, int people, String selectedRegion, String startDate, String endDate, String startDateTime, String endDateTime);
+    public List<String> purchaseTicketA(OrderDto orderDto);
+    public List<String> purchaseTicketB(OrderDto orderDto);
 
+    public void insertPurchase(PurchaseDto purchaseDto);
+
+    public void updateTicketStatusA(String ticketSerialListA);
+    public void updateTicketStatusB(String ticketSerialListB);
 }

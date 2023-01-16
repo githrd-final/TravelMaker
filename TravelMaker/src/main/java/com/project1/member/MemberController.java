@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -14,7 +15,7 @@ import javax.servlet.http.HttpSession;
 @Slf4j
 public class MemberController {
 
-    @Autowired
+    @Resource(name = "memberService")
     MemberService memberService;
 
 
@@ -86,5 +87,4 @@ public class MemberController {
         mv.setViewName("member/signUp");
         return mv;
     }
-
 }

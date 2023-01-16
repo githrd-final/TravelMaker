@@ -57,7 +57,6 @@
                         console.log('오류 발생')
                     }
                 })
-
             } else {
                 console.log("callback 처리에 실패하였습니다.");
             }

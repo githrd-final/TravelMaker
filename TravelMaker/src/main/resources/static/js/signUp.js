@@ -7,6 +7,5 @@ $('.btnProfileSelect').on('click',function(){
 
 $('.btnSubmit').on('click',function(){
     window.close();
-
     location.replace("http://localhost:9282");
 })

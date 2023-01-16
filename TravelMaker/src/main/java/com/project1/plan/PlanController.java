@@ -2,6 +2,7 @@ package com.project1.plan;
 
 import java.util.List;
 
+import com.project1.order.PurchaseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,23 @@ public class PlanController {
 
 	@Autowired
 	PlanService planService;
+
+	// 추천 리스트 띄우기
+	@RequestMapping("/plan/itemList/{contentTypeId}")
+	public ModelAndView itemListCate(PurchaseDto purchaseDto, @PathVariable String contentTypeId) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		TourAPIGetData tourAPIGetData = new TourAPIGetData();
+		TourAPIJsonParsing tourAPIJsonParsing = new TourAPIJsonParsing();
+		String mapX = planService.findMapX(purchaseDto.getRegion());
+		String mapY = planService.findMapY(purchaseDto.getRegion());
+		String a = tourAPIGetData.getLocationJsonData(mapX, mapY);
+		List<String> b = tourAPIJsonParsing.getContentIdList(a);
+		List<String> c = tourAPIGetData.getDetailJsonDataListByType(b, contentTypeId);
+		List<testVo> result = tourAPIJsonParsing.getOutputList(c);
+		mv.addObject("result", result);
+		mv.setViewName("plan/itemlist");
+		return mv;
+	}
 
 	@RequestMapping("/plan/itemList/{region}")
 	public ModelAndView itemList(@PathVariable String region) {

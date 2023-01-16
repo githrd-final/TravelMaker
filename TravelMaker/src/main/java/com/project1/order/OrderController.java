@@ -2,25 +2,19 @@ package com.project1.order;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServlet;
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 @RestController
 @Slf4j
 public class OrderController {
 
-    @Autowired
+    @Resource(name = "orderService")
     OrderService orderService;
 
     @RequestMapping(value="/order/regionSelect", method = RequestMethod.GET)
@@ -49,27 +43,43 @@ public class OrderController {
         log.info(orderDto.getStartDateTime());
         log.info(orderDto.getEndDateTime());
         request.setAttribute("orderDto", orderDto);
-        log.info(request.getParameter("people"));
         mv.addObject("orderDto", orderDto);
         mv.setViewName("order/regionSelect");
         return mv;
     }
 
     @RequestMapping("/order/purchaseCheck")
-    public ModelAndView purchaseCheck(HttpServletRequest request, OrderDto orderDto) throws Exception {
+    public ModelAndView purchaseCheck(HttpServletRequest request, OrderDto orderDto, ModelAndView mv) throws Exception {
         log.info("purchaseCheck");
-        ModelAndView mv = new ModelAndView();
         orderDto.setRegion(request.getParameter("region"));
+        request.setAttribute("orderDto", orderDto);
         mv.addObject("orderDto", orderDto);
+        log.info(orderDto.getEmail());
+        log.info(orderDto.getPeople());
         mv.setViewName("order/purchaseCheck");
         return mv;
     }
 
+    @ResponseBody
     @RequestMapping("/order/purchasedTicket")
-    public ModelAndView purchasedTicket(HttpServletRequest request, HttpSession session, OrderDto orderDto) {
+    public ModelAndView purchasedTicket(OrderDto orderDto, HttpServletRequest request, HttpServletResponse response) throws Exception {
         ModelAndView mv = new ModelAndView();
+        PurchaseDto purchaseDto;
         log.info("purchasedTicket");
-        String purchaseNumber = orderService.purchaseTicket(orderDto);
+        log.info(orderDto.getPeople());
+        log.info(orderDto.getEmail());
+
+        try {
+            purchaseDto = orderService.purchaseTicket(orderDto);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        log.info(purchaseDto.getPurchaseSerial());
+        log.info(orderDto.getEmail());
+        mv.addObject("orderDto", orderDto);
+        mv.addObject("purchaseDto", purchaseDto);
+        request.setAttribute("orderDto", orderDto);
+        request.setAttribute("purchaseDto", purchaseDto);
         mv.setViewName("order/purchasedTicket");
         return mv;
     }

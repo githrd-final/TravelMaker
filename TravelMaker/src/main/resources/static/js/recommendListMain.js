@@ -34,19 +34,20 @@ $(document).ready(function(){
 
 /*숙소, 관광지, 맛집 별로 리스트 뜨게 */
 /*숙소 추천 리스트 */
+/*
    $('.btnAccommodation').on('click', function(){
             $('.recommandList').load('/Accommodation/AccommodationList');
-        })
+        })*/
         
 /*관광지 추천 리스트 */
-   $('.btnTouristAttractions').on('click', function(){
+   /*$('.btnTouristAttractions').on('click', function(){
             $('.recommandList').load('/TouristAttractions/TouristAttractionsList');
-        })
+        })*/
         
 /*맛집 추천 리스트 */
-   $('.btnRestaurants').on('click', function(){
+   /*$('.btnRestaurants').on('click', function(){
             $('.recommandList').load('/Restaurants/RestaurantsList');
-        })
+        })*/
 //퀵메뉴 추가 이벤트 시작
 $(document).ready(function(){
 	$('.btnAccommodation').click(); 
@@ -65,3 +66,14 @@ if(width_size<=450){
     $('#btnMyTravel').on('click',function(){
         $('#content').load('/planner/planner');
     })}
+
+$('.btnAccommodation').on('click', function(){
+    $('.recommandList').load('/plan/itemList/12');
+})
+$('.btnTouristAttractions').on('click', function(){
+    $('.recommandList').load('/plan/itemList/14');
+})
+
+$('.btnRestaurants').on('click', function(){
+    $('.recommandList').load('/plan/itemList/39');
+})

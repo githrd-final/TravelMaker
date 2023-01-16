@@ -1,5 +1,7 @@
+<%@ page import="com.project1.order.PurchaseDto" %>
+<%@ page import="org.springframework.web.servlet.ModelAndView" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+		 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +13,21 @@
 <title>TICKET 구매내역</title>
 </head>
 <body>
+<%
+	PurchaseDto purchaseDto = (PurchaseDto)request.getAttribute("purchaseDto");
+%>
+
+<form action = 'purchasedTicket' method = 'post' id="frm" >
+	<input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}">
+	<input type="text" name="email" id="email" value="${purchaseDto.email}">
+	<input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">
+	<input type="text" name="people" id="people" value="${orderDto.people}" style="display:none">
+	<input type="text" name="region" id="region" value="${orderDto.region}" style="display:none">
+	<input type="text" name="startDate" value="${orderDto.startDate}" style="display:none">
+	<input type="text" name="endDate" value="${orderDto.endDate}" style="display:none">
+	<input type="text" name="startDateTime" value="${orderDto.startDateTime}" style="display:none">
+	<input type="text" name="endDateTime" value="${orderDto.endDateTime}" style="display:none">
+</form>
 <main id='myTourSelectMain'>
 	<div class="myTourSelectContainer">
 		<h1 class="upcomming">티켓 구매 내역</h1>

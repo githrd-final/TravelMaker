@@ -1,7 +1,6 @@
 package com.project1.mybatis;
 
 import com.project1.member.MemberDto;
-import lombok.NoArgsConstructor;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

@@ -2,9 +2,11 @@
  * 
  */
 
-var region = $('#region').val();
-var people = $('#people').val();
-var email = $('#email').val();
+var frm = $("#frm");
+var email = document.getElementById("email").value;
+var region = document.getElementById("region").value;
+var people = document.getElementById("people").value;
+console.log(frm.serialize());
 function requestPay() {
 var IMP = window.IMP; // 생략 가능
 IMP.init("imp84346376"); // 예: imp00000000
@@ -12,9 +14,9 @@ IMP.init("imp84346376"); // 예: imp00000000
     IMP.request_pay({ // param
         pg: "html5_inicis",
         pay_method: "card",
-        merchant_uid: "ORD20180131-001",
+        merchant_uid: "ORD20180131-020",
         name: "랜덤 기차 여행 - " + region,
-        amount: 600,
+        amount: 100, // if
         buyer_email: email,
         buyer_name: "양수비",
         buyer_tel: "010-4242-4242",
@@ -22,8 +24,23 @@ IMP.init("imp84346376"); // 예: imp00000000
         buyer_postcode: "01181"
     }, function (rsp) { // callback
         if (rsp.success) {
-            alert("성공");
-            $('#content').load('/order/purchasedTicket');
+            var orderDto = frm.serialize();
+            console.log(orderDto);
+            $.ajax({
+                type : "POST",
+                url : "/order/purchasedTicket",
+                data : orderDto,
+                success : function(data) {
+                    console.log(data);
+                    alert("성공");
+                    $("#content").load("/order/purchasedTicket");
+                },
+                    error: function(data) {
+                        console.log(data);
+                        alert("실패");
+                    }
+            });
+            /*$('#content').load('/order/purchasedTicket);*/
         } else {
             alert("오류가 발생했습니다. 다시 시도해주세요.");
         }
@@ -33,6 +50,6 @@ IMP.init("imp84346376"); // 예: imp00000000
 /*$('#btnTicket').on('click', function(){
             $('#content').load('/order/purchasedTicket');
 })*/
-$('#btnTicket').on('click', function(){
+/*$('#btnTicket').on('click', function(){
     $('#content').load('/order/purchasedTicket');
-})
+})*/

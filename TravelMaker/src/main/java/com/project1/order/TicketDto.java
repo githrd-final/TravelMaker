@@ -16,5 +16,4 @@ public class TicketDto {
     String ticketEndTime;
     String ticketSeat;
     int ticketStatus;
-
 }

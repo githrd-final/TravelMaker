@@ -10,7 +10,7 @@
 <link rel='stylesheet' href='./css/purchaseCheck.css'/>
 <script defer src='./js/purchaseCheck.js'></script>
  <!-- jQuery -->
-  <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
  <!-- iamport.payment.js -->
   <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
 <title>상세보기</title>
@@ -22,11 +22,16 @@
 
 <div class = 'one'>
 <div id = 'two' style = "background-image: url('/images/${orderDto.region}.jpeg')"></div>
-<input type="text" id="email" value="${orderDto.email}" hidden>
-<input type="text" id="startDate" value="${orderDto.startDate}" hidden>
-<input type="text" id="endDate" value="${orderDto.endDate}" hidden>
-
-<!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
+<form action = 'purchaseCheck' method = 'post' id="frm" hidden>
+	<input type="text" name="email" id="email" value="${orderDto.email}" style="display:none">
+	<input type="text" name="region" id="region" value="${orderDto.region}" style="display:none">
+	<input type="text" name="people" id="people" value="${orderDto.people}" style="display:none">
+	<input type="text" name="startDate" value="${orderDto.startDate}" style="display:none">
+	<input type="text" name="endDate" value="${orderDto.endDate}" style="display:none">
+	<input type="text" name="startDateTime" value="${orderDto.startDateTime}" style="display:none">
+	<input type="text" name="endDateTime" value="${orderDto.endDateTime}" style="display:none">
+</form>
+	<!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
 <div id = 'three'>
 	<div>
 		<label>선택지역 : </label>
