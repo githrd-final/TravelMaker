@@ -120,7 +120,11 @@ public class PlannerController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+	}
+	
+	@RequestMapping("/planner/bucketInsert")
+	public void bucketInsert(BucketVo bucketVo) {
+		bucketService.bucketToPlanInsert(bucketVo);
 	}
 	
 	// -------------- plan 부분 ------------------ //
@@ -224,6 +228,10 @@ public class PlannerController {
 		
 		if(planVo.planDate.equals(planVo.prePlanDate) && planVo.planOrder == planVo.prePlanOrder) {
 			msg = "수정할 값을 입력해주세요~";
+			return msg;
+		}
+		if(planVo.planOrder <= 0 ) {
+			msg = "1이상의 값을 입력해주세요~";
 			return msg;
 		}
 		
