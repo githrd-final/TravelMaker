@@ -29,7 +29,7 @@
 				<div class="modalBody" id="plannerDateModalBody">
 					<span>일정을 추가할 날을 입력하세요.</span></br>
 					<span>
-						<select>
+						<select id="planInsertDate">
 							<option	value="1일자">1일차</option>
 							<option value="2일자">2일차</option>
 							<option value="3일자">3일차</option>
@@ -37,7 +37,7 @@
 					</span>
 				</div>
 				<div class="modalFooter">
-					<input type="button" value="입력"/>
+					<input type="button" value="입력" id="btnPlanInsert"/>
 				</div>
 			</div>	
 			<div class="plannerModal" id="plannerModifyModal" style="display:none">
@@ -75,12 +75,16 @@
 					<span class="modalXicon"><i class="fa-solid fa-xmark fa-2xl" ></i></span>
 				</div>
 				<div class="modalBody" id="plannerMemoModalBody">
-					<span>
-						<textarea placeholder="메모를 작성해주세요."></textarea>
-					</span>
+					<form id="planMemoFrm">
+						<span>
+							<textarea placeholder="메모를 작성해주세요." name="planNote" id="memoText"></textarea>
+						</span>
+						<input type="hidden" name ="planbucketSerial"/>
+					</form>
 				</div>
 				<div class="modalFooter">
-					<input type="button" value="입력"/>
+					<input type="button" value="입력" id="btnUpdateMemo"/>
+					<input type="hidden" value="초기화" id="btnResetMemo"/>
 				</div>
 			</div>	
 			<div id="MapZone">
@@ -88,10 +92,16 @@
 			</div>
 			<div id="planBucketListZone">
 				<div id="planBucketListMenu">
-					<div class="planBucketMenuItem" id="BucketMenuActive">전체</div>
-					<div class="planBucketMenuItem">숙박</div>
-					<div class="planBucketMenuItem">관광지</div>
-					<div class="planBucketMenuItem">맛집</div>
+					<div class="planBucketMenuItemAll" id="BucketMenuActive">전체</div>
+					<div class="planBucketMenuItem">
+						<input type="hidden" value="32"/>숙박
+					</div>
+					<div class="planBucketMenuItem">
+						<input type="hidden" value="12"/>관광지
+					</div>
+					<div class="planBucketMenuItem">
+						<input type="hidden" value="39"/>맛집
+					</div>
 				</div>
 				<div id="planBucketList">
 				
@@ -116,22 +126,23 @@
 	</div>
 	<script>
 		
-		var planListItemFrm = null;
-		var currentModal = null;
+		var planInsertFrm = null;   // customView일정입력폼
+		var planListItemFrm = null; // 일정리스트아이템폼
+		var planMemoFrm = null;     // 메모모달폼
+		var btnWriteMemo = null;    // 선택된 아이템의 메모작성버튼
+		var btnShowMemo = null;     // 선택된 아이템의 메모보기버튼
+		
+		var currentModal = null; // 현재 보여지고 있는 모달
 		var plannerDateModal = document.querySelector('#plannerDateModal');
 		var plannerModifyModal = document.querySelector('#plannerModifyModal');
 		var plannerMemoModal = document.querySelector('#plannerMemoModal');
 		var modalWrap = document.querySelector('#modal-wrap');
 		
-		function openDateModal(){
+		function openDateModal(Frm){
+			planInsertFrm = Frm;
 			modalWrap.style.display = 'block';
 			plannerDateModal.style.display = 'block';
 			currentModal = plannerDateModal;
-		}
-		
-		function closeModal(){
-			modalWrap.style.display = 'none';
-			currentModal.style.display = 'none';
 		}
 		
 		function openModifyModal(node){
@@ -141,7 +152,6 @@
 			var planOrder = planListItemFrm.planOrder.value;
 			var planDate = planListItemFrm.planDate.value;
 			var planbucketSerial = planListItemFrm.planbucketSerial.value;
-
 			planModifyFrm.planOrder.value = planOrder;
 			planModifyFrm.prePlanOrder.value = planOrder;
 			planModifyFrm.prePlanDate.value = planDate;
@@ -155,10 +165,23 @@
 			
 		}
 		
-		function openMemoModal(){
+		function openMemoModal(planbucketSerial){
+ 			$('#memoText').val("");
+			
+			btnWriteMemo = document.getElementById('writeMemo'+ planbucketSerial);
+			btnShowMemo = document.getElementById('showMemo'+ planbucketSerial);
+			
+			planMemoFrm = document.querySelector('#planMemoFrm');
+			planMemoFrm.planbucketSerial.value = planbucketSerial;
+			
 			modalWrap.style.display = 'block';
 			plannerMemoModal.style.display = 'block';
 			currentModal = plannerMemoModal;
+		}
+		
+		function closeModal(){
+			modalWrap.style.display = 'none';
+			currentModal.style.display = 'none';
 		}
 		
 		$('.modalXicon').on('click',function(){

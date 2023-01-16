@@ -10,11 +10,11 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 <body>
-	<c:forEach begin="1" end="15">
-		<div class="planBucketItem">
-			<span class="planBucketItemTitle">가나돈까스</span>
-			<span class="planBucketItemType">맛집</span><br/>
-			<span class="planBucketItemAddr">합정역 8번출구</span>
+	<c:forEach var="bucketVo" items="${list}">
+		<div class="planBucketItem" onclick="customView('${bucketVo.mapX}','${bucketVo.mapY}')">
+			<span class="planBucketItemTitle">${bucketVo.locationName}</span>
+			<span class="planBucketItemType">${bucketVo.contenttypeId}</span><br/>
+			<span class="planBucketItemAddr">${bucketVo.addr}</span>
 			<span class="planBucketItemIcon"><i class="fa-solid fa-xmark fa-2xl" id="planBucketXicon"></i></span>
 		</div>
 	</c:forEach>
