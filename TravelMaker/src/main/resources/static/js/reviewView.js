@@ -51,15 +51,15 @@
 	
 	/* 리뷰 삭제 */
 	$('#rv_content_crud_delete').on('click',function(){
-		/*if(!confirm("정말 삭제하시겠습니까?")){
-			return;
-		}else{
+		if(confirm("정말 삭제하시겠습니까?")==true){
 			var frm = $('.rv_form')[0];
 			var param = $(frm).serialize();
 			$.post("/review/reviewDelete", param, function(data){
-				$('#content').html(data); 
+				$("#content").load("/myTour/myTourSelect", data); 
 			});
-		}*/
+		}else{
+			return;
+		}
 	});
 	
 	/**목록으로 가기  */

@@ -40,7 +40,85 @@ $(document).ready(function() {
 		focus : true, // set focus to editable area after initializing summernote
 		lang: "ko-KR",
 		fontNames : fonts,
-		placeholder: '글 내용을 입력해주세요.'
-			
+		placeholder: '글 내용을 입력해주세요.',
+		
+		callbacks : {
+				onMediaDelete : function(target) {
+					deleteFile(target[0].src);
+				},
+		
+				onImageUpload : function(files, editor, welEditable) {
+		
+					loadInterval.length = files.length;
+					$('#summer').addClass('spinner');//spinner
+					
+					for (var i = files.length - 1; i >= 0; i--) {
+						sendFile(i, files[i], this);
+					}
+				}
+			}	
 	});
+	
+	function sendFile(intervalPos, file, el) {
+	var form_data = new FormData();
+	form_data.append('file', file);
+	$.ajax({
+		data : form_data,
+		type : "POST",
+		url : '/MyTour/MyTourReviewInsert',
+		enctype : 'multipart/form-data',
+		cache : false,
+		contentType : false,
+		processData : false,
+		success : function(img_name) {
+			
+			loadInterval[intervalPos] = setInterval(loadCheck.bind(null, intervalPos, img_name), 1500);
+			
+			
+			
+			/*
+			setTimeout(function(){
+				console.log("loading....2")
+				$('#summernote').summernote('editor.insertImage', img_name);
+			}, 43000)
+			*/
+							
+			
+					
+			}
+		});
+	}
+	
+			function loadCheck(intervalPos, img) {	//spinner(로딩 체크)
+			try{
+				var t = new Image();
+				t.src = img;
+				t.onload = function(){
+					clearInterval(loadInterval[intervalPos]);
+					$('#summernote').summernote('editor.insertImage', img);
+					$('#summer').removeClass('spinner'); //spinner 제거
+				}
+			}catch(err){
+				console.log(err);
+			}finally{
+				
+			}
+
+		}
+
+		function deleteFile(target) {
+			console.table("target:" + target)
+			$.ajax({
+				data : {
+					target : target
+				},
+				type : "POST",
+				url : '', // replace with your url
+				cache : false,
+				success : function(resp) {
+					console.log(resp);
+				}
+			});
+		}
+
 })

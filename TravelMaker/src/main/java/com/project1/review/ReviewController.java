@@ -11,11 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.project1.myTour.MyTourPageVo;
+
 @RestController
 public class ReviewController {
 	
 	@Autowired
 	ReviewService service;
+	
 	@RequestMapping("/review/reviewSelect")
 	public ModelAndView reviewSelect(ReviewPageVo pVo) {
 		ModelAndView mv = new ModelAndView();
@@ -34,7 +37,7 @@ public class ReviewController {
 	@RequestMapping("/review/reviewView")
 	public ModelAndView reviewView(ReviewVo rVo, ReviewPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
-		session.setAttribute("email", "abc@naver.com");
+		session.setAttribute("email", "happilyah@naver.com");
 		String userEmail = (String)session.getAttribute("email");
 		pVo.setChkUserLike(service.chkUserLike(userEmail, rVo.getReviewSerial()));
 		System.out.println("rs : " +rVo.getReviewSerial());
@@ -96,28 +99,25 @@ public class ReviewController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		mv.addObject("rVo", rVo);
-		mv.addObject("pVo", pVo);
-		mv.setViewName("review/reviewView");
+		mv.setViewName("/review/reviewView");
 		return mv;
 		
 	}
 	
 	@RequestMapping("/review/reviewDelete")
-	public void reviewDelete(ReviewVo rVo, HttpServletResponse resp) {
+	public MyTourPageVo reviewDelete(ReviewVo rVo, HttpServletResponse resp) {
+		resp.setCharacterEncoding("UTF-8");
+		resp.setContentType("text/html;charset=utf-8");
+		ModelAndView mv = new ModelAndView();
+		MyTourPageVo pVo = new MyTourPageVo();
 		boolean b = service.delete(rVo);
 		service.myReviewUpdate(rVo.getPurchaseSerial());
 		System.out.println("삭제 컨트롤러 실행! 구고번호:"+rVo.getPurchaseSerial());
-		try {
-			PrintWriter out = resp.getWriter();
-			if(!b) {
-				out.print("<script>");
-				out.print("   alert('삭제 중 오류 발생')");
-				out.print("</script>");
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		
+		return pVo;
+		
 	}
 	
 	@RequestMapping("/review/reviewThumbsUp")

@@ -75,6 +75,9 @@
 	<delete id="delete" parameterType="com.project1.review.ReviewVo">
 		delete from review where reviewSerial=#{reviewSerial}
 	</delete>
+	<delete id='myReviewLikeDelete' parameterType="com.project1.review.ReviewVo">
+		delete from reviewlike where reviewSerial=#{reviewSerial}
+	</delete>
 	<update id="myReviewUpdate" parameterType="String">
 		update purchase set myReview=0 where purchaseSerial=#{_parameter}; 
 	</update>
