@@ -11,16 +11,16 @@
 <body>
 	<c:forEach var = 'vo' items='${list}'>
 		<div class="planItem">
-			<div class='planItemDataZone' onclick="openModifyModal(this)">
+			<div class='planItemDataZone' onclick="openModifyModal(${vo.planOrder},${vo.locationName},${vo.planDate},${vo.planbucketSerial})">
 				<form>
 					<span class="planItemOrder">
-						<input type="hidden" name="planOrder" value="${vo.planOrder}"/>${vo.planOrder}
+						<input type="hidden" name="planOrder" value="${vo.planOrder}"/>
 					</span>
 					<span class="planItemName">${vo.locationName}</span>
 					<span class="planItemDate">
-						<input type="hidden" name="planDate" value="${vo.planDate}"/>${vo.planDate}
+						<input type="hidden" name="planDate" value="${vo.planDate}"/>
 					</span>
-					<input type="hidden" name="planbucketSerial" value="${vo.planbucketSerial}"/>
+<%-- 					<input type="hidden" name="planbucketSerial" value="${vo.planbucketSerial}"/> --%>
 					<input type="hidden" name="purchaseSerial" value="1234"/>
 				</form>
 			</div>

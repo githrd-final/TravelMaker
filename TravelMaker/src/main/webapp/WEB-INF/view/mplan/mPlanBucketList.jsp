@@ -28,7 +28,7 @@
 				<div class="bucketbtn">
 					<div></div>
 					<div>
-						<input type="image" src="img/plus.png" class="bucketToPlan" value='{"locationName":"${vo.locationName}", "planbucketSerial":"${vo.planbucketSerial}","purchaseSerial":"${vo.purchaseSerial }", "mapX":"${vo.mapX }", "mapY":"${vo.mapY }"}'/>
+						<input type="image" src="img/plus.png" class="bucketToPlan" value='{"locationName":"${vo.locationName}", "planbucketSerial":"${vo.planbucketSerial}","purchaseSerial":"${vo.purchaseSerial }","contenttypeId":"${vo.contenttypeId }", "mapX":"${vo.mapX }", "mapY":"${vo.mapY }"}'/>
 						<input type="image" src="img/minus.png" class="bucketThrow" style='cursor:hand;'value='{"planbucketSerial":"${vo.planbucketSerial}","purchaseSerial":"${vo.purchaseSerial }"}'/>
 					</div>
 					<div>	
@@ -44,7 +44,7 @@
 		var jsoninsertplan =  JSON.parse(this.value);
 		console.log(jsoninsertplan);
  		$('#modalLocationName').text(jsoninsertplan["locationName"]);
- 		
+ 		$('#modalInputContenttypeId').attr('value',jsoninsertplan["contenttypeId"]);
 		$('#modalInputpurchaseSerial').attr('value',jsoninsertplan["purchaseSerial"]);
  		$('#modalInputLocationName').attr('value',jsoninsertplan["locationName"]);
  		$('#modalInputplanbucketSerial').attr('value',jsoninsertplan["planbucketSerial"]);
@@ -55,7 +55,7 @@
 	
 	$('.bucketThrow').on('click', function(){
 		//window.alert("삭제하시겠습니까?");
-		 if(confirm("정말 등록하시겠습니까 ?") == true){
+		 if(confirm("정말 삭제하시겠습니까 ?") == true){
 			var jsoninsertplan =  JSON.parse(this.value);
 			console.log(jsoninsertplan);
 			$.post('/mplan/mPlanBucketDelete', jsoninsertplan, function(){

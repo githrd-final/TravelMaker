@@ -3,6 +3,7 @@
  */
 var purchaseSerial = "purchaseSerial="+$('#purchaseSerial')[0].value;
 var totalTravelDay = $('#totalTravelDay')[0].value;
+var pSerial = $('#purchaseSerial')[0].value;
 
 $.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
             $('.mList').html(data);
@@ -103,6 +104,8 @@ $( document ).ready(function() {
 		    map.panTo(moveLatLon);   
 		}
 		
+		
+		
 		// 일정버튼 클릭, 커스텀 출력 및 지도 범위 설정
 		PlanClicked= function(){
 			polyline=null;
@@ -140,6 +143,8 @@ $( document ).ready(function() {
 	$('#mPlanSerial').value = "0"
 })
 
+		
+		
 	var bucketFilterBtnClicked = function(filterbtn){
 		var filterSerial;
 		if(filterbtn.value=="숙소"){
@@ -203,7 +208,9 @@ $( document ).ready(function() {
 	$('#mPlanList').on('click', function(){
 		$('#mPlanList').attr("class","clickbtn");
 		$('#mPlanBucketList').attr("class","nonclickbtn");
-		$('.mList').load('/mplan/mPlanList');	/* 메인화면 들어가자마자 바로 뿌려주게*/ 
+		$.post("/mplan/mPlanList", purchaseSerial, function(data){
+            $('.mList').html(data);
+ 		}) 
 	})
 	
 	$('#goReview').on('click',function(){
@@ -225,7 +232,10 @@ $( document ).ready(function() {
 		var frm = $('.frm_bucketToPlanInsert')[0];
 		var param = $(frm).serialize();
 		$('#BucketModal').css('display', 'none');
-		$.post('/mplan/mBucketToPlan', param, function(){ 
+		$.post('/mplan/mBucketToPlan', param, function(data){ 
+			if(data!=""){
+			alert(data);
+			}
 		});
 		$.ajax({
 			type:'post',
@@ -241,8 +251,43 @@ $( document ).ready(function() {
 			}
 		})
 	})
-		
+
+	$('#btnPlanModalAdd').on('click', function(){
+		var frm = $('.frm_PlanUpdate')[0];
+		var param = $(frm).serialize();
+		$('#modal2').css('display', 'none');
+		$.post('/mplan/planUpdate', param, function(){
+			$('.mList').load('/mplan/mPlanList', purchaseSerial); 
+		});
+	})
 	
+	$('#btnPlanModalSubtract').on('click', function(){
+		var frm = $('.frm_PlanUpdate')[0];
+		var param = $(frm).serialize();
+		$('#modal2').css('display', 'none');
+		$.post('/mplan/planDelete', param, function(){ 
+			$('.mList').load('/mplan/mPlanList', purchaseSerial);
+		});
+	})	
+	
+	$('#btnCheck3').on('click', function(){
+		var frm = $('.frm_PlanMemoUpdate')[0];
+		var param = $(frm).serialize();
+		$('#modal3').css('display', 'none');
+		$.post('/mplan/memoUpdate', param, function(){ 
+			$('.mList').load('/mplan/mPlanList', purchaseSerial);
+			this.memoTag.src="img/memo.png";
+		});
+	})	
+	
+	var planFilterBtnClicked = function(filterbtn){
+		var filterSerial=filterbtn.value;
+		
+		var param="planDate="+filterSerial+"&"+purchaseSerial;
+		$.post("/mplan/mPlanFilterList", param, function(data){
+            $('.mList').html(data);
+ 		}) 
+	}
 	
 	var memo=1;
 	//modal update
@@ -255,11 +300,21 @@ $( document ).ready(function() {
 		$('#modal2').css('display', 'none');
 	})	
 		
-	modalView2 = function(frm){
+	modalView2 = function(th){
 		if(memo==1){
-			$('#modal2').css('display', 'block');	
+			$('#UpdateModallocationItem').val(th.querySelector('#planListLocationName').value);
+			$('.UpdatePlanOrder').val(th.querySelector('#planListPlanOrder').value);
+			$('.UpdatePlanDate option[value='+th.querySelector('#planListPlanDate').value+']').prop('selected', true);
+			$('#UpdatePurchaseSerial').val(pSerial);
+			$('#UpdatePrePlanDate').val(th.querySelector('#planListPlanDate').value);
+			$('#UpdatePrePlanOrder').val(th.querySelector('#planListPlanOrder').value);
+			$('#UpdatePlanbucketSerial').val(th.querySelector('#planListPlanbucketSerial').value);
+			
+		
+			$('#modal2').css('display', 'block');
 		}
 	}
+	
 	
 	
 	//modal memo
@@ -278,7 +333,12 @@ $( document ).ready(function() {
 	modalView3 = function(memoTag){
 		memo=0;
 		this.memoTag = memoTag;
+		$('.MemoArea').val(memoTag.value);
 		$('#modal3').css('display', 'block');	
+	}
+
+	memoUpdate= function(planbucketSerial){
+		$('#MemoUpdatePlanbucketSerial').val(planbucketSerial);
 	}
 	
 	memoInsert = function(){

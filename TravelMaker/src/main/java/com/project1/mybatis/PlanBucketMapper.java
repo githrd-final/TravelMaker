@@ -13,6 +13,10 @@ import com.project1.planner.BucketVo;
 public interface PlanBucketMapper {
 	//처음 로드시 날짜 출력
 	public int TravelDay(String purchaseSerial);
+	
+	//plan에 insert할때 plan갯수 버킷리스트
+	public int InsertCountPlan(String planbucketSerial);
+	
 	//구매고유번호로 출력할 버킷리스트
 	public List<BucketVo> bucketSelect(String purchaseSerial);
 	

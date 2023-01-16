@@ -75,7 +75,7 @@
 	z-index: 100;
 }
 
-#BucketModal form #content1, #modal2>#content2{
+#BucketModal form #content1, #modal2 .frm_PlanUpdate #content2{
 	width: 70vw;
 	min-height:20vh;	
 	border-radius:10px;
@@ -86,7 +86,7 @@
 	text-align:center;
 	background-color: #fff;
 }
-#modal3>#content3{
+#modal3 .frm_PlanMemoUpdate #content3{
 	width: 80vw;
 	min-height:15vh;	
 	border-radius:10px;
@@ -97,7 +97,7 @@
 	text-align:center;
 	background-color: #fff;
 }
-#BucketModal form #content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
+#BucketModal form #content1 #btnClose, #modal2 .frm_PlanUpdate #content2 #btnClose2, #modal3 .frm_PlanMemoUpdate #content3 #btnClose3{
 	position: absolute;
 	font-size:1.5rem;
 	margin-right:1vh;
@@ -119,6 +119,11 @@
 	font-size:1rem;
 }
 
+#modal2 .locationName{
+	border:none;
+	width: fit-content;
+}
+
 #modal2 .UpdatePlanSerial{
 	width:3vw;
 	font-size:1rem;
@@ -135,13 +140,13 @@
 	margin-top:20px;
 	margin-bottom:15px;
 }
-#BucketModal form #content1 select, #modal2>#content2 select{
+#BucketModal form #content1 select, #modal2 .frm_PlanUpdate #content2 select{
 	margin-top:5%;
 	width: fit-content;
 	font-size:1rem;
 	margin-bottom:10%;	
 }
-#BucketModal form #content1 #btnBucketModalAdd, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
+#BucketModal form #content1 #btnBucketModalAdd, #modal3 .frm_PlanMemoUpdate #content3 #btnCheck3{
 	width: 50vw;
 	font-size:1rem;
 	margin-top:2vh;
@@ -152,6 +157,17 @@
 	margin-bottom:1vh;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 		
+}
+#modal2 .frm_PlanUpdate #btnPlanModalAdd, #modal2 .frm_PlanUpdate #btnPlanModalSubtract{
+	width: 25vw;
+	font-size:1rem;
+	margin-top:2vh;
+	padding:2%;
+	background-color:tomato;
+	color:white;
+	border:none;
+	margin-bottom:1vh;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
@@ -260,8 +276,10 @@
 	.planFilter{
 		display:inline-block;
 		color:gray;
+		background-color:white;
 		margin-right: 10vw;
 		font-size:0.5rem;
+		border:none;
 	}
 	.planDays{
 		background-color:rgba(255, 99, 71, 0.5);
