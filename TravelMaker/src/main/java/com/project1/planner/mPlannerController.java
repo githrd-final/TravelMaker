@@ -119,10 +119,10 @@ public class mPlannerController {
 	}
 	
 	@RequestMapping("/mplan/mBucketToPlan")
-	public void mBucketToPlanList(BucketVo bVo) {
-		
-		service.bucketToPlanInsert(bVo);
+	public String mBucketToPlanList(BucketVo bVo) {
+		String msg = service.bucketToPlanInsert(bVo);
 		mPlanBucketListSelect(bVo.getPurchaseSerial());
+		return msg;
 	}
 	
 	

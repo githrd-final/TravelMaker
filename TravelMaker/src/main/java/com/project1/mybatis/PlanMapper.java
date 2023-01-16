@@ -28,11 +28,13 @@ public interface PlanMapper {
 	// 수정하기 이전의 일자의 데이터 행 개수
 	public int countPreDate(PlanVo planVo);
 	// 수정하는 날의 마지막순번으로 업데이트
-	public int updateCheck(PlanVo planVo);
-	// 다른일자로 변경될때 같은일자의 순번변경
-	public int updateSameDate(PlanVo planVo);
-	// 수정된 일자의 순번들변경
-	public int updateOrder(PlanVo planVo);
+	public int updateToLastOrder(PlanVo planVo);
+	// 다른일자로 변경될때 그전일자의 순번변경
+	public int updatePreDateOrder(PlanVo planVo);
+	// 같은일자로 변경될때 순번변경
+	public int updateSameDayOrder(PlanVo planVo);
+	// 다른일자로 변경될때 순번변경
+	public int updateDiffDayOrder(PlanVo planVo);
 	// 일정 수정
 	public int updatePlan(PlanVo planVo);
 	

@@ -38,16 +38,22 @@ public class PlanBucketService {
 		List<BucketVo> list = pbmapper.bucketDetailSelect(bVo);
 		return list;
 	}
-	public void bucketToPlanInsert(BucketVo bVo){
+	public String bucketToPlanInsert(BucketVo bVo){
 		status = manager.getTransaction(new DefaultTransactionDefinition());
+		String msg="";
 		Object savePoint = status.createSavepoint();
-		
-		int cnt = pbmapper.bucketToPlanInsert(bVo);
-		if(cnt>0) {
-			manager.commit(status);
+		int count = pbmapper.InsertCountPlan(bVo.getPlanbucketSerial());
+		if(count==0) {
+			int cnt = pbmapper.bucketToPlanInsert(bVo);
+			if(cnt>0) {
+				manager.commit(status);
+			}else {
+				status.rollbackToSavepoint(savePoint);
+			}
 		}else {
-			status.rollbackToSavepoint(savePoint);
+			msg="이미 일정리스트에 존재하는 일정입니다.";
 		}
+		return msg;
 	}
 	
 	public void planBucketDelete(BucketVo bVo) {

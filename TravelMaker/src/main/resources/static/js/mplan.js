@@ -232,7 +232,10 @@ $( document ).ready(function() {
 		var frm = $('.frm_bucketToPlanInsert')[0];
 		var param = $(frm).serialize();
 		$('#BucketModal').css('display', 'none');
-		$.post('/mplan/mBucketToPlan', param, function(){ 
+		$.post('/mplan/mBucketToPlan', param, function(data){ 
+			if(data!=""){
+			alert(data);
+			}
 		});
 		$.ajax({
 			type:'post',
