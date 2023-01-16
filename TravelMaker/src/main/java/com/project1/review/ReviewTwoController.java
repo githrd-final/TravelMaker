@@ -37,6 +37,9 @@ public class ReviewTwoController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		rVo = service.getrVo();
+		
+		System.out.println("rVo.serial: " + rVo.getReviewSerial());
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
 		mv.setViewName("review/reviewView");

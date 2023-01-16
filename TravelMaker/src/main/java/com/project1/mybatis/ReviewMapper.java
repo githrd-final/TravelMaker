@@ -37,6 +37,7 @@ public interface ReviewMapper {
 	
 	//delete
 	public int delete(ReviewVo rVo);
+	public int myReviewLikeDelete(ReviewVo rVo);
 	public void myReviewUpdate(String purchaseSerial);
 
 	public int thumbsUp(@Param("reviewSerial") int reviewSerial, @Param("userEmail") String userEmail);

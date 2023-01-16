@@ -234,6 +234,7 @@
 	review.view = function(reviewSerial){
 		frm = $('#rs_header')[0];
 		frm.reviewSerial.value = reviewSerial;
+		console.log('리뷰시리얼: ', reviewSerial);
 		param = $(frm).serialize();
 		$.post("/review/reviewView", param, function(data){
 			$('#content').html(data);

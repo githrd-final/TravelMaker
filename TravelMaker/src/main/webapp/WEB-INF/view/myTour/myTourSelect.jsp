@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
@@ -10,6 +11,9 @@
 <link rel='stylesheet' media='screen and (max-width : 450px)' href='../css/mobileMyTourSelect.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
 <script defer src='../js/myTourSelect.js'></script>
+<%
+	LocalDate now = LocalDate.now();
+%>
 </head>
 <body>
 <main id='myTourSelectMain'>
@@ -55,7 +59,7 @@
 						</c:when>
 						<c:otherwise>
 							<input type='button' class="btnReview1" value='후기작성' onclick="myTour.insert('${vo.purchaseSerial}')"/>
-						</c:otherwise>				
+						</c:otherwise>			
 					</c:choose>
 				</div> <!-- end item-left -->
 			</div> <!-- end item -->

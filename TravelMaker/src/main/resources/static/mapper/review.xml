@@ -6,7 +6,7 @@
 	</select>
 	
 	<select id='select' parameterType='com.project1.review.ReviewPageVo' resultType='com.project1.review.ReviewVo'>
-		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, p.sysPhoto from review r join reviewphoto p on r.reviewSerial = p.reviewSerial 
+		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp from review r
 		where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%') 
 			
 			<if test='order==null'>
@@ -74,6 +74,9 @@
 	
 	<delete id="delete" parameterType="com.project1.review.ReviewVo">
 		delete from review where reviewSerial=#{reviewSerial}
+	</delete>
+	<delete id='myReviewLikeDelete' parameterType="com.project1.review.ReviewVo">
+		delete from reviewlike where reviewSerial=#{reviewSerial}
 	</delete>
 	<update id="myReviewUpdate" parameterType="String">
 		update purchase set myReview=0 where purchaseSerial=#{_parameter}; 

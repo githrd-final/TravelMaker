@@ -20,9 +20,9 @@ public class MyTourController {
 		ModelAndView mv = new ModelAndView();
 		List<MyTourVo> list = service.select(pVo);
 		pVo = service.getpVo();
-		
 		mv.addObject("list", list);
 		mv.addObject("pVo", pVo);
+		System.out.println("삭제후 실행 완료");
 		mv.setViewName("myTour/myTourSelect");
 		return mv;
 	} 

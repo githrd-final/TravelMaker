@@ -12,6 +12,7 @@ import com.project1.mybatis.ReviewTwoMapper;
 @Service
 @Transactional
 public class ReviewTwoService {
+	ReviewVo rVo;
 	
 	@Autowired
 	ReviewTwoMapper mapper;
@@ -30,6 +31,7 @@ public class ReviewTwoService {
 		if(cnt>0) {
 			b = true;
 			manager.commit(status);
+			rVo = mapper.myReviewView(vo.getPurchaseSerial());
 		}else {
 			status.rollbackToSavepoint(savePoint);
 		}
@@ -39,4 +41,9 @@ public class ReviewTwoService {
 	public void myReviewUpdate(String purchaseSerial) {
 		mapper.myReviewUpdate(purchaseSerial);
 	}
+
+	public ReviewVo getrVo() {
+		return rVo;
+	}
+	
 }

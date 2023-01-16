@@ -98,15 +98,34 @@ public class ReviewService {
 	}
 	
 	public boolean delete(ReviewVo rVo) {
+		status = manager.getTransaction(new DefaultTransactionDefinition());
+		savePoint = status.createSavepoint();
 		boolean b = false;
-		int cnt = mapper.delete(rVo);
-		if(cnt>0) {
-			b = true;
-			manager.commit(status);
-			System.out.println("커밋완료!");
+		
+		int flag = rVo.getThumbsUp();
+		System.out.println("좋아요수 : "+rVo.getThumbsUp());
+		if(flag>=1) {
+			int cnt1 = mapper.myReviewLikeDelete(rVo);
+			int cnt2 = mapper.delete(rVo);
+			if(cnt1>0 && cnt2>0) {
+				b = true;
+				manager.commit(status);
+				System.out.println("커밋완료!");
+			}else {
+				status.rollbackToSavepoint(savePoint);
+				System.out.println("롤백됨");
+			}
 		}else {
-			status.rollbackToSavepoint(savePoint);
-			System.out.println("롤백됨");
+			
+			int cnt = mapper.delete(rVo);
+			if(cnt>0) {
+				b = true;
+				manager.commit(status);
+				System.out.println("커밋완료!");
+			}else {
+				status.rollbackToSavepoint(savePoint);
+				System.out.println("롤백됨");
+			}
 		}
 		return b;
 	}
