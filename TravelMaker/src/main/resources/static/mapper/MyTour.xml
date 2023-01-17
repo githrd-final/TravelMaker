@@ -64,7 +64,7 @@
 		end as city
 		from purchase p left join review r
 		on p.purchaseSerial=r.purchaseSerial
-		WHERE p.email=#{email} and substring(p.purchaseSerial,10,1)="0"
+		WHERE p.email=#{email}
 		order by p.myReview asc, p.startDate desc
 		limit #{startNo}, #{listSize}
 	</select>
@@ -141,7 +141,7 @@
     </select>
     <select id='nickName' parameterType='String' resultType='String'>
     	select u.nickName from user u join purchase p 
-    	on u.email=SUBSTRING(#{_parameter},21) 
+    	on u.email=#{_parameter}
     	group by u.email;
     </select>
 </mapper>

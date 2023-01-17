@@ -2,6 +2,8 @@ package com.project1.myTour;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +16,9 @@ public class MyTourController {
 	MyTourService service;
 	
 	@RequestMapping("/myTour/myTourSelect")
-	public ModelAndView myTourSelect(MyTourPageVo pVo) {
+	public ModelAndView myTourSelect(MyTourPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
+		pVo.setEmail((String)session.getAttribute("email"));
 		List<MyTourVo> list = service.select(pVo);
 		pVo = service.getpVo();
 		mv.addObject("list", list);
@@ -26,10 +29,12 @@ public class MyTourController {
 	} 
 	
 	@RequestMapping("/myTour/myTourInsert")
-	public ModelAndView myTourInsert(MyTourVo vo) {
+	public ModelAndView myTourInsert(MyTourVo vo, MyTourPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println(vo);
-		vo = service.insertView(vo.getPurchaseSerial());
+		pVo = new MyTourPageVo();
+		pVo.setEmail((String)session.getAttribute("email"));
+		vo = service.insertView(vo.getPurchaseSerial(), pVo.email);
 		List<MyTourReviewVo> list = service.getList();
 		int datePlan = Integer.parseInt(service.getDatePlan());
 		String nickName = service.getNickName();
