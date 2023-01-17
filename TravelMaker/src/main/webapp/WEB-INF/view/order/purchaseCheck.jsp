@@ -65,7 +65,6 @@
 	
 	<div id='btnZone'>
 		<button type='submit' id='btnBuy' onclick="requestPay()" >결제하기</button>
-		<li><button type='submit' id='btnTicket'>구매내역</button></li>
 	</div>
 	
 </div>
