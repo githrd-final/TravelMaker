@@ -14,7 +14,7 @@ public class PurchaseCheckController {
 	@Autowired
 	OrderService service;
 
-	@RequestMapping("/order/purchaseCheck")
+	//@RequestMapping("/order/purchaseCheck")
 	public ModelAndView select() {
 		ModelAndView mv = new ModelAndView();
 
