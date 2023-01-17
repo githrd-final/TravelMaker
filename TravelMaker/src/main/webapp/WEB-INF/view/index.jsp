@@ -21,8 +21,7 @@
 </head>
 <body>
 <header id='IndexHeader'>
-<<<<<<< HEAD
-<h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>	
+<h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>
 <div id='menu'>
 	<ul class='indexUl'>
 		<li><a href="#" class='indexMyPage'>마이페이지</a>
@@ -51,25 +50,6 @@
 		<%} %>
 	</ul>
 </div>
-=======
-	<h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>	
-	<div id='menu'>
-		<ul class='indexUl'>
-			<li><a href="#" class='indexMyPage'>마이페이지</a>
-				<ul id='block' class='indexUl'>
-					<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTour'>내여행</a></li>
-					<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfo'>기본정보</a></li>
-				</ul>
-			</li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnReviewBoard'>후기게시판</a></li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnCompanyInfo'>회사소개</a></li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnFAQ'>FAQ</a></li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogin'>로그인</a>
-	
-		</ul>		
-	
-	</div>
->>>>>>> main
 </header>
 <div id='empty'></div>
 <div id='content'>

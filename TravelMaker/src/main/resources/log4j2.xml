@@ -22,11 +22,7 @@
         <Logger name="com.project1.member" level="info">
             <AppenderRef ref="FileLog" />
         </Logger>
-<<<<<<< HEAD
         <Root level="info">
-=======
-        <Root level="error">
->>>>>>> main
             <AppenderRef ref="ConsoleLog" />
             <AppenderRef ref="FileLog" />
         </Root>
