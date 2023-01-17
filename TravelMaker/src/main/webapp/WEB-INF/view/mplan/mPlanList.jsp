@@ -24,7 +24,7 @@
 			<div class="planDay" id="${vo.planDate }">${vo.planDate }</div> 
 		</div>	
 	</c:if>
-		<div class='Planitem' onclick='modalView2(this);' >
+		<div class='Planitem' onclick='modalView2(this); ListClicked(${vo.mapX}, ${vo.mapY });' >
 			<div class="planSerial">${vo.planOrder }</div>
 				<div class="planInfo">
 					<div class="planTitle">${vo.locationName }</div>
@@ -44,6 +44,8 @@
 					<input type="hidden" value="${vo.planDate }" name="planDate" id="planListPlanDate">
 					<input type="hidden" value="${vo.planOrder }" name="planOrder" id="planListPlanOrder">
 					<input type="hidden" value="${vo.purchaseSerial }" name="purchaseSerial" id="planListPurchaseSerial">
+					<input type="hidden" value="${vo.mapX }" name="mapX" id="planListMapX">
+					<input type="hidden" value="${vo.mapY }" name="mapY" id="planListMapY">
 					
 										
 					
@@ -56,22 +58,24 @@
 		$.post("/mplan/mPlanList", purchaseSerial, function(data){
             $('.mList').html(data);
  		}) 
+
+		$.ajax({
+				type : 'post',
+				url : '/mplan/planJson',
+				data : purchaseSerial,
+				dataType: 'json',
+				async : false,
+				success : function(data){
+					setPlanPositions(data);
+					setCustomOverlays(planPositions);
+				},
+				error : function(request,status,error){
+					alert("error : " + error);
+				}
+			})
+	
+
 	})
-	$('.Planitem').on('click'), function(){
-		console.log(this);	
-	}
-	
-//	var modalSubmit = function(planOrder, planDate, locationName, planbucketSerial){
-//		console.log(locationName);
-// 		$('#UpdateModallocationItem').text(locationName);
-//  		$('#modalInputContenttypeId').attr('value',jsoninsertplan["contenttypeId"]);
-// 		$('#modalInputpurchaseSerial').attr('value',jsoninsertplan["purchaseSerial"]);
-//  		$('#modalInputLocationName').attr('value',jsoninsertplan["locationName"]);
-//  		$('#modalInputplanbucketSerial').attr('value',jsoninsertplan["planbucketSerial"]);
-//  		$('#modalInputmapX').attr('value',jsoninsertplan["mapX"]);
-//  		$('#modalInputmapY').attr('value',jsoninsertplan["mapY"]);
-//	}
-	
 	
 	</script>	
 </body>
