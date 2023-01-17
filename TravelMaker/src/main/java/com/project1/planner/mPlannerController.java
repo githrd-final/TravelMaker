@@ -32,9 +32,11 @@ public class mPlannerController {
 	@RequestMapping("/mplan/mPlanner")
 	public ModelAndView mPlannerSelect() {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
+
 		travelDay = service.TravelDay("1201100A106001121A11happilyah@naver.com");
-		System.out.println(travelDay);
+
 		mv.addObject("purchaseSerial", "1201100A106001121A11happilyah@naver.com");
+
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
 		return mv;
@@ -124,15 +126,85 @@ public class mPlannerController {
 		mPlanBucketListSelect(bVo.getPurchaseSerial());
 		return msg;
 	}
+
+	@RequestMapping("/mplan/planJson")
+	public void planJson(@RequestParam("purchaseSerial") String purchaseSerial,
+							   HttpServletResponse response,
+							   ObjectMapper objectMapper) {
+		
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		List<PlanVo> list = planService.selectAllPlan(purchaseSerial);
+		JSONArray jsonArray = new JSONArray();
+		
+		for(PlanVo vo : list) {
+			try {
+				String voStr = objectMapper.writeValueAsString(vo);
+				jsonArray.add(voStr);
+			} catch (JsonProcessingException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		String json = jsonArray.toJSONString();
+		PrintWriter writer;
+		
+		try {
+			writer = response.getWriter();
+			writer.write(json);
+			writer.flush();
+			writer.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	@RequestMapping("/mplan/planJsonByDate")
+	public void planJsonByDate(PlanVo planVo,
+							   HttpServletResponse response,
+							   ObjectMapper objectMapper) {
+		
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=utf-8");
+		
+		List<PlanVo> list = planService.selectPlanByDate(planVo);
+		JSONArray jsonArray = new JSONArray();
+		
+		for(PlanVo vo : list) {
+			try {
+				String voStr = objectMapper.writeValueAsString(vo);
+				jsonArray.add(voStr);
+			} catch (JsonProcessingException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		String json = jsonArray.toJSONString();
+		PrintWriter writer;
+		
+		try {
+			writer = response.getWriter();
+			writer.write(json);
+			writer.flush();
+			writer.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
 	
 	
 	@RequestMapping("/mplan/mPlanList")
 	public ModelAndView mPlanListSelect(@RequestParam("purchaseSerial") String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();
-		System.out.println("Controller travelDay:"+travelDay);
 		List<PlanVo> list = planService.selectAllPlan(purchaseSerial);
-		System.out.println(list);
-		System.out.println(travelDay);
+		
 		mv.addObject("list",list);
 		mv.addObject("totalTravelDay",travelDay);
 		
@@ -156,7 +228,6 @@ public class mPlannerController {
 	@RequestMapping("/mplan/planUpdate")
 	public void planUpdate(PlanVo planVo) {
 		boolean result = false;
-		System.out.println("UpdateController purchaseSerial:"+planVo.getPurchaseSerial()+" preplanorder:"+planVo.getPrePlanOrder()+" planOrder:"+planVo.getPlanOrder()+" planDate:"+planVo.getPlanDate()+" preplanDate:"+planVo.getPrePlanDate());
 		result = planService.updatePlan(planVo);
 		
 	}

@@ -20,7 +20,7 @@
 				<input type="hidden" name="purchaseSerial" id="purchaseSerial" value="${purchaseSerial }"/>
 				<input type="hidden" name="totalTravelDay" id="totalTravelDay" value="${totalTravelDay }"/>
 				<input type='button' id="mPlanBucketList" class="clickbtn" value="Bucket" onclick="BucketBtnClicked()"/>
-				<input type='button' id="mPlanList" class="nonclickbtn" value="Plan" onclick="PlanClicked()"/>
+				<input type='button' id="mPlanList" class="nonclickbtn" value="Plan"/>
 			</div>
 			<div class='mList'>
 			</div>
