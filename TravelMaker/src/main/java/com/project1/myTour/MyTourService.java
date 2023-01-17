@@ -31,7 +31,7 @@ public class MyTourService {
 		return list;
 	}
 	
-	public MyTourVo insertView(String purchaseSerial){
+	public MyTourVo insertView(String purchaseSerial, String email){
 		System.out.println("서비스 구매고유번호: "+ purchaseSerial);
 		MyTourVo vo = mapper.insertView(purchaseSerial);
 		System.out.println("인서트뷰"+vo.getPurchaseSerial());
@@ -39,7 +39,7 @@ public class MyTourService {
 		System.out.println(list);
 		datePlan = mapper.datePlan(purchaseSerial);
 		System.out.println(datePlan);
-		nickName = mapper.nickName(purchaseSerial);
+		nickName = mapper.nickName(email);
 		System.out.println(nickName);
 		
 		return vo;

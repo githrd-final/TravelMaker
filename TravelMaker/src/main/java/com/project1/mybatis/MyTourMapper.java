@@ -18,5 +18,5 @@ public interface MyTourMapper {
 	public MyTourVo insertView(String purchaseSerial);
 	public List<MyTourReviewVo> myTourReview(String purchaseSerial);
 	public String datePlan(String purchaseSerial);
-	public String nickName(String purchaseSerial);
+	public String nickName(String email);
 }

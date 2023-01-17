@@ -37,7 +37,6 @@ public class ReviewController {
 	@RequestMapping("/review/reviewView")
 	public ModelAndView reviewView(ReviewVo rVo, ReviewPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
-		session.setAttribute("email", "happilyah@naver.com");
 		String userEmail = (String)session.getAttribute("email");
 		pVo.setChkUserLike(service.chkUserLike(userEmail, rVo.getReviewSerial()));
 		System.out.println("rs : " +rVo.getReviewSerial());
