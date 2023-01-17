@@ -49,7 +49,7 @@ public class ReviewService {
 	public ReviewPageVo getpVo() {
 		return pVo;
 	}
-	public ReviewVo view(int reviewSerial, String up) {
+	public ReviewVo view(int reviewSerial, String purchaseSerial, String up) {
 		ReviewVo rVo = null;
 		System.out.println("리뷰시리얼 " + reviewSerial);
 		if(up != null && up.equals("up")) {
@@ -57,6 +57,8 @@ public class ReviewService {
 		}
 		rVo = mapper.view(reviewSerial);
 		System.out.println("servicerVo :" + rVo);
+		rpList = mapper.reviewPlan(purchaseSerial);
+		datePlan = mapper.datePlan(purchaseSerial);
 		
 		return rVo;
 	}
@@ -142,7 +144,7 @@ public class ReviewService {
 	}
 	
 	
-	public boolean thumbsUp(int reviewSerial, String userEmail) {
+	public boolean thumbsUp(int reviewSerial, String userEmail, String purchaseSerial) {
 		status = manager.getTransaction(new DefaultTransactionDefinition());
 		savePoint = status.createSavepoint();
 		
@@ -159,6 +161,8 @@ public class ReviewService {
 			}else {
 				manager.commit(status);
 				rVo = mapper.view(reviewSerial);
+				rpList = mapper.reviewPlan(purchaseSerial);
+				datePlan = mapper.datePlan(purchaseSerial);
 				pVo.setChkUserLike(true);
 			}
 		}

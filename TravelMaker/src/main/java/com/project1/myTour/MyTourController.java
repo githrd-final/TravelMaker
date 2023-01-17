@@ -3,8 +3,6 @@ package com.project1.myTour;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -25,7 +23,22 @@ public class MyTourController {
 		System.out.println("삭제후 실행 완료");
 		mv.setViewName("myTour/myTourSelect");
 		return mv;
-	} 
+	}
+	
+	@RequestMapping("/myTour/myTourTicket")
+	public ModelAndView myTourTicket(MyTourVo vo) {
+		ModelAndView mv = new ModelAndView();
+		List<MyTourTicketVo> list = service.TicketView(vo.getPurchaseSerial());
+		int reviewSerial = vo.getReviewSerial();
+		String purchaseSerial = vo.getPurchaseSerial();
+		mv.addObject("list", list);
+		mv.addObject("reviewSerial", reviewSerial);
+		System.out.println("reviewSerial:"+reviewSerial);
+		mv.addObject("purchaseSerial",purchaseSerial);
+		mv.setViewName("myTour/myTourTicket");
+		System.out.println("실행 OK");
+		return mv;
+	}
 	
 	@RequestMapping("/myTour/myTourInsert")
 	public ModelAndView myTourInsert(MyTourVo vo) {

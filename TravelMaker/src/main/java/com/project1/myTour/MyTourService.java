@@ -31,6 +31,12 @@ public class MyTourService {
 		return list;
 	}
 	
+	public List<MyTourTicketVo> TicketView(String purchaseSerial){
+		System.out.println("서비스 구매고유번호: "+ purchaseSerial);
+		List<MyTourTicketVo> list = mapper.TicketView(purchaseSerial);
+		return list;
+	}
+	
 	public MyTourVo insertView(String purchaseSerial){
 		System.out.println("서비스 구매고유번호: "+ purchaseSerial);
 		MyTourVo vo = mapper.insertView(purchaseSerial);

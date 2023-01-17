@@ -77,3 +77,5 @@ $('#btnSearch').on('click',function(){
 $('.btnLogin').on('click',function(){
 	$('#content').load('/member/login');
 })
+
+

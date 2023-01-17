@@ -4,12 +4,12 @@
  (reviewView = function(){
 	 /** 좋아요 확인  */
 	 var heart_yn = $('#chkUserLike').val();
-	 if(heart_yn=="true"){
+	 if(heart_yn=='true'){
 		var heart_ynR = 1;
 	}else{
 		heart_ynR = 0;
 	}
-	console.log(heart_ynR);
+	console.log("하트 yn =", heart_ynR);
 	console.log(Boolean(heart_ynR));
 	 if(heart_ynR){
 		$('#rv_heart_icon').css('background-image','url("../images/heart-icon-clicked.png")');
@@ -19,8 +19,7 @@
 	}
 	 /**하트 눌를때 */
 	 $('#rv_heart_icon').on('click',function(){
-		var clk_yn = $('#rv_heart_icon').css('background-image');
-		console.log(clk_yn);
+		
 		frm = $('#rv_form')[0];
 		param= $(frm).serialize();
 		if(!heart_ynR){
@@ -62,4 +61,14 @@
 			return;
 		}
 	});
-})()
+	
+	/**목록으로 가기  */
+	$('#rv_to_list').on('click',function(){
+		var frm = $('#rv_form');
+		param = $(frm).serialize();
+		$.post("review/reviewSelect", param, function(data){
+			$('#content').html(data);
+		})
+	})
+	
+})();

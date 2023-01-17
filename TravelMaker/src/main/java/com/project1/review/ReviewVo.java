@@ -16,15 +16,15 @@ public class ReviewVo {
 	int view;			//조회수
 	int thumbsUp;		//좋아요수
 	String purchaseSerial;	//구매고유번호
-	String sysPhoto;
-	
+	String sysUserPhoto;	//프로필 사진 
 
-	public String getSysPhoto() {
-		return sysPhoto;
+
+	public String getSysUserPhoto() {
+		return sysUserPhoto;
 	}
 
-	public void setSysPhoto(String sysPhoto) {
-		this.sysPhoto = sysPhoto;
+	public void setSysUserPhoto(String sysUserPhoto) {
+		this.sysUserPhoto = sysUserPhoto;
 	}
 
 	public int getReviewSerial() {

@@ -60,7 +60,7 @@
 
 #rv_content_detail_2{
 	display : grid;
-	grid-template-columns : 30px auto auto auto auto 1fr ;
+	grid-template-columns : 30px auto auto auto auto auto 1fr ;
 	gap : 5px;
 }
 
@@ -69,7 +69,7 @@
 	background-size: cover;
 	width: 15px;
 	height: 15px;
-	align-self : end;
+	align-self : start;
 	grid-column: 2/3;
 }
 #rv_view_num{
@@ -81,7 +81,7 @@
 	background-size: cover;
 	width: 15px;
 	height: 15px;
-	align-self : end;
+	align-self : start;
 	grid-column: 4/5;
 }
 #rv_heart_num{
@@ -92,6 +92,15 @@
 	cursor : pointer;
 	transform:scale(1.2);
 }
+#rv_to_list{
+	justify-self: end;
+	grid-column: 7/8;
+	align-self : start;
+}
+#rv_to_list:hover{
+	cursor : pointer;
+	transform:scale(1.2);
+}
 #rv_content_crud{
 	right: 10px;
 	background-image: url('../images/menu-icon.png');
@@ -99,7 +108,8 @@
 	width: 15px;
 	height: 15px;
 	justify-self:end;
-	grid-column: 7/8;
+	align-self: center;
+	grid-column: 8/9;
 }
 #rv_content_crud_list{
 	width : 4vw;

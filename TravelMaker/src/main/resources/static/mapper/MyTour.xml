@@ -64,10 +64,20 @@
 		end as city
 		from purchase p left join review r
 		on p.purchaseSerial=r.purchaseSerial
-		WHERE p.email=#{email} and substring(p.purchaseSerial,10,1)="0"
-		order by p.myReview asc, p.startDate desc
+		WHERE p.email=#{email}
+		order by p.myReview,p.startDate desc
 		limit #{startNo}, #{listSize}
 	</select>
+	
+	<select id='TicketView' parameterType="String" resultType="com.project1.myTour.MyTourTicketVo">
+        select t.ticketSerial,t.ticketStartPoint,t.ticketEndPoint,t.ticketDate,t.ticketStartTime,t.ticketEndTime,t.ticketSeat,t.region, pt.purchaseSerial 
+		from ticket t left join purchasedticket pt
+		on t.ticketSerial=pt.ticketSerialStart or t.ticketSerial=pt.ticketSerialEnd
+		where pt.purchaseSerial=#{_parameter};
+    </select>
+    <select id='TicketReview' parameterType='String' resultType='Integer'>
+    	select myReview from purchase where purchaseSerial=#{_parameter};
+    </select>
 	
 	<select id='insertView' parameterType="String" resultType="com.project1.myTour.MyTourVo">
         select purchaseSerial, 

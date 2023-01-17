@@ -6,8 +6,8 @@
 	</select>
 	
 	<select id='select' parameterType='com.project1.review.ReviewPageVo' resultType='com.project1.review.ReviewVo'>
-		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp from review r
-		where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%') 
+		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, u.sysUserPhoto from review r join user u on r.nickName = u.nickName 
+		where (r.period like '%${period}%' and r.region like '%${region}%' and r.city like '%${city}%') and (r.reviewTitle like '%${findStr}%' or r.nickName like '%${findStr}%') 
 			
 			<if test='order==null'>
 				order by r.reviewSerial desc
@@ -52,7 +52,7 @@
 	</update>
 	
 	<select id='reviewModifyView' parameterType="Integer" resultType="com.project1.review.ReviewVo">
-		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, text, postingDate, period, purchaseSerial
+		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, text, postingDate, period, purchaseSerial, view, thumbsUp 
 		from review where reviewSerial='${_parameter}'
 	</select>
 	<select id='reviewPlan' parameterType="String" resultType="com.project1.review.ReviewPlanVo">
