@@ -13,6 +13,7 @@
                 <div class="item-address">${item.addr1}</div>
                 <div class="item-tel">${item.tel}</div>
                 <div class="item-homepage">${item.homepage}</div>
+                <div class="item-overview">${item.overView}</div>
             </div>
             <div class="item-detailBtnGroup-modal">
                 <input type="button" class= "itemModaltoMyPlan" value="내 일정 보기" />

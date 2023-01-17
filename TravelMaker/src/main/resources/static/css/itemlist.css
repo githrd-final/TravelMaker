@@ -1,5 +1,56 @@
 @charset "UTF-8";
 
+#item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3vh;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.item-name{
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+.item-image{
+    grid-column: 4 / 5;
+    grid-row: 1 / 8;
+}
+
+.item-address{
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+}
+
+.item-tel{
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+}
+
+.item-homepage{
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+}
+
+.check input, .check progress {
+    accent-color: tomato;
+    margin : 7px;
+}
+input[type="checkbox"]{
+    width: 20px; /*Desired width*/
+    height: 20px; /*Desired height*/
+    cursor: pointer;
+    margin : 5px;
+}
+label{
+    font-size : 1.2rem;
+    font-weight : bold;
+}
+.check{
+    float : right;
+    margin-bottom: 8%;
+}
+
 #modal.modal-overlay {
     width: 100%;
     height: 100%;

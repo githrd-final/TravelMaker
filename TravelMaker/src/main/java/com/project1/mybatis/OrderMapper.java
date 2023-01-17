@@ -11,7 +11,8 @@ import java.util.List;
 @Mapper
 public interface OrderMapper {
 
-    public String selectRegion(OrderDto orderDto);
+    public String selectRegionA(OrderDto orderDto);
+    public String selectRegionB(OrderDto orderDto);
 
     public Integer checkTicketA(OrderDto orderDto);
     public Integer checkTicketB(OrderDto orderDto);

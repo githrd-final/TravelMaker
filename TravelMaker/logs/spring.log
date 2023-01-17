@@ -1791,3 +1791,1156 @@ Caused by: org.xml.sax.SAXParseException: The markup in the document following t
 11:08:00.809+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 143060
 11:08:05.100+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
 11:08:05.100+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+11:35:47.552+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+11:35:47.552+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+11:36:47.379+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:36:47.379+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:36:56.057+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 1
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-20
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-21
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - am
+11:36:56.081+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - am
+11:36:57.050+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+11:36:57.051+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:36:57.051+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+11:37:05.607+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:37:05.616+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:37:07.768+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 2669 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+11:37:07.771+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+11:37:07.786+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:37:07.787+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:37:08.084+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+11:37:08.090+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+11:37:08.315+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+11:37:08.431+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 643 ms
+11:37:08.680+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+11:37:08.739+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:37:08.904+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:37:08.964+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:37:08.986+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+11:37:08.991+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.394 seconds (JVM running for 1.95)
+11:37:10.008+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:37:10.009+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+11:37:10.463+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:37:10.463+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:37:17.082+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+11:37:17.176+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+11:37:18.038+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+11:37:18.038+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:37:18.038+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+11:37:33.695+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+11:37:33.718+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+11:37:33.718+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+11:37:33.719+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+11:37:33.719+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+11:37:33.720+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 충청도
+11:37:33.758+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+11:37:33.761+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+11:37:33.763+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 5
+11:37:33.769+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+11:37:33.769+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:37:34.782+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchasedTicketB
+11:37:34.784+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+11:37:37.460+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:37:37.469+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:37:37.471+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:37:37.473+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:38:19.104+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:38:19.109+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:38:19.111+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:38:19.113+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:38:30.003+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - 143060
+11:38:48.658+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:38:48.664+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:38:48.667+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:38:48.669+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:39:19.088+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 128383
+11:45:36.166+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+11:45:36.166+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+11:45:50.843+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:45:50.853+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:45:52.926+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 2752 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+11:45:52.929+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+11:45:52.950+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:45:52.950+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:45:53.234+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+11:45:53.249+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+11:45:53.768+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+11:45:53.891+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 940 ms
+11:45:54.212+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+11:45:54.275+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:45:54.440+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:45:54.501+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:45:54.518+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+11:45:54.524+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.75 seconds (JVM running for 2.414)
+11:46:10.702+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:46:10.704+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+11:46:11.073+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:46:11.073+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:46:19.004+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+11:46:19.096+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+11:46:19.096+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:46:19.096+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+11:46:19.097+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+11:46:19.097+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+11:46:19.097+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+11:46:19.097+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+11:46:19.842+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+11:46:19.843+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:46:19.843+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+11:46:38.501+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+11:46:38.522+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+11:46:38.523+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+11:46:38.523+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+11:46:38.523+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+11:46:38.524+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 충청도
+11:46:38.568+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+11:46:38.571+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+11:46:38.573+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 5
+11:46:38.581+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+11:46:38.581+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:46:40.153+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - purchasedTicketB
+11:46:40.153+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+11:46:43.295+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:46:43.298+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:46:43.300+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:46:43.303+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:46:57.409+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:46:57.413+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:46:57.414+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:46:57.415+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:46:57.450+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:46:57.452+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:46:57.453+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:46:57.455+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:47:00.470+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 143060
+11:47:03.871+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 133271
+11:47:15.315+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 133271
+11:48:15.918+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:48:15.923+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:48:17.975+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 2776 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+11:48:17.978+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+11:48:17.994+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:48:17.994+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:48:18.222+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+11:48:18.227+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+11:48:18.441+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+11:48:18.551+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 557 ms
+11:48:18.786+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+11:48:18.846+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:48:18.984+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:48:19.043+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:48:19.062+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+11:48:19.068+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.228 seconds (JVM running for 2.094)
+11:48:57.325+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:48:57.334+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:48:59.690+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 2781 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+11:48:59.695+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+11:48:59.730+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:48:59.731+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:49:00.066+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+11:49:00.071+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+11:49:00.286+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+11:49:00.425+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 694 ms
+11:49:00.751+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+11:49:00.810+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:49:00.942+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:49:01.003+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:49:01.020+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+11:49:01.025+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.642 seconds (JVM running for 2.417)
+11:49:01.524+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:49:01.526+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+11:49:01.940+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:49:01.940+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:49:17.701+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+11:49:17.808+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+11:49:18.774+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+11:49:18.775+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:49:18.775+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+11:49:35.024+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+11:49:35.046+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+11:49:35.046+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+11:49:35.046+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+11:49:35.046+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+11:49:35.047+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 충청도
+11:49:35.084+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+11:49:35.086+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+11:49:35.090+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 5
+11:49:35.097+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+11:49:35.097+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+11:49:36.216+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - purchasedTicketB
+11:49:36.216+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+11:49:39.125+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+11:49:39.128+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+11:49:39.130+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+11:49:39.132+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+11:49:45.052+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 133271
+11:49:47.419+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 133271
+12:03:00.647+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:03:00.667+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:03:02.450+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 3005 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+12:03:02.453+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:03:02.471+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:03:02.471+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:03:02.708+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:03:02.715+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+12:03:02.954+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:03:03.075+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+12:03:03.327+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:03:03.386+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:03:03.591+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:03:03.650+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:03:03.667+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:03:03.672+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.367 seconds (JVM running for 1.874)
+12:03:30.969+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:03:30.975+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+12:03:31.139+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 133271
+12:03:31.557+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+12:03:31.557+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+12:03:39.839+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+12:03:39.907+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+12:03:39.907+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:03:39.907+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+12:03:39.907+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 2023-01-20
+12:03:39.908+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 2023-01-21
+12:03:39.908+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - am
+12:03:39.908+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - am
+12:03:40.645+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - purchaseCheck
+12:03:40.646+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:03:40.646+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 1
+12:03:56.497+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchasedTicketA
+12:03:56.517+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - servicePurchaseTicket
+12:03:56.518+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - seoljw94@naver.com
+12:03:56.518+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - 1
+12:03:56.518+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - people : 1
+12:03:56.518+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - region : 충청도
+12:03:56.563+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - 보은
+12:03:56.568+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - selectedRegion : 보은
+12:03:56.570+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - regionInt : 5
+12:03:56.578+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+12:03:56.578+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:03:57.520+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchasedTicketB
+12:03:57.520+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+12:04:00.267+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:04:00.271+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:04:00.273+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:04:00.275+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:07:39.431+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:07:39.443+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:07:41.585+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 3192 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+12:07:41.588+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:07:41.606+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:07:41.607+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:07:41.874+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:07:41.879+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+12:07:42.124+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:07:42.245+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 638 ms
+12:07:42.555+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:07:42.627+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:07:42.820+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:07:42.891+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:07:42.910+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:07:42.918+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.489 seconds (JVM running for 2.063)
+12:07:48.469+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:07:48.471+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+12:07:48.866+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+12:07:48.866+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+12:07:58.068+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+12:07:58.163+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+12:07:58.891+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+12:07:58.892+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:07:58.892+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+12:08:16.890+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+12:08:16.911+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+12:08:16.912+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+12:08:16.912+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+12:08:16.913+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+12:08:16.914+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 충청도
+12:08:16.952+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+12:08:16.955+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+12:08:16.957+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 5
+12:08:16.967+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+12:08:16.967+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:08:17.878+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - purchasedTicketB
+12:08:17.879+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+12:08:20.371+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:08:20.377+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:08:20.379+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:08:20.382+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:08:52.671+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:08:52.676+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:08:52.679+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:08:52.681+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:08:53.776+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:08:53.778+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:08:53.778+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:08:53.779+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:13:50.103+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - 2769697
+12:16:02.641+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:16:02.649+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:16:04.252+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 3233 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+12:16:04.254+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:16:04.269+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:16:04.269+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:16:04.498+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:16:04.503+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+12:16:04.720+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:16:04.834+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+12:16:05.069+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:16:05.129+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:16:05.268+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:16:05.328+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:16:05.344+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:16:05.349+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.223 seconds (JVM running for 1.701)
+12:16:23.634+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:16:23.635+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+12:16:23.995+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+12:16:23.995+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+12:16:32.566+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+12:16:32.649+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+12:16:33.428+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+12:16:33.429+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:16:33.429+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+12:17:26.078+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+12:17:26.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+12:17:26.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+12:17:26.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+12:17:26.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+12:17:26.099+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 충청도
+12:17:26.142+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+12:17:26.145+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+12:17:26.147+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 5
+12:17:26.151+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+12:17:26.151+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+12:17:27.469+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - purchasedTicketB
+12:17:27.469+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+12:17:30.165+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:17:30.169+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:17:30.171+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:17:30.174+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:17:46.201+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:17:46.203+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:17:46.204+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:17:46.207+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:17:46.966+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+12:17:46.969+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+12:17:46.970+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+12:17:46.972+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+12:18:15.396+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 133271
+12:18:31.883+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 2876506
+12:36:03.956+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s491ms).
+12:42:02.403+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s442ms).
+12:48:01.137+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s735ms).
+13:03:33.912+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m32s774ms).
+13:21:37.681+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m33s757ms).
+14:00:34.978+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+14:00:34.978+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+14:01:03.747+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:01:03.764+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:01:05.931+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 3841 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:01:05.934+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:01:05.952+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:01:05.952+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:01:06.199+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:01:06.205+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+14:01:06.445+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:01:06.558+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 606 ms
+14:01:06.804+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+14:01:06.864+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:01:07.060+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:01:07.119+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:01:07.136+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+14:01:07.141+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.378 seconds (JVM running for 1.894)
+14:01:32.190+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:01:32.193+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14:01:32.570+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:01:32.570+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:01:44.140+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - callCallBack
+14:01:44.140+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - callCallBack
+14:01:44.283+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+14:01:44.283+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+14:01:44.373+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+14:01:44.373+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+14:01:44.392+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+14:01:44.392+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+14:01:44.580+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+14:01:44.580+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+14:01:51.346+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+14:01:51.426+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+14:01:51.426+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:01:51.426+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+14:01:51.426+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 2023-01-20
+14:01:51.426+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 2023-01-21
+14:01:51.426+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - am
+14:01:51.427+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - am
+14:01:52.612+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchaseCheck
+14:01:52.612+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:01:52.612+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 1
+14:02:11.833+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - purchasedTicketA
+14:02:11.848+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - servicePurchaseTicket
+14:02:11.849+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - seoljw94@naver.com
+14:02:11.849+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - 1
+14:02:11.849+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - people : 1
+14:02:11.851+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - region : 충청도
+14:02:11.861+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - 보은
+14:02:11.865+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - selectedRegion : 보은
+14:02:11.869+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - regionInt : 5
+14:02:11.875+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+14:02:11.875+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:02:13.263+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - purchasedTicketB
+14:02:13.264+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+14:02:17.854+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:02:17.859+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:02:17.861+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:02:17.863+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:02:54.814+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:02:54.818+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:02:54.819+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:02:54.821+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:03:16.101+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:03:16.104+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:03:16.106+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:03:16.108+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:03:28.058+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 134946
+14:03:30.178+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 133271
+14:03:34.077+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 133271
+14:06:39.786+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:06:39.796+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:06:41.818+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 3916 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:06:41.822+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:06:41.840+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:06:41.840+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:06:42.098+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:06:42.104+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+14:06:42.355+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:06:42.474+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 634 ms
+14:06:42.717+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+14:06:42.778+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:06:42.948+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:06:43.009+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:06:43.026+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+14:06:43.032+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.354 seconds (JVM running for 2.063)
+14:07:00.975+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:07:00.977+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:07:01.328+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:07:01.328+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:07:08.517+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:07:08.606+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:07:10.832+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+14:07:10.833+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:07:10.833+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+14:07:36.123+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+14:07:36.140+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+14:07:36.140+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+14:07:36.141+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+14:07:36.141+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+14:07:36.142+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 충청도
+14:07:36.178+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+14:07:36.180+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+14:07:36.182+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 5
+14:07:36.187+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+14:07:36.187+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:07:37.455+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchasedTicketB
+14:07:37.456+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+14:07:40.829+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:07:40.834+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:07:40.836+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:07:40.838+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:08:11.316+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:08:11.318+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:08:11.320+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:08:11.322+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:08:33.517+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:08:33.521+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:08:33.522+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:08:33.523+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:09:15.467+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 128383
+14:13:02.465+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+14:13:02.465+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+14:13:33.357+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:13:33.364+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:13:36.135+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 3974 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:13:36.138+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:13:36.156+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:13:36.156+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:13:36.474+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:13:36.480+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+14:13:36.719+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:13:36.830+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 673 ms
+14:13:37.080+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+14:13:37.140+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:13:37.308+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:13:37.368+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:13:37.385+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+14:13:37.390+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.405 seconds (JVM running for 1.921)
+14:14:01.414+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:14:01.422+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+14:14:01.459+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - regionSelect
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 1
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 2023-01-20
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 2023-01-21
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - am
+14:14:01.707+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - am
+14:14:02.815+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchaseCheck
+14:14:02.816+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:14:02.816+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+14:14:25.659+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - purchasedTicketA
+14:14:25.679+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - servicePurchaseTicket
+14:14:25.679+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - seoljw94@naver.com
+14:14:25.679+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - 1
+14:14:25.679+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - people : 1
+14:14:25.680+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - region : 충청도
+14:14:25.720+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - 보은
+14:14:25.723+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - selectedRegion : 보은
+14:14:25.725+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - regionInt : 5
+14:14:25.736+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+14:14:25.736+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:14:27.018+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - purchasedTicketB
+14:14:27.019+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 123456seoljw94@naver.com
+14:14:46.706+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+14:14:46.712+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 127.8607067082
+14:14:46.714+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+14:14:46.717+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
+14:16:03.831+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 128383
+14:16:05.108+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 128383
+14:16:06.358+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 125827
+14:16:07.517+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 128383
+14:16:09.168+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 128383
+14:16:11.225+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - 2769697
+14:16:23.208+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 125827
+14:21:42.387+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 2769697
+14:21:46.164+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanController - 2732631
+14:21:48.229+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 125829
+14:21:48.838+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 128383
+14:21:53.512+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 125827
+14:22:20.221+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 2769697
+14:22:33.285+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - 125827
+14:24:28.097+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 125827
+14:37:41.972+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:37:42.002+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:37:46.001+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 4282 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:37:46.006+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:37:46.023+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:37:46.023+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:37:46.267+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:37:46.272+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+14:37:46.559+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:37:46.673+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
+14:37:46.797+0900 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService': Unsatisfied dependency expressed through field 'memberMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/com/project1/mybatis/MemberMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+14:37:46.806+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:37:46.815+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService': Unsatisfied dependency expressed through field 'memberMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/com/project1/mybatis/MemberMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService': Unsatisfied dependency expressed through field 'memberMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/com/project1/mybatis/MemberMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/com/project1/mybatis/MemberMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:615) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:187) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac$$FastClassBySpringCGLIB$$8888d06c.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.project1.mybatis.OrderMapper.selectRegionB. please check file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml] and file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:187) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac$$FastClassBySpringCGLIB$$8888d06c.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.project1.mybatis.OrderMapper.selectRegionB. please check file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml] and file [/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes/static/mapper/order.xml]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1045) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1001) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:799) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:297) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:187) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac$$FastClassBySpringCGLIB$$8888d06c.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$29a259ac.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.3.0.jar:2.3.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.24.jar:5.3.24]
+	... 22 more
+14:38:46.656+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 4295 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:38:46.658+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:38:46.673+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:38:46.673+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:38:46.909+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:38:46.917+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+14:38:47.137+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:38:47.250+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 576 ms
+14:38:47.493+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+14:38:47.553+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:38:47.717+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:38:47.782+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:38:47.799+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+14:38:47.804+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.271 seconds (JVM running for 1.689)
+14:38:50.628+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:38:50.629+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+14:38:51.063+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:38:51.063+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:38:58.025+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+14:38:58.117+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+14:38:58.118+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:38:58.118+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+14:38:58.118+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+14:38:58.118+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+14:38:58.118+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:38:58.118+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:38:59.120+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+14:38:59.124+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:38:59.124+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+14:39:17.677+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+14:39:17.699+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+14:39:17.699+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+14:39:17.699+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+14:39:17.700+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+14:39:17.701+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 전국
+14:39:51.018+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:39:51.030+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:39:52.582+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 4311 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:39:52.585+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:39:52.602+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:39:52.602+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:39:52.831+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:39:52.837+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+14:39:53.054+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:39:53.168+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 566 ms
+14:39:53.407+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+14:39:53.464+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:39:53.594+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:39:53.652+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:39:53.668+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+14:39:53.674+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.237 seconds (JVM running for 1.675)
+14:40:00.562+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:40:00.563+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14:40:00.859+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:40:00.859+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:40:08.541+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:40:08.633+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:40:09.569+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+14:40:09.569+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:40:09.569+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+14:40:26.037+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+14:40:26.056+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+14:40:26.056+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+14:40:26.056+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+14:40:26.056+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+14:40:26.057+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 전국
+14:40:26.091+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 보은
+14:40:26.094+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 보은
+14:40:26.096+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 1
+14:52:30.690+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:52:30.704+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:52:32.982+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 17.0.4.1 on MacBook-Air.local with PID 4460 (/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/target/classes started by jerry in /Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker)
+14:52:32.986+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+14:52:33.012+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:52:33.012+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:52:33.565+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+14:52:33.572+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+14:52:33.841+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+14:52:33.951+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 939 ms
+14:52:34.218+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+14:52:34.278+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:52:34.447+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:52:34.506+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:52:34.523+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+14:52:34.528+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.794 seconds (JVM running for 2.38)
+14:52:42.908+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:52:42.910+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:52:43.325+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:52:43.325+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+14:52:50.545+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-20
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-21
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:52:50.634+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+14:52:51.912+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+14:52:51.913+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:52:51.913+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+14:53:08.802+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchasedTicketA
+14:53:08.818+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - servicePurchaseTicket
+14:53:08.818+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - seoljw94@naver.com
+14:53:08.818+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 1
+14:53:08.818+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - people : 1
+14:53:08.819+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - region : 전국
+14:53:08.857+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - 군산
+14:53:08.862+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectedRegion : 군산
+14:53:08.866+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - regionInt : 1
+14:53:08.875+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - dtjsatrseoljw94@naver.com
+14:53:08.875+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - seoljw94@naver.com
+14:53:09.848+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - purchasedTicketB
+14:53:09.848+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - dtjsatrseoljw94@naver.com

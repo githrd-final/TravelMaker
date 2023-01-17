@@ -57,29 +57,58 @@ public class OrderService {
         }
 
         int totalPrice = price * people;
-        String selectedRegion = orderMapper.selectRegion(orderDto);
-        orderDto.setSelectedRegion(selectedRegion);
-        boolean checkTicketA = false;
-        boolean checkTicketB = false;
-        while(checkTicketA == false || checkTicketB == false) {
-            log.info(selectedRegion);
-            orderMapper.checkTicketA(orderDto);
-            orderMapper.checkTicketB(orderDto);
-            if(orderMapper.checkTicketA(orderDto)>=people){
-                checkTicketA = true;
+        String selectedRegion;
+        if(region.equals("전국")){
+            selectedRegion = orderMapper.selectRegionA(orderDto);
+            orderDto.setSelectedRegion(selectedRegion);
+            boolean checkTicketA = false;
+            boolean checkTicketB = false;
+            while(checkTicketA == false || checkTicketB == false) {
+                log.info(selectedRegion);
+                orderMapper.checkTicketA(orderDto);
+                orderMapper.checkTicketB(orderDto);
+                if(orderMapper.checkTicketA(orderDto)>=people){
+                    checkTicketA = true;
+                }
+                if(orderMapper.checkTicketB(orderDto)>=people){
+                    checkTicketB = true;
+                }
+                if(checkTicketA == true && checkTicketB == true) {
+                    selectedRegion = orderMapper.selectRegionA(orderDto);
+                    orderDto.setSelectedRegion(selectedRegion);
+                    log.info("selectedRegion : " + selectedRegion);
+                }
             }
-            if(orderMapper.checkTicketB(orderDto)>=people){
-                checkTicketB = true;
-            }
-            if(checkTicketA == true && checkTicketB == true) {
-                selectedRegion = orderMapper.selectRegion(orderDto);
-                orderDto.setSelectedRegion(selectedRegion);
-                log.info("selectedRegion : " + selectedRegion);
+            if(checkTicketA && checkTicketB) {
+                ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
+                ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
             }
         }
-        if(checkTicketA && checkTicketB) {
-            ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
-            ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
+        else{
+            selectedRegion = orderMapper.selectRegionB(orderDto);
+            orderDto.setSelectedRegion(selectedRegion);
+            boolean checkTicketA = false;
+            boolean checkTicketB = false;
+            while(checkTicketA == false || checkTicketB == false) {
+                log.info(selectedRegion);
+                orderMapper.checkTicketA(orderDto);
+                orderMapper.checkTicketB(orderDto);
+                if(orderMapper.checkTicketA(orderDto)>=people){
+                    checkTicketA = true;
+                }
+                if(orderMapper.checkTicketB(orderDto)>=people){
+                    checkTicketB = true;
+                }
+                if(checkTicketA == true && checkTicketB == true) {
+                    selectedRegion = orderMapper.selectRegionB(orderDto);
+                    orderDto.setSelectedRegion(selectedRegion);
+                    log.info("selectedRegion : " + selectedRegion);
+                }
+            }
+            if(checkTicketA && checkTicketB) {
+                ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
+                ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
+            }
         }
 
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
