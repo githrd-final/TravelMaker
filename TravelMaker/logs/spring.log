@@ -1,0 +1,79 @@
+17:02:14.654+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 16656 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+17:02:14.656+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+17:02:14.674+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:02:14.675+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:02:14.939+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+17:02:14.945+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+17:02:15.226+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+17:02:15.370+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 695 ms
+17:02:15.629+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+17:02:15.693+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:02:15.887+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:02:15.971+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:02:15.993+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+17:02:15.999+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.479 seconds (JVM running for 2.055)
+17:02:25.737+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:02:25.743+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+17:02:26.292+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+17:02:26.292+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+17:02:30.083+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+17:02:30.083+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+17:02:36.186+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - callCallBack
+17:02:36.186+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - callCallBack
+17:02:36.257+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+17:02:36.257+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+17:02:36.389+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - naverCheck
+17:02:36.389+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - naverCheck
+17:02:36.408+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberService - serviceNaverCheck
+17:02:36.408+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberService - serviceNaverCheck
+17:02:36.586+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+17:02:36.586+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+17:02:38.224+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+17:02:38.224+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+17:23:17.720+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s557ms).
+17:26:48.334+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+17:26:48.334+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+17:29:49.416+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+17:29:49.438+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:29:49.453+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:29:51.068+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 18309 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+17:29:51.070+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+17:29:51.089+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:29:51.090+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:29:51.330+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+17:29:51.336+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+17:29:51.561+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+17:29:51.678+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 588 ms
+17:29:51.924+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+17:29:51.981+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:29:52.149+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:29:52.212+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:29:52.231+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+17:29:52.235+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.292 seconds (JVM running for 1.878)
+17:29:55.604+0900 [http-nio-9282-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:29:55.606+0900 [http-nio-9282-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:29:55.623+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+17:29:55.623+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+17:30:47.740+0900 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+17:30:47.763+0900 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:30:47.769+0900 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:30:49.112+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 18366 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+17:30:49.115+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+17:30:49.131+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:30:49.131+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:30:49.353+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+17:30:49.359+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+17:30:49.583+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+17:30:49.700+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
+17:30:49.925+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+17:30:49.979+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:30:50.130+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:30:50.191+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:30:50.217+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+17:30:50.222+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.243 seconds (JVM running for 1.713)
+17:30:54.605+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:30:54.609+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+17:30:55.081+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+17:30:55.081+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+17:30:57.138+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+17:30:57.138+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
