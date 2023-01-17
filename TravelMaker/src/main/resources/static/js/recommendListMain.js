@@ -37,21 +37,21 @@ $(document).ready(function(){
 var frm = $("#frm");
 var purchaseDto = frm.serialize();
    $('.btnAccommodation').on('click', function(){
-       $.post('plan/itemList/12', purchaseDto, function(data) {
+       $.post('plan/itemList/32', purchaseDto, function(data) {
            $('.recommandList').html(data);
        });
    })
         
 /*관광지 추천 리스트 */
    $('.btnTouristAttractions').on('click', function(){
-       $.post('plan/itemList/14', purchaseDto, function(data) {
+       $.post('plan/itemList/12', purchaseDto, function(data) {
            $('.recommandList').html(data);
        });
     })
         
 /*맛집 추천 리스트 */
    $('.btnRestaurants').on('click', function(){
-       $.post('plan/itemList/32', purchaseDto, function(data) {
+       $.post('plan/itemList/39', purchaseDto, function(data) {
            $('.recommandList').html(data);
        });
         })

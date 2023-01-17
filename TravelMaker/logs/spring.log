@@ -1208,3 +1208,5 @@
 09:58:43.379+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 36.4291484926
 09:58:56.795+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 128383
 09:59:04.128+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 2769697
+10:01:15.833+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:01:15.852+0900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
