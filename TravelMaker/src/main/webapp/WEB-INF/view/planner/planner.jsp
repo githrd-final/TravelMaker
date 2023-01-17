@@ -15,7 +15,7 @@
 	<div id='planner_title'>
 		<div>여행일정</div>
 		<div>여러분만의 일정을 계획해보세요.</div>
-		<div><input type="hidden" id="purchaseSerial" value="1234"/></div>
+		<div><input type="hidden" id="purchaseSerial" value="1201100A106001121A11happilyah@naver.com"/></div>
 	</div>
 	<div id="plannerZone">
 		<div id="MapBucketZone">
@@ -61,7 +61,7 @@
 					<input type="hidden" name="prePlanOrder"/>
 					<input type="hidden" name="prePlanDate"/>
 					<input type="hidden" name="planbucketSerial"/>
-					<input type="hidden" name="purchaseSerial" value="1234"/>
+					<input type="hidden" name="purchaseSerial" value="1201100A106001121A11happilyah@naver.com"/>
 				</form>
 				</div>
 				<div class="modalFooter">
