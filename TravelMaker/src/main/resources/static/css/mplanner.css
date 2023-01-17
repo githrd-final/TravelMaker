@@ -308,21 +308,22 @@
 	height:1.5vh;
 	display:block;
 }
-.customoverlay{
+
+/*customOverlay */
+.customOverlay{
+	border-radius: 50%;
+	background-color: #fff;
 	text-align:center;
-	width:5vw;
-	height:5vw;
-	line-height:5vw;
-	color:white;
-	background-color:tomato;
-	border-radius:50%;
+	width:10vw;
+	height:10vw;
+	color:#000;
+	font-size:0.6em;
+	font-weight:bold;
+	padding-top:0.8vw;
+	positions:relative;
 }
-.customoverlay1{
-	text-align:center;
-	width:5vw;
-	height:5vw;
-	line-height:5vw;
-	color:white;
-	background-color:darkblue;
-	border-radius:50%;
+
+.customOverlay>div{
+	font-size:0.3em;
+	font-weight:bold;
 }

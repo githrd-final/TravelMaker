@@ -4,12 +4,20 @@
 var purchaseSerial = "purchaseSerial="+$('#purchaseSerial')[0].value;
 var totalTravelDay = $('#totalTravelDay')[0].value;
 var pSerial = $('#purchaseSerial')[0].value;
+var map;
+
+		var planPositions = [];
+		var planPositionDayOne = [];
+		var planPositionDayTwo = [];
+		var planPositionDayThree = [];
+		var planPositionDays = [];
+		var customoverlays=[];
+		var polylines = [];
+		
 
 $.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
             $('.mList').html(data);
  })
-//$('.mList').load('/mplan/mPlanBucketList');	/* 메인화면 들어가자마자 바로 뿌려주게*/ 
- // A $( document ).ready() block.
 $( document ).ready(function() {
 	kakao.maps.disableHD();
     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -18,7 +26,7 @@ $( document ).ready(function() {
 				level: 9 //지도의 레벨(확대, 축소 정도)
 			};
 				
-			var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+		map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 			
 		
 			
@@ -27,7 +35,15 @@ $( document ).ready(function() {
 		var markers=[];    
 		var linepath = [];
 		var polyline;
-		var customoverlays=[];
+		customoverlays=[];
+		
+		planPositions = [];
+		planPositionDayOne = [];
+		planPositionDayTwo = [];
+		planPositionDayThree = [];
+		planPositionDays = [];
+		
+		polylines = [];
 		
 		// 버킷버튼 클릭, 커스텀 출력 및 지도 범위 설정
 		BucketBtnClicked= function(positions){
@@ -55,6 +71,12 @@ $( document ).ready(function() {
 				if(customoverlays.length!=0){
 					for(var i =0; i< customoverlays.length;i++){
 						customoverlays[i].setMap(null);	
+					}
+				}
+				
+				if(polylines.length != 0){
+					for(var i=0; i<polylines.length; i++){
+						polylines[i].setMap(null);
 					}
 				}
 				if(polyline!= null){
@@ -106,40 +128,7 @@ $( document ).ready(function() {
 		
 		
 		
-		// 일정버튼 클릭, 커스텀 출력 및 지도 범위 설정
-		PlanClicked= function(){
-			polyline=null;
-			customoverlays=[];
-			for(var i =0;i<positions.length;i++){
-				
-				markers[i].setMap(null);
-				var content = '<div class ="customoverlay">'+ (i+1) +'</div>';
-				var customOverlay = new kakao.maps.CustomOverlay({
-		    			position: positions[i].latlng,
-		    			content: content   
-		    		
-				}); //end Customoverlay
-							
-			    map.setBounds(bounds);
-			    customoverlays.push(customOverlay);
-			    
-				// 커스텀 오버레이를 지도에 표시합니다
-				customOverlay.setMap(map);
-		}//endfor
-
-
-		//폴리라인 출력
-		polyline = new kakao.maps.Polyline({
-		    path: linepath, // 선을 구성하는 좌표배열 입니다
-		    strokeWeight: 3, // 선의 두께 입니다
-		    strokeColor: 'tomato', // 선의 색깔입니다
-		    strokeOpacity: 0.5, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
-		    strokeStyle: 'solid' // 선의 스타일입니다
-		});
 		
-		// 지도에 선을 표시합니다
-		polyline.setMap(map);  
-	};
 	$('#mPlanSerial').value = "0"
 })
 
@@ -211,7 +200,176 @@ $( document ).ready(function() {
 		$.post("/mplan/mPlanList", purchaseSerial, function(data){
             $('.mList').html(data);
  		}) 
+ 		
+			$.ajax({
+					type : 'post',
+					url : '/mplan/planJson',
+					data : purchaseSerial,
+					dataType: 'json',
+					async : false,
+					success : function(data){
+						setPlanPositions(data);
+						setCustomOverlays(planPositions);
+					},
+					error : function(request,status,error){
+						alert("error : " + error);
+					}
+				})
+			
 	})
+	
+	
+	function setPlanPositions(data){
+		
+		
+		planPositions = [];
+		planPositionDayOne = [];
+		planPositionDayTwo = [];
+		planPositionDayThree = [];
+		planPositionDays = [];
+		
+		bounds = new kakao.maps.LatLngBounds();  
+			
+		for(var i=0; i<data.length; i++){
+			var json = JSON.parse(data[i]);
+			var title = json.locationName;
+			
+			var mapX = json.mapX;
+			var mapY = json.mapY;
+			var planDate = json.planDate;
+			
+			if(planDate == '1일자'){
+				planPositionDayOne.push({
+					title : title,
+					latlng : new kakao.maps.LatLng(mapY,mapX),
+				});
+			} else if ( planDate == '2일자'){
+				planPositionDayTwo.push({
+					title : title,
+					latlng : new kakao.maps.LatLng(mapY,mapX),
+				});
+			} else if (planDate == '3일자') {
+				planPositionDayThree.push({
+					title : title,
+					latlng : new kakao.maps.LatLng(mapY,mapX),
+				});
+				
+			}
+			
+			planPositions.push({
+				title : title,
+				latlng : new kakao.maps.LatLng(mapY,mapX),
+			});
+			
+		} // end of for
+		
+		planPositionDays.push(planPositionDayOne,planPositionDayTwo,planPositionDayThree);
+		
+	} //setPlanPositions
+	
+	function setCustomOverlays(){
+		if(customoverlays.length != 0){
+			for(var i=0; i<customoverlays.length; i++){
+				customoverlays[i].setMap(null);
+			}
+		}
+		
+		if(polylines.length != 0){
+			for(var i=0; i<polylines.length; i++){
+				polylines[i].setMap(null);
+			}
+		}
+		
+		var customColor = ['tomato','blue','green'];
+		for(var i=0; i<planPositionDays.length; i++){
+			if(planPositionDays[i].length != 0){
+				linePath = [];
+				for(var j=0; j<planPositionDays[i].length; j++){
+					linePath.push(planPositionDays[i][j].latlng);
+					var customOverlay = new kakao.maps.CustomOverlay({
+					    position: planPositionDays[i][j].latlng,
+					    content: '<div class="customOverlay" style="border : 7px outset '+customColor[i]+'">' +
+					    				(j+1) +
+					    			'<div> DAY' + (i+1) + '</div>' +
+					    		 '</div>' 
+					});
+					customOverlay.setMap(map);
+					customoverlays.push(customOverlay);
+				}
+				
+				var polyline = new kakao.maps.Polyline({
+				    path: linePath, // 선을 구성하는 좌표배열 입니다
+				    strokeWeight: 8, // 선의 두께 입니다
+				    strokeColor: customColor[i], // 선의 색깔입니다
+				    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+				    strokeStyle: 'solid' // 선의 스타일입니다
+				});
+				
+				
+				polyline.setMap(map);
+				polylines.push(polyline);
+				
+			}
+	  }
+		
+	} //setCustomOverlays
+	
+	
+	function setCustomView(bucketPositions){
+		customViews = [];
+		polylines=[];
+		
+		for(var i=0; i<bucketPositions.length; i++){
+			
+			var addr = bucketPositions[i].addr;
+			var contenttypeId = bucketPositions[i].contenttypeId;
+			var locationName = bucketPositions[i].locationName;
+			var locationPhoto = bucketPositions[i].locationPhoto;
+			var overview = bucketPositions[i].overview.split(".")[0];
+			
+			var mapX = bucketPositions[i].mapX;
+			var mapY = bucketPositions[i].mapY;
+			var planbucketSerial = bucketPositions[i].planbucketSerial;
+			var purchaseSerial = bucketPositions[i].purchaseSerial;
+			
+			var content = '<div class="customView">' + 
+						  '    <div class="customViewHeader">' + 
+						  '        <span class="cvTitle">' + 
+						  				locationName + 
+						  '        </span>' + 
+						  '        <span class="cvXIcon"><i class="fa-solid fa-xmark fa-xl" onclick="customClose()"></i></span>'+
+						  '    </div>' +    
+						  '    <div class="customViewBody">' + 
+						  '         <div class="cvImgZone">' +
+						  '             <img class="cvImg" src="' + locationPhoto + '">' +
+						  '         </div>' + 
+						  '         <div class="cvOverView">' + 
+						                overview + 
+						  '         </div>' + 
+						  '    </div>' + 
+						  '    <div class="customViewFooter">'+
+						  '  	  <form id="planInsertFrm">'+
+						  '			<input type="hidden" name="purchaseSerial" value="'+ purchaseSerial +'"/> ' +
+						  '			<input type="hidden" name="planbucketSerial" value="'+ planbucketSerial +'"/> ' +
+						  '			<input type="hidden" name="contenttypeId" value="'+ contenttypeId +'"/> ' +
+						  '			<input type="hidden" name="locationName" value="'+ locationName +'"/> ' +
+						  '			<input type="hidden" name="mapX" value="'+ mapX +'"/> ' +
+						  '			<input type="hidden" name="mapY" value="'+ mapY +'"/> ' +
+						  ' 	  </form>' +
+						  '        <span class="cvPlusIcon" onclick="openDateModal(this.previousElementSibling)"><i class="fa-regular fa-square-plus"></i></span>'+
+						  '    </div>'+
+			              '</div>';	
+			
+			var customView = new kakao.maps.CustomOverlay({
+			    position: new kakao.maps.LatLng(mapY, mapX),
+			    content: content,
+			    yAnchor: 1.3
+			});
+			customViews.push(customView);
+		}
+	} // setCustomView
+	
+	
 	
 	$('#goReview').on('click',function(){
 		$('#content').load('/myTour/myTourSelect');
@@ -257,8 +415,24 @@ $( document ).ready(function() {
 		var param = $(frm).serialize();
 		$('#modal2').css('display', 'none');
 		$.post('/mplan/planUpdate', param, function(){
-			$('.mList').load('/mplan/mPlanList', purchaseSerial); 
+			$('.mList').load('/mplan/mPlanList', purchaseSerial);
+			$.ajax({
+				type : 'post',
+				url : '/mplan/planJson',
+				data : purchaseSerial,
+				dataType: 'json',
+				async : false,
+				success : function(data){
+					setPlanPositions(data);
+					setCustomOverlays(planPositions);
+				},
+				error : function(request,status,error){
+					alert("error : " + error);
+				}
+			}) 
 		});
+				
+
 	})
 	
 	$('#btnPlanModalSubtract').on('click', function(){
@@ -267,7 +441,23 @@ $( document ).ready(function() {
 		$('#modal2').css('display', 'none');
 		$.post('/mplan/planDelete', param, function(){ 
 			$('.mList').load('/mplan/mPlanList', purchaseSerial);
+			$.ajax({
+				type : 'post',
+				url : '/mplan/planJson',
+				data : purchaseSerial,
+				dataType: 'json',
+				async : false,
+				success : function(data){
+					setPlanPositions(data);
+					setCustomOverlays(planPositions);
+				},
+				error : function(request,status,error){
+					alert("error : " + error);
+				}
+			})
 		});
+				
+
 	})	
 	
 	$('#btnCheck3').on('click', function(){
@@ -283,10 +473,26 @@ $( document ).ready(function() {
 	var planFilterBtnClicked = function(filterbtn){
 		var filterSerial=filterbtn.value;
 		
+		
+		
 		var param="planDate="+filterSerial+"&"+purchaseSerial;
 		$.post("/mplan/mPlanFilterList", param, function(data){
             $('.mList').html(data);
- 		}) 
+ 		})
+ 		$.ajax({
+					type : 'post',
+					url : '/mplan/planJsonByDate',
+					data : param,
+					dataType: 'json',
+					async : false,
+					success : function(data){
+						setPlanPositions(data);
+						setCustomOverlays(planPositions);
+					},
+					error : function(request,status,error){
+						alert("error : " + error);
+					}
+				}) 
 	}
 	
 	var memo=1;
