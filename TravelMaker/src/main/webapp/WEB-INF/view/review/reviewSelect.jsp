@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,17 +18,43 @@
 				<div>여러분의 여행을 공유해주세요.</div>
 			</div>
 			<div id='rs_blank_30px'></div>
-			<div id='rs_header'>
+			<form id='rs_header'>
 				<div id='rs_header_inner'>
-					<div id='rs_filter_period'>기간별</div>
-					<div id='rs_filter_region'>도별</div>
-					<div id='rs_filter_location'>지역별</div>
+					<div id='rs_filter_period'>
+						<select name='period' id='rs_filter_period_combo'>
+							<option value=''>기간별</option>
+							<option value='2' >1박 2일</option>
+							<option value='3' >2박 3일</option>
+						</select>
+						<input id ="tempPeriod" value="${pVo.period }" style="display: none;">
+					</div>
+					<div id='rs_filter_region'>
+						<select name='region' id='rs_filter_region_combo'>
+							<option value="">티켓별</option>
+							<option value="">전국</option>
+							<option value='강원도' >강원도</option>
+							<option value='경상도'>경상도</option>
+							<option value='전라도' >전라도</option>
+							<option value='충청도' >충청도</option>
+						</select>
+						<input list ='region' id='tempRegion' value='${pVo.region }' style='display:none;'>
+					</div>
+					<div id='city'>
+						<select name='city' id='rs_filter_location_combo'>
+							<option value=''>지역별</option>
+							
+						</select>
+						<input id='tempCity' value='${pVo.city }' style='display:none;'>
+					</div>
 					<div id='rs_search'>
 						<div id='rs_search_icon'></div>
-						<input id='rs_search_text' placeholder='제목 or 아이디 + Enter' type='text'/>
+						<input id='rs_search_text' name='findStr' value='${pVo.findStr }' placeholder='제목 or 아이디 + Enter' type='text'/>
 					</div>
 				</div>
-			</div>
+				<input type='text' name='nowPage' id='rs_pageVo' value='${pVo.nowPage }' style='display : none;'/>
+				<input type='text' name='order' id='rs_order' value='${pVo.order }' style='display : none;' />
+				<input type='hidden' name='reviewSerial' value='0'/>
+			</form>
 			
 			<div id='rs_contents'>
 				<div id='rs_contents_header'>
@@ -35,56 +62,59 @@
 					<div id='rs_refresh'></div>
 					<div id='rs_contents_filter'>
 						<div id= 'rs_contents_filter_list'>
-							<div id='rs_contents_filter_recent'>최근순</div>
-							<div id='rs_contents_filter_view'>조회순</div>
-							<div id='rs_contents_filter_heart'>추천순</div>
+							<div id='rs_contents_filter_recent'>과거순</div>
+							<div id='rs_contents_filter_view'>조회 많은 순</div>
+							<div id='rs_contents_filter_heart'>추천 많은 순</div>
 						</div>
 					</div>
 					<div id='rs_contents_header_blank'></div>
 				</div>
-			<%for(int i=0; i<10 ; i++){ %>	
-				<div class='rs_content'>
-					<div class='rs_content_blank'></div>
-					<div class='rs_content_1'>
-						<div class='rs_content_user'>
-							<div id='rs_content_user_photo'></div>
-							<div id='rs_content_user_name'>채찌채찌채찌</div>
-						</div>
-						<div class='rs_content_date'>2022-12-25 (일)</div>
-					</div>
-					<div class='rs_content_2'>
-						<div class='rs_content_title'>구례 여행 다녀왔어요.</div>
-					</div>
-					<div class='rs_content_3'>
-						<div class='rs_content_3_1'>
-							<div class='rs_content_location'><div>구례</div></div>
-						</div>
-						<div class='rs_content_3_2'>
-							<div class='rs_content_view'>
-								<div class='rs_content_view_icon'></div>
-								<div class='rs_content_view_num'>2023</div>
+				<c:forEach var='vo' items='${list }'>
+					<div class='rs_content' onclick='review.view(${vo.reviewSerial })'>
+						<div class='rs_content_blank'></div>
+						<div class='rs_content_1'>
+							<div class='rs_content_user'>
+								<img id="rs_content_user_photo" src = '/images/${vo.sysUserPhoto }'/>
+								<div id='rs_content_user_name'>${vo.nickName }</div>
 							</div>
-							<div class='rs_content_heart'>
-								<div class='rs_content_heart_icon'></div>
-								<div class='rs_content_heart_num'>23</div>
+							<div class='rs_content_date'>${vo.postingDate }</div>
+						</div>
+						<div class='rs_content_2'>
+							<div class='rs_content_title'>${vo.reviewTitle }</div>
+						</div>
+						<div class='rs_content_3'>
+							<div class='rs_content_3_1'>
+								<div class='rs_content_location'><div>${vo.city }</div></div>
+							</div>
+							<div class='rs_content_3_2'>
+								<div class='rs_content_view'>
+									<div class='rs_content_view_icon'></div>
+									<div class='rs_content_view_num'>${vo.view }</div>
+								</div>
+								<div class='rs_content_heart'>
+									<div class='rs_content_heart_icon'></div>
+									<div class='rs_content_heart_num'>${vo.thumbsUp }</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class='rs_content_blank'></div>
-				</div>	
-			<%} %>			
+						<div class='rs_content_blank'></div>
+					</div>	
+				</c:forEach>
 			</div>
 			<div id='rs_blank_30px'></div>
 			<div id='rs_page_btn'>
-				<div id='rs_page_begin'>처음</div>
-				<div id='rs_page_before'>이전</div>
-				<div id='rs_page_1'>1</div>
-				<div id='rs_page_2'>2</div>
-				<div id='rs_page_3'>3</div>
-				<div id='rs_page_4'>4</div>
-				<div id='rs_page_5'>5</div>
-				<div id='rs_page_after'>다음</div>
-				<div id='rs_page_end'>끝</div>
+				<c:if test="${pVo.startPage>1 }">
+					<input type='button' id='rs_page_begin' value='처음' onclick='review.move(1)'>
+					<input type='button' id='rs_page_before' value='이전' onclick='review.move(${pVo.startPage-1})'>
+				</c:if>
+				<c:forEach var='i' begin='${pVo.startPage }' end='${pVo.endPage }'>
+					<input type='button' id='rs_page_${i }' value='${i }' onclick='review.move(${i })'>
+					
+				</c:forEach>
+				<c:if test="${pVo.totPage>pVo.endPage }">
+					<input type='button' id='rs_page_after' value='다음' onclick='review.move(${pVo.endPage+1 })'>
+					<input type='button' id='rs_page_end' value='끝' onclick='review.move(${pVo.totPage})'>
+				</c:if>
 			</div>
 		</div>
 		<div id='rs_blank_65px'></div>

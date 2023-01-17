@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#ud_to_reviewView:hover{
+	cursor : pointer;
+}
+#ud_main{
+	margin : auto;
+	width: 70vw;
+}

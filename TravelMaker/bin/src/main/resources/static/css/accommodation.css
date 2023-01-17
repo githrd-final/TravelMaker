@@ -1,0 +1,209 @@
+@charset "UTF-8";
+#accommodation{
+	width : 100%;
+	height : 180px;
+	border : 2px solid #ddd;
+}
+img{
+	float : right;
+	width : 250px;
+	height : 100%;
+}
+#accommodation div{
+	margin : 10px;
+}
+
+#accommodation #title{
+	font-size : 20px;
+	font-weight : bold;
+}
+#accommodation #location{
+	font-size : 17px;
+}
+#accommodation {
+	font-size: 15px;
+    height: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+/*체크박스------------------------------------*/
+
+/* 색상 변경 */
+.check input, .check progress {
+  accent-color: tomato;
+  margin : 7px;
+}
+input[type="checkbox"]{
+	width: 20px; /*Desired width*/
+	height: 20px; /*Desired height*/
+	cursor: pointer;
+	margin : 5px;
+}
+label{
+	font-size : 1.2rem;
+	font-weight : bold;
+}
+.check{
+	float : right;
+	margin-bottom: 8%;
+}
+
+#modal.modal-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(1.5px);
+	-webkit-backdrop-filter: blur(1.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: none;
+}
+
+#modal .modal-window {
+	/* background: rgba( 69, 139, 197, 0.70 ); */
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 13.5px );
+	-webkit-backdrop-filter: blur( 13.5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	width: 40%;
+	height: 80%;
+	position: absolute;
+	margin: auto;
+	padding: 10px;
+	background-color : white;
+}
+
+.item-detail-modal{
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	margin : auto;
+	margin-bottom : 10vh;
+}
+
+.item-name{
+	margin-top : 3vh;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.item-image{
+	margin: 3vh auto 0 auto;
+	background-size: cover;
+	width: 50%;
+	height: 50%;
+}
+
+.item-address{
+	margin-top : 3vh;
+	font-size: 1.5em;
+}
+
+.item-tel{
+	margin-top : 3vh;
+}
+
+.item-homepage{
+	margin-top : 3vh;
+}
+
+.item-homepage a{
+	color: black;
+
+}
+
+.item-detailBtnGroup-modal{
+	width: 100%;
+	height: 40%;
+	text-align: center;
+	margin : auto;
+}
+
+.item-detailBtnGroup-modal input{
+	text-align: center;
+	background-color: #ff6347;
+	font-size: 1.5em;
+	padding : 10px;
+	color : white;
+	border-radius: 10px;
+}
+
+.koreap{
+	margin-top : 10em;
+}
+#accommodation:hover{
+	cursor : pointer;
+}
+
+@media screen and (max-width: 450px) {
+
+	#modal{
+		z-index: 150;
+	}
+	#modal .modal-window {
+		width: 80%;
+		height: 80%;
+	}
+	
+	#accommodation #title{
+		font-size : 1.5rem;
+	}
+	#accommodation #location{
+		font-size : 1.2rem;
+	}
+	#accommodation #doc{
+		font-size : 1rem;
+	}
+	img{
+		float : right;
+		width : 30vw;
+		height : 100%;
+	}
+	#accommodation{
+		width : 100%;
+		height : 110px;
+		border : 2px solid #ddd;
+	}
+/*체크박스------------------------------------*/
+
+/* 색상 변경 */
+.check input, .check progress {
+  accent-color: tomato;
+  margin : 7px;
+}
+input[type="checkbox"]{
+	width: 20px; /*Desired width*/
+	height: 20px; /*Desired height*/
+	cursor: pointer;
+	margin : 5px;
+}
+label{
+	font-size : 1.2rem;
+	font-weight : bold;
+}
+.check{
+	float : right;
+	margin-bottom: 8%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	#modal{
+		z-index: 150;
+	}
+	#modal .modal-window {
+		width: 80%;
+		height: 80%;
+	}
+}
+}

@@ -5,7 +5,6 @@
 
  $('.btnReviewBoard').on('click', function(){
 	 $('#content').load('/review/reviewSelect')
-
  })
 /**FAQ 연결 */
 $('.btnFAQ').on('click',function(){
@@ -78,3 +77,5 @@ $('#btnSearch').on('click',function(){
 $('.btnLogin').on('click',function(){
 	$('#content').load('/member/login');
 })
+
+

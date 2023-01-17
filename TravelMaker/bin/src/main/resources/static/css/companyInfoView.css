@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+.ci_main{
+	display: grid;
+	grid-template-columns : 1fr;
+	justify-items : center;
+}
+.ci_main div{
+	opacity : 0;
+	transition : all 2s;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.ci_main div{
+	font-size : 1.5rem;
+	font-weight: bolder;
+	text-align: center
+}
+
+@media screen and (max-width: 450px){
+	.ci_main div{
+	font-size : 1.5rem;
+	font-weight: bolder;
+	text-align: center
+}
+	
+}
+
+#ci_down_icon {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+#ci_down_icon{
+	background-image: url('../images/down-icon.png');
+	background-size: cover;
+	width: 5vw;
+	height: 5vw;
+	opacity : 0.8;
+	transition : 0.5s;
+}
+#ci_blank_50vh{
+	height:50vh;
+}
+#ci_blank_10vh{
+	height:10vh;
+}
+.ci_reason1, .ci_reason2, .ci_reason3{
+	display: grid;
+	grid-template-columns : 1fr;
+	justify-items : center;
+	align-items : center;
+	color : #ffa899;
+	height : 150px;
+	
+}
+.ci_result1, .ci_result2, .ci_result3{
+	display: grid;
+	grid-template-columns : 1fr;
+	justify-items : center;
+	align-items : center;
+	color:#ff6347;
+}
+.ci_purchase{
+	display: grid;
+	grid-template-columns : 1fr;
+	justify-items : center;
+	align-items : center;
+}
+.ci_recommend{
+	display: grid;
+	grid-template-columns : 1fr;
+	justify-items : center;
+	align-items : center;
+}
+
+/* CSS */
+.ci_ticket_purchase {
+  width: 300px;
+  height: 100px;
+  align-items: center ;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: grid;
+  font-size: 2rem !important;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+  outline: 0;
+}
+
+
+.button-45:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.button-45:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
