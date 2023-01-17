@@ -77,11 +77,13 @@ var kakaoMap = (function(){
 		for(var i=0; i<data.length; i++){
 			
 			var json = JSON.parse(data[i]);
+			console.log("셋 버킷 포지션스 제이슨 ", json);
 			var addr = json.addr;
 			var contenttypeId = json.contenttypeId;
 			var locationName = json.locationName;
 			var locationPhoto = json.locationPhoto;
 			var overview = json.overview;
+			console.log("셋 버킷 포지션스 오버뷰 ", overview);
 			var mapX = json.mapX;
 			var mapY = json.mapY;
 			var planbucketSerial = json.planbucketSerial;
@@ -148,13 +150,14 @@ var kakaoMap = (function(){
 	
 	function setCustomView(bucketPositions){
 		customViews = [];
-		
+		console.log("버킷포지션렝스",bucketPositions.length);
 		for(var i=0; i<bucketPositions.length; i++){
-			
+			console.log(bucketPositions[i]);
 			var addr = bucketPositions[i].addr;
 			var contenttypeId = bucketPositions[i].contenttypeId;
 			var locationName = bucketPositions[i].locationName;
 			var locationPhoto = bucketPositions[i].locationPhoto;
+			console.log("오버뷰 ", bucketPositions[i].overviews);
 			var overview = bucketPositions[i].overview.split(".")[0];
 			
 			var mapX = bucketPositions[i].mapX;
@@ -374,16 +377,22 @@ var kakaoMap = (function(){
 			})
 			
 			customView = function(mapX,mapY){
+				
+				console.log("눌렸다고");
 				if(customViews.length != 0){
 					for(var i=0; i<customViews.length; i++){
 						customViews[i].setMap(null);
 					}
 				}
+				console.log("눌렸다고!!"+customViews.length);
 				
 				for(var i=0; i<customViews.length; i++){
 					var customMapX = customViews[i].getPosition().La.toString();
 					var customMapY = customViews[i].getPosition().Ma.toString();
+						console.log("눌렸다고1");
 					if(customMapX.includes(mapX) && customMapY == mapY){
+						
+						console.log("눌렸다고2");
 						customViews[i].setMap(map);
 						map.setCenter(new kakao.maps.LatLng(parseFloat(mapY)+0.001, mapX));
 						map.setLevel(3);

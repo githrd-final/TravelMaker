@@ -32,9 +32,9 @@ public class mPlannerController {
 	@RequestMapping("/mplan/mPlanner")
 	public ModelAndView mPlannerSelect() {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-		travelDay = service.TravelDay("1234");
+		travelDay = service.TravelDay("1201100A106001121A11happilyah@naver.com");
 		System.out.println(travelDay);
-		mv.addObject("purchaseSerial", "1234");
+		mv.addObject("purchaseSerial", "1201100A106001121A11happilyah@naver.com");
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
 		return mv;
