@@ -11,8 +11,8 @@
   align-items: center;
   display: grid;
   grid-template-columns: 100%;
-  gap:1vh;
-  margin:1vh auto;
+  gap:2vh;
+  margin:0vh auto;
    margin-top:0;
 }
 .upcomming {
@@ -20,13 +20,14 @@
     padding: 2vh;
     margin: 1.8vh;
     margin-right: 70%;
+    font-size: 1.5rem;
 }
 .logo{
-   float: left;
-    width: 14vh;
-    height: 24vh;
+    float: left;
+    width: 18vh;
+    height: 27vh;
     position: absolute;
-    top: 1vh;
+    top: 2vh;
     left: -2vh;
 }
 .myTourSelectContainer .myTourSelectItem {
@@ -59,12 +60,12 @@
     position: absolute;
 }
 .myTourSelectContainer .item-right .up-border {
-  top: -8px;
-  right: -35px;
+  top: -1vh;
+  right: -7vh;
 }
 .myTourSelectContainer .item-right .down-border {
-  bottom: -13px;
-  right: -35px;
+  bottom: -3.3vh;
+  right: -7vh;
 }
 .myTourSelectContainer .item-right .num {
   font-size: 60px;
@@ -81,7 +82,7 @@
 }
 .myTourSelectContainer .item-left {
   width: 100%;
-  padding: 4vh 0vw 1.8vh 5vw;
+  padding: 4vh 0vw 1.8vh 8vw;
   border-left: 3px dotted #999;
 }
 .TicketClick:hover{
@@ -105,12 +106,12 @@
 .myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .loc .icon {
   margin-right: 10px;
   font-size: 20px;
-  color: #666;
+  color: tomato;
 }
 .myTourSelectContainer .item-left .loc {display: block}
 .fix {clear: both}
 .myTourSelectContainer .myTourSelectItem .btnReview1{
-	width: 32vw;
+	width: 43vw;
 	background-color: #fff;
 	border: 0 solid #e2e8f0;
 	border-radius: 1.5rem;
@@ -141,9 +142,8 @@
 /*페이징처리부분*/
 #ri_page_btn{
 	justify-self : center;
-	display : grid;
-	width: 90vw;
-	grid-template-columns : 1.4fr 1.4fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1.4fr;
+	display : flex;
+	width: 30vw;
 	justify-items : center;
 	gap : 2px;
 	margin-top: 15vh;

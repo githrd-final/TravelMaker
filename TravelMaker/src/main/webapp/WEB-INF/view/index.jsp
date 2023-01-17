@@ -21,6 +21,7 @@
 </head>
 <body>
 <header id='IndexHeader'>
+<<<<<<< HEAD
 <h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>	
 <div id='menu'>
 	<ul class='indexUl'>
@@ -50,6 +51,25 @@
 		<%} %>
 	</ul>
 </div>
+=======
+	<h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>	
+	<div id='menu'>
+		<ul class='indexUl'>
+			<li><a href="#" class='indexMyPage'>마이페이지</a>
+				<ul id='block' class='indexUl'>
+					<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTour'>내여행</a></li>
+					<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfo'>기본정보</a></li>
+				</ul>
+			</li>
+			<li class='indexMenuLi'><a href="#" class='indexMenuA btnReviewBoard'>후기게시판</a></li>
+			<li class='indexMenuLi'><a href="#" class='indexMenuA btnCompanyInfo'>회사소개</a></li>
+			<li class='indexMenuLi'><a href="#" class='indexMenuA btnFAQ'>FAQ</a></li>
+			<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogin'>로그인</a>
+	
+		</ul>		
+	
+	</div>
+>>>>>>> main
 </header>
 <div id='empty'></div>
 <div id='content'>
@@ -123,7 +143,7 @@
 
 <div id='indexFooterContainer'>
 	<footer id='indexFooter'>
-		<p class='indexFooterP'>Visit Goa and have a good time doing it, when you use one or more of our tours...</p>
+		<p class='indexFooterP'>Visit Travel Maker and have a good time doing it, when you use one or more of our tours...</p>
 	</footer>
 </div>
 														 

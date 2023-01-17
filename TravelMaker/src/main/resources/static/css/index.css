@@ -313,7 +313,7 @@ section:not(#hero):nth-child(even) {
 hr {
 	width:250px;
 	height:3px;
-	background-color:#3f51b5;
+	background-color:tomato;
 	border:0;
 	margin:50px;
 }
@@ -385,6 +385,11 @@ section .sectionP {
 
 .contact form .btn{
 	padding: 18px 42px;
+	background-color: tomato;
+	border:none;
+}
+.contact form .btn:hover{
+	cursor: pointer;
 }
 
 .contact form input {

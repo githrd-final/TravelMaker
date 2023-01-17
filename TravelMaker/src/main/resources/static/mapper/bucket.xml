@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project1.mybatis.PlanBucketMapper">
+	<select id="TravelDay" parameterType="String" resultType="int">
+		SELECT DATEDIFF((SELECT endDate FROM purchase WHERE purchaseSerial = '${_parameter}'), (SELECT startDate FROM purchase WHERE purchaseSerial='${_parameter}'));	
+	</select>
+	
+	<select id="InsertCountPlan" parameterType="String" resultType="int">
+		SELECT COUNT(planDate) FROM plan WHERE planbucketSerial = '${_parameter}'; 
+	</select>
+	
+	<select id="bucketSelect" parameterType="String" resultType="com.project1.planner.BucketVo">
+		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId, locationName, mapX, mapY, locationPhoto 
+		from planBucket 
+		where purchaseSerial = '${_parameter}'
+	</select>
+	
+	<select id="bucketDetailSelect" parameterType="com.project1.planner.BucketVo" resultType="com.project1.planner.BucketVo">
+		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId , locationName, mapX, mapY, locationPhoto from planBucket where purchaseSerial = #{purchaseSerial} and contenttypeId = #{contenttypeId}
+	</select>
+	
+	
+	<insert id="bucketToPlanInsert" parameterType="com.project1.planner.BucketVo">
+		Insert into plan(planDate, planOrder , locationName, planBucketSerial, mapX, mapY, purchaseSerial, contenttypeId) 
+		VALUES (#{planDate}, insertOrder(#{planDate}, #{purchaseSerial}), #{locationName},#{planbucketSerial},#{mapX},#{mapY}, #{purchaseSerial}, #{contenttypeId});
+	</insert>
+	
+	<delete id="planBucketDelete" parameterType="String">
+		Delete from planBucket where planBucketSerial = '${_parameter}'
+	</delete>
+	
+	
+<!-- 	<select id="bucketDeletePlanSelect" parameterType="String" resultType="Integer"> -->
+<!-- 		Select count(*) from plan where planBucketSerial = ${_parameter} -->
+<!-- 	</select> -->
+</mapper>

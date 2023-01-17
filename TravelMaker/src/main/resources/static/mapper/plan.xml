@@ -11,3 +11,80 @@
     </select>
 
 </mapper>
+
+<!-- 	<select id = "selectDate" paremeterType="String" resultType="Integer"> -->
+<!-- 		SELECT DATEDIFF(#{endDate},#{startDate}) FROM purchase WHERE purchaseSerial = #{_parameter} -->
+<!-- 	</select> -->
+	
+	<select id = "selectAllPlan" parameterType = "String" resultType="com.project1.planner.PlanVo"> 
+		SELECT planDate,contentTypeId,planOrder,planbucketSerial,locationName,mapX,mapY,planNote,purchaseSerial FROM plan 
+		WHERE purchaseSerial = #{purchaseSerial} ORDER BY planDate,planOrder
+	</select>
+	
+	<select id = "selectPlanByDate" parameterType="com.project1.planner.PlanVo" resultType="com.project1.planner.PlanVo"> 
+		SELECT planDate,contentTypeId,planOrder,planbucketSerial,locationName,mapX,mapY,planNote,purchaseSerial FROM plan
+		WHERE planDate = #{planDate} AND purchaseSerial = #{purchaseSerial} ORDER BY planOrder
+		
+	</select>
+	
+	
+	<!--  update -->
+	<select id="modifyCheck" parameterType="com.project1.planner.PlanVo" resultType="Integer">
+		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{planDate} AND planOrder = #{planOrder} AND purchaseSerial = #{purchaseSerial}
+	</select>
+	<select id="countPreDate" parameterType="com.project1.planner.PlanVo" resultType="Integer">
+		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{prePlanDate}
+	</select>
+	<update id="updateToLastOrder" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planDate = #{planDate}, planOrder = countTarget(#{planDate}) WHERE planbucketSerial = #{planbucketSerial}
+	</update>
+	<update id="updatePreDateOrder" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planOrder = planOrder - 1 WHERE planDate = #{prePlanDate} 
+												  AND planOrder &gt; #{prePlanOrder} 
+												  AND purchaseSerial = #{purchaseSerial}
+	</update>
+	<update id="updateSameDayOrder" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET 
+		<choose>
+			<when test="planOrder &gt; prePlanOrder">
+				planOrder = planOrder - 1 WHERE planOrder <![CDATA[ <= ]]> #{planOrder}
+			</when>
+			<when test="planOrder &lt; prePlanOrder">
+				planOrder = planOrder + 1 WHERE planOrder <![CDATA[ >= ]]> #{planOrder}
+			</when>
+		</choose>
+		AND planDate = #{planDate} AND purchaseSerial = #{purchaseSerial}
+	</update>
+	<update id="updateDiffDayOrder" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planOrder = planOrder + 1 WHERE planDate = #{planDate}
+													AND planOrder <![CDATA[ >= ]]> #{planOrder}
+													AND purchaseSerial = #{purchaseSerial}
+	</update>
+	<update id="updatePlan" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planOrder = #{planOrder},planDate = #{planDate} WHERE planbucketSerial = #{planbucketSerial}
+	</update>
+	<!--  update -->
+	
+	<!--  delete   -->
+	<delete id="deletePlan" parameterType="com.project1.planner.PlanVo">
+		DELETE FROM plan WHERE planbucketSerial = #{planbucketSerial}
+	</delete>
+	<update id="deleteUpdateOrder" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planOrder = planOrder - 1 WHERE planDate = #{planDate} 
+												    AND planOrder &gt; #{planOrder} 
+													AND purchaseSerial = #{purchaseSerial}
+	</update>
+	<!--  delete   -->
+	
+	<!--  Memo -->
+	<update id="updateMemo" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planNote = #{planNote} WHERE planbucketSerial = #{planbucketSerial}
+	</update>
+	<select id="showMemo" parameterType="com.project1.planner.PlanVo" resultType="String">
+		SELECT planNote FROM plan WHERE planbucketSerial = #{planbucketSerial} 
+	</select>
+	<update id="resetMemo" parameterType="com.project1.planner.PlanVo">
+		UPDATE plan SET planNote = NULL WHERE planbucketSerial = #{planbucketSerial}
+	</update>
+	<!--  Memo -->
+</mapper>

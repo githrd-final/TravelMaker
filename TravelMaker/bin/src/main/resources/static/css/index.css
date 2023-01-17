@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html {
+	font: normal 16px Raleway;
+	color:#555;
+}
+
+#menu, .indexUl {
+	list-style:none;
+}
+
+.TravelMaker, .indexMyPage, .btnMyTour, .btnMyInfo, .btnReviewBoard, .btnCompanyInfo, .btnFAQ, .btnLogin {
+	text-decoration:none;
+	opacity:0.75;
+	color:#fff;
+}
+
+.TravelMaker:hover, .indexMyPage:hover, .btnMyTour:hover, .btnMyInfo:hover, .btnReviewBoard:hover, .btnCompanyInfo:hover, .btnFAQ:hover, .btnLogin:hover {
+	opacity:1;
+}
+
+@keyframes fadeIn {
+	100% {
+		opacity:1;
+	}
+}
+
+#IndexHeader {
+	position:absolute;
+	width:100%;
+	
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+	padding: 35px 100px 0;
+	opacity:0;
+	animation: fadeIn 1s  0.5s forwards ease-in;
+	color:#fff;
+	z-index: 20;
+}
+
+#menu {
+	margin-right: -15px;
+	line-height:30px;
+}
+
+#menu>ul>li{
+	float: left;
+	width: 120px;
+	margin: 0 15px;
+	position: relative;
+}
+
+#menu>ul>li:hover {
+	cursor: pointer;
+}
+
+#menu>ul>li>#block{
+	width: 80px;
+	display: none;
+	position: absolute;
+}
+
+#menu>ul>li:hover>#block{
+	display: block;
+	position:absolute;
+	width: 100px;
+	height: 70px;
+	background-color: #fff;
+	border: 0.2px solid #697c89;
+	border-radius: 10px;
+	color: black;
+	padding:5px;
+	text-align: center;
+	z-index: 3;
+}
+
+#menu>ul>li:hover>#block .indexMenuA{
+	color:black;
+	font-size:0.8rem;
+}
+
+#menu>ul>li>#block>.indexMenuLi:hover{
+	text-decoration: underline;
+}
+
+
+section {
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding: 100px 80px;
+}
+
+section:not(#hero):nth-child(even) {
+	background-color:#f5f5f5;
+}
+
+
+.btn {
+	border-radius:4px;
+	text-transform:uppercase;
+	background-color:#3751b5;
+	opacity:1;
+	font-weight:bold;
+	color:#fff;
+}
+
+#hero {
+	position:relative;
+	justify-content:center;
+	text-align:center;
+	min-height:100vh;
+	color:#fff;
+}
+
+#hero #hero-content{
+	position: absolute;
+	margin:auto;
+	width: 630px;
+	height: 230px;
+	background: #F59651;
+	opacity:0;
+	padding:30px;
+	animation: fadeIn 1s  0.5s forwards ease-in;
+	display: grid;
+	grid-template-areas:
+		"  .	 startDate endDate people"
+		" start  date1	  date2    su  "
+		"  .	 amPm1	  amPm2	   	.  "
+		"  .     button button		.  ";
+	gap:10px;
+}
+
+#start{grid-area: start;}
+#startDate{
+	grid-area: startDate;
+	align-self: end;	/*아래*/
+	justify-self: start; /*왼쪽*/
+}
+#date1{
+	grid-area: date1;
+	align-self: center;
+	justify-self: center;
+}
+#amPm1{
+	grid-area: amPm1;
+	align-self: start;
+	justify-self: center;
+}
+#endDate{
+	grid-area: endDate;
+	align-self: end;
+	justify-self: start;
+}
+#date2{
+	grid-area: date2;
+	align-self: center;
+	justify-self: center;
+}
+#amPm2{
+	grid-area: amPm2;
+	align-self: start;
+	justify-self: center;
+}
+#people{
+	grid-area: people;
+	align-self: end;
+	justify-self: start; /*center?*/
+}
+#peopleSu{
+	grid-area: su;
+	align-self: center;
+	justify-self: start;
+	text-align:center;
+}
+#btnSearch{
+  grid-area:button;
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+#btnSearch:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  opacity: 0.57;
+}
+
+#hero #hero-content #date1,#date2{
+	border:none;
+	border-radius:10px;
+	height: 25px;
+	padding:10px;
+	line-height: 25px;
+	width:100%
+}
+
+#hero #hero-content #peopleSu{
+	border:none;
+	border-radius:10px;
+	height: 25px;
+}
+
+#hero .bkg-img {
+	position:absolute;
+	top:0;
+	left:0;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+
+#hero h1 {
+	font-size:60px;
+	margin-bottom:15px;
+}
+
+#hero h3 {
+	font-size:28px;
+	margin-bottom:40px;
+}
+
+#hero a.btn {
+	padding: 20px 46px;
+}
+
+
+#hero-content {
+	opacity:0;
+	margin-top:10px;
+	animation: slideIn 1s 1s forwards ease-in;
+}
+
+@keyframes slideIn {
+	100% {
+		opacity:1;
+		margin:0;
+	}
+}
+
+.grid {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+hr {
+	width:250px;
+	height:3px;
+	background-color:#3f51b5;
+	border:0;
+	margin:50px;
+}
+
+section h3.title {
+	text-transform:capitalize;
+	font: bold 32px Raleway;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+section .sectionP {
+	max-width:775px;
+	line-height:2;
+	padding: 0 20px;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+.destinations .grid li {
+	height:350px;
+	padding:10px;
+	background-clip:content-box;
+	background-size:cover;
+	background-position:center;
+}
+
+.destinations .grid li.small {
+	flex-basis:30%;
+}
+
+.destinations .grid li.large {
+	flex-basis:70%;
+}
+
+
+
+.packages .grid li {
+	padding:50px;
+	flex-basis:50%;
+	text-align:center;
+} 
+
+.packages .grid li i {
+	color:#8c9eff;
+}
+
+.packages .grid li h4 {
+	font-size:30px;
+	margin:20px;
+}
+	
+
+.testimonials .quote {
+	font-size:22px;
+	font-weight:300;
+	line-height:1.5;
+	margin: 40px 0 25px;
+}
+
+
+.contact form {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	width:60%;
+}
+
+.contact form .btn{
+	padding: 18px 42px;
+}
+
+.contact form input {
+	padding:15px;
+	margin-right:30px;
+	font-size:18px;
+	color:#555;
+	flex:1;
+} 
+
+#indexFooterContainer{
+	display:flex;
+	flex-direction:column;
+}
+
+#indexFooter {
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	background-color:#E49082;
+	color:#fff;
+	padding: 20px 0;
+	margin-top:auto;
+	z-index: 3;
+}
+
+#indexFooter ul {
+	display:flex;
+}
+
+#indexFooter ul li {
+	margin-left:16px;
+	
+}
+
+#indexFooter .indexFooterP {
+	text-transform:uppercase;
+	font-size:14px;
+	opacity:0.6;
+	align-self:center;
+}
