@@ -1,7 +1,10 @@
 /**
  * 
  */
-/*티켓 구매내역 미리띄울게 */
+var frm = $("#frm");
    $('#btnPlan').on('click', function(){
-            $('#content').load('/plan/recommendListMain');
-        })
+       var purchaseDto = frm.serialize();
+       $.post('plan/recommendListMain', purchaseDto, function(data) {
+           $('#content').html(data);
+       });
+   })

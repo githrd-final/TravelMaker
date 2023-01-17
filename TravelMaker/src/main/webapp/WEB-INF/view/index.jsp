@@ -10,34 +10,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-
-
 <!-- include summernote css/js -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet"> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	38fcbbc356cdd719e19ce18e5b27584d"></script>
-
+<script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
 <script defer src='../js/index.js'></script>
+<meta name ="google-signin-scope" content="profile email">
+<meta name ="google-signin-client_id" content="1073520954501-tqj85u21s3lftdforl8ikb220sbg1qn1.apps.googleusercontent.com">
 </head>
 <body>
 <header id='IndexHeader'>
-	<h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>	
-	<div id='menu'>
-		<ul class='indexUl'>
-			<li><a href="#" class='indexMyPage'>마이페이지</a>
-				<ul id='block' class='indexUl'>
-					<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTour'>내여행</a></li>
-					<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfo'>기본정보</a></li>
-				</ul>
-			</li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnReviewBoard'>후기게시판</a></li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnCompanyInfo'>회사소개</a></li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnFAQ'>FAQ</a></li>
-			<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogin'>로그인</a>
-	
-		</ul>		
-	
-	</div>
+<h2><a href="/" class='TravelMaker'>Travel Maker</a></h2>
+<div id='menu'>
+	<ul class='indexUl'>
+		<li><a href="#" class='indexMyPage'>마이페이지</a>
+		<%
+			//로그인된 아이디가 있는지 읽어와보기
+			String email = (String)session.getAttribute("email");
+			String result = (String)request.getAttribute("result");
+		%>
+			<ul id='block' class='indexUl'>
+				<%if(email==null){%>
+				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTourB'>내여행</a></li>
+				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfoB'>기본정보</a></li>
+				<%}else{ %>
+				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTour'>내여행</a></li>
+				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfo'>기본정보</a></li>
+				<%} %>
+			</ul>
+		</li>
+		<li class='indexMenuLi'><a href="#" class='indexMenuA btnReviewBoard'>후기게시판</a></li>
+		<li class='indexMenuLi'><a href="#" class='indexMenuA btnCompanyInfo'>회사소개</a></li>
+		<li class='indexMenuLi'><a href="#" class='indexMenuA btnFAQ'>FAQ</a></li>
+		<%if(email==null){%>
+		<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogin'>로그인</a>
+		<%}else{ %>
+		<li class='indexMenuLi'><a href="/" class='indexMenuA btnLogout'>로그아웃</a>
+		<%} %>
+	</ul>
+</div>
 </header>
 <div id='empty'></div>
 <div id='content'>
@@ -62,7 +74,11 @@
 				<span id='people'>인원</span>
 				<input type='text' size='5' id='peopleSu'/>
 				</span>
-				<input type='button' id='btnSearch' class = 'indexMenuA' value='Search'/>
+				<%if(email==null){%>
+					<input type='button' id='btnSearchB' class = 'indexMenuA' value='Search'/>
+				<%}else{ %>
+					<input type='button' id='btnSearch' class = 'indexMenuA' value='Search'/>
+				<%} %>
 			</div>
 	</section>
 	

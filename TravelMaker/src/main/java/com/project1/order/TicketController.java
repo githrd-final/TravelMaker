@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class TicketController {
 	
 
-	@RequestMapping("/order/purchasedTicket")
+	//@RequestMapping("/order/purchasedTicket")
 	public ModelAndView select() {
 		ModelAndView mv = new ModelAndView();
 

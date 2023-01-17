@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project1.mybatis.MemberMapper">
+
+    <select id="findEmail" resultType="Integer" parameterType="String">
+        SELECT count(email) FROM user where email = #{_parameter}
+    </select>
+
+    <insert id="insertMember" parameterType="com.project1.member.MemberDto">
+        INSERT INTO user (email, nickName, userComment, oriUserPhoto, sysUserPhoto) VALUES (#{email}, #{nickName}, #{userComment}, #{oriUserPhoto}, #{sysUserPhoto})
+    </insert>
+</mapper>

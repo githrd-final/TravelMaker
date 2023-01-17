@@ -1,0 +1,26 @@
+package com.project1.mybatis;
+
+import com.project1.order.OrderDto;
+import com.project1.order.PurchaseDto;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+@Mapper
+public interface OrderMapper {
+
+    public String selectRegion(OrderDto orderDto);
+
+    public Integer checkTicketA(OrderDto orderDto);
+    public Integer checkTicketB(OrderDto orderDto);
+
+    public List<String> purchaseTicketA(OrderDto orderDto);
+    public List<String> purchaseTicketB(OrderDto orderDto);
+
+    public void insertPurchase(PurchaseDto purchaseDto);
+
+    public void updateTicketStatusA(String ticketSerialListA);
+    public void updateTicketStatusB(String ticketSerialListB);
+}

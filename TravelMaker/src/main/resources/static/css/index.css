@@ -15,13 +15,13 @@ html {
 	list-style:none;
 }
 
-.TravelMaker, .indexMyPage, .btnMyTour, .btnMyInfo, .btnReviewBoard, .btnCompanyInfo, .btnFAQ, .btnLogin {
+.TravelMaker, .indexMyPage, .btnMyTour, .btnMyTourB, .btnMyInfo, .btnMyInfoB, .btnReviewBoard, .btnCompanyInfo, .btnFAQ, .btnLogin, .btnLogout {
 	text-decoration:none;
 	opacity:0.75;
 	color:#fff;
 }
 
-.TravelMaker:hover, .indexMyPage:hover, .btnMyTour:hover, .btnMyInfo:hover, .btnReviewBoard:hover, .btnCompanyInfo:hover, .btnFAQ:hover, .btnLogin:hover {
+.TravelMaker:hover, .indexMyPage:hover, .btnMyTour:hover, .btnMyTourB:hover, .btnMyInfo:hover, .btnMyInfoB:hover, .btnReviewBoard:hover, .btnCompanyInfo:hover, .btnFAQ:hover, .btnLogin:hover, .btnLogout:hover {
 	opacity:1;
 }
 
@@ -211,9 +211,43 @@ section:not(#hero):nth-child(even) {
   transition: box-shadow .2s;
 }
 
+#btnSearchB{
+	grid-area:button;
+	background-color: initial;
+	background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+	height: 40px;
+	line-height: 40px;
+	outline: 0;
+	overflow: hidden;
+	padding: 0 20px;
+	pointer-events: auto;
+	position: relative;
+	text-align: center;
+	touch-action: manipulation;
+	user-select: none;
+	-webkit-user-select: none;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 100%;
+	z-index: 9;
+	border: 0;
+	transition: box-shadow .2s;
+}
+
 #btnSearch:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
   opacity: 0.57;
+}
+
+#btnSearchB:hover {
+	box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+	opacity: 0.57;
 }
 
 #hero #hero-content #date1,#date2{

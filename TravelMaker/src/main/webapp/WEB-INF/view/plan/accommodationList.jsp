@@ -8,6 +8,7 @@
 <link rel='stylesheet' href='./css/accommodation.css'/>
 <script defer src='./js/accommodation.js'></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
 <title>숙소 추천 리스트</title>
 </head>
 <body>
@@ -22,6 +23,15 @@
 
 	 <br/>
 
+	<c:forEach var='item' items='${result}'>
+		<div class="item" id="item">
+			<div class="item-name" id="title">${item.title}</div>
+			<div class="item-image" style="background-image: url('${item.firstImage}')" id="location"></div>
+			<div class="item-address" id="doc">${item.addr1}</div>
+			<div class="item-tel">${item.tel}</div>
+			<div class="item-homepage">${item.homepage}</div>
+		</div>
+	</c:forEach>
 	<div id='accommodation' class='ex'>
 		<span><img src='./images/hotel.png'/></span>
 		<div id='title'>스위트호텔 남원</div>

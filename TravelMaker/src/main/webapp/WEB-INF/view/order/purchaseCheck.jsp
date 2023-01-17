@@ -1,5 +1,8 @@
+<%@ page import="com.project1.order.OrderDto" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+		 pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="var" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,46 +10,57 @@
 <link rel='stylesheet' href='./css/purchaseCheck.css'/>
 <script defer src='./js/purchaseCheck.js'></script>
  <!-- jQuery -->
-  <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
  <!-- iamport.payment.js -->
   <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
 <title>상세보기</title>
 </head>
 <body>
+<%
+	OrderDto orderDto = (OrderDto)request.getAttribute("orderDto");
+%>
 
 <div class = 'one'>
-<div id = 'two'></div>
-
-<!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
+<div id = 'two' style = "background-image: url('/images/${orderDto.region}.jpeg')"></div>
+<form action = 'purchaseCheck' method = 'post' id="frm" hidden>
+	<input type="text" name="email" id="email" value="${orderDto.email}" style="display:none">
+	<input type="text" name="region" id="region" value="${orderDto.region}" style="display:none">
+	<input type="text" name="people" id="people" value="${orderDto.people}" style="display:none">
+	<input type="text" name="startDate" value="${orderDto.startDate}" style="display:none">
+	<input type="text" name="endDate" value="${orderDto.endDate}" style="display:none">
+	<input type="text" name="startDateTime" value="${orderDto.startDateTime}" style="display:none">
+	<input type="text" name="endDateTime" value="${orderDto.endDateTime}" style="display:none">
+</form>
+	<!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
 <div id = 'three'>
 	<div>
 		<label>선택지역 : </label>
-		<span>전라도</span>
+		<span name="region" value="${orderDto.region}">${orderDto.region}</span>
 	</div>
 	<div>
 		<label>인원수 : </label>
-		<span>2명</span>
+		<span name="people" value="${orderDto.people}">${orderDto.people} 명</span>
 	</div>
 	<div>
 		<label>가는날</label>	
 		 <label>
-		    <input type="radio" name="startTime" value="오전"/>
+		    <input type="radio" name="startTime" value="오전" ${(orderDto.startDateTime eq 'am')? 'checked' : ''}/>
 		    <span>오전</span>
-		    <input type="radio" name="startTime" value="오후" checked/>
+		    <input type="radio" name="startTime" value="오후" ${(orderDto.startDateTime eq 'pm')? 'checked' : ''}/>
 		    <span>오후</span>
 	  	</label>
 	  	<br/>
 	  	<label>오는날</label>	
 		 <label>
-		    <input type="radio" name="endTime" value="오전" checked/>
+		    <input type="radio" name="endTime" value="오전" ${(orderDto.endDateTime eq 'am')? 'checked' : ''}/>
 		    <span>오전</span>
-		    <input type="radio" name="endTime" value="오후"/>
+		    <input type="radio" name="endTime" value="오후" ${(orderDto.endDateTime eq 'pm')? 'checked' : ''}/>
 		    <span>오후</span>
 	  	</label>
 	</div>
 	<div>
 		<label>총 금액 : </label>
-		<span>60,000원</span>
+		<span>${orderDto.people}*30000 원</span>
 	</div>
 	
 	<div id='btnZone'>

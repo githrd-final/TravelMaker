@@ -131,6 +131,12 @@
 			<artifactId>log4j-slf4j-impl</artifactId>
 			<version>2.9.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-web</artifactId>
+			<version>2.9.0</version>
+			<scope>runtime</scope>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
           <!-- 대용량 파일 처리 -->
           <dependency>

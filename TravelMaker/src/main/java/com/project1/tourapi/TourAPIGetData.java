@@ -1,5 +1,7 @@
 package com.project1.tourapi;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
+@Slf4j
 
 public class TourAPIGetData {
 	
@@ -163,10 +165,8 @@ public class TourAPIGetData {
 							+"&mapinfoYN=Y"
 							+"&overviewYN=Y"
 							+"&addrinfoYN=Y";
-				
-				
+
 				StringBuffer json = readURL(url);
-				
 				detailJsonDataList.add(json.toString());
 			}
 			
@@ -230,6 +230,34 @@ public class TourAPIGetData {
 		}
 			
 		
+		return json.toString();
+	}
+
+	// 위치기반&카테고리 검색 조회
+	public String getLocationCategoryJsonData(String mapX,String mapY, String contentTypeId) {
+		StringBuffer json = new StringBuffer();
+
+		try {
+			String url = "http://apis.data.go.kr/B551011/KorService/locationBasedList?serviceKey=" + APIkey
+					+"&pageNo="+pageNo
+					+"&numOfRows="+numOfRows
+					+"&MobileOS="+ MobileOS
+					+"&MobileApp="+ MobileApp
+					+"&arrange=O"
+					+"&_type="+type
+					+"&cat1="+contentTypeId
+					+"&mapX="+mapX
+					+"&mapY="+mapY
+					+"&radius=20000";
+
+
+			json = readURL(url);
+
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+
+
 		return json.toString();
 	}
 
