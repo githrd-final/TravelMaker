@@ -10,7 +10,9 @@ import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Transactional
@@ -79,9 +81,6 @@ public class OrderService {
             ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
             ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
         }
-        log.info("ticketSerialListA : " + ticketSerialListA);
-        log.info("ticketSerialListB : " + ticketSerialListB);
-        log.info("ticketSerialListA : " + ticketSerialListA.get(0));
 
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
         int regionInt = 0;
@@ -110,6 +109,7 @@ public class OrderService {
         purchaseDto.setEndDateTime(endDateTime);
         log.info("regionInt : " + regionInt);
         purchaseDto.setRegionInt(regionInt);
+        purchaseDto.setCity(selectedRegion);
 
         orderMapper.insertPurchase(purchaseDto);
         orderMapper.updateTicketStatusA(ticketSerialListA.get(0));

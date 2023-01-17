@@ -17,4 +17,5 @@ public class PurchaseDto {
     private String startDateTime;
     private String endDateTime;
     private int regionInt;
+    private String city;
 }

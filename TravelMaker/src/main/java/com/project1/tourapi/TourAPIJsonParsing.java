@@ -117,6 +117,9 @@ public class TourAPIJsonParsing {
 						vo.setTitle((String)itemObj.get("title"));
 						vo.setOverView((String)itemObj.get("overview"));
 						vo.setFirstImage((String)itemObj.get("firstimage"));
+						vo.setAddr1((String)itemObj.get("addr1"));
+						vo.setTel((String)itemObj.get("tel"));
+						vo.setHomepage((String)itemObj.get("homepage"));
 					}
 					
 					list.add(vo);

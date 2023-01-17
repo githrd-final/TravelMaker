@@ -14,7 +14,7 @@ IMP.init("imp84346376"); // 예: imp00000000
     IMP.request_pay({ // param
         pg: "html5_inicis",
         pay_method: "card",
-        merchant_uid: "ORD20180131-020",
+        merchant_uid: "ORD20180131-084",
         name: "랜덤 기차 여행 - " + region,
         amount: 100, // if
         buyer_email: email,
@@ -28,15 +28,13 @@ IMP.init("imp84346376"); // 예: imp00000000
             console.log(orderDto);
             $.ajax({
                 type : "POST",
-                url : "/order/purchasedTicket",
+                url : "/order/purchasedTicketA",
                 data : orderDto,
                 success : function(data) {
-                    console.log(data);
                     alert("성공");
-                    $("#content").load("/order/purchasedTicket");
+                    $("#content").load("/order/purchasedTicketB");
                 },
                     error: function(data) {
-                        console.log(data);
                         alert("실패");
                     }
             });

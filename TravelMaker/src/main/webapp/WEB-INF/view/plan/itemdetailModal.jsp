@@ -3,7 +3,6 @@
 <html>
 <head>
     <title>viewdetail</title>
-    <script defer src='/js/accommodation.js'></script>
 </head>
 <body>
         <c:set var="item" value="${result}"/>

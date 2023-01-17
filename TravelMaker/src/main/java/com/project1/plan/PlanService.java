@@ -23,18 +23,16 @@ public class PlanService {
     @Autowired
     PlanMapper planMapper;
 
-    public String findMapX(String region) throws Exception {
+    public String findMapX(String city) throws Exception {
         log.info("serviceFindMapX");
-        log.info(region);
-        String mapX = planMapper.findMapX(region);
+        String mapX = planMapper.findMapX(city);
         log.info("mapX : " + mapX);
         return mapX;
     }
 
-    public String findMapY(String region) throws Exception {
+    public String findMapY(String city) throws Exception {
         log.info("serviceFindMapY");
-        log.info(region);
-        String mapY = planMapper.findMapY(region);
+        String mapY = planMapper.findMapY(city);
         log.info("mapY : " + mapY);
         return mapY;
     }

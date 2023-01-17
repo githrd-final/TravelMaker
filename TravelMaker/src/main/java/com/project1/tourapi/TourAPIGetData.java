@@ -1,5 +1,7 @@
 package com.project1.tourapi;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
+@Slf4j
 
 public class TourAPIGetData {
 	
@@ -163,10 +165,8 @@ public class TourAPIGetData {
 							+"&mapinfoYN=Y"
 							+"&overviewYN=Y"
 							+"&addrinfoYN=Y";
-				
-				
+
 				StringBuffer json = readURL(url);
-				
 				detailJsonDataList.add(json.toString());
 			}
 			

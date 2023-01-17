@@ -61,13 +61,11 @@ public class OrderController {
     }
 
     @ResponseBody
-    @RequestMapping("/order/purchasedTicket")
-    public ModelAndView purchasedTicket(OrderDto orderDto, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    @RequestMapping("/order/purchasedTicketA")
+    public ModelAndView purchasedTicketA(OrderDto orderDto, HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception {
         ModelAndView mv = new ModelAndView();
         PurchaseDto purchaseDto;
-        log.info("purchasedTicket");
-        log.info(orderDto.getPeople());
-        log.info(orderDto.getEmail());
+        log.info("purchasedTicketA");
 
         try {
             purchaseDto = orderService.purchaseTicket(orderDto);
@@ -76,10 +74,21 @@ public class OrderController {
         }
         log.info(purchaseDto.getPurchaseSerial());
         log.info(orderDto.getEmail());
-        mv.addObject("orderDto", orderDto);
-        mv.addObject("purchaseDto", purchaseDto);
         request.setAttribute("orderDto", orderDto);
         request.setAttribute("purchaseDto", purchaseDto);
+        mv.setViewName("order/purchaseDtoPage");
+        session.setAttribute("purchaseDto", purchaseDto);
+        return mv;
+    }
+
+    @RequestMapping("/order/purchasedTicketB")
+    public ModelAndView purchasedTicketB(HttpSession session, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        ModelAndView mv = new ModelAndView();
+        PurchaseDto purchaseDto = (PurchaseDto) session.getAttribute("purchaseDto");
+        log.info("purchasedTicketB");
+        log.info(purchaseDto.getPurchaseSerial());
+        request.setAttribute("purchaseDto", purchaseDto);
+        session.removeAttribute("purchaseDto");
         mv.setViewName("order/purchasedTicket");
         return mv;
     }
