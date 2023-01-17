@@ -64,6 +64,9 @@
 	<!--  update -->
 	
 	<!--  delete   -->
+	<select id="deleteCheck" parameterType="com.project1.planner.PlanVo" resultType="Integer">
+		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{planDate}
+	</select>
 	<delete id="deletePlan" parameterType="com.project1.planner.PlanVo">
 		DELETE FROM plan WHERE planbucketSerial = #{planbucketSerial}
 	</delete>

@@ -11,11 +11,13 @@
 </head>
 <body>
 	<c:forEach var="bucketVo" items="${list}">
-		<div class="planBucketItem" onclick="customView('${bucketVo.mapX}','${bucketVo.mapY}')">
-			<span class="planBucketItemTitle">${bucketVo.locationName}</span>
-			<span class="planBucketItemType">${bucketVo.contenttypeId}</span><br/>
-			<span class="planBucketItemAddr">${bucketVo.addr}</span>
-			<span class="planBucketItemIcon"><i class="fa-solid fa-xmark fa-2xl" id="planBucketXicon"></i></span>
+		<div class="planBucketItem">
+			<div class="bucketDataZone" onclick="customView('${bucketVo.mapX}','${bucketVo.mapY}')">
+				<span class="planBucketItemTitle">${bucketVo.locationName}</span>
+				<span class="planBucketItemType">${bucketVo.contenttypeId}</span><br/>
+				<span class="planBucketItemAddr">${bucketVo.addr}</span>
+			</div>
+			<span class="planBucketItemIcon" onclick="bucketDelete('${bucketVo.planbucketSerial}')"><i class="fa-solid fa-xmark fa-2xl"></i></span>
 		</div>
 	</c:forEach>
 </body>
