@@ -67,6 +67,10 @@
     	limit 1
     </select>
     
+    <select id ="userDetailView" parameterType="String" resultType="com.project1.review.UserVo">
+    	select email, nickName, userComment, oriUserPhoto, sysUserPhoto from user where nickName = #{_parameter}
+    </select>
+    
     <update id="modify" parameterType="com.project1.review.ReviewVo">
     	update review set reviewTitle=#{reviewTitle}, reviewStar=${reviewStar}, text=#{text}
     	where reviewSerial=${reviewSerial}

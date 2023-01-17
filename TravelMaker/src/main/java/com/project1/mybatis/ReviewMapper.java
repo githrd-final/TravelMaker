@@ -11,6 +11,7 @@ import com.project1.review.ReviewPageVo;
 import com.project1.review.ReviewPlanVo;
 
 import com.project1.review.ReviewVo;
+import com.project1.review.UserVo;
 
 @Repository
 @Mapper
@@ -46,4 +47,5 @@ public interface ReviewMapper {
 	public int thumbsUpR(int reviewSerial);
 	public int thumbsDownR(int reviewSerial);
 	
+	public UserVo userDetailView(String nickName);
 }

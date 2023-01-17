@@ -24,6 +24,7 @@
 			<input type='hidden' name='period' value='${pVo.period }'/>
 			<input type='hidden' name='region' value='${pVo.region }'/>
 			<input type='hidden' name='city' value='${pVo.city }'/>
+			<input type='hidden' id ='nickName' name='nickName' value='${rVo.nickName }'/>
 		</form>
 		<div id='rv_title'>
 				<div>후기 게시판</div>

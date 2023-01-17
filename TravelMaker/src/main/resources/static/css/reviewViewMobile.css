@@ -60,6 +60,10 @@
 	align-self : end;
 	border-radius : 50%;
 }
+#rv_content_user_photo:hover{
+	cursor : pointer;
+}
+
 
 #rv_content_detail_2{
 	display : grid;
@@ -192,4 +196,17 @@
 }
 #rv_content_article img{
 	width:95%;
+}
+#ri_content_plan_day{
+	background-color : #f1f6fa;
+	width: 60px;
+	padding : 2px;
+	color: #3f8ef1;
+	border-radius : 20%;
+	text-align: center;
+	display:inline-block;
+	margin-right:25px;
+}
+.spanclass{
+	display : none;
 }

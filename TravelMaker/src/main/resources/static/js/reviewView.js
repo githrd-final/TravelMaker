@@ -65,10 +65,18 @@
 	/**목록으로 가기  */
 	$('#rv_to_list').on('click',function(){
 		var frm = $('#rv_form');
-		param = $(frm).serialize();
+		var param = $(frm).serialize();
 		$.post("review/reviewSelect", param, function(data){
 			$('#content').html(data);
 		})
 	})
 	
+	/**프로필 사진 누르기 (한줄 자기 소개 보러 가기) */
+	$('#rv_content_user_photo').on('click',function(){
+		var frm = $('#rv_form');
+		var param = $(frm).serialize();
+		$.post("review/userDetail", param, function(data){
+			$('#content').html(data);
+		})
+	})
 })();

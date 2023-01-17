@@ -64,6 +64,18 @@ public class ReviewController {
 		return regionCity;
 	}
 	
+	@RequestMapping("/review/userDetail")
+	public ModelAndView userDetailView(ReviewVo rVo, ReviewPageVo pVo, UserVo uVo) {
+		ModelAndView mv = new ModelAndView();
+		uVo = service.userDetailView(uVo.nickName);
+		System.out.println("유저 디테일 리뷰시리얼 " +rVo.reviewSerial);
+		mv.addObject("uVo", uVo);
+		mv.addObject("rVo", rVo);
+		mv.addObject("pVo", pVo);
+		mv.setViewName("review/userDetail");
+		return mv;
+	}
+	
 	@RequestMapping("/review/reviewModifyView")
 	public ModelAndView reviewModifyView(ReviewVo rVo) {
 		ModelAndView mv = new ModelAndView();
