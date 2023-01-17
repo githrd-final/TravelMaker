@@ -10,8 +10,6 @@
         SELECT mapY FROM station where city = #{city};
     </select>
 
-</mapper>
-
 <!-- 	<select id = "selectDate" paremeterType="String" resultType="Integer"> -->
 <!-- 		SELECT DATEDIFF(#{endDate},#{startDate}) FROM purchase WHERE purchaseSerial = #{_parameter} -->
 <!-- 	</select> -->
