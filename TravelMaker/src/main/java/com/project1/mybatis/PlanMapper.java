@@ -1,18 +1,19 @@
 package com.project1.mybatis;
 
-import java.util.List;
-
+import com.project1.planner.PlanVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
-import com.project1.planner.PlanVo;
+import java.util.List;
 
 @Repository
 @Mapper
 public interface PlanMapper {
-	
-	
-	
+
+    public String findMapX(String region);
+
+    public String findMapY(String region);
+
 	//로드시 날짜 필요함
 	public int selectDate(String purchaseSerial);
 	

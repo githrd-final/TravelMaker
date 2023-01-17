@@ -1,7 +1,7 @@
 /**
  * 
  */
- 
+ /*
  	const modal = document.getElementById("modal");
 
 	modal.addEventListener("click", e => {
@@ -25,7 +25,7 @@
 	}
  
  
-$('.ex').on('click',function(){
+$('#item').on('click',function(){
     $('#modal').load('/plan/itemDetailModal/129156');
     $('#modal').css('display', 'flex');
 })
@@ -38,3 +38,4 @@ if(width_size<=450){
 	$('.itemModaltoMyPlan').on('click',function(){
 		$('#content').load('/planner/planner');
 	})}
+*/

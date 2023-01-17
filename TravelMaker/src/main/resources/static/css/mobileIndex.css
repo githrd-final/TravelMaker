@@ -46,14 +46,13 @@ html {
 }
 
 #menu {
-	margin-right: -15px;
 	line-height:30px;
 	justify-self : center;
 }
 
 #menu>ul>li{
 	float: left;
-	font-size: 0.5em;
+	font-size: 1.5em;
 	width: fit-content;
 	margin: 0 1vw;
 	position: relative;
@@ -85,7 +84,7 @@ html {
 
 #menu>ul>li:hover>#block .indexMenuA{
 	color:black;
-	font-size:0.8rem;
+	font-size:1.2rem;
 }
 
 #menu>ul>li>#block>.indexMenuLi:hover{
@@ -128,7 +127,7 @@ section:not(#hero):nth-child(even) {
 	width: 80vw;
 	min-height: 38vh;
 	background: #F59651;
-	font-size:0.6em;
+	font-size:1.2rem;
 	opacity:0;
 	padding:2vh 9vw;
 	animation: fadeIn 1s  0.5s forwards ease-in;
@@ -142,8 +141,8 @@ section:not(#hero):nth-child(even) {
 #start{grid-area: start;}
 #startDate{
 	grid-area: startDate;
-	align-self: end;	/*아래*/
-	justify-self: start; /*왼쪽*/
+	align-self: center;	/*아래*/
+	justify-self: center; /*왼쪽*/
 }
 #date1{
 	grid-area: date1;
@@ -157,8 +156,8 @@ section:not(#hero):nth-child(even) {
 }
 #endDate{
 	grid-area: endDate;
-	align-self: end;
-	justify-self: start;
+	align-self: center;
+	justify-self: center;
 }
 #date2{
 	grid-area: date2;
@@ -172,8 +171,8 @@ section:not(#hero):nth-child(even) {
 }
 #people{
 	grid-area: people;
-	align-self: end;
-	justify-self: start; /*center?*/
+	align-self: center;
+	justify-self: center;
 }
 #peopleSu{
 	grid-area: su;
@@ -317,8 +316,6 @@ section .sectionP {
 
 
 .packages .grid li {
-	padding:50px;
-	flex-basis:50%;
 	text-align:center;
 }
 
@@ -327,8 +324,13 @@ section .sectionP {
 }
 
 .packages .grid li h4 {
-	font-size:30px;
-	margin:20px;
+	font-size:2.8rem;
+	margin:1.8vh;
+}
+
+.packages p{
+	font-size: 1.2rem;
+	line-height: 2;
 }
 
 
@@ -348,6 +350,15 @@ section .sectionP {
 	width:60%;
 }
 
+.contact h3{
+	font-size: 2.8rem;
+	margin-bottom: 3vh;
+}
+
+.contact p{
+	font-size: 1.2rem;
+}
+
 .contact form .btn{
 	padding: 1.5vh 3vw;
     margin: 2vh auto;
@@ -364,16 +375,14 @@ section .sectionP {
 	display:flex;
 	flex-direction:column;
 }
-#indexFooter{
-	margin:5px auto;
-}
+
 #indexFooter {
 	display:flex;
 	align-items: center;
 	justify-content:space-around;
 	background-color:#E49082;
 	color:#fff;
-	padding: 20px 0;
+	padding: 2.2vh;
 	z-index: 3;
 }
 
@@ -395,4 +404,6 @@ section .sectionP {
 
 .TravelMaker{
 	font-size:2.5rem;
+	justify-content: center;
+	display:flex;
 }

@@ -1,0 +1,303 @@
+@charset "EUC-KR";
+		#mplanner{
+			display:grid;
+			grid-rows: 2fr 3fr;
+			min-height:55vh;
+			}
+		#map{
+			min-width:100vw;
+ 			min-height:20vh;
+		}
+		.mListContainer{
+			margin:1vh;
+	  		justify-content : center;
+		}
+		#button_container{
+			display:grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		input#mPlanList, input#mPlanBucketList{
+			height:50px;
+			font-size:1.5rem;
+			border-radius: 20px 20px 0 0;
+		}
+		input#mPlanList:hover, input#mPlanBucketList:hover{
+			background-color:tomato;
+			color: white;
+		}
+		.mList{
+			border-left: black 1px solid;
+			border-right: black 1px solid;
+			border-bottom: black 1px solid;
+			overflow-y:auto;
+			height:45vh;
+		}
+		.clickbtn{
+			background-color:tomato;
+			border:none;
+			color: white;
+		}
+		.nonclickbtn{
+			background-color:white;
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			border-bottom:1px solid black;
+		}
+		.mList::-webkit-scrollbar{
+			display:none;
+		}
+		/* modal box */
+
+.modalheader{
+	background-color: tomato;
+	color: white;
+	padding:1vh;
+	border-radius:10px 10px 0 0;
+}
+#modal, #modal2, #modal3{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	display:none;
+	width: 100vw;
+	height: 100vh;
+}
+
+#modalBack, #modalBack2, #modalBack3{
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+#modal>#content1, #modal2>#content2{
+	width: 70vw;
+	min-height:20vh;	
+	border-radius:10px;
+	margin: 45vh auto;
+	z-index:101;
+	padding-bottom: 2vh;
+	position: relative;
+	text-align:center;
+	background-color: #fff;
+}
+#modal3>#content3{
+	width: 80vw;
+	min-height:15vh;	
+	border-radius:10px;
+	margin: 45vh auto;
+	z-index:101;
+	padding-bottom: 2vh;
+	position: relative;
+	text-align:center;
+	background-color: #fff;
+}
+#modal>#content1 #btnClose, #modal2>#content2 #btnClose2, #modal3>#content3 #btnClose3{
+	position: absolute;
+	font-size:1.5rem;
+	margin-right:1vh;
+	color:white;
+	right:2px;
+	padding:0;
+	top:2px;
+	height:fit-content;
+	background-color: tomato;
+	border: none;
+	float:right;
+}
+.locationTitle{
+	font-size:1.5rem;
+	font-weight:bold;
+	display:inline-block;
+}
+.UpdateSubTitle{
+	font-size:1rem;
+}
+
+#modal2 .UpdatePlanSerial{
+	width:3vw;
+	font-size:1rem;
+}
+.MemoArea{
+	height:10vh;
+	width:80%;
+	background-color:#eee;
+	border:none;
+}
+#modal .locationName, #modal2 .locationName, #modal3 .locationName{
+	font-size:1.5rem;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:15px;
+}
+#modal>#content1 select, #modal2>#content2 select{
+	margin-top:5%;
+	width: fit-content;
+	font-size:1rem;
+	margin-bottom:10%;	
+}
+#modal>#content1 #btnCheck, #modal2>#content2 #btnCheck2, #modal3>#content3 #btnCheck3{
+	width: 50vw;
+	font-size:1rem;
+	margin-top:2vh;
+	padding:2%;
+	background-color:tomato;
+	color:white;
+	border:none;
+	margin-bottom:1vh;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+		
+}
+
+
+	.Bucketitem{
+		padding:1vh;
+		border-bottom:1px solid lightgray;
+		display:grid;
+		grid-template-columns:1.5fr 2fr 1fr 1fr;
+	}
+	
+	.bucketImg{
+		width:100%;
+		border-radius:10%;
+	}
+	.bucketInfo{
+		padding-left:1vh;
+	}
+	.bucketTitle{
+		font-size:1.5rem;
+		margin-top:2vh;
+		margin-bottom:1vh;
+	}
+	.bucketgubun{
+		font-size:1rem;
+		color: darkgray;
+	}
+	.bucketbtn{
+		display:grid;
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.bucketToPlan, .bucketThrow{
+		width:25%;
+		padding:1vw;
+		border-radius:40px;
+	}
+	.bucketToPlan{
+		margin-right: 7vw;
+	}
+	#FiltersContainer{
+		position:relative;
+	}
+	#bucketFilters{
+		position:absolute;
+		right:0;
+	}
+	.bucketFilter{
+		color:gray;
+		font-size:0.5rem;
+		margin-right: 10vw;
+	}
+
+	.Planitem{
+		padding:1%;
+		display:grid;
+		margin:5%;
+		border-bottom:1px solid gray;
+		grid-template-columns:repeat(3,1fr);
+	}
+	.planDay{
+		font-size:1.5rem;
+	}
+	.planSerial{
+		font-size:1.5rem;
+		margin:auto;
+	}
+	.planInfo{
+		padding-left:1vh;
+	}
+	.planTitle{
+		font-size:1.5rem;
+	}
+	.plangubun{
+		font-size:1rem;
+		color: darkgray;
+	}
+	.planMemoWrapper{
+		position:relative
+	}
+	.PlanMemo{
+		display: grid;
+		justify-items:end;
+		grid-template-rows :1fr 10px;
+	}
+	.PlanMemo div{
+		font-size:0.5rem;
+	}
+	.PlanMemoItem{
+		width:15%;
+	}
+	#FiltersContainer{
+		display:grid;
+		min-height:1.8vh;
+		margin-top:0.3vh;
+		justify-items:end;
+	}
+	.planFilters{
+		width:fit-content;
+	}
+	.planFilter{
+		display:inline-block;
+		color:gray;
+		margin-right: 10vw;
+		font-size:0.5rem;
+	}
+	.planDays{
+		background-color:rgba(255, 99, 71, 0.5);
+		color: white;
+		font-weight:bold;
+		text-align:center;
+		padding: 10px;
+	}
+	#goReview{
+	border-radius:50%;
+	line-height:4;
+	width:13vw;
+	height:13vw;
+	text-align:center;
+	font-weight:bold;
+	font-size:1rem;
+	text-decoration:none;
+	position :fixed;
+	z-index:500;
+	right:5%;
+	bottom:20vh;
+	color:#fff;
+	background-color:tomato;
+}
+#goReview>span{
+	height:1.5vh;
+	display:block;
+}
+.customoverlay{
+	text-align:center;
+	width:5vw;
+	height:5vw;
+	line-height:5vw;
+	color:white;
+	background-color:tomato;
+	border-radius:50%;
+}
+.customoverlay1{
+	text-align:center;
+	width:5vw;
+	height:5vw;
+	line-height:5vw;
+	color:white;
+	background-color:darkblue;
+	border-radius:50%;
+}

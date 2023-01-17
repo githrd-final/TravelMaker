@@ -1,0 +1,100 @@
+@charset "UTF-8";
+#listBack{
+	width : 75vw;
+	margin : 20px auto;
+	position : relative;
+}
+.title{
+	margin-top : 3vh;
+	margin-bottom : 5vh;
+	font-size : 1.5rem;
+}
+.btn-group button {
+    background-color: rgb(235, 233, 230);;
+    border: 3px solid #FFF;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    width : 20%;
+    font-size : 1.5rem;
+    text-align : center;
+    font-weight : bold;
+}
+
+
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group button:hover {
+    background-color: tomato;
+    color : #fff;
+}
+.btn-group button:focus {
+    background-color: tomato;
+    color : #fff;
+}
+
+/*검색창----------------------------------*/
+
+.searchTxt {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  line-height: 40px;
+  border-radius : 6px;
+  width:25%;
+  height : 53px;
+  margin : 16px;
+}
+/*검색 버튼-----------------------------------*/
+.search-btn {
+  float : right;
+  color: #EDEDED;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin : 10px;
+}
+
+
+/*퀵 버튼--------------------------------------*/
+#Quick{
+	position: absolute; 
+	right: 10px; 
+	top: 400px;
+}
+.quickMenuBar{
+	border: 2px solid tomato;
+	border-radius : 3px;
+	width : 110px;
+	height : 80px;
+	padding : 2px;
+	font-size : 15px;
+	text-align : center;
+}
+#btnMyTravel{
+	cursor:pointer;
+	border-bottom : 2px dotted tomato;
+	margin : 3px;
+}
+#btnTop{
+	cursor:pointer;
+	margin : 3px;
+}
+#btnMyTravel:hover{
+	background-color : tomato;
+}
+#btnTop:hover{
+	background-color : tomato;
+}
+

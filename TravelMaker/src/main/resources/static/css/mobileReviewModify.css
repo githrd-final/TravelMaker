@@ -42,6 +42,13 @@
 	margin-bottom:50px;
 } 
 
+#ri_InsertH{
+	font-size: 1.5rem;
+}
+
+#ri_InsertDiv{
+	font-size: 1.2rem;
+}
 .reviewInsertSpanDate{
 	grid-area: spanDate;
 	text-align:center;
@@ -113,6 +120,7 @@
 }
 #ri_content_plan{
 	grid-area: ri_content_plan;
+	font-size: 1.2rem;
 }
 #summernote{
 	width:100%;
