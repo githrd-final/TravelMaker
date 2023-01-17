@@ -123,8 +123,15 @@ public class PlannerController {
 	}
 	
 	@RequestMapping("/planner/bucketInsert")
-	public void bucketInsert(BucketVo bucketVo) {
-		bucketService.bucketToPlanInsert(bucketVo);
+	public String bucketInsert(BucketVo bucketVo) {
+		String msg = bucketService.bucketToPlanInsert(bucketVo);
+		return msg;
+	}
+	
+	@RequestMapping("/planner/bucketDelete")
+	public void bucketDelete(BucketVo bucketVo) {
+		bucketService.planBucketDelete(bucketVo);
+		
 	}
 	
 	// -------------- plan 부분 ------------------ //
@@ -134,6 +141,7 @@ public class PlannerController {
 	public ModelAndView planList(@RequestParam("purchaseSerial") String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();
 		List<PlanVo> list = planService.selectAllPlan(purchaseSerial);
+		
 		mv.addObject("list",list);
 		mv.setViewName("planner/planList");
 		return mv;

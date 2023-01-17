@@ -142,21 +142,25 @@ public class PlanListService {
 		status = manager.getTransaction(new DefaultTransactionAttribute());
 		savePoint = status.createSavepoint();
 		
+		
+		int deleteChk = planMapper.deleteCheck(planVo);
 		int cnt = planMapper.deletePlan(planVo);
 		
 		if(cnt < 1) {
 			result = false;
+			status.rollbackToSavepoint(savePoint);
 			return result;
 		} 
 		
-		cnt = planMapper.deleteUpdateOrder(planVo);
-		if(cnt < 1){
-			result = false;
-			return result;
-		} 
+		if(deleteChk != 1 && planVo.planOrder != deleteChk) {
+			cnt = planMapper.deleteUpdateOrder(planVo);
+			if(cnt < 1){
+				result = false;
+				return result;
+			} 
+		}
 		
 		if(result) manager.commit(status);
-		else  status.rollbackToSavepoint(savePoint);
 		return result;
 	}
 	
