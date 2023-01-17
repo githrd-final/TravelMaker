@@ -9,16 +9,42 @@
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 <body>
-	<c:forEach var = 'i' begin='1' end='15'>
+	<c:forEach var = 'planVo' items='${list}'>
 		<div class="planItem">
-			<div class='planItemDataZone' onclick="openModifyModal()">
-				<span class="planItemOrder">${i}</span>
-				<span class="planItemName">가나돈까스</span>
-				<span class="planItemDate">2023-01-0${i}</span>
+			<div class='planItemDataZone' onclick="openModifyModal(this)">
+				<form>
+					<span class="planItemOrder">
+						<input type="hidden" name="planOrder" value="${planVo.planOrder}"/>${planVo.planOrder}
+					</span>
+					<span class="planItemName">${planVo.locationName}</span>
+					<span class="planItemDate">
+						<input type="hidden" name="planDate" value="${planVo.planDate}"/>${planVo.planDate}
+					</span>
+					<input type="hidden" name="planbucketSerial" value="${planVo.planbucketSerial}"/>
+					<input type="hidden" name="purchaseSerial" value="${planVo.purchaseSerial}"/>
+				</form>
 			</div>
-			<div class="planItemMemoZone" onclick="openMemoModal()">
-				<span class="planItemIcon"><i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i></span>
-				<span><input type="button" value="메모 작성" class="btnInsertMemo"/></span>
+			<div class="planItemMemoZone" >
+				<c:if test="${empty planVo.planNote}">
+				<span class="planItemIcon" 
+					  onclick = "openMemoModal('${planVo.planbucketSerial}')">
+				<i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i>
+				</span>
+				<span>
+					<input type="button" value="메모 작성" id="writeMemo${planVo.planbucketSerial}" 
+						   onclick="openMemoModal('${planVo.planbucketSerial}')"/>
+				</span>
+				</c:if>
+				<c:if test="${!empty planVo.planNote}">
+				<span class="planItemIcon" 
+					  onclick = "ShowMemo('${planVo.planbucketSerial}')">
+				<i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i>
+				</span>
+				<span>
+					<input type="button" value="메모 보기" class = "btnShowMemo" onclick = "ShowMemo('${planVo.planbucketSerial}')" 
+						   id="showMemo${planVo.planbucketSerial}" style="background-color : #0080FF"/>
+				</span>
+				</c:if>
 			</div>
 		</div>
 	</c:forEach>
