@@ -3,43 +3,48 @@ a{
 	color : #ddd;
 }
 .one{
-position: relative;
-width: 800px;
-height: 600px;
-margin : 10px auto;
+width: 55%;
+margin : 10vh auto;
+display: grid;
+grid-template-areas:
+		"two three"
+		"four four";
+gap:5.5vh;
 border: #000000;
-font-weight : bold;
 }
 
 /*지역(상품) 사진*/
 #two{
+grid-area: two;
 box-sizing: border-box;
-
-position: absolute;
-width: 375px;
+width: 27vw;
+justify-self: end;
+/* 
 height: 356px;
 left: 12px;
 top: 18px;
-
+ */
 border: 1px solid #fff;
 /*background-image: url( "../images/namwon.jpg" );*/
-background-size: cover;
+background-size: 100% 100%;
 }
 
 /*결제*/
 #three{
+	grid-area: three;
+	justify-self: start;
 box-sizing: border-box;
 
-position: absolute;
-width: 375px;
+/* width: 375px;
 height: 356px;
 left: 415px;
-bottom: 226px;
+bottom: 226px; */
 
 border: 1px solid #fff;
 padding : 10px;
 font-size : 1.5rem;
 text-align : center;
+font-weight : bold;
 }
 
 #three div{
@@ -56,16 +61,37 @@ text-align : center;
 	border-bottom: 2px solid #ddd;
 }
 #four{
+	grid-area: four;
 	box-sizing: border-box;
-	position: absolute;
-	width: 778px;
-	height: 178px;
+	width: 100%;
+	/* height: 178px;
 	left: 12px;
-	top: 398px;
-	overflow: scroll;
+	top: 398px; */
 	font-size : 1rem;
 	border: 1px solid #fff;
 }
+.star_rating {
+	font-size:0; 
+	letter-spacing:-4px;
+}
+.star_rating a {
+    font-size:2vh;
+    letter-spacing:0;
+    display:inline-block;
+    margin-left:5px;
+    color: transparent; /* 기존 이모지 컬러 제거 */
+	text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+    text-decoration:none;
+}
+.star_rating a:first-child {margin-left:0;}
+.star_rating a.on {color:#777;}
+.reviewStar{
+	border: none;
+	color: #aaa;
+	width: 2vw;
+	margin-left: 1vh;
+}
+
 /*스크롤바 hidden-------------------------------------*/
 #four::-webkit-scrollbar {
     display: none; /* 크롬, 사파리, 오페라, 엣지 */
@@ -137,41 +163,43 @@ li{
 
 
 	.preReview{
-		display : inline-block;
+	display: grid;
+	grid-template-areas:
+		"preReviewStar . . ."
+		"preReviewUserName preReviewDoc preReviewDoc preReviewDate";
+	/* gap:10px; */
 	}
-	.preReview span{
-		display : inline-block;
-		margin : 2px;
-		text-align : center;
+	.preReviewStar{
+	grid-area: preReviewStar;
+	font-size : 0.8rem;
+	text-align : center;
+	color : #ccc;
+	justify-self: center;
+	width: 14vw;
 	}
-	
-	.preReviewUser{
-		font-size : 1.2rem;
-		width : 14vw;
-		text-align : center;
-		font-weight : bold;
-	
+	.preReviewUserName{
+	grid-area: preReviewUserName;
+	font-size : 1rem;
+	width : 10vw;
+	text-align : center;
+	color : #ccc;
+	justify-self: start;
 	}
-	 .preReviewUserName{
-		font-size : 1rem;
-		width : 14vw;
-		text-align : center;
-		color : #ddd;
+	.preReviewDate{
+	grid-area: preReviewDate;
+	font-size : 1rem;
+	width : 10vw;
+	text-align : center;
+	color : #ccc;
+	justify-self: start;
 	}
-	
-	.preReviewTitle{
-		font-size : 1.2rem;
-		width : 35vw;
-		text-align : center;
-		font-weight : bold;
-		color : black;
-	}
-	
 	.preReviewDoc{
-		font-size : 1rem;
-		width : 35vw;
-		text-align : center;
-		color : #ddd;
+	grid-area: preReviewDoc;
+	font-size : 1rem;
+	width : 34vw;
+	text-align : center;
+	color : #aaa;
+	justify-self: start;
 	}
 	
 
@@ -208,10 +236,30 @@ li{
 	left : 25px;
 	border:1px solid #ddd;
 	border-radius : 7px;
-	height: 100px;
 	padding : 5px;
+	box-sizing: border-box;
 	}
-	
+	.star_rating {
+	font-size:0; 
+	letter-spacing:-4px;
+	}
+	.star_rating a {
+	    font-size:1.5vh;
+	    letter-spacing:0;
+	    display: inline-block;
+	    margin-left:5px;
+	    color: transparent; /* 기존 이모지 컬러 제거 */
+		text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+	    text-decoration:none;
+	}
+	.star_rating a:first-child {margin-left:0;}
+	.star_rating a.on {color:#777;}
+	.reviewStar{
+		border: none;
+		color: #aaa;
+		width: 1vw;
+		margin-left: 1vh;
+	}
 	
 	/*후기---------------------------*/
 	.preReviewTitleP{
@@ -220,42 +268,46 @@ li{
 	margin-bottom : 10px;
 	text-align : center;
 	border-bottom: 2px solid #ddd;
-}
+	}
 	.preReview{
-	display : inline-block;
+	display: grid;
+	grid-template-areas:
+		"preReviewStar preReviewDate"
+		"preReviewUserName preReviewDoc"
+	/* gap:10px; */
 	}
-	.preReview span{
-	display : inline-block;
-	margin : 2px;
-	}
-	
-	.preReviewUser{
-	font-size : 1.2rem;
-	width : 25vw;
+	.preReviewStar{
+	grid-area: preReviewStar;
 	text-align : center;
-	font-weight : bold;
-	color : black;
+	color : #ccc;
 	}
-	 .preReviewUserName{
+	.preReviewUserName{
+	grid-area: preReviewUserName;
 	font-size : 1rem;
 	width : 25vw;
 	text-align : center;
-	color : #ddd;
+	color : #bbb;
 	}
-	
-	.preReviewTitle{
-	font-size : 1.2rem;
-	width : 60vw;
+	.preReviewDate{
+	grid-area: preReviewDate;
+	font-size : 1rem;
+	width : 25vw;
 	text-align : center;
-	font-weight : bold;
-	color : black;
+	color : #bbb;
 	}
-	
 	.preReviewDoc{
+	grid-area: preReviewDoc;
 	font-size : 1rem;
 	width : 60vw;
 	text-align : center;
-	color : #ddd;
+	color : #aaa;
+	}
+	.reviewStar{
+	border: none;
+	color: #aaa;
+	width: 2vw;
+	margin-left: 1vh;
+	font-size: 1vh;
 	}
 	
 	

@@ -28,6 +28,22 @@ public class MyTourController {
 		return mv;
 	} 
 	
+	@RequestMapping("/myTour/myTourTicket")
+	public ModelAndView myTourTicket(MyTourVo vo) {
+		ModelAndView mv = new ModelAndView();
+		List<MyTourTicketVo> list = service.TicketView(vo.getPurchaseSerial());
+		int reviewSerial = vo.getReviewSerial();
+		String purchaseSerial = vo.getPurchaseSerial();
+		mv.addObject("list", list);
+		mv.addObject("reviewSerial", reviewSerial);
+		System.out.println("reviewSerial:"+reviewSerial);
+		mv.addObject("purchaseSerial",purchaseSerial);
+		mv.setViewName("myTour/myTourTicket");
+		System.out.println("실행 OK");
+		return mv;
+	}
+
+	
 	@RequestMapping("/myTour/myTourInsert")
 	public ModelAndView myTourInsert(MyTourVo vo, MyTourPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();

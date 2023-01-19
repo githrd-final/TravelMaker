@@ -18,6 +18,7 @@
 %>
 
 <form action = 'purchasedTicket' method = 'post' id="frm" hidden>
+
 	<input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none">
 	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none">
 	<input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">

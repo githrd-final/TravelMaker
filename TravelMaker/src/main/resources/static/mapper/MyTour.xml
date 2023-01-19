@@ -3,7 +3,7 @@
 <mapper namespace="com.project1.mybatis.MyTourMapper">
 	<select	id='totList' parameterType="com.project1.myTour.MyTourPageVo" resultType="Integer">
 		SELECT COUNT(purchaseSerial) totSize FROM purchase
-        WHERE email=#{email} and substring(purchaseSerial,10,1)="0"
+        WHERE email=#{email}
 	</select>
 	
 	<select id='select' parameterType="com.project1.myTour.MyTourPageVo" resultType="com.project1.myTour.MyTourVo">
@@ -68,7 +68,15 @@
 		order by p.myReview asc, p.startDate desc
 		limit #{startNo}, #{listSize}
 	</select>
-	
+	<select id='TicketView' parameterType="String" resultType="com.project1.myTour.MyTourTicketVo">
+        select t.ticketSerial,t.ticketStartPoint,t.ticketEndPoint,t.ticketDate,t.ticketStartTime,t.ticketEndTime,t.ticketSeat,t.region, pt.purchaseSerial 
+		from ticket t left join purchasedticket pt
+		on t.ticketSerial=pt.ticketSerialStart or t.ticketSerial=pt.ticketSerialEnd
+		where pt.purchaseSerial=#{_parameter};
+    </select>
+    <select id='TicketReview' parameterType='String' resultType='Integer'>
+    	select myReview from purchase where purchaseSerial=#{_parameter};
+    </select>
 	<select id='insertView' parameterType="String" resultType="com.project1.myTour.MyTourVo">
         select purchaseSerial, 
 		case
