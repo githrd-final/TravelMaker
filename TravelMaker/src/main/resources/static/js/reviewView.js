@@ -2,6 +2,8 @@
  * 
  */
  (reviewView = function(){
+	
+	
 	 /** 좋아요 확인  */
 	 var heart_yn = $('#chkUserLike').val();
 	 if(heart_yn=='true'){

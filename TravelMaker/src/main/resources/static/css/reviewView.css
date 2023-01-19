@@ -2,6 +2,7 @@
 #rv_main{
 	display: grid;
 	grid-template-columns : 1fr;
+	
 }
 
 #rv_blank_65px{
@@ -176,7 +177,13 @@
 	height:25px;
 	border-bottom: 1px dashed black;
 }
-
+#rv_content_title{
+	font-size : 1.2rem;
+	font-weight: bolder;
+}
+#rv_content_article{
+	min-height: 50vh;
+}
 #rv_content_article img{
 	width:70%;
 	margin : auto;

@@ -118,7 +118,7 @@ public class ReviewController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+		mv.addObject("pVo", pVo);
 		mv.addObject("rVo", rVo);
 		mv.setViewName("/review/reviewView");
 		return mv;
