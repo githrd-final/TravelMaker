@@ -14,17 +14,17 @@
 	<div id='rv_main'>
 		<div id='rv_blank_65px'></div>
 		<form id='rv_form' class='rv_form'>
-			<input type='text' name = 'reviewSerial' value='${rVo.reviewSerial}'/>
-			<input type='text' id ='thumbsUp' name='thumbsUp' value='${rVo.thumbsUp}'>
-			<input type='text' name='purchaseSerial' value='${rVo.purchaseSerial }'/>
-			<input type='text' id='chkUserLike' name='chkUserLike' value='${pVo.chkUserLike }'/>
-			<input type='text' name='nowPage' value='${pVo.nowPage }'/>
-			<input type='text' name='order' value='${pVo.order }'/>
-			<input type='text' name='findStr' value='${pVo.findStr }'/>
-			<input type='text' name='period' value='${pVo.period }'/>
-			<input type='text' name='region' value='${pVo.region }'/>
-			<input type='text' name='city' value='${pVo.city }'/>
-			<input type='text' id ='nickName' name='nickName' value='${rVo.nickName }'/>
+			<input type='hidden' name = 'reviewSerial' value='${rVo.reviewSerial}'/>
+			<input type='hidden' id ='thumbsUp' name='thumbsUp' value='${rVo.thumbsUp}'>
+			<input type='hidden' name='purchaseSerial' value='${rVo.purchaseSerial }'/>
+			<input type='hidden' id='chkUserLike' name='chkUserLike' value='${pVo.chkUserLike }'/>
+			<input type='hidden' name='nowPage' value='${pVo.nowPage }'/>
+			<input type='hidden' name='order' value='${pVo.order }'/>
+			<input type='hidden' name='findStr' value='${pVo.findStr }'/>
+			<input type='hidden' name='period' value='${pVo.period }'/>
+			<input type='hidden' name='region' value='${pVo.region }'/>
+			<input type='hidden' name='city' value='${pVo.city }'/>
+			<input type='hidden' id ='nickName' name='nickName' value='${rVo.nickName }'/>
 		</form>
 		<div id='rv_title'>
 				<div>후기 게시판</div>
