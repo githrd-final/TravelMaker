@@ -1,329 +1,903 @@
-17:02:14.654+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 16656 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:02:14.656+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:02:14.674+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-17:02:14.675+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-17:02:14.939+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:02:14.945+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-17:02:15.226+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:02:15.370+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 695 ms
-17:02:15.629+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:02:15.693+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:02:15.887+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:02:15.971+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:02:15.993+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:02:15.999+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.479 seconds (JVM running for 2.055)
-17:02:25.737+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:02:25.743+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
-17:02:26.292+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:02:26.292+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:02:30.083+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
-17:02:30.083+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
-17:02:36.186+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - callCallBack
-17:02:36.186+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - callCallBack
-17:02:36.257+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
-17:02:36.257+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
-17:02:36.389+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - naverCheck
-17:02:36.389+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - naverCheck
-17:02:36.408+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberService - serviceNaverCheck
-17:02:36.408+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberService - serviceNaverCheck
-17:02:36.586+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
-17:02:36.586+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
-17:02:38.224+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
-17:02:38.224+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
-17:23:17.720+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s557ms).
-17:26:48.334+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
-17:26:48.334+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
-17:29:49.416+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-17:29:49.438+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-17:29:49.453+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-17:29:51.068+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 18309 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:29:51.070+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:29:51.089+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-17:29:51.090+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-17:29:51.330+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:29:51.336+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-17:29:51.561+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:29:51.678+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 588 ms
-17:29:51.924+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:29:51.981+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:29:52.149+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:29:52.212+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:29:52.231+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:29:52.235+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.292 seconds (JVM running for 1.878)
-17:29:55.604+0900 [http-nio-9282-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:29:55.606+0900 [http-nio-9282-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-17:29:55.623+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
-17:29:55.623+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
-17:30:47.740+0900 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-17:30:47.763+0900 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-17:30:47.769+0900 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-17:30:49.112+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 18366 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:30:49.115+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:30:49.131+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-17:30:49.131+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-17:30:49.353+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:30:49.359+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-17:30:49.583+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:30:49.700+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
-17:30:49.925+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:30:49.979+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:30:50.130+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:30:50.191+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:30:50.217+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:30:50.222+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.243 seconds (JVM running for 1.713)
-17:30:54.605+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:30:54.609+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-17:30:55.081+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:30:55.081+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:30:57.138+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-17:30:57.138+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-17:45:29.797+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
-17:45:29.873+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-17:45:29.885+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-17:45:29.964+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 18366 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:45:29.965+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:45:30.056+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:45:30.059+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-17:45:30.132+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:45:30.222+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 255 ms
-17:45:30.318+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:45:30.344+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-17:45:30.408+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-17:45:30.419+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:45:30.430+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:45:30.434+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.509 seconds (JVM running for 881.922)
-17:45:30.435+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:45:41.126+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:45:41.129+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-17:45:41.537+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:45:41.537+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:45:44.229+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-17:45:44.229+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-17:51:00.067+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-17:51:00.083+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-17:51:00.097+0900 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-17:54:36.485+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:54:36.488+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:54:36.512+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-17:54:36.513+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-17:54:36.758+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:54:36.764+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-17:54:37.020+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:54:37.144+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 631 ms
-17:54:37.378+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:54:37.433+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:54:37.634+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:54:37.705+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:54:37.725+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:54:37.730+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.391 seconds (JVM running for 1.904)
-17:54:41.601+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:54:41.602+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-17:54:42.138+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:54:42.138+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
-17:54:43.684+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-17:54:43.684+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-17:54:57.546+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:54:57.602+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-17:54:57.614+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-17:54:57.714+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:54:57.715+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:54:57.812+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:54:57.816+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
-17:54:57.866+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:54:57.930+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 213 ms
-17:54:58.036+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:54:58.059+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-17:54:58.076+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-17:54:58.087+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:54:58.098+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:54:58.102+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.407 seconds (JVM running for 22.276)
-17:54:58.103+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:55:19.968+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:55:19.977+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
-17:56:09.808+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:56:09.834+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-17:56:09.845+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
-17:56:09.934+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:56:09.935+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:56:10.003+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:56:10.005+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
-17:56:10.042+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:56:10.102+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 166 ms
-17:56:10.182+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:56:10.202+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-17:56:10.218+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-17:56:10.226+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:56:10.232+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:56:10.234+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.346 seconds (JVM running for 94.408)
-17:56:10.235+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:56:27.938+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:56:27.984+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-17:56:27.998+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-17:56:28.170+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:56:28.170+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:56:28.245+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:56:28.248+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-17:56:28.297+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:56:28.364+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 193 ms
-17:56:28.454+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:56:28.489+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-17:56:28.511+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-17:56:28.532+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:56:28.538+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:56:28.540+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.456 seconds (JVM running for 112.714)
-17:56:28.541+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:56:30.995+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:56:31.057+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-17:56:31.068+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
-17:56:31.175+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:56:31.176+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:56:31.234+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:56:31.236+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
-17:56:31.288+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:56:31.354+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 178 ms
-17:56:31.467+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:56:31.512+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-17:56:31.531+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
-17:56:31.543+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:56:31.554+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:56:31.559+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.396 seconds (JVM running for 115.732)
-17:56:31.560+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:56:36.033+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:56:36.064+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
-17:56:36.078+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
-17:56:36.216+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:56:36.216+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:56:36.330+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:56:36.333+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-17:56:36.378+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:56:36.526+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 309 ms
-17:56:36.701+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:56:36.753+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-17:56:36.768+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
-17:56:36.781+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:56:36.805+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:56:36.810+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.646 seconds (JVM running for 120.984)
-17:56:36.813+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:56:38.205+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:56:38.248+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
-17:56:38.259+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
-17:56:38.332+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:56:38.332+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:56:38.405+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:56:38.407+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
-17:56:38.465+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:56:38.558+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 225 ms
-17:56:38.676+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:56:38.816+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
-17:56:38.845+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
-17:56:38.862+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:56:38.871+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:56:38.873+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.555 seconds (JVM running for 123.047)
-17:56:38.874+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:56:56.603+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:56:56.657+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
-17:56:56.671+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
-17:56:56.801+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:56:56.802+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:56:56.884+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:56:56.888+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
-17:56:56.929+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:56:56.972+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 168 ms
-17:56:57.053+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:56:57.073+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
-17:56:57.092+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
-17:56:57.098+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:56:57.104+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:56:57.106+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.376 seconds (JVM running for 141.28)
-17:56:57.107+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:57:25.138+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:57:25.199+0900 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
-17:57:25.228+0900 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
-17:57:25.331+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:57:25.331+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:57:25.397+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:57:25.400+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-17:57:25.442+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:57:25.488+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 156 ms
-17:57:25.584+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:57:25.617+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
-17:57:25.632+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
-17:57:25.639+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:57:25.645+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:57:25.648+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.347 seconds (JVM running for 169.821)
-17:57:25.648+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:57:34.221+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:57:34.259+0900 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
-17:57:34.265+0900 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
-17:57:34.373+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:57:34.373+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:57:34.470+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:57:34.472+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
-17:57:34.521+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:57:34.574+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 200 ms
-17:57:34.725+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:57:34.755+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
-17:57:34.789+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
-17:57:34.808+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:57:34.825+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:57:34.830+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.49 seconds (JVM running for 179.004)
-17:57:34.832+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:57:39.307+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-17:57:39.328+0900 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
-17:57:39.351+0900 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
-17:57:39.478+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:57:39.479+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:57:39.577+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:57:39.580+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
-17:57:39.652+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:57:39.718+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 237 ms
-17:57:39.809+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:57:39.827+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
-17:57:39.845+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
-17:57:39.865+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:57:39.878+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:57:39.880+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.445 seconds (JVM running for 184.054)
-17:57:39.881+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:58:00.710+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-17:58:00.758+0900 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
-17:58:00.767+0900 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
-17:58:00.883+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20134 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:58:00.884+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:58:00.983+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:58:00.985+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
-17:58:01.024+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:58:01.091+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 204 ms
-17:58:01.236+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:58:01.265+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
-17:58:01.278+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
-17:58:01.288+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:58:01.297+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:58:01.299+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.453 seconds (JVM running for 205.472)
-17:58:01.299+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-17:58:12.710+0900 [RMI TCP Connection(20)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-17:58:12.724+0900 [RMI TCP Connection(20)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
-17:58:12.729+0900 [RMI TCP Connection(20)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
-17:58:14.539+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 20306 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
-17:58:14.542+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
-17:58:14.563+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-17:58:14.564+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-17:58:14.787+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-17:58:14.793+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-17:58:15.007+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
-17:58:15.121+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 557 ms
-17:58:15.354+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-17:58:15.410+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:58:15.554+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:58:15.616+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-17:58:15.634+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
-17:58:15.639+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.228 seconds (JVM running for 2.103)
-17:58:18.577+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-17:58:18.578+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-17:59:51.051+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
-17:59:51.051+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
-17:59:51.501+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
-17:59:51.501+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
-18:02:08.096+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-18:02:08.096+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
-18:02:10.343+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
-18:02:10.343+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+00:48:58.897+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m10s619ms).
+01:04:59.990+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m31s63ms).
+01:10:47.453+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m47s428ms).
+01:17:40.827+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m23s361ms).
+03:53:56.181+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m43s11ms).
+03:59:54.536+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s340ms).
+04:05:52.064+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s518ms).
+04:26:49.571+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m57s437ms).
+06:43:25.914+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m34s488ms).
+07:10:01.835+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s738ms).
+07:42:16.283+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m14s456ms).
+07:53:33.435+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m17s152ms).
+08:09:04.356+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m30s921ms).
+08:43:19.547+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m15s191ms).
+08:43:51.217+0900 [RMI TCP Connection(975)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+08:43:51.372+0900 [RMI TCP Connection(975)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+08:43:51.388+0900 [RMI TCP Connection(975)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+08:43:53.258+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:43:53.261+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:43:53.280+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:43:53.280+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:43:53.509+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:43:53.515+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+08:43:53.745+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:43:53.866+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 586 ms
+08:43:54.117+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:43:54.175+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:43:54.353+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:43:54.416+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:43:54.434+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:43:54.439+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.308 seconds (JVM running for 1.823)
+08:44:01.848+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:44:01.851+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+08:44:03.284+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:44:03.284+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:44:11.485+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+08:44:11.485+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+08:44:14.754+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - callCallBack
+08:44:14.754+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - callCallBack
+08:44:14.818+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+08:44:14.818+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+08:44:14.895+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+08:44:14.895+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+08:44:14.905+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+08:44:14.905+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+08:44:15.036+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+08:44:15.036+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+08:44:17.448+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:44:17.448+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:44:21.049+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:44:21.049+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:44:24.492+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+08:44:24.492+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+08:44:49.093+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:44:49.093+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:46:51.661+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:46:51.743+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+08:46:51.772+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+08:46:52.048+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:46:52.049+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:46:52.184+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:46:52.188+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+08:46:52.262+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:46:52.356+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+08:46:52.517+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:46:52.538+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+08:46:52.563+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+08:46:52.581+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:46:52.593+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:46:52.597+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.74 seconds (JVM running for 179.971)
+08:46:52.601+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:46:54.023+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:46:54.076+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+08:46:54.112+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+08:46:54.224+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:46:54.224+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:46:54.382+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:46:54.388+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+08:46:54.482+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:46:54.582+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 357 ms
+08:46:54.830+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:46:54.872+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+08:46:54.915+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+08:46:54.932+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:46:54.964+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:46:54.970+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.761 seconds (JVM running for 182.344)
+08:46:54.979+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:46:56.378+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:46:56.473+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+08:46:56.536+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+08:46:56.648+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:46:56.648+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:46:56.766+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:46:56.770+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+08:46:56.825+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:46:56.931+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 281 ms
+08:46:57.094+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:46:57.134+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+08:46:57.158+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+08:46:57.175+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:46:57.187+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:46:57.190+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.562 seconds (JVM running for 184.563)
+08:46:57.191+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:47:34.347+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:47:34.420+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+08:47:34.453+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+08:47:34.610+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:47:34.611+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:47:34.736+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:47:34.738+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+08:47:34.795+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:47:34.857+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 245 ms
+08:47:34.987+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:47:35.013+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+08:47:35.039+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+08:47:35.048+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:47:35.061+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:47:35.064+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.493 seconds (JVM running for 222.438)
+08:47:35.065+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:48:15.284+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:48:15.339+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+08:48:15.392+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+08:48:15.520+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:48:15.520+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:48:15.611+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:48:15.613+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+08:48:15.653+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:48:15.705+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 184 ms
+08:48:15.864+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:48:15.906+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+08:48:15.923+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+08:48:15.941+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:48:15.962+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:48:15.965+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.468 seconds (JVM running for 263.338)
+08:48:15.966+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:49:15.484+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+08:49:15.532+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+08:49:15.556+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+08:49:15.847+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:49:15.847+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:49:15.921+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:49:15.923+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+08:49:15.955+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:49:16.002+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 154 ms
+08:49:16.141+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:49:16.184+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+08:49:16.216+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+08:49:16.223+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:49:16.230+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:49:16.235+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.582 seconds (JVM running for 323.608)
+08:49:16.236+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:50:12.680+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:50:12.821+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+08:50:12.833+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+08:50:13.011+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:50:13.011+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:50:13.170+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:50:13.174+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+08:50:13.248+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:50:13.337+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 325 ms
+08:50:13.530+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:50:13.631+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+08:50:13.691+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+08:50:13.732+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:50:13.758+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:50:13.768+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.78 seconds (JVM running for 381.141)
+08:50:13.771+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:50:15.212+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:50:15.255+0900 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+08:50:15.265+0900 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+08:50:15.388+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:50:15.389+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:50:15.486+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:50:15.488+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+08:50:15.525+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:50:15.578+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 187 ms
+08:50:15.670+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:50:15.719+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+08:50:15.750+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+08:50:15.767+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:50:15.780+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:50:15.786+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.434 seconds (JVM running for 383.159)
+08:50:15.787+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:50:20.287+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:50:20.345+0900 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+08:50:20.408+0900 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+08:50:20.584+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:50:20.585+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:50:20.693+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:50:20.698+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+08:50:20.754+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:50:20.858+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 272 ms
+08:50:21.038+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:50:21.091+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+08:50:21.118+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+08:50:21.135+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:50:21.154+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:50:21.161+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.603 seconds (JVM running for 388.534)
+08:50:21.162+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:50:24.658+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+08:50:24.698+0900 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+08:50:24.707+0900 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+08:50:24.815+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:50:24.815+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:50:24.962+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:50:24.970+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+08:50:25.087+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:50:25.230+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 411 ms
+08:50:25.431+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:50:25.476+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+08:50:25.497+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+08:50:25.506+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:50:25.519+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:50:25.523+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.726 seconds (JVM running for 392.896)
+08:50:25.525+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:52:47.287+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+08:52:47.332+0900 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+08:52:47.353+0900 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+08:52:47.694+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 69718 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:52:47.695+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:52:47.821+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:52:47.826+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+08:52:47.917+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:52:48.025+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 329 ms
+08:52:48.243+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:52:48.309+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+08:52:48.365+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+08:52:48.406+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:52:48.432+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:52:48.437+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.957 seconds (JVM running for 535.81)
+08:52:48.439+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+08:55:44.217+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:55:44.241+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+08:55:44.268+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+08:55:44.268+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+08:57:33.921+0900 [RMI TCP Connection(44)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+08:57:33.945+0900 [RMI TCP Connection(44)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+08:57:33.959+0900 [RMI TCP Connection(44)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+08:57:35.691+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70403 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:57:35.694+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:57:35.711+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:57:35.711+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:57:35.959+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:57:35.966+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+08:57:36.214+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:57:36.343+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 631 ms
+08:57:36.584+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:57:36.641+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:57:36.809+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:57:36.874+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:57:36.919+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:57:36.928+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.368 seconds (JVM running for 2.052)
+08:57:37.608+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:57:37.609+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+08:58:29.332+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+08:58:29.332+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+08:58:37.399+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+08:58:37.399+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+08:59:14.565+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:59:14.565+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:59:16.092+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+08:59:16.092+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+08:59:18.921+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:59:18.921+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:59:27.528+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 192 class path changes (0 additions, 192 deletions, 0 modifications)
+08:59:27.594+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+08:59:27.624+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+08:59:42.809+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+08:59:42.812+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+08:59:42.829+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:59:42.829+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:59:43.078+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+08:59:43.084+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+08:59:43.338+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+08:59:43.451+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 622 ms
+08:59:43.697+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+08:59:43.754+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:59:43.922+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:59:43.984+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:59:44.002+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+08:59:44.007+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.347 seconds (JVM running for 1.953)
+08:59:47.422+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:59:47.424+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+08:59:47.931+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+08:59:47.931+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+08:59:49.756+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+08:59:49.756+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+08:59:55.470+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+08:59:55.470+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+09:00:44.746+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+09:00:44.896+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:00:44.922+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:00:45.133+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+09:00:45.174+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+09:00:45.410+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09:00:45.431+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+09:00:45.732+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+09:00:45.903+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 723 ms
+09:00:46.106+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+09:00:46.147+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+09:00:46.191+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+09:00:46.227+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09:00:46.252+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+09:00:46.259+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.183 seconds (JVM running for 64.205)
+09:00:46.264+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09:00:50.769+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+09:00:50.804+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+09:00:50.851+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+09:00:50.982+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+09:00:50.983+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+09:00:51.097+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+09:00:51.104+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+09:00:51.182+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+09:00:51.290+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 305 ms
+09:00:51.614+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+09:00:51.661+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+09:00:51.705+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+09:00:51.730+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09:00:51.745+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+09:00:51.747+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.797 seconds (JVM running for 69.693)
+09:00:51.748+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09:00:55.709+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:00:55.718+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+09:00:58.215+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+09:00:58.215+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+09:08:25.128+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+09:08:25.128+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+09:08:33.233+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+09:08:33.233+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+09:09:34.832+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+09:09:34.832+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+09:09:37.812+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+09:09:37.812+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+09:22:31.473+0900 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=5m9s498ms).
+09:36:08.851+0900 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=5m37s283ms).
+09:46:48.601+0900 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=4m57s107ms).
+09:52:08.633+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+09:52:08.633+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+09:56:38.149+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+09:56:38.149+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:02:01.011+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+10:02:01.011+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+10:02:04.173+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+10:02:04.173+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+10:04:58.535+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+10:04:58.535+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+10:06:28.678+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+10:06:28.678+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+10:06:32.486+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+10:06:32.486+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+10:06:33.333+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:06:33.333+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:10:11.346+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:10:11.515+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+10:10:11.632+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+10:10:11.902+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:10:11.903+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:10:12.159+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:10:12.164+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+10:10:12.351+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:10:12.509+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+10:10:12.801+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:10:12.858+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+10:10:12.917+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+10:10:12.942+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:10:12.991+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:10:12.998+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.146 seconds (JVM running for 3364.391)
+10:10:13.001+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:10:14.400+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:10:14.496+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+10:10:14.524+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+10:10:14.648+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:10:14.649+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:10:14.754+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:10:14.758+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+10:10:14.827+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:10:14.912+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 262 ms
+10:10:15.048+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:10:15.079+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+10:10:15.102+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+10:10:15.124+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:10:15.138+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:10:15.141+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.515 seconds (JVM running for 3366.532)
+10:10:15.142+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:10:57.342+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:10:57.371+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+10:22:33.947+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:22:34.172+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+10:22:34.204+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+10:22:34.465+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:22:34.466+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:22:34.635+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:22:34.640+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+10:22:34.719+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:22:34.812+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 345 ms
+10:22:35.038+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:22:35.089+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+10:22:35.180+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+10:22:35.206+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:22:35.250+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:22:35.255+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.858 seconds (JVM running for 4106.613)
+10:22:35.256+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:23:21.488+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:23:21.548+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+10:23:21.587+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+10:23:21.782+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:23:21.783+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:23:22.029+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:23:22.049+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+10:23:22.168+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:23:22.247+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 461 ms
+10:23:22.412+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:23:22.451+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+10:23:22.479+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+10:23:22.504+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:23:22.511+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:23:22.516+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.788 seconds (JVM running for 4153.873)
+10:23:22.518+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:23:35.195+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:23:35.276+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+10:23:35.308+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+10:23:35.544+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:23:35.545+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:23:35.671+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:23:35.673+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+10:23:35.755+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:23:35.820+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 273 ms
+10:23:36.027+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:23:36.050+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+10:23:36.073+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+10:23:36.081+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:23:36.095+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:23:36.097+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.595 seconds (JVM running for 4167.453)
+10:23:36.098+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:27:03.811+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:27:03.914+0900 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+10:27:03.941+0900 [Thread-31] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+10:27:04.129+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:27:04.130+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:27:04.237+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:27:04.239+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+10:27:04.296+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:27:04.350+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 219 ms
+10:27:04.500+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:27:04.540+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+10:27:04.578+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+10:27:04.595+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:27:04.620+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:27:04.625+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.533 seconds (JVM running for 4375.975)
+10:27:04.627+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:28:17.661+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:28:17.758+0900 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+10:28:17.839+0900 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+10:28:18.127+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:28:18.130+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:28:18.304+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:28:18.308+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+10:28:18.411+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:28:18.545+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 411 ms
+10:28:18.758+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:28:18.783+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+10:28:18.799+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+10:28:18.808+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:28:18.826+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:28:18.830+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.817 seconds (JVM running for 4450.178)
+10:28:18.832+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:28:33.492+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:28:33.544+0900 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+10:28:33.569+0900 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+10:28:33.757+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:28:33.758+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:28:33.917+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:28:33.922+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+10:28:34.008+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:28:34.086+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 327 ms
+10:28:34.348+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:28:34.385+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+10:28:34.412+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+10:28:34.431+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:28:34.474+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:28:34.479+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.774 seconds (JVM running for 4465.826)
+10:28:34.481+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:28:42.038+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:28:42.124+0900 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+10:28:42.130+0900 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+10:28:42.223+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:28:42.224+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:28:42.302+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:28:42.304+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+10:28:42.340+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:28:42.409+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 185 ms
+10:28:42.639+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:28:42.697+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+10:28:42.721+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+10:28:42.734+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:28:42.743+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:28:42.745+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.543 seconds (JVM running for 4474.092)
+10:28:42.747+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:29:06.603+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:29:06.685+0900 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+10:29:06.819+0900 [Thread-47] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.
+10:29:07.010+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:29:07.010+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:29:07.152+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:29:07.155+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+10:29:07.276+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:29:07.359+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 348 ms
+10:29:07.670+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:29:07.774+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+10:29:07.829+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+10:29:07.847+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:29:07.862+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:29:07.867+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.891 seconds (JVM running for 4499.214)
+10:29:07.868+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:29:09.304+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:29:09.345+0900 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+10:29:09.477+0900 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+10:29:09.620+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:29:09.621+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:29:09.752+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:29:09.758+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+10:29:09.851+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:29:10.055+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 432 ms
+10:29:10.348+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:29:10.421+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+10:29:10.441+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+10:29:10.459+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:29:10.480+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:29:10.483+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.886 seconds (JVM running for 4501.83)
+10:29:10.484+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:29:16.954+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:29:17.214+0900 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+10:29:17.255+0900 [Thread-55] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+10:29:17.550+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:29:17.551+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:29:17.743+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:29:17.750+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+10:29:17.876+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:29:17.984+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 430 ms
+10:29:18.266+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:29:18.331+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+10:29:18.376+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+10:29:18.408+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:29:18.439+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:29:18.446+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.944 seconds (JVM running for 4509.894)
+10:29:18.449+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:29:21.949+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:29:22.043+0900 [Thread-59] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+10:29:22.060+0900 [Thread-59] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+10:29:22.231+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 70559 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:29:22.231+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:29:22.342+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:29:22.351+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+10:29:22.489+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:29:22.645+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 412 ms
+10:29:23.062+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:29:23.128+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+10:29:23.168+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+10:29:23.201+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:29:23.228+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:29:23.232+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.025 seconds (JVM running for 4514.681)
+10:29:23.233+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:29:26.835+0900 [RMI TCP Connection(103)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+10:29:26.980+0900 [RMI TCP Connection(103)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+10:29:27.001+0900 [RMI TCP Connection(103)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+10:31:35.876+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:31:35.879+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:31:35.895+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:31:35.895+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:31:36.143+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:31:36.152+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+10:31:36.408+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:31:36.532+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 637 ms
+10:31:36.804+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:31:36.861+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:31:37.043+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:31:37.105+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:31:37.124+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:31:37.129+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.384 seconds (JVM running for 2.007)
+10:31:57.044+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:31:57.047+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:31:57.627+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:31:57.627+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:31:59.104+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+10:31:59.104+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+10:33:41.272+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+10:33:41.272+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+10:33:42.960+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:33:42.960+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:33:45.325+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+10:33:45.325+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+10:33:50.147+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+10:33:50.147+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+10:33:52.533+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+10:33:52.533+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+10:33:53.830+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - callCallBack
+10:33:53.830+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - callCallBack
+10:33:53.911+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+10:33:53.911+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+10:33:53.993+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+10:33:53.993+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+10:33:53.997+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:33:53.997+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:33:54.079+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:33:54.079+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:34:02.264+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+10:34:02.264+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+10:34:04.773+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:34:04.773+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:34:06.151+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+10:34:06.151+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+10:34:07.268+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - callCallBack
+10:34:07.268+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - callCallBack
+10:34:07.333+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+10:34:07.333+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+10:34:07.383+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+10:34:07.383+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+10:34:07.386+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:34:07.386+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:34:07.475+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+10:34:07.475+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+10:34:17.630+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:34:17.630+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:34:20.955+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - callCallBack
+10:34:20.955+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - callCallBack
+10:34:21.455+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - naverCheck
+10:34:21.455+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - naverCheck
+10:34:21.460+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:34:21.460+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:34:53.218+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+10:34:53.218+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+10:34:53.328+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - naverCheck
+10:34:53.328+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - naverCheck
+10:34:53.330+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:34:53.330+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberService - serviceNaverCheck
+10:35:42.253+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:35:42.253+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+10:36:15.498+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:36:15.592+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:36:15.614+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:36:15.830+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:36:15.831+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:36:16.173+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:36:16.186+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+10:36:16.299+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:36:16.402+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
+10:36:16.576+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:36:16.609+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+10:36:16.643+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+10:36:16.662+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:36:16.671+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:36:16.673+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.934 seconds (JVM running for 281.566)
+10:36:16.675+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:36:16.733+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:36:16.734+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:36:39.472+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:36:39.510+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+10:36:39.524+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+10:36:39.637+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:36:39.638+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:36:39.779+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:36:39.780+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+10:36:39.855+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:36:39.940+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 300 ms
+10:36:40.094+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:36:40.137+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+10:36:40.161+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+10:36:40.181+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:36:40.192+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:36:40.197+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.586 seconds (JVM running for 305.091)
+10:36:40.199+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:36:40.954+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:36:40.955+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:37:02.039+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:37:02.057+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+10:37:02.070+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+10:37:02.219+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:37:02.219+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:37:02.340+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:37:02.342+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+10:37:02.422+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:37:02.492+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 272 ms
+10:37:02.637+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:37:02.663+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+10:37:02.707+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+10:37:02.717+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:37:02.742+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:37:02.745+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.564 seconds (JVM running for 327.64)
+10:37:02.746+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:37:04.588+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:37:04.591+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:37:24.565+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+10:37:24.616+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+10:37:24.642+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+10:37:24.784+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:37:24.785+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:37:24.950+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:37:24.956+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+10:37:25.073+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:37:25.190+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 403 ms
+10:37:25.502+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:37:25.562+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+10:37:25.583+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+10:37:25.666+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:37:25.703+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:37:25.713+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.966 seconds (JVM running for 350.61)
+10:37:25.715+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:37:27.603+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:37:27.607+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+10:42:07.392+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 192 class path changes (0 additions, 192 deletions, 0 modifications)
+10:42:07.471+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+10:42:07.500+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+10:42:09.945+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:42:09.950+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:42:10.162+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:42:10.174+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+10:42:10.245+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:42:10.317+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 358 ms
+10:42:10.480+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:42:10.531+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+10:42:10.577+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+10:42:10.604+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:42:10.618+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:42:10.621+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.732 seconds (JVM running for 635.532)
+10:42:10.622+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:42:12.054+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 137 class path changes (137 additions, 0 deletions, 0 modifications)
+10:42:12.084+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+10:42:12.107+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+10:42:12.248+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:42:12.249+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:42:12.434+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:42:12.439+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+10:42:12.555+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:42:12.680+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 429 ms
+10:42:12.991+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:42:13.030+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+10:42:13.068+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+10:42:13.100+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:42:13.128+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:42:13.134+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.926 seconds (JVM running for 638.046)
+10:42:13.139+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:42:16.564+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:42:16.577+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+10:42:17.161+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:42:17.161+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+10:42:19.034+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+10:42:19.034+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+10:44:23.193+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 192 class path changes (0 additions, 192 deletions, 0 modifications)
+10:44:23.284+0900 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+10:44:23.311+0900 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+10:44:27.197+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 75464 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:44:27.198+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:44:27.316+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:44:27.318+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+10:44:27.396+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:44:27.494+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 292 ms
+10:44:27.707+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:44:27.732+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+10:44:27.758+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+10:44:27.770+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:44:27.778+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:44:27.781+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.652 seconds (JVM running for 772.7)
+10:44:27.782+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:44:33.859+0900 [RMI TCP Connection(35)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+10:44:33.885+0900 [RMI TCP Connection(35)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+10:44:33.889+0900 [RMI TCP Connection(35)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+10:44:35.455+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 76281 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+10:44:35.458+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+10:44:35.473+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:44:35.474+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:44:35.701+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+10:44:35.707+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+10:44:35.947+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+10:44:36.077+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 603 ms
+10:44:36.387+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+10:44:36.447+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:44:36.605+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:44:36.675+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:44:36.693+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+10:44:36.698+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.375 seconds (JVM running for 1.857)
+10:44:38.960+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:44:38.961+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:51:07.629+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s887ms).
+10:57:55.006+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m47s379ms).
+11:26:36.644+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:26:36.644+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:26:43.883+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+11:26:43.883+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+11:26:45.029+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:26:45.029+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:34:10.535+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m15s258ms).
+11:44:10.488+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+11:44:10.488+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+11:44:55.282+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+11:44:55.282+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+11:55:51.164+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+11:55:51.164+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+11:57:31.473+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+11:57:31.473+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+12:00:48.551+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+12:00:48.551+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+12:00:51.294+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+12:00:51.294+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+12:01:10.771+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+12:01:10.771+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+12:01:10.933+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+12:01:10.933+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - naverCheck
+12:01:10.938+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+12:01:10.938+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberService - serviceNaverCheck
+12:05:08.826+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s30ms), soft-evicting connections from pool.
+12:10:44.041+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+12:10:44.041+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+12:15:23.417+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:15:23.662+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:15:23.719+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:15:24.055+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 76281 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+12:15:24.056+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:15:24.331+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:15:24.336+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+12:15:24.545+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:15:24.682+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 623 ms
+12:15:24.989+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:15:25.131+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+12:15:25.192+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+12:15:25.228+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:15:25.294+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:15:25.402+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.42 seconds (JVM running for 4909.169)
+12:15:25.408+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:15:33.839+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:15:33.877+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+12:15:33.900+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+12:15:34.079+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 76281 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+12:15:34.082+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:15:34.202+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:15:34.204+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+12:15:34.311+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:15:34.359+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 275 ms
+12:15:34.482+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:15:34.513+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+12:15:34.529+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+12:15:34.538+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:15:34.545+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:15:34.547+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.506 seconds (JVM running for 4918.315)
+12:15:34.548+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:15:43.174+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:15:43.248+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+12:15:43.367+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+12:15:43.550+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 76281 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+12:15:43.552+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:15:43.884+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:15:43.892+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+12:15:44.030+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:15:44.128+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 572 ms
+12:15:44.298+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:15:44.343+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+12:15:44.375+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+12:15:44.392+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:15:44.402+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:15:44.404+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.926 seconds (JVM running for 4928.172)
+12:15:44.404+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:16:21.570+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:16:21.665+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+12:16:21.731+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+12:16:22.009+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 76281 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+12:16:22.010+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:16:22.169+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:16:22.176+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+12:16:22.457+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:16:22.645+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 625 ms
+12:16:22.871+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:16:22.914+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+12:16:22.952+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+12:16:22.965+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:16:22.976+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:16:22.980+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.059 seconds (JVM running for 4966.749)
+12:16:22.981+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:16:32.608+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:16:32.741+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+12:16:32.782+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+12:16:32.970+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 76281 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+12:16:32.971+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+12:16:33.101+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+12:16:33.104+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+12:16:33.179+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+12:16:33.254+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 281 ms
+12:16:33.503+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+12:16:33.552+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+12:16:33.585+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+12:16:33.598+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:16:33.612+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+12:16:33.631+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.702 seconds (JVM running for 4977.398)
+12:16:33.647+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:16:34.247+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:16:34.253+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+12:18:11.240+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+12:18:11.240+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+12:18:18.783+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+12:18:18.783+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+12:18:20.452+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:18:20.452+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:18:31.530+0900 [RMI TCP Connection(104)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+12:18:31.549+0900 [RMI TCP Connection(104)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+12:18:31.555+0900 [RMI TCP Connection(104)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
