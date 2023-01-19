@@ -3,8 +3,9 @@
  */
 /**후기게시판 연결  */
 $( document ).ready(function() {
-	if(sessionStorage.getItem('email')!=null){
-		location.replace('/index');
+	console.log(sessionStorage.getItem('email'));
+	if(sessionStorage.getItem('email')){
+		location.replace('/');
 	}
 });
  $('.btnReviewBoard').on('click', function(){
@@ -12,7 +13,7 @@ $( document ).ready(function() {
  })
 /**FAQ 연결 */
 $('.btnFAQ').on('click',function(){
-	$('#content').load('/mplan/mPlanner')
+	$('#content').load('/member/FAQ')
 })
 
 /**회사소개 연결  */
@@ -24,10 +25,19 @@ $('.btnCompanyInfo').on('click',function(){
 $('.btnMyInfo').on('click',function(){
 		$('#content').load('/myInfo/myInfo');
 })
+$('.btnMyInfoB').on('click',function(){
+	alert("로그인이 필요한 서비스입니다.");
+	$('#content').load('/member/login');
+})
 /* 마이페이지-내여행 연결 */
 $('.btnMyTour').on('click',function(){
 		$('#content').load('/myTour/myTourSelect');
 })
+$('.btnMyTourB').on('click',function(){
+	alert("로그인이 필요한 서비스입니다.");
+	$('#content').load('/member/login');
+})
+
  function navigo (){
 	 const hero = document.querySelector('#hero');   //hero부분 획득
 	 const fixStart = hero.clientHeight;      //hero 높이
@@ -137,9 +147,13 @@ $('#btnSearch').on('click', function(){
 	}
 })
 
+$('#btnSearchB').on('click', function(){
+	alert("로그인이 필요한 서비스입니다.");
+	$('#content').load('/member/login');
+})
 
-$('.btnLogout').on('click', function () {
-	$('#content').load('/member/logout');
+$('.btnLogin').on('click',function(){
+	$('#content').load('/member/login');
 })
 
 var result = $('#result').val();
