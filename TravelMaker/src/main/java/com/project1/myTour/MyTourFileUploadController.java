@@ -30,9 +30,9 @@ import com.google.gson.JsonObject;
 
 @RestController
 public class MyTourFileUploadController {
-	static String uploadPath="/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/src/main/resources/static/upload//";
+	static String uploadPath="C:\\Users\\junah\\eclipse-workspace\\TravelMaker\\TravelMaker\\src\\main\\resources\\static\\upload\\";
 	UUID uuid = null;
-	String tempDir = "/Users/hwangjiwon/temp/";
+	String tempDir = "C:\\Temp\\";
 	HttpServletRequest req;
 	
 	@RequestMapping(value="/MyTour/MyTourReviewInsert")

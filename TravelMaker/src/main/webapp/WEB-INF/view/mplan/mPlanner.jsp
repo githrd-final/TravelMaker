@@ -85,7 +85,6 @@
 				<span class="locationTitle">메모</span>
 				<input type='button' id='btnClose3' value='X'/>
 			</div>
-			<div class="locationName">섬진강</div>
 			<textarea class="MemoArea" name="planNote"></textarea><br/>
 			<input type='button' value='수정' id='btnCheck3'onclick="memoInsert(this)"/>
 		</div>

@@ -14,7 +14,7 @@ IMP.init("imp84346376"); // 예: imp00000000
     IMP.request_pay({ // param
         pg: "html5_inicis",
         pay_method: "card",
-        merchant_uid: "ORD20180131-086",
+        merchant_uid: "ORD20180131-110",
         name: "랜덤 기차 여행 - " + region,
         amount: 100, // if
         buyer_email: email,

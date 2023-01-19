@@ -2,7 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project1.mybatis.OrderMapper">
 
-    <select id="selectRegion" resultType="String" parameterType="com.project1.order.OrderDto">
+    <select id="selectRegionA" resultType="String" parameterType="com.project1.order.OrderDto">
+        SELECT ticketEndPoint FROM ticket where ticketDate = #{startDate}
+                                            and ticketStartTime = #{startDateTime} order by rand() limit 1;
+    </select>
+
+    <select id="selectRegionB" resultType="String" parameterType="com.project1.order.OrderDto">
         SELECT ticketEndPoint FROM ticket where region = #{region} and ticketDate = #{startDate}
                                             and ticketStartTime = #{startDateTime} order by rand() limit 1;
     </select>
@@ -46,4 +51,10 @@
         where ticketSerial = #{ticketSerialListB}
     </update>
 
+	<select id="purchaseCheckReview" parameterType="String" resultType="com.project1.review.ReviewVo">
+		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review where region=#{_parameter} order by reviewStar DESC limit 5;
+	</select>
+	<select id="purchaseCheckReviewAll" resultType="com.project1.review.ReviewVo">
+		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review order by reviewStar DESC limit 5;
+	</select>
 </mapper>

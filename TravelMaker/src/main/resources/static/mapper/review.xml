@@ -47,6 +47,12 @@
 		select count(*) from reviewLike where userEmail = #{userEmail} and reviewSerial = #{reviewSerial}
 	</select>
 	
+	<select id='selectUserReview' parameterType='String' resultType='com.project1.review.ReviewVo'>
+		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, u.sysUserPhoto from review r join user u on r.nickName = u.nickName 
+		where r.nickName = #{_parameter} limit 1,3
+	</select> 
+	
+	
 	<update id='viewUp' parameterType='Integer'>
 		update review set view = view + 1 where reviewSerial = #{_parameter}
 	</update>

@@ -10,7 +10,7 @@
 <html>
 <head>
     <script defer src='./js/itemlist.js'></script>
-    <link rel='stylesheet' href='./css/accommodation.css'/>
+    <link rel='stylesheet' href='./css/itemlist.css'/>
     <title>itemlist</title>
 </head>
 <body>
@@ -18,10 +18,10 @@
 <%
     PurchaseDto purchaseDto = (PurchaseDto)request.getAttribute("purchaseDto");
 %>
-<form action = 'purchasedTicket' method = 'post' id="frm" hidden>
-    <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none>
-	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none>
-    <input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">
+<form action = 'purchasedTicket' method = 'post' id="frm" hidden/>
+    <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none"/>
+	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none"/>
+    <input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none"/>
     <input type="text" name="people" id="people" value="${purchaseDto.people}" style="display:none">
     <input type="text" name="region" id="region" value="${purchaseDto.region}" style="display:none">
     <input type="text" name="startDate" value="${purchaseDto.startDate}" style="display:none">
@@ -30,6 +30,13 @@
     <input type="text" name="endDateTime" value="${purchaseDto.endDateTime}" style="display:none">
     <input type="text" name="city" value="${purchaseDto.city}" style="display:none">
 </form>
+<div class='check'>
+    <input type="checkbox" id="cb1" name='cb' onclick='checkOnlyOne(this)'>
+    <label for="cb1" >거리순(역 기준)</label>
+
+    <input type="checkbox" id="cb2" name='cb' onclick='checkOnlyOne(this)'>
+    <label for="cb2" >추천순</label>
+</div>
 
 <main class="show list">
     <c:forEach var='item' items='${result}' varStatus="status">

@@ -22,7 +22,7 @@
 %>
 
 <form action = 'purchasedTicket' method = 'post' id="frm" hidden>
-	<input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none>
+	<input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none"/>
 	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none">
 	<input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">
 	<input type="text" name="people" id="people" value="${purchaseDto.people}" style="display:none">
@@ -35,7 +35,7 @@
 </form>
 
 <div id='listBack'>
-	<h3 class='title'>추천 리스트 - 전라북도 남원</h3>
+	<h3 class='title'>추천 리스트 - ${purchaseDto.city}</h3>
 	<div class="btn-group" >
 	  <button type="button" class="btnAccommodation">숙소</button>
 	  <button type="button" class="btnTouristAttractions">관광지</button>

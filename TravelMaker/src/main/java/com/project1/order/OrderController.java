@@ -5,6 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.project1.review.ReviewVo;
+
+import java.util.List;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -53,6 +57,8 @@ public class OrderController {
         log.info("purchaseCheck");
         orderDto.setRegion(request.getParameter("region"));
         request.setAttribute("orderDto", orderDto);
+        List<ReviewVo> list = orderService.purchaseCheckReview(request.getParameter("region"));
+        mv.addObject("list",list);
         mv.addObject("orderDto", orderDto);
         log.info(orderDto.getEmail());
         log.info(orderDto.getPeople());

@@ -38,4 +38,10 @@ public class MemberService{
         log.info("serviceNaverSignUp");
         memberMapper.naverSignUp(memberDto);
     }
+    
+    public void insertMember(MemberDto memberDto) {
+    	log.info("InsertMember");
+        memberMapper.insertMember(memberDto);
+    }
+    
 }

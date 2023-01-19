@@ -1,6 +1,8 @@
 package com.project1.order;
 
 import com.project1.mybatis.OrderMapper;
+import com.project1.review.ReviewVo;
+
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,29 +59,58 @@ public class OrderService {
         }
 
         int totalPrice = price * people;
-        String selectedRegion = orderMapper.selectRegion(orderDto);
-        orderDto.setSelectedRegion(selectedRegion);
-        boolean checkTicketA = false;
-        boolean checkTicketB = false;
-        while(checkTicketA == false || checkTicketB == false) {
-            log.info(selectedRegion);
-            orderMapper.checkTicketA(orderDto);
-            orderMapper.checkTicketB(orderDto);
-            if(orderMapper.checkTicketA(orderDto)>=people){
-                checkTicketA = true;
+        String selectedRegion;
+        if(region.equals("전국")){
+            selectedRegion = orderMapper.selectRegionA(orderDto);
+            orderDto.setSelectedRegion(selectedRegion);
+            boolean checkTicketA = false;
+            boolean checkTicketB = false;
+            while(checkTicketA == false || checkTicketB == false) {
+                log.info(selectedRegion);
+                orderMapper.checkTicketA(orderDto);
+                orderMapper.checkTicketB(orderDto);
+                if(orderMapper.checkTicketA(orderDto)>=people){
+                    checkTicketA = true;
+                }
+                if(orderMapper.checkTicketB(orderDto)>=people){
+                    checkTicketB = true;
+                }
+                if(checkTicketA == true && checkTicketB == true) {
+                    selectedRegion = orderMapper.selectRegionA(orderDto);
+                    orderDto.setSelectedRegion(selectedRegion);
+                    log.info("selectedRegion : " + selectedRegion);
+                }
             }
-            if(orderMapper.checkTicketB(orderDto)>=people){
-                checkTicketB = true;
-            }
-            if(checkTicketA == true && checkTicketB == true) {
-                selectedRegion = orderMapper.selectRegion(orderDto);
-                orderDto.setSelectedRegion(selectedRegion);
-                log.info("selectedRegion : " + selectedRegion);
+            if(checkTicketA && checkTicketB) {
+                ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
+                ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
             }
         }
-        if(checkTicketA && checkTicketB) {
-            ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
-            ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
+        else{
+            selectedRegion = orderMapper.selectRegionB(orderDto);
+            orderDto.setSelectedRegion(selectedRegion);
+            boolean checkTicketA = false;
+            boolean checkTicketB = false;
+            while(checkTicketA == false || checkTicketB == false) {
+                log.info(selectedRegion);
+                orderMapper.checkTicketA(orderDto);
+                orderMapper.checkTicketB(orderDto);
+                if(orderMapper.checkTicketA(orderDto)>=people){
+                    checkTicketA = true;
+                }
+                if(orderMapper.checkTicketB(orderDto)>=people){
+                    checkTicketB = true;
+                }
+                if(checkTicketA == true && checkTicketB == true) {
+                    selectedRegion = orderMapper.selectRegionB(orderDto);
+                    orderDto.setSelectedRegion(selectedRegion);
+                    log.info("selectedRegion : " + selectedRegion);
+                }
+            }
+            if(checkTicketA && checkTicketB) {
+                ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
+                ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
+            }
         }
 
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
@@ -116,5 +147,18 @@ public class OrderService {
         orderMapper.updateTicketStatusB(ticketSerialListB.get(0));
 
         return purchaseDto;
+    }
+    
+    public List<ReviewVo> purchaseCheckReview(String region){
+    	List<ReviewVo> list = null;
+    	System.out.println("order서비스 지역:"+region);
+    	if(region.equals("전국")) {
+    		list = orderMapper.purchaseCheckReviewAll();
+    		System.out.println("order서비스 전국 list:"+list.toString());
+    	}else {
+    		list = orderMapper.purchaseCheckReview(region);
+    		System.out.println("order서비스 지역 list:"+list.toString());
+    	}
+    	return list;
     }
 }
