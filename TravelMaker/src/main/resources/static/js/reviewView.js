@@ -79,4 +79,24 @@
 			$('#content').html(data);
 		})
 	})
+	$('#rv_content_user_name').on('click',function(){
+		var frm = $('#rv_form');
+		var param = $(frm).serialize();
+		$.post("review/userDetail", param, function(data){
+			$('#content').html(data);
+		})
+	})
+	
+	/**url 링크 복사 */
+	$('#rv_copy_icon').on('click', function(){
+		var url = window.document.location.href;
+		var textarea = document.createElement("textarea");
+		document.body.appendChild(textarea);
+		textarea.value = url;
+		textarea.select();
+		document.execCommand("copy");
+		document.body.removeChild(textarea);
+		alert("후기 주소가 복사되었습니다.")
+	})
+	
 })();
