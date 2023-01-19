@@ -12,6 +12,7 @@ var kakaoMap = (function(){
 	var linePathAll = []; 	 
 	var customViews = []; 	 
 	var customOverlays = []; 
+	var targetCustoms = [];
 	var targetCustom = null;
 	
 	var purchaseSerial = document.querySelector('#purchaseSerial').value;
@@ -67,6 +68,7 @@ var kakaoMap = (function(){
 	function initMap(container,options){
 		map = new kakao.maps.Map(container,options)
 	}
+	
 	function setBounds(bounds,linePath){
 		
 		for(var i=0; i<linePath.length; i++){
@@ -245,6 +247,8 @@ var kakaoMap = (function(){
 	} //setMarkers
 	
 	
+	
+	
 	function setCustomOverlays(planPositions){
 		if(customOverlays.length != 0){
 			for(var i=0; i<customOverlays.length; i++){
@@ -287,6 +291,29 @@ var kakaoMap = (function(){
 				    strokeStyle: 'solid' // 선의 스타일입니다
 				});
 				
+				var totalDistance = null;
+				
+				// polyline을 클릭했을떄 총거리 customOverlay생성해주는 함수
+				kakao.maps.event.addListener(polyline,'mouseover',function(mouseEvent){
+					console.log(linePath[linePath.length-1]);
+					
+					totalDistance = new kakao.maps.CustomOverlay({
+					    position: linePath[linePath.length-1],
+					    content: '<div class="totalDistance">' +
+					    			'총 거리 : ' + Math.round(polyline.getLength())  + 'M' + 
+					    		 '</div>' ,
+					    zIndex: 3,
+					    xAnchor:-0.3,
+					    yAnchor:1
+					});
+					
+					totalDistance.setMap(map);
+				})
+				
+				kakao.maps.event.addListener(polyline,'mouseout',function(mouseEvent){
+					totalDistance.setMap(null);
+				})
+				
 				polyline.setMap(map);
 				polylines.push(polyline);
 				
@@ -304,7 +331,6 @@ var kakaoMap = (function(){
 		
 		initMap(container,options);
 		
-
 		function showBucket(param){ 
 			$.ajax({
 				type : 'post',
@@ -410,13 +436,14 @@ var kakaoMap = (function(){
 				}
 				
 				for(var i=0; i<customViews.length; i++){
-					var customMapX = customViews[i].getPosition().La.toString();
-					var customMapY = customViews[i].getPosition().Ma.toString();
-					if(customMapX.includes(mapX) && customMapY == mapY){
+					var customMapX = customViews[i].getPosition().La;
+					var customMapY = customViews[i].getPosition().Ma;
+					if(customMapY.toFixed(10) == mapY){
 						customViews[i].setMap(map);
 						map.setCenter(new kakao.maps.LatLng(parseFloat(mapY)+0.001, mapX));
 						map.setLevel(3);
 						targetCustom = customViews[i];
+						targetCustoms.push(targetCustom);
 						break;
 					};
 				}

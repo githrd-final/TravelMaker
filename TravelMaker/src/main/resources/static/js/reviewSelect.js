@@ -2,7 +2,9 @@
  * 
  */
  (review = function(){
-
+	if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+ 		window.scrollBy(0,-150);
+	}
 	/**하트 1이상이면 빨간 하트 
 	for(i=0; i<10; i++){
 		if(Math.abs($('.rs_content_heart_num').text()[i])!=0){

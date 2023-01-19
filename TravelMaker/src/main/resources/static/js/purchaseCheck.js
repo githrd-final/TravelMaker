@@ -11,10 +11,12 @@ function requestPay() {
 var IMP = window.IMP; // 생략 가능
 IMP.init("imp84346376"); // 예: imp00000000
     // IMP.request_pay(param, callback) 결제창 호출
+    
+    const rand = Math.floor(Math.random() * 1000);
     IMP.request_pay({ // param
         pg: "html5_inicis",
         pay_method: "card",
-        merchant_uid: "ORD20180131-108",
+		merchant_uid: "ORD20230126-" + rand,
         name: "랜덤 기차 여행 - " + region,
         amount: 100, // if
         buyer_email: email,

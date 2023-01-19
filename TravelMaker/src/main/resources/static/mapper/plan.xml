@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project1.mybatis.PlanMapper">
-
     <select id="findMapX" resultType="String" parameterType="com.project1.order.PurchaseDto">
         SELECT mapX FROM station where city = #{city};
     </select>

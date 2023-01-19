@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+#myTourSelectMain {
+  background: #ECE9E6;
+  width:100%;
+  height:100%;
+  margin:0;
+} 
+
+.myTourSelectContainer {
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap:10px;
+  margin-top:0;
+}
+.upcomming {
+  justify-self: start;
+  padding:20px;
+  margin: 18px 8px;
+  font-size: 1.5rem;
+}
+.logo{
+   float : left;
+    width: 26vh;
+    height: 32vh;
+    position : absolute;
+    top: 3vh;
+    left: -1.9vh;
+}
+.myTourSelectContainer .myTourSelectItem {
+  width: 650px;
+  height: 250px;
+  display:inline-block;
+  padding: 0 20px;
+  /* background: #ECE9E6; */
+  background: #fff;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
+  float: left;
+  padding: 20px; 
+}
+.myTourSelectContainer .item-right {
+  padding: 79px 50px;
+  margin-right: 20px;
+  width: 25%;
+  position: relative;
+  height: 150px;
+}
+.myTourSelectContainer .item-right .up-border, .myTourSelectContainer .item-right .down-border {
+    padding: 14px 15px;
+    background-color: #ECE9E6;
+    border-radius: 50%;
+    position: absolute;
+}
+.myTourSelectContainer .item-right .up-border {
+  top: -8px;
+  right: -35px;
+}
+.myTourSelectContainer .item-right .down-border {
+  bottom: -13px;
+  right: -35px;
+}
+.myTourSelectContainer .item-right .num {
+  font-size: 60px;
+  text-align: center;
+  color: #111;
+}
+.myTourSelectContainer .item-right .day, .myTourSelectContainer .item-left .event {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 9px;
+}
+.myTourSelectContainer .item-right .day {
+  text-align: center;
+  font-size: 25px;
+}
+.myTourSelectContainer .item-left {
+  width: 71%;
+  padding: 7.3vh 0px 8vh 5.5vw;
+  border-left: 3px dotted #999;
+}
+.myTourSelectContainer .item-left .title {
+  color: #111;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+.myTourSelectContainer .item-left .sce {
+  margin-top: 5px;
+  display: block;
+}
+.myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .sce p,
+.myTourSelectContainer .item-left .loc .icon, .myTourSelectContainer .item-left .loc p{
+    float:left;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .loc .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: tomato;
+}
+.myTourSelectContainer .item-left .loc {display: block}
+.fix {clear: both}
+
+/*버튼------------------------------------*/
+#divBtnPlan{
+	margin:auto;
+	margin-bottom: 30vh;
+}
+.btnMyTourTicketPlan, .btnMyReview, .btnReview1{
+	width: 20vw;
+	background-color: #fff;
+	border: 0 solid #e2e8f0;
+	border-radius: 1.5rem;
+	box-sizing: border-box;
+	color: #697c89;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1.1rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 1rem 1.6rem;
+	text-align: center;
+	text-decoration: none #697c89 solid;
+	text-decoration-thickness: auto;
+	transition: all .1s cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.btnMyTourTicketPlan:hover, .btnMyReview:hover, .btnReview1:hover {
+	background-color:tomato;
+	color: #fff;
+}

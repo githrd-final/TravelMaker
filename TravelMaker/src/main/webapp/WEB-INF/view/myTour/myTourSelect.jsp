@@ -1,7 +1,8 @@
 <%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,9 +12,7 @@
 <link rel='stylesheet' media='screen and (max-width : 450px)' href='../css/mobileMyTourSelect.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
 <script defer src='../js/myTourSelect.js'></script>
-<%
-	LocalDate now = LocalDate.now();
-%>
+
 </head>
 <body>
 <main id='myTourSelectMain'>
@@ -33,8 +32,8 @@
 				</div> <!-- end item-right -->
 				
 				<div class="item-left">
-					<div class='TicketClick' onclick="myTour.view('${vo.purchaseSerial}')">
-						<p class="event">예매번호 : ${vo.purchaseSerial } (${vo.people}명)</p>
+					<div class='TicketClick' onclick="myTour.myTourTicket('${vo.purchaseSerial}', '${vo.reviewSerial }')">
+						<p class="event">예매번호 : ${fn:substring(vo.purchaseSerial,0,20) } (${vo.people}명)</p>
 						<h2 class="title">${vo.city }행</h2>
 						
 						<div class="sce">
@@ -55,15 +54,16 @@
 					</div>
 					<c:choose>
 						<c:when test="${vo.myReview ne false}">
-							<input type='button' class='btnMyReview' value='내가 작성한 리뷰' onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
+							<input type='button' class='btnMyReview' value='내 후기' onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
 						</c:when>
 						<c:otherwise>
-							<input type='button' class="btnReview1" value='후기작성' onclick="myTour.insert('${vo.purchaseSerial}')"/>
+							<input type='button' class="btnReview1" value='후기 작성' onclick="myTour.insert('${vo.purchaseSerial}')"/>
 						</c:otherwise>			
 					</c:choose>
 				</div> <!-- end item-left -->
 			</div> <!-- end item -->
 		</c:forEach>
+  
   <!-- 페이징처리 -->
 	<div id='ri_page_btn'>
 		<c:if test="${pVo.startPage>1 }">

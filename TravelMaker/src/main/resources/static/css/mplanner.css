@@ -134,7 +134,7 @@
 	background-color:#eee;
 	border:none;
 }
-#BucketModal .locationName, #modal2 .locationName, #modal3 .locationName{
+#BucketModal .locationName, #modal2 .locationName, #modal3 .MemoArea{
 	font-size:1.5rem;
 	font-weight:bold;
 	margin-top:20px;
