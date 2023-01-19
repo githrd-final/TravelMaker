@@ -3,7 +3,6 @@ package com.project1.mybatis;
 import com.project1.order.OrderDto;
 import com.project1.order.PurchaseDto;
 import com.project1.review.ReviewVo;
-
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -15,6 +14,9 @@ public interface OrderMapper {
 
     public String selectRegionA(OrderDto orderDto);
     public String selectRegionB(OrderDto orderDto);
+
+    public List<ReviewVo> selectReviewAll();
+    public List<ReviewVo> selectReview(OrderDto orderDto);
 
     public Integer checkTicketA(OrderDto orderDto);
     public Integer checkTicketB(OrderDto orderDto);

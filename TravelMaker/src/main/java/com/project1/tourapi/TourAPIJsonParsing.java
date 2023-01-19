@@ -59,8 +59,8 @@ public class TourAPIJsonParsing {
 			String addr1 = (String)itemObj.get("addr1");
 			String addr2 = (String)itemObj.get("addr2");
 			String tel = (String)itemObj.get("tel");
-			String mapx = (String)itemObj.get("mapx");
-			String mapy = (String)itemObj.get("mapy");
+			String mapX = (String)itemObj.get("mapx");
+			String mapY = (String)itemObj.get("mapy");
 			String firstimage = (String)itemObj.get("firstimage");
 			String firstimage2 = (String)itemObj.get("firstimage2");
 			String overview = (String)itemObj.get("overview");
@@ -78,12 +78,15 @@ public class TourAPIJsonParsing {
 			String areaname = (String)itemObj.get("areaname");
 
 			vo.setContentID(contentId);
+			vo.setContentTypeId(contentTypeId);
 			vo.setFirstImage(firstimage);
 			vo.setAddr1(addr1);
 			vo.setTel(tel);
 			vo.setHomepage(homepage);
 			vo.setTitle(title);
 			vo.setOverView(overview);
+			vo.setMapX(mapX);
+			vo.setMapY(mapY);
 
 		} catch (ParseException e) {
 			e.printStackTrace();
@@ -120,6 +123,9 @@ public class TourAPIJsonParsing {
 						vo.setAddr1((String)itemObj.get("addr1"));
 						vo.setTel((String)itemObj.get("tel"));
 						vo.setHomepage((String)itemObj.get("homepage"));
+						vo.setMapX((String)itemObj.get("mapx"));
+						vo.setMapY((String)itemObj.get("mapy"));
+						vo.setContentTypeId((String)itemObj.get("contenttypeid"));
 					}
 					
 					list.add(vo);

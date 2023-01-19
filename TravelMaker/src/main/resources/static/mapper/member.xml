@@ -9,4 +9,8 @@
     <insert id="insertMember" parameterType="com.project1.member.MemberDto">
         INSERT INTO user (email, nickname, userComment, oriUserPhoto, sysUserPhoto) VALUES (#{email}, #{nickname}, #{userComment}, #{sysUserPhoto}, #{sysUserPhoto})
     </insert>
+
+    <update id="memberUpdate" parameterType="com.project1.member.MemberDto">
+        update user set nickName = #{nickname}, userComment = , #{userComment}, oriUserPhoto = #{oriUserPhoto}, sysUserPhoto = #{sysUserPhoto} where email = #{email}
+    </update>
 </mapper>

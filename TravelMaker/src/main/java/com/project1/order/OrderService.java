@@ -2,7 +2,6 @@ package com.project1.order;
 
 import com.project1.mybatis.OrderMapper;
 import com.project1.review.ReviewVo;
-
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +27,19 @@ public class OrderService {
 
     @Autowired
     OrderMapper orderMapper;
+
+    public List<ReviewVo> selectReview(OrderDto orderDto) throws Exception {
+        log.info("selectReview");
+        List<ReviewVo> reviewVoList = new ArrayList<>();
+        String region = orderDto.getRegion();
+        if(region.equals("전국")){
+            reviewVoList = orderMapper.selectReviewAll();
+        }
+        else {
+            reviewVoList = orderMapper.selectReview(orderDto);
+        }
+        return reviewVoList;
+    }
 
     public PurchaseDto purchaseTicket(OrderDto orderDto) throws Exception {
         String purchaseSerial = "";

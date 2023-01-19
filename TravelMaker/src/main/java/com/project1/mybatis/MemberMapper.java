@@ -13,4 +13,9 @@ public interface MemberMapper {
     public void naverSignUp(MemberDto memberDto);
     
     public void insertMember(MemberDto memberDto);
+    public void newSignUp(MemberDto memberDto);
+
+    public MemberDto findMember(String email);
+
+    public void memberUpdate(MemberDto memberDto);
 }

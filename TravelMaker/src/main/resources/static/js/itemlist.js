@@ -31,15 +31,57 @@ function isModalOn() {
 })*/
 
 function openModal(frm) {
-    $('#modal').load('/plan/itemDetailModal/' + frm.abc.value);
+    $('#modal').load('/plan/itemDetailModal/' + frm.contentID.value);
     $('#modal').css('display', 'flex');
 }
 
-if(width_size<=450){
+/*if(width_size<=450){
     $('.itemModaltoMyPlan').on('click',function(){
         $('#content').load('/mplan/mPlanner');
     })
 }else{
     $('.itemModaltoMyPlan').on('click',function(){
         $('#content').load('/planner/planner');
+    })} */
+
+var frm = $("#frm");
+var purchaseDto = frm.serialize();
+var itemForm = document.querySelector('#item');
+function orderByDistance(){
+
+}
+
+if(width_size<=450){
+    $('.itemModaltoMyPlan').on('click',function(){
+        $.post('plan/itemModaltoMyPlan/', purchaseDto, function(data){
+            $('#content').html(data);
+        });
+    })
+}else{
+    $('.itemModaltoMyPlan').on('click',function(){
+        $.post('plan/itemModaltoMyPlan/', purchaseDto, function(data){
+            $('#content').html(data);
+        });
     })}
+
+$('#insertPlanBucket').on('click',
+    function (frm) {
+        alert("asdf");
+        $.ajax({
+            type : "POST",
+            url : "plan/deletePlanBucket/"+frm.abc.value,
+            data : purchaseDto,
+            success : function(data) {
+                $('#modal').load('/plan/itemDetailModal/' + frm.abc.value);
+            },
+            error: function(data) {
+                alert("오류가 발생했습니다");
+            }
+        });
+    })
+
+$('#deletePlanBucket').on('click',function (frm) {
+    $.post('plan/deletePlanBucket/' + frm.abc.value, purchaseDto, function(data){
+        console.log("deleted");
+    });
+})
