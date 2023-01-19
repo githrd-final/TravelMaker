@@ -10,13 +10,13 @@
 	</select>
 	
 	<select id="bucketSelect" parameterType="String" resultType="com.project1.planner.BucketVo">
-		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId, locationName, mapX, mapY, locationPhoto, addr, overview 
+		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId, substring_index(locationName,' ',2) as locationName, mapX, mapY, locationPhoto, addr, overview 
 		from planBucket 
 		where purchaseSerial = '${_parameter}'
 	</select>
 	
 	<select id="bucketDetailSelect" parameterType="com.project1.planner.BucketVo" resultType="com.project1.planner.BucketVo">
-		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId , locationName, mapX, mapY, locationPhoto, addr, overview from planBucket where purchaseSerial = #{purchaseSerial} and contenttypeId = #{contenttypeId}
+		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId , substring_index(locationName,' ',2) as locationName, mapX, mapY, locationPhoto, addr, overview from planBucket where purchaseSerial = #{purchaseSerial} and contenttypeId = #{contenttypeId}
 	</select>
 	
 	
