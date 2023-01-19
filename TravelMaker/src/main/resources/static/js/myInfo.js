@@ -15,7 +15,6 @@ $('.btnSubmit').on('click',function(){
         return false;
     }
     else {
-        alert("수정합니다.");
         $.ajax({
             type: 'POST',
             url: '/member/memberUpdateWithImage',
@@ -29,6 +28,10 @@ $('.btnSubmit').on('click',function(){
                 frm.enctype = '';
                 param = $(frm).serialize();
                 location.replace('/');
+            },
+            error: function (data) {
+                alert("수정에 실패하였습니다.");
+                alert(data);
             }
         });
     }
