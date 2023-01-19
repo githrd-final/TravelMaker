@@ -14,10 +14,10 @@ public class MyInfoController {
 		return mv; 
 	}
 	
-	@RequestMapping("/myInfo/myInfoModify")
+	/*@RequestMapping("/myInfo/myInfoModify")
 	public ModelAndView Modify() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("myInfo/myInfo");
 		return mv;
-	}
+	}*/
 }

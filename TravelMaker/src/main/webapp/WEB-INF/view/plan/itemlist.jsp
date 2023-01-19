@@ -42,16 +42,20 @@
     <c:forEach var='item' items='${result}' varStatus="status">
         <form class="item" id="item" onclick="openModal(this)">
             <div class="item-name">${item.title}</div>
-            <input type="text" class="item-contentId" name=abc value="${item.contentID}" style="display: none"></input>
+            <input type="text" name="purchaseSerial" id="purchaseSerialModal" value="${purchaseDto.purchaseSerial}" style="display:none">
+            <input type="text" class="item-contentId" name="contentID" value="${item.contentID}" style="display: none"></input>
+            <input type="text" class="item-contentTypeId" name="contentTypeId" value="${item.contentTypeId}" style="display: none"></input>
             <div class="item-image" style="background-image: url('${item.firstImage}')"></div>
             <div class="item-address">${item.addr1}</div>
             <div class="item-tel">${item.tel}</div>
             <div class="item-homepage">${item.homepage}</div>
+            <input type="text" class="item-mapx" name=mapx value="${item.mapX}" style="display: none"></input>
+            <input type="text" class="item-mapy" name=mapy value="${item.mapY}" style="display: none"></input>
         </form>
     </c:forEach>
     <div id="modal" class="modal-overlay">
     </div>
-    </main>
+</main>
 </body>
 <!--
 <script>
