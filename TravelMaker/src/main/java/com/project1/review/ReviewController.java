@@ -38,15 +38,19 @@ public class ReviewController {
 	public ModelAndView reviewView(ReviewVo rVo, ReviewPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
 		String userEmail = (String)session.getAttribute("email");
+		UserVo uVo = new UserVo();
 		pVo.setChkUserLike(service.chkUserLike(userEmail, rVo.getReviewSerial()));
 		System.out.println("rs : " +rVo.getReviewSerial());
 		System.out.println("컨트롤 구고번호1: "+ rVo.getPurchaseSerial());
 		rVo = service.reviewModifyView(rVo.getReviewSerial(), rVo.getPurchaseSerial());
 		rVo = service.view(rVo.getReviewSerial(),rVo.purchaseSerial,"up");
+		uVo = service.userDetailView(rVo.nickName);
 		List<ReviewPlanVo> rpList = service.getRpList();
 		int datePlan = Integer.parseInt(service.getDatePlan());
 		
 		System.out.println("컨트롤 구고번호2: "+ rVo.getPurchaseSerial());
+		mv.addObject("uVo", uVo);
+		mv.addObject("userEmail", userEmail);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
 		mv.addObject("rpList", rpList);
@@ -67,7 +71,11 @@ public class ReviewController {
 	public ModelAndView userDetailView(ReviewVo rVo, ReviewPageVo pVo, UserVo uVo) {
 		ModelAndView mv = new ModelAndView();
 		uVo = service.userDetailView(uVo.nickName);
+		List<ReviewVo> list = service.selectUserReview(rVo);
 		System.out.println("유저 디테일 리뷰시리얼 " +rVo.reviewSerial);
+		System.out.println("유저 디테일 리스트 "+ list.toString());
+		
+		mv.addObject("list", list);
 		mv.addObject("uVo", uVo);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);

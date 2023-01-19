@@ -201,4 +201,10 @@ public class ReviewService {
 		return uVo;
 	}
 	
+	public List<ReviewVo> selectUserReview(ReviewVo rVo){
+		List<ReviewVo> list = mapper.selectUserReview(rVo.nickName);
+		
+		return list;
+	}
+	
 	}
