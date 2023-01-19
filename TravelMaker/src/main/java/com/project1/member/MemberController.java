@@ -1,12 +1,19 @@
 package com.project1.member;
 
 import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.web.servlet.view.RedirectView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.http.HttpResponse;
+
 import javax.annotation.Resource;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -27,9 +34,9 @@ public class MemberController {
     }
 
     @RequestMapping("/member/signUp")
-    public ModelAndView signUp() {
+    public ModelAndView signUp(HttpSession session) {
         log.info("signUp");
-
+        System.out.println("signup : "+session.getAttribute("email"));
         ModelAndView mv = new ModelAndView();
         mv.setViewName("member/signUp");
         return mv;
@@ -60,9 +67,9 @@ public class MemberController {
 
         String result = memberService.naverCheck(memberDto);
 
-        if(result == "registered") {
-            session.setAttribute("email", email);
-        }
+        session.setAttribute("email", email);
+           
+        
         return result;
     }
 
@@ -82,9 +89,24 @@ public class MemberController {
     @RequestMapping("/{result}")
     public ModelAndView goSignUp(@PathVariable("result") String result) {
         ModelAndView mv = new ModelAndView();
+        
         mv.addObject("result", result);
+        System.out.println(result);
         log.info("goSignUp");
         mv.setViewName("member/signUp");
+        return mv;
+    }
+    
+    @RequestMapping("/member/UserAdd")
+    public ModelAndView UserAdd(MemberDto dto, HttpSession session) {
+        log.info("UserAdd");
+        ModelAndView mv = new ModelAndView();
+        String email = (String)session.getAttribute("email");
+        
+    	dto.setEmail(email);
+    	memberService.insertMember(dto);
+    	
+        mv.setViewName("/index");
         return mv;
     }
 }

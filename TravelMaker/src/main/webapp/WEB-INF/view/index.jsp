@@ -31,23 +31,15 @@
 			String result = (String)request.getAttribute("result");
 		%>
 			<ul id='block' class='indexUl'>
-				<%if(email==null){%>
-				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTourB'>내여행</a></li>
-				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfoB'>기본정보</a></li>
-				<%}else{ %>
 				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyTour'>내여행</a></li>
 				<li class='indexMenuLi'><a href='#' class='indexMenuA btnMyInfo'>기본정보</a></li>
-				<%} %>
+				
 			</ul>
 		</li>
 		<li class='indexMenuLi'><a href="#" class='indexMenuA btnReviewBoard'>후기게시판</a></li>
 		<li class='indexMenuLi'><a href="#" class='indexMenuA btnCompanyInfo'>회사소개</a></li>
 		<li class='indexMenuLi'><a href="#" class='indexMenuA btnFAQ'>FAQ</a></li>
-		<%if(email==null){%>
-		<li class='indexMenuLi'><a href="#" class='indexMenuA btnLogin'>로그인</a>
-		<%}else{ %>
-		<li class='indexMenuLi'><a href="/" class='indexMenuA btnLogout'>로그아웃</a>
-		<%} %>
+		<li class='indexMenuLi'><a href="/index" class='indexMenuA btnLogout'>로그아웃</a>
 	</ul>
 </div>
 </header>
@@ -74,11 +66,8 @@
 				<span id='people'>인원</span>
 				<input type='text' size='5' id='peopleSu'/>
 				</span>
-				<%if(email==null){%>
-					<input type='button' id='btnSearchB' class = 'indexMenuA' value='Search'/>
-				<%}else{ %>
 					<input type='button' id='btnSearch' class = 'indexMenuA' value='Search'/>
-				<%} %>
+				
 			</div>
 	</section>
 	
@@ -126,12 +115,6 @@
 		<p class='indexFooterP'>Visit Travel Maker and have a good time doing it, when you use one or more of our tours...</p>
 	</footer>
 </div>
-														 
-<!--
-https://farm5.staticflickr.com/4005/4267674623_a786e4a440_o.jpg
-https://farm9.staticflickr.com/8334/8103080370_254bcd9f90_o.jpg
-https://farm6.staticflickr.com/5296/5444152459_2bffa50e90_o.jpg
-https://farm1.staticflickr.com/211/535585258_84df3cd5f1_o.jpg
--->														
+														
 </body>
 </html>
