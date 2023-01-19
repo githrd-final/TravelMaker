@@ -28,4 +28,7 @@ public interface OrderMapper {
 
     public void updateTicketStatusA(String ticketSerialListA);
     public void updateTicketStatusB(String ticketSerialListB);
+    //베스트후기
+    public List<ReviewVo> purchaseCheckReview(String region);
+    public List<ReviewVo> purchaseCheckReviewAll();
 }

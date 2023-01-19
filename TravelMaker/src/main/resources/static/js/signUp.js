@@ -7,32 +7,12 @@ $('.btnProfileSelect').on('click',function(){
 })
 
 $('.btnSubmit').on('click',function(){
-    var frm = $('.frm')[0];
-    var param = new FormData(frm);
-    if(frm.nickname.value == ""){
-        alert("닉네임을 입력해주세요.");
-        frm.nickname.focus();
-        return false;
-    }
-    else {
-        if (frm.profileImage.value != "") {
-            $.ajax({
-                type: 'POST',
-                url: '/member/memberInsertWithImage',
-                contentType: false,
-                processData: false,
-                data: param,
-                dataType: 'html',
-                success: function (data) {
-                    if (data != "") alert(data);
-                    frm.enctype = '';
-                    param = $(frm).serialize();
-                    location.replace('/');
-                }
-            })
-        }
-        else{
-
-        }
-    }
-})
+    window.close();
+    var frm = $('.signupContainer')[0];
+	var param = $(frm).serialize();
+	console.log(frm);
+	console.log(param);
+	$.post('/member/UserAdd', param, function(data){	
+		location.replace("http://localhost:9282/");
+	});
+})	

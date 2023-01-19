@@ -550,6 +550,16 @@ body{
 	font-weight:bold;
 }
 
+
+/* totalDistance */
+
+.totalDistance{
+	background-color:#fff;
+	padding:5px;
+	border-radius:10px;
+	font-weight:bold;
+}
+
 /* 후기목록으로 가기 */
 #goReview{
 	text-decoration:none;

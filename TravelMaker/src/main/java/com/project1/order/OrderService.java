@@ -160,4 +160,17 @@ public class OrderService {
 
         return purchaseDto;
     }
+    
+    public List<ReviewVo> purchaseCheckReview(String region){
+    	List<ReviewVo> list = null;
+    	System.out.println("order서비스 지역:"+region);
+    	if(region.equals("전국")) {
+    		list = orderMapper.purchaseCheckReviewAll();
+    		System.out.println("order서비스 전국 list:"+list.toString());
+    	}else {
+    		list = orderMapper.purchaseCheckReview(region);
+    		System.out.println("order서비스 지역 list:"+list.toString());
+    	}
+    	return list;
+    }
 }

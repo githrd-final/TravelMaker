@@ -59,4 +59,10 @@
         where ticketSerial = #{ticketSerialListB}
     </update>
 
+	<select id="purchaseCheckReview" parameterType="String" resultType="com.project1.review.ReviewVo">
+		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review where region=#{_parameter} order by reviewStar DESC limit 5;
+	</select>
+	<select id="purchaseCheckReviewAll" resultType="com.project1.review.ReviewVo">
+		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review order by reviewStar DESC limit 5;
+	</select>
 </mapper>

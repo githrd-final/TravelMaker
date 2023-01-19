@@ -13,4 +13,11 @@ public class MainController {
         mv.setViewName("index");
         return mv;
     }
+    @RequestMapping("/index")
+    public ModelAndView indexLogout() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("index2");
+        return mv;
+    }
+
 }

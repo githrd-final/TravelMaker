@@ -7,7 +7,7 @@
     </select>
 
     <insert id="insertMember" parameterType="com.project1.member.MemberDto">
-        INSERT INTO user (email, nickName, userComment, oriUserPhoto, sysUserPhoto) VALUES (#{email}, #{nickname}, #{userComment}, #{oriUserPhoto}, #{sysUserPhoto})
+        INSERT INTO user (email, nickname, userComment, oriUserPhoto, sysUserPhoto) VALUES (#{email}, #{nickname}, #{userComment}, #{sysUserPhoto}, #{sysUserPhoto})
     </insert>
 
     <update id="memberUpdate" parameterType="com.project1.member.MemberDto">

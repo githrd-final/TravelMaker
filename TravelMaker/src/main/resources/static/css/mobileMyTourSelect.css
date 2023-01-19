@@ -41,7 +41,9 @@
   display:grid;
   grid-template-columns:1fr 2fr;
 }
-
+.TicketClick:hover{
+	cursor: pointer;
+}
 .myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
   /* float: left; */
   padding: 2vh; 
@@ -85,9 +87,7 @@
   padding: 4vh 0vw 1.8vh 8vw;
   border-left: 3px dotted #999;
 }
-.TicketClick:hover{
-	cursor: pointer;
-}
+
 .myTourSelectContainer .item-left .title {
   color: #111;
   font-size: 2rem;
@@ -116,6 +116,29 @@
 	border: 0 solid #e2e8f0;
 	border-radius: 1.5rem;
 	box-sizing: border-box;
+	color: tomato;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1.1rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 1rem 1.6rem;
+	text-align: center;
+	text-decoration: none #697c89 solid;
+	text-decoration-thickness: auto;
+	transition: all .1s cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+.myTourSelectContainer .myTourSelectItem .btnMyReview{
+	width: 43vw;
+	background-color: #fff;
+	border: 0 solid #e2e8f0;
+	border-radius: 1.5rem;
+	box-sizing: border-box;
 	color: #697c89;
 	cursor: pointer;
 	display: inline-block;
@@ -133,8 +156,7 @@
 	-webkit-user-select: none;
 	touch-action: manipulation;
 }
-
-.myTourSelectContainer .myTourSelectItem .btnReview1:hover {
+.myTourSelectContainer .myTourSelectItem .btnReview1:hover,.btnMyReview:hover {
 	background-color: tomato;
 	color: #fff;
 }

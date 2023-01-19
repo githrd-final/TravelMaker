@@ -49,4 +49,10 @@ public class MemberService{
         log.info("serviceMemberUpdate");
         memberMapper.memberUpdate(memberDto);
     }
+    
+    public void insertMember(MemberDto memberDto) {
+    	log.info("InsertMember");
+        memberMapper.insertMember(memberDto);
+    }
+    
 }

@@ -10,6 +10,9 @@ public interface MemberMapper {
 
     public int findEmail(String email);
 
+    public void naverSignUp(MemberDto memberDto);
+    
+    public void insertMember(MemberDto memberDto);
     public void newSignUp(MemberDto memberDto);
 
     public MemberDto findMember(String email);
