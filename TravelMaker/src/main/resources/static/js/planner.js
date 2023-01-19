@@ -1,13 +1,17 @@
+	
+
+
 
 /*  Map */
 var kakaoMap = (function(){
 		
 	var map = null;
-	var bounds = new kakao.maps.LatLngBounds();  
-	var bucketMarkers = [];  // 마커객체들이 담긴 배열
-	var linePath = [];		 // polyline 연결할 마커의 좌표들이 담긴 배열
-	var customViews = []; 	 // customView객체들이 담긴 배열
-	var customOverlays = []; // cunstomOverlay객체들이 담긴 배열
+	var bounds = new kakao.maps.LatLngBounds();
+	var bucketMarkers = [];  
+	var linePath = [];		 
+	var linePathAll = []; 	 
+	var customViews = []; 	 
+	var customOverlays = []; 
 	var targetCustom = null;
 	
 	var purchaseSerial = document.querySelector('#purchaseSerial').value;
@@ -63,7 +67,7 @@ var kakaoMap = (function(){
 	function initMap(container,options){
 		map = new kakao.maps.Map(container,options)
 	}
-	function setBounds(bounds){
+	function setBounds(bounds,linePath){
 		
 		for(var i=0; i<linePath.length; i++){
 			bounds.extend(linePath[i]);
@@ -77,13 +81,11 @@ var kakaoMap = (function(){
 		for(var i=0; i<data.length; i++){
 			
 			var json = JSON.parse(data[i]);
-			console.log("셋 버킷 포지션스 제이슨 ", json);
 			var addr = json.addr;
 			var contenttypeId = json.contenttypeId;
 			var locationName = json.locationName;
 			var locationPhoto = json.locationPhoto;
 			var overview = json.overview;
-			console.log("셋 버킷 포지션스 오버뷰 ", overview);
 			var mapX = json.mapX;
 			var mapY = json.mapY;
 			var planbucketSerial = json.planbucketSerial;
@@ -105,6 +107,8 @@ var kakaoMap = (function(){
 	}
 	
 	function setPlanPositions(data){
+		linePathAll = [];
+		
 		planPositions = [];
 		planPositionDayOne = [];
 		planPositionDayTwo = [];
@@ -141,6 +145,8 @@ var kakaoMap = (function(){
 				latlng : new kakao.maps.LatLng(mapY,mapX),
 			});
 			
+			linePathAll.push(planPositions[i].latlng);
+			
 		} // end of for
 		
 		planPositionDays.push(planPositionDayOne,planPositionDayTwo,planPositionDayThree);
@@ -150,14 +156,13 @@ var kakaoMap = (function(){
 	
 	function setCustomView(bucketPositions){
 		customViews = [];
-		console.log("버킷포지션렝스",bucketPositions.length);
+		
 		for(var i=0; i<bucketPositions.length; i++){
-			console.log(bucketPositions[i]);
+			
 			var addr = bucketPositions[i].addr;
 			var contenttypeId = bucketPositions[i].contenttypeId;
 			var locationName = bucketPositions[i].locationName;
 			var locationPhoto = bucketPositions[i].locationPhoto;
-			console.log("오버뷰 ", bucketPositions[i].overviews);
 			var overview = bucketPositions[i].overview.split(".")[0];
 			
 			var mapX = bucketPositions[i].mapX;
@@ -266,7 +271,8 @@ var kakaoMap = (function(){
 					    content: '<div class="customOverlay" style="border : 7px outset '+customColor[i]+'">' +
 					    				(j+1) +
 					    			'<div> DAY' + (i+1) + '</div>' +
-					    		 '</div>' 
+					    		 '</div>' ,
+					    zIndex: 3
 					});
 					
 					customOverlay.setMap(map);
@@ -281,7 +287,6 @@ var kakaoMap = (function(){
 				    strokeStyle: 'solid' // 선의 스타일입니다
 				});
 				
-				setBounds(bounds);
 				polyline.setMap(map);
 				polylines.push(polyline);
 				
@@ -289,8 +294,6 @@ var kakaoMap = (function(){
 		}
 		
 	} //setCustomOverlays
-	
-	
 	
 	$('#goReview').on('click',function(){
 		$('#content').load('/myTour/myTourSelect');
@@ -301,39 +304,48 @@ var kakaoMap = (function(){
 		
 		initMap(container,options);
 		
+
+		function showBucket(param){ 
+			$.ajax({
+				type : 'post',
+				url : '/planner/bucketJson',
+				data : param,
+				dataType: 'json',
+				async : false,
+				success : function(data){
+					setBucketPositions(data);
+					setCustomView(bucketPositions);
+					setMarkers(bucketPositions);
+					setBounds(bounds,linePath);
+					
+				},
+				error : function(request,status,error){
+					alert("error : " + error);
+				}
+			})
+		} // showBucket()
 		
+		function showBucketList(param){
+			$('#planBucketList').load('/planner/bucketList',param);
+		}
 		
 		$('#planBucketList').load('/planner/bucketList',{"purchaseSerial" : purchaseSerial},function(data){
 			
+			var param = {"purchaseSerial" : purchaseSerial};
+			showBucket(param);
+			
 			$('.planBucketMenuItemAll').on('click',function(ev){
+				bounds = new kakao.maps.LatLngBounds();
 				var target = ev.target;
 				var param = {"purchaseSerial" : purchaseSerial}
 				MenuActive(bucketItems,target);
-				$('#planBucketList').load('/planner/bucketList',param);
+				showBucketList(param);
+				showBucket(param);
 				
-				$.ajax({
-					type : 'post',
-					url : '/planner/bucketJson',
-					data : param,
-					dataType: 'json',
-					async : false,
-					success : function(data){
-						setBucketPositions(data);
-						setCustomView(bucketPositions);
-						setMarkers(bucketPositions);
-						setBounds(bounds);
-						
-					},
-					error : function(request,status,error){
-						alert("error : " + error);
-					}
-				})
 			})
 			
-			var planBucketMenuItemAll = document.querySelector('.planBucketMenuItemAll');
-			planBucketMenuItemAll.click();
-			
 			$('.planBucketMenuItem').on('click',function(ev){
+				bounds = new kakao.maps.LatLngBounds();
 				var target = ev.target;
 				var contenttypeId = ev.target.firstChild.nextSibling.value;
 				var param = {"contenttypeId" : contenttypeId,
@@ -351,7 +363,7 @@ var kakaoMap = (function(){
 					success : function(data){
 						setBucketPositions(data);
 						setMarkers(bucketPositions);
-						setBounds(bounds);
+						setBounds(bounds,linePath);
 					},
 					error : function(request,status,error){
 						alert("error : " + error);
@@ -367,7 +379,9 @@ var kakaoMap = (function(){
 				param += "&planDate="+planDate;
 				
 				$.post('planner/bucketInsert',param,function(data){
-					alert('입력성공!');
+					if(data=="") alert('입력성공!');
+					else alert(data);
+					
 					closeModal();
 					$('#PlanMenuActive').click();
 					if(targetCustom != null){
@@ -376,23 +390,29 @@ var kakaoMap = (function(){
 				})
 			})
 			
+			bucketDelete = function(planbucketSerial){
+				var flag = confirm('버킷을 삭제하시겠습니까?');
+				if(flag){
+					var param = {'planbucketSerial' : planbucketSerial}
+					$.post('planner/bucketDelete',param,function(){
+						alert('삭제 성공!');
+						$('#PlanMenuActive').click();
+						$('#BucketMenuActive').click();
+					})
+				}	
+			}
+			
 			customView = function(mapX,mapY){
-				
-				console.log("눌렸다고");
 				if(customViews.length != 0){
 					for(var i=0; i<customViews.length; i++){
 						customViews[i].setMap(null);
 					}
 				}
-				console.log("눌렸다고!!"+customViews.length);
 				
 				for(var i=0; i<customViews.length; i++){
 					var customMapX = customViews[i].getPosition().La.toString();
 					var customMapY = customViews[i].getPosition().Ma.toString();
-						console.log("눌렸다고1");
 					if(customMapX.includes(mapX) && customMapY == mapY){
-						
-						console.log("눌렸다고2");
 						customViews[i].setMap(map);
 						map.setCenter(new kakao.maps.LatLng(parseFloat(mapY)+0.001, mapX));
 						map.setLevel(3);
@@ -409,53 +429,55 @@ var kakaoMap = (function(){
 					}
 				}
 			}
-			
-			
-			
-			
 		}); // end of planBucket load
-
 		
+		function showPlan(param){ 
+			
+			$.ajax({
+				type : 'post',
+				url : '/planner/planJson',
+				data : param,
+				dataType: 'json',
+				async : false,
+				success : function(data){
+					setPlanPositions(data);
+					setCustomOverlays(planPositions);
+					setBounds(bounds,linePathAll);
+				},
+				error : function(request,status,error){
+					alert("error : " + error);
+				}
+			})
+		} // showPlan()
+		
+		function showPlanList(param){
+			var planList = $('#planList').load('/planner/planList',param);
+			return planList[0].outerText;
+		}
 		
 		
 		$('#planList').load('/planner/planList',{"purchaseSerial" : purchaseSerial},function(data){
 			
-			
-			bounds = new kakao.maps.LatLngBounds();  
+			var param = {"purchaseSerial" : purchaseSerial};
+			var outerText = showPlanList(param);
+			if(outerText != ""){
+				showPlan(param);
+			}
 			
 			$('.planListMenuItemAll').on('click',function(ev){
-				
+				bounds = new kakao.maps.LatLngBounds();
 				var target = ev.target;
-				var param = {"purchaseSerial" : purchaseSerial}
 				
 				if(targetCustom != null){
 					customClose();
 				}
 				MenuActive(planItems,target);
-				$('#planList').load('/planner/planList',param);
-				
-				$.ajax({
-					type : 'post',
-					url : '/planner/planJson',
-					data : param,
-					dataType: 'json',
-					async : false,
-					success : function(data){
-						setPlanPositions(data);
-						setCustomOverlays(planPositions);
-					},
-					error : function(request,status,error){
-						alert("error : " + error);
-					}
-				})
+				showPlanList(param)
+				showPlan(param);
 			})
 			
-			var planListMenuItemAll = document.querySelector('.planListMenuItemAll');
-			planListMenuItemAll.click();
-			
-			
 			planMenuClick = function(target){
-				
+				bounds = new kakao.maps.LatLngBounds();
 				var planMenuFrm = target.children[0];
 				var planDate = planMenuFrm.planDate.value;
 				
@@ -482,6 +504,7 @@ var kakaoMap = (function(){
 							var planDate = JSON.parse(data[0]).planDate;
 							setPlanPositions(data);
 							setCustomOverlays(planPositions);
+							setBounds(bounds,linePath);
 						}
 					}
 				})
@@ -527,7 +550,6 @@ var kakaoMap = (function(){
 			$('#btnResetMemo').on('click',function(){
 				
 				var param =$(planMemoFrm).serialize();
-				console.log(param);
 				var reset = confirm("메모를 초기화 시키겠습니까?");
 				
 				if(reset){
@@ -557,9 +579,10 @@ var kakaoMap = (function(){
 		
 		
 		
-		
 	})// end of document Ready
 	
 	
 	
 })();
+
+

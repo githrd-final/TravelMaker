@@ -1,6 +1,8 @@
 package com.project1.order;
 
 import com.project1.mybatis.OrderMapper;
+import com.project1.review.ReviewVo;
+
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -145,5 +147,18 @@ public class OrderService {
         orderMapper.updateTicketStatusB(ticketSerialListB.get(0));
 
         return purchaseDto;
+    }
+    
+    public List<ReviewVo> purchaseCheckReview(String region){
+    	List<ReviewVo> list = null;
+    	System.out.println("order서비스 지역:"+region);
+    	if(region.equals("전국")) {
+    		list = orderMapper.purchaseCheckReviewAll();
+    		System.out.println("order서비스 전국 list:"+list.toString());
+    	}else {
+    		list = orderMapper.purchaseCheckReview(region);
+    		System.out.println("order서비스 지역 list:"+list.toString());
+    	}
+    	return list;
     }
 }
