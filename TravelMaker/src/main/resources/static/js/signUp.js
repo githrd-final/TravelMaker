@@ -1,11 +1,38 @@
 /**
  *
  */
+
 $('.btnProfileSelect').on('click',function(){
-    $('#content').load('/member/login');
+    $('#content').load('/member/');
 })
 
 $('.btnSubmit').on('click',function(){
-    window.close();
-    location.replace("http://localhost:9282");
+    var frm = $('.frm')[0];
+    var param = new FormData(frm);
+    if(frm.nickname.value == ""){
+        alert("닉네임을 입력해주세요.");
+        frm.nickname.focus();
+        return false;
+    }
+    else {
+        if (frm.profileImage.value != "") {
+            $.ajax({
+                type: 'POST',
+                url: '/member/memberInsertWithImage',
+                contentType: false,
+                processData: false,
+                data: param,
+                dataType: 'html',
+                success: function (data) {
+                    if (data != "") alert(data);
+                    frm.enctype = '';
+                    param = $(frm).serialize();
+                    location.replace('/');
+                }
+            })
+        }
+        else{
+
+        }
+    }
 })

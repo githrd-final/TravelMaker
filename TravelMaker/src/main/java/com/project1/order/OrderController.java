@@ -1,5 +1,6 @@
 package com.project1.order;
 
+import com.project1.review.ReviewVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @RestController
 @Slf4j
@@ -56,6 +58,8 @@ public class OrderController {
         mv.addObject("orderDto", orderDto);
         log.info(orderDto.getEmail());
         log.info(orderDto.getPeople());
+        List<ReviewVo> listReviewVo = orderService.selectReview(orderDto);
+        mv.addObject("listReviewVo", listReviewVo);
         mv.setViewName("order/purchaseCheck");
         return mv;
     }

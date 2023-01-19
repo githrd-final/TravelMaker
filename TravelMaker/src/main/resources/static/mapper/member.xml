@@ -7,6 +7,10 @@
     </select>
 
     <insert id="insertMember" parameterType="com.project1.member.MemberDto">
-        INSERT INTO user (email, nickName, userComment, oriUserPhoto, sysUserPhoto) VALUES (#{email}, #{nickName}, #{userComment}, #{oriUserPhoto}, #{sysUserPhoto})
+        INSERT INTO user (email, nickName, userComment, oriUserPhoto, sysUserPhoto) VALUES (#{email}, #{nickname}, #{userComment}, #{oriUserPhoto}, #{sysUserPhoto})
     </insert>
+
+    <update id="memberUpdate" parameterType="com.project1.member.MemberDto">
+        update user set nickName = #{nickname}, userComment = , #{userComment}, oriUserPhoto = #{oriUserPhoto}, sysUserPhoto = #{sysUserPhoto} where email = #{email}
+    </update>
 </mapper>

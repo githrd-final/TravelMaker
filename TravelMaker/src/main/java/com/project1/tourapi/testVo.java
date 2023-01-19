@@ -14,6 +14,7 @@ public class testVo {
 	String contentTypeId;
 	String cat1;
 	String firstImage2;
+	String locationName;
 	public String getContentID() {
 		return contentID;
 	}
@@ -62,6 +63,15 @@ public class testVo {
 	public void setHomepage(String homepage) {
 		this.homepage = homepage;
 	}
+
+	public String getLocationName() {
+		return locationName;
+	}
+
+	public void setLocationName(String locationName) {
+		this.locationName = locationName;
+	}
+
 	public String getMapX() {
 		return mapX;
 	}
