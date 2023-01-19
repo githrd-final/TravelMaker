@@ -22,9 +22,9 @@
         </div>
         <div class='profileImage'>
             <div class='img-box'></div>
-            <input type='file' class='btnProfileSelect' name="profileImage" value='파일 선택'>
+            <input type='file' class='btnProfileSelect' name="attFile" value='파일 선택' accept="image/*">
             <br/>
-            <input type='submit' class='btnSubmit' value='수정'>
+            <input type='button' class='btnSubmit' value='수정'>
         </div>
     </form>
 </main>

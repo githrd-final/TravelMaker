@@ -119,21 +119,30 @@ public class MemberController {
     }
 
     @RequestMapping(value = "/member/memberUpdateWithImage", method = RequestMethod.POST)
-    public String memberUpdateWithImage(HttpServletRequest request, @RequestParam("attFile") MultipartFile img) throws IOException, ServletException {
+    public String memberUpdateWithImage(HttpSession session, @RequestParam("nickname") String nickname, @RequestParam("intro") String intro, @RequestParam("attFile") MultipartFile img) throws IOException, ServletException {
         log.info("memberUpdateWithImage");
-        log.info("email: " + request.getAttribute("email"));
-        MemberDto memberDto = memberService.findMember((String) request.getAttribute("email"));
-        memberDto.setUserComment((String) request.getAttribute("intro"));
-        memberDto.setNickname((String) request.getAttribute("nickname"));
+        log.info("email: " + session.getAttribute("email"));
+        MemberDto memberDto = memberService.findMember((String) session.getAttribute("email"));
+        log.info("nickname: " + memberDto.getNickname());
+        memberDto.setUserComment(nickname);
+        memberDto.setNickname(intro);
+        log.info("intro: " + memberDto.getUserComment());
+        log.info("nickname: " + memberDto.getNickname());
         AttVo attVo = new AttVo();
         try {
             attVo = fileupload(img);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        memberDto.setOriUserPhoto(attVo.getOriFile());
-        memberDto.setSysUserPhoto(attVo.getSysFile());
-
+        if(attVo != null) {
+            memberDto.setOriUserPhoto(attVo.getOriFile());
+            memberDto.setSysUserPhoto(attVo.getSysFile());
+        }
+        else{
+        memberDto.setOriUserPhoto(null);
+        memberDto.setSysUserPhoto(null);
+        }
+        log.info("nickname: " + memberDto.getNickname());
         memberService.memberUpdate(memberDto);
         return null;
     }
@@ -180,17 +189,22 @@ public class MemberController {
             UUID uuid = UUID.randomUUID(); //랜덤 숫자. 이름중복 방지
             String oriFile = mul.getOriginalFilename();
             String sysFile = "";
-            File temp = new File(path + oriFile);//path + 파일명 -> temp
-            mul.transferTo(temp); // 선택한 파일 -> temp로
+            if(oriFile != null && !oriFile.equals("")) {
+                sysFile = uuid.toString() + "_" + oriFile;
+                File temp = new File(path + oriFile);//path + 파일명 -> temp
+                mul.transferTo(temp); // 선택한 파일 -> temp로
 
-            sysFile = (uuid.getLeastSignificantBits()*-1) + "-" + oriFile; //경로+랜덤문자+파일명
-            File f = new File(path + sysFile);
-            temp.renameTo(f); //f로 이름 바꿔줌
+                sysFile = (uuid.getLeastSignificantBits()*-1) + "-" + oriFile; //경로+랜덤문자+파일명
+                File f = new File(path + sysFile);
+                temp.renameTo(f); //f로 이름 바꿔줌
 
-            AttVo attVo = new AttVo();//boardVo가 먼저 만들어져서 sno가 있어야 pSno도 추가되어야겠찌
-            attVo.setOriFile(oriFile);
-            attVo.setSysFile(sysFile);
+                AttVo attVo = new AttVo();//boardVo가 먼저 만들어져서 sno가 있어야 pSno도 추가되어야겠찌
+                attVo.setOriFile(oriFile);
+                attVo.setSysFile(sysFile);
 
-        return attVo;
+                return attVo;
+            }
+
+        return null;
     }
 }
