@@ -26,9 +26,16 @@ public class PlannerController {
 	@Autowired
 	PlanBucketService bucketService;
 	
+	int travelDay;
+	
 	@RequestMapping("/planner/planner")
 	public ModelAndView planner() {
 		ModelAndView mv = new ModelAndView();
+		travelDay = bucketService.TravelDay("1201100A106001121A11happilyah@naver.com");
+		
+		mv.addObject("purchaseSerial", "1201100A106001121A11happilyah@naver.com");
+		
+		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("planner/planner");
 		return mv;
 	}
