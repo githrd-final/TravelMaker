@@ -118,14 +118,18 @@ public class PlanController {
 		String planbucketSerial = purchaseDto.getPurchaseSerial() + contentId;
 		int checkAdded = planService.checkAdded(planbucketSerial);
 		HashMap<String, Object> map = new HashMap<String, Object>();
+		log.info("map : " + map);
 		TourAPIGetData tourAPIGetData = new TourAPIGetData();
 		TourAPIJsonParsing tourAPIJsonParsing = new TourAPIJsonParsing();
 		String result1 = tourAPIGetData.getMoreDetailJsonData(contentId);
+		log.info("result1 : " + result1);
 		testVo result2 = tourAPIJsonParsing.getDetailItem(result1);
+		log.info("result2 : " + result2);
 		map.put("planbucketSerial", planbucketSerial);
 		map.put("contendId", contentId);
 		map.put("purchaseDto", purchaseDto);
 		map.put("result", result2);
+		log.info("map : " + map);
 		log.info(result2.getContentID() + " " + result2.getTitle() + result2.getAddr1());
 		log.info("mapX : " + result2.getMapX());
 		log.info("mapY : " + result2.getMapY());

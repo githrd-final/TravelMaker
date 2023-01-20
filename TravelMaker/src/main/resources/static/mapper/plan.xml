@@ -14,7 +14,7 @@
 	</select>
 
 	<insert id="insertPlanBucket" parameterType="java.util.HashMap">
-		insert into planbucket values (#{planbucketSerial}, #{purchaseDto.purchaseSerial}, #{result.contentTypeId}, #{result.title}, #{result.mapX}, #{result.mapY}, #{result.firstImage}, #{result.overView}, #{result.addr1}, #{contentId});
+		insert into planbucket values (#{planbucketSerial}, #{purchaseDto.purchaseSerial}, #{result.contentTypeId}, #{result.title}, #{result.mapX}, #{result.mapY}, #{result.firstImage}, #{result.overView}, #{result.addr1});
 	</insert>
 
 	<delete id="deletePlanBucket" parameterType="java.util.HashMap">
