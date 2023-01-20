@@ -121,12 +121,16 @@
 
 #modal2 .locationName{
 	border:none;
-	width: fit-content;
+	white-space: pre-line;
+
 }
 
 #modal2 .UpdatePlanSerial{
-	width:3vw;
+	width:5vw;
 	font-size:1rem;
+}
+#modal2 .UpdatePlanOrder{
+	width:5vw;
 }
 .MemoArea{
 	height:10vh;
@@ -175,7 +179,7 @@
 		padding:1vh;
 		border-bottom:1px solid lightgray;
 		display:grid;
-		grid-template-columns:1.5fr 2fr 1fr 1fr;
+		grid-template-columns:1.5fr 3fr 1fr;
 	}
 	
 	.bucketImg{
@@ -189,6 +193,12 @@
 		font-size:1.5rem;
 		margin-top:2vh;
 		margin-bottom:1vh;
+		width:40vw;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display:block;
+		
 	}
 	.bucketTitle input{
 		display:none;
@@ -245,6 +255,12 @@
 	}
 	.planTitle{
 		font-size:1.5rem;
+		width:40vw;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display:block;
+		
 	}
 	.plangubun{
 		font-size:1rem;
@@ -288,6 +304,22 @@
 		text-align:center;
 		padding: 10px;
 	}
+	#goRecommend{
+		border-radius:50%;
+		line-height:4;
+		width:13vw;
+		height:13vw;
+		text-align:center;
+		font-weight:bold;
+		font-size:1rem;
+		text-decoration:none;
+		position :fixed;
+		z-index:500;
+		right:20vw;
+		bottom:20vh;
+		color:#fff;
+		background-color:tomato;
+	}
 	#goReview{
 	border-radius:50%;
 	line-height:4;
@@ -299,12 +331,12 @@
 	text-decoration:none;
 	position :fixed;
 	z-index:500;
-	right:5%;
+	right:5vw;
 	bottom:20vh;
 	color:#fff;
 	background-color:tomato;
 }
-#goReview>span{
+#goReview>span, #goRecommend>span{
 	height:1.5vh;
 	display:block;
 }

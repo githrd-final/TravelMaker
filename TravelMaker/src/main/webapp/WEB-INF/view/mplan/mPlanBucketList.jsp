@@ -23,8 +23,7 @@
 				<div class="bucketInfo">
 					<div class="bucketTitle">${vo.locationName}<input id='bucketTitleInput' value="${vo.locationName}" name="locationName"/> </div>
 					<div class="bucketgubun">${vo.contenttypeId} </div>		
-				</div>
-				<div></div>
+				</div>	
 				<div class="bucketbtn">
 					<div></div>
 					<div>
