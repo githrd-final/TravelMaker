@@ -24,8 +24,8 @@
 	<select id='TicketView' parameterType="String" resultType="com.project1.myTour.MyTourTicketVo">
         select t.ticketSerial,t.ticketStartPoint,t.ticketEndPoint,t.ticketDate,t.ticketSeat,t.region, pt.purchaseSerial,
         case
-        	when t.ticketStartTime="오전" then "10:00"
-        	when t.ticketStartTime="오후" then "16:00" 
+        	when t.ticketStartTime="am" then "10:00"
+        	when t.ticketStartTime="pm" then "16:00" 
         end as ticketStartTime
 		from ticket t left join purchasedticket pt
 		on t.ticketSerial=pt.ticketSerialStart or t.ticketSerial=pt.ticketSerialEnd
