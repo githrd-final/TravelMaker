@@ -345,3 +345,582 @@
 15:30:17.298+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanController - mapX : 128.4848963314
 15:30:17.299+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanController - mapY : 38.1778584536
 15:30:17.299+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+15:39:49.130+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (1 addition, 0 deletions, 3 modifications)
+15:39:49.159+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+15:39:49.166+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+15:39:49.274+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 5571 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+15:39:49.274+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+15:39:49.408+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+15:39:49.414+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+15:39:49.487+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+15:39:49.591+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 316 ms
+15:39:49.795+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+15:39:49.839+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+15:39:49.858+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+15:39:49.877+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:39:49.889+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+15:39:49.893+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.64 seconds (JVM running for 9206.978)
+15:39:49.894+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+15:39:57.289+0900 [RMI TCP Connection(176)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+15:39:57.310+0900 [RMI TCP Connection(176)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+15:39:57.314+0900 [RMI TCP Connection(176)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+15:39:59.068+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 14532 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+15:39:59.071+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+15:39:59.090+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:39:59.090+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:39:59.318+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+15:39:59.324+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+15:39:59.554+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+15:39:59.670+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 580 ms
+15:39:59.924+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+15:39:59.986+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:40:00.143+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:40:00.207+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:40:00.226+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+15:40:00.231+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.306 seconds (JVM running for 1.803)
+15:40:04.625+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:40:04.627+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+15:40:05.136+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+15:40:05.136+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+15:40:07.613+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+15:40:07.613+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+15:41:04.205+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - callCallBack
+15:41:04.205+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - callCallBack
+15:41:04.276+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+15:41:04.276+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+15:41:04.332+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - naverCheck
+15:41:04.332+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - naverCheck
+15:41:04.344+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberService - serviceNaverCheck
+15:41:04.344+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberService - serviceNaverCheck
+15:41:04.393+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - registered
+15:41:04.393+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - registered
+15:41:04.462+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+15:41:04.462+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+15:41:19.110+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - way_2005@naver.com
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 2023-01-20
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 2023-01-21
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - am
+15:41:19.173+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - am
+15:41:22.718+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - purchaseCheck
+15:41:22.727+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - way_2005@naver.com
+15:41:22.728+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 1
+15:41:22.728+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderService - selectReview
+15:41:43.188+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - purchasedTicketA
+15:41:43.193+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - servicePurchaseTicket
+15:41:43.194+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - way_2005@naver.com
+15:41:43.194+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - 1
+15:41:43.194+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - people : 1
+15:41:43.195+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - region : 강원도
+15:41:43.229+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - 속초
+15:41:43.256+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - selectedRegion : 속초
+15:41:43.281+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - regionInt : 2
+15:41:43.288+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 435wghjmvbway_2005@naver.com
+15:41:43.288+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - way_2005@naver.com
+15:41:44.593+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchasedTicketB
+15:41:44.593+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 435wghjmvbway_2005@naver.com
+15:41:48.360+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:41:48.364+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:41:48.365+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:41:48.367+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:41:51.764+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 125804
+15:41:51.767+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:41:51.771+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - result : 0
+15:41:53.485+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 125756
+15:41:53.488+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:41:53.492+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - result : 0
+15:41:55.688+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 1626469
+15:41:55.692+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:41:55.695+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - result : 0
+15:41:57.848+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 125730
+15:41:57.851+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:41:57.855+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - result : 0
+15:42:00.355+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - 125715
+15:42:00.357+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:42:00.360+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - result : 0
+15:42:01.633+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 125756
+15:42:01.636+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:42:01.640+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - result : 0
+15:42:01.642+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - map : {}
+15:42:01.734+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"125756","contenttypeid":"12","title":"계조암(속초)","createdtime":"20031226090000","modifiedtime":"20221216171559","tel":"","telname":"","homepage":"","booktour":"0","firstimage":"http://tong.visitkorea.or.kr/cms/resource/43/2707443_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/43/2707443_image2_1.jpg","addr1":"강원도 속초시 설악동","addr2":"(설악산국립공원 내)","zipcode":"24904","mapx":"128.4848963314","mapy":"38.1778584536","mlevel":"6","overview":"\n대한불교조계종 제3교구 본사인 신흥사의 산내 암자이다 .설악산 울산바위 쪽으로 올라가다 보면, 흔들바위가 나오는데 바로 그 뒤쪽의 커다란 바위에 조그만 암자가 있다. 바위 속에 법당을 마련했는데, 바닥엔 온돌까지 놓여 있다. \n신라 자장율사가 수도하기 위해 처음 만들었다는데 그 뒤 원효·의상·지각·봉정 등 여러조사(祖師)들이 대를 물려 수도하였다고 하여 이름이 계조암이라 부르게 되었다고 한다. 계조암이 들어앉은 바위가 목탁 바위인데 이 암자는 목탁 속에 들어있기 때문에 다른 절에서 10년 걸릴 공부도 5년이면 끝낼 수 있다는 전설이 전해오고 있다\u003cbr\u003e"}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:42:01.734+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@4dc8524f
+15:42:01.734+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@7e47bd7e, result=com.project1.tourapi.testVo@4dc8524f, planbucketSerial=435wghjmvbway_2005@naver.com125756, contendId=125756}
+15:42:01.734+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 125756 계조암(속초)강원도 속초시 설악동
+15:42:01.735+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - mapX : 128.4848963314
+15:42:01.735+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - mapY : 38.1778584536
+15:42:01.735+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+15:46:09.412+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 125756
+15:46:09.420+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:09.428+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - result : 0
+15:46:10.540+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 125804
+15:46:10.543+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:10.546+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - result : 0
+15:46:11.955+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 2616507
+15:46:11.958+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:11.962+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - result : 0
+15:46:15.302+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 125715
+15:46:15.304+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:15.306+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - result : 0
+15:46:16.916+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanController - 125730
+15:46:16.918+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:16.921+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - result : 0
+15:46:20.995+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 125773
+15:46:20.998+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:21.003+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - result : 0
+15:46:24.040+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 2710736
+15:46:24.045+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:24.049+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - result : 0
+15:46:27.131+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 2456701
+15:46:27.133+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:27.136+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - result : 0
+15:46:30.604+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 125621
+15:46:30.607+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:46:30.611+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - result : 0
+15:46:34.118+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:34.122+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:34.124+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:34.126+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:35.392+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:35.395+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:35.397+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:35.399+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:36.364+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:36.367+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:36.369+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:36.371+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:37.362+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:37.363+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:37.364+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:37.365+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:37.915+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:37.916+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:37.917+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:37.917+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:38.555+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:38.558+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:38.559+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:38.561+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:39.236+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:39.239+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:39.241+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:39.243+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:40.276+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:40.280+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:40.282+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:40.283+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:41.097+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:41.099+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:41.100+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:41.101+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:41.646+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:41.648+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:41.651+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:41.653+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:42.284+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:42.287+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:42.289+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:42.291+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:43.548+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:43.551+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:43.553+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:43.554+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:44.002+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:44.005+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:44.006+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:44.007+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:44.563+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:44.566+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:44.568+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:44.570+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:45.053+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:45.057+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:45.059+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:45.061+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:45.586+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:45.586+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:45.587+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:45.587+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:46.052+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:46.053+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:46.054+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:46.055+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:46.712+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:46.716+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:46.717+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:46.719+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:47.796+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:47.801+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:47.803+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:47.805+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:48.427+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:48.430+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:48.431+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:48.433+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:48.883+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:48.886+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:48.888+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:48.890+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:46:49.413+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:46:49.417+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:46:49.420+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:46:49.422+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:16.890+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:16.897+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:16.898+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:16.900+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:17.405+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:17.408+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:17.409+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:17.411+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:17.894+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:17.897+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:17.898+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:17.900+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:18.318+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:18.321+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:18.323+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:18.324+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:19.013+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:19.016+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:19.017+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:19.019+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:19.714+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:19.717+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:19.719+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:19.721+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:20.456+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:20.459+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:20.461+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:20.463+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:22.661+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:22.662+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:22.663+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:22.664+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:23.222+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:23.223+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:23.224+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:23.224+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:24.068+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapX
+15:48:24.072+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapX : 128.59153527
+15:48:24.074+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapY
+15:48:24.076+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapY : 38.20975713
+15:48:34.774+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 2913607
+15:48:34.777+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:48:34.782+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - result : 0
+15:48:36.212+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 137324
+15:48:36.214+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:48:36.217+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - result : 0
+15:48:36.217+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - map : {}
+15:48:36.307+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"137324","contenttypeid":"32","title":"광림모텔","createdtime":"20030828090000","modifiedtime":"20220818173924","tel":"033-636-0096","telname":"","homepage":"","booktour":"","firstimage":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image3_1.jpg","addr1":"강원도 속초시 청대로 2","addr2":"","zipcode":"24894","mapx":"128.6002939920","mapy":"38.1839433186","mlevel":"6","overview":"강원도 속초시에 위치한 광림모텔은 7층짜리 큰 건물로 지어진 모텔이다. 큰 외관의 모습처럼 로비가 넓고, 객실은 침대방과 온돌방이 있어 기호에 맞게 선택할 수 있다. 객실은 깔끔하게 정리정돈되어 있으며 TV, 에어컨, 미니 냉장고, 화장대, 욕조 등이 있어 이용하기에 편하다."}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:48:36.308+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@268dc67c
+15:48:36.308+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@420b7a74, result=com.project1.tourapi.testVo@268dc67c, planbucketSerial=435wghjmvbway_2005@naver.com137324, contendId=137324}
+15:48:36.308+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 137324 광림모텔강원도 속초시 청대로 2
+15:48:36.308+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - mapX : 128.6002939920
+15:48:36.308+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - mapY : 38.1839433186
+15:48:36.310+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+15:57:07.049+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 137324
+15:57:07.056+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:07.061+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - result : 0
+15:57:07.061+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - map : {}
+15:57:07.266+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"137324","contenttypeid":"32","title":"광림모텔","createdtime":"20030828090000","modifiedtime":"20220818173924","tel":"033-636-0096","telname":"","homepage":"","booktour":"","firstimage":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image3_1.jpg","addr1":"강원도 속초시 청대로 2","addr2":"","zipcode":"24894","mapx":"128.6002939920","mapy":"38.1839433186","mlevel":"6","overview":"강원도 속초시에 위치한 광림모텔은 7층짜리 큰 건물로 지어진 모텔이다. 큰 외관의 모습처럼 로비가 넓고, 객실은 침대방과 온돌방이 있어 기호에 맞게 선택할 수 있다. 객실은 깔끔하게 정리정돈되어 있으며 TV, 에어컨, 미니 냉장고, 화장대, 욕조 등이 있어 이용하기에 편하다."}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:57:07.266+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@41e6cb45
+15:57:07.266+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@3080dd32, result=com.project1.tourapi.testVo@41e6cb45, planbucketSerial=435wghjmvbway_2005@naver.com137324, contendId=137324}
+15:57:07.266+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 137324 광림모텔강원도 속초시 청대로 2
+15:57:07.266+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - mapX : 128.6002939920
+15:57:07.266+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - mapY : 38.1839433186
+15:57:07.267+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+15:57:07.364+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 137324
+15:57:07.364+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:07.366+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - result : 0
+15:57:10.241+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 137324
+15:57:10.244+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:10.246+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - result : 1
+15:57:10.247+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - map : {}
+15:57:10.347+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"137324","contenttypeid":"32","title":"광림모텔","createdtime":"20030828090000","modifiedtime":"20220818173924","tel":"033-636-0096","telname":"","homepage":"","booktour":"","firstimage":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image3_1.jpg","addr1":"강원도 속초시 청대로 2","addr2":"","zipcode":"24894","mapx":"128.6002939920","mapy":"38.1839433186","mlevel":"6","overview":"강원도 속초시에 위치한 광림모텔은 7층짜리 큰 건물로 지어진 모텔이다. 큰 외관의 모습처럼 로비가 넓고, 객실은 침대방과 온돌방이 있어 기호에 맞게 선택할 수 있다. 객실은 깔끔하게 정리정돈되어 있으며 TV, 에어컨, 미니 냉장고, 화장대, 욕조 등이 있어 이용하기에 편하다."}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:57:10.347+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@57c25377
+15:57:10.348+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@d24879a, result=com.project1.tourapi.testVo@57c25377, planbucketSerial=435wghjmvbway_2005@naver.com137324, contendId=137324}
+15:57:10.348+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 137324 광림모텔강원도 속초시 청대로 2
+15:57:10.348+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - mapX : 128.6002939920
+15:57:10.348+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - mapY : 38.1839433186
+15:57:10.437+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 137324
+15:57:10.441+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:10.444+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - result : 0
+15:57:21.532+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 137324
+15:57:21.535+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:21.537+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - result : 1
+15:57:21.538+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - map : {}
+15:57:21.770+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"137324","contenttypeid":"32","title":"광림모텔","createdtime":"20030828090000","modifiedtime":"20220818173924","tel":"033-636-0096","telname":"","homepage":"","booktour":"","firstimage":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image3_1.jpg","addr1":"강원도 속초시 청대로 2","addr2":"","zipcode":"24894","mapx":"128.6002939920","mapy":"38.1839433186","mlevel":"6","overview":"강원도 속초시에 위치한 광림모텔은 7층짜리 큰 건물로 지어진 모텔이다. 큰 외관의 모습처럼 로비가 넓고, 객실은 침대방과 온돌방이 있어 기호에 맞게 선택할 수 있다. 객실은 깔끔하게 정리정돈되어 있으며 TV, 에어컨, 미니 냉장고, 화장대, 욕조 등이 있어 이용하기에 편하다."}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:57:21.771+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@3e75410b
+15:57:21.771+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@2c264852, result=com.project1.tourapi.testVo@3e75410b, planbucketSerial=435wghjmvbway_2005@naver.com137324, contendId=137324}
+15:57:21.771+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 137324 광림모텔강원도 속초시 청대로 2
+15:57:21.771+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - mapX : 128.6002939920
+15:57:21.771+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - mapY : 38.1839433186
+15:57:21.857+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 137324
+15:57:21.859+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:21.860+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - result : 0
+15:57:29.651+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 137324
+15:57:29.653+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:29.657+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - result : 1
+15:57:29.657+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - map : {}
+15:57:29.761+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"137324","contenttypeid":"32","title":"광림모텔","createdtime":"20030828090000","modifiedtime":"20220818173924","tel":"033-636-0096","telname":"","homepage":"","booktour":"","firstimage":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image3_1.jpg","addr1":"강원도 속초시 청대로 2","addr2":"","zipcode":"24894","mapx":"128.6002939920","mapy":"38.1839433186","mlevel":"6","overview":"강원도 속초시에 위치한 광림모텔은 7층짜리 큰 건물로 지어진 모텔이다. 큰 외관의 모습처럼 로비가 넓고, 객실은 침대방과 온돌방이 있어 기호에 맞게 선택할 수 있다. 객실은 깔끔하게 정리정돈되어 있으며 TV, 에어컨, 미니 냉장고, 화장대, 욕조 등이 있어 이용하기에 편하다."}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:57:29.761+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@14a64b44
+15:57:29.761+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@660459ae, result=com.project1.tourapi.testVo@14a64b44, planbucketSerial=435wghjmvbway_2005@naver.com137324, contendId=137324}
+15:57:29.761+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 137324 광림모텔강원도 속초시 청대로 2
+15:57:29.761+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - mapX : 128.6002939920
+15:57:29.761+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - mapY : 38.1839433186
+15:57:29.933+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - 137324
+15:57:29.935+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:57:29.939+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - result : 0
+15:58:04.551+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 137324
+15:58:04.553+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:58:04.556+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - result : 1
+15:58:04.557+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - map : {}
+15:58:04.670+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - result1 : {"response": {"header":{"resultCode":"0000","resultMsg":"OK"},"body": {"items": {"item":[{"contentid":"137324","contenttypeid":"32","title":"광림모텔","createdtime":"20030828090000","modifiedtime":"20220818173924","tel":"033-636-0096","telname":"","homepage":"","booktour":"","firstimage":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image2_1.jpg","firstimage2":"http://tong.visitkorea.or.kr/cms/resource/85/709585_image3_1.jpg","addr1":"강원도 속초시 청대로 2","addr2":"","zipcode":"24894","mapx":"128.6002939920","mapy":"38.1839433186","mlevel":"6","overview":"강원도 속초시에 위치한 광림모텔은 7층짜리 큰 건물로 지어진 모텔이다. 큰 외관의 모습처럼 로비가 넓고, 객실은 침대방과 온돌방이 있어 기호에 맞게 선택할 수 있다. 객실은 깔끔하게 정리정돈되어 있으며 TV, 에어컨, 미니 냉장고, 화장대, 욕조 등이 있어 이용하기에 편하다."}]},"numOfRows":1,"pageNo":1,"totalCount":1}}}
+15:58:04.670+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - result2 : com.project1.tourapi.testVo@3e04e12b
+15:58:04.670+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - map : {purchaseDto=com.project1.order.PurchaseDto@48eb3685, result=com.project1.tourapi.testVo@3e04e12b, planbucketSerial=435wghjmvbway_2005@naver.com137324, contendId=137324}
+15:58:04.670+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 137324 광림모텔강원도 속초시 청대로 2
+15:58:04.670+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - mapX : 128.6002939920
+15:58:04.670+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - mapY : 38.1839433186
+15:58:04.745+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 137324
+15:58:04.746+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceCheckAdded
+15:58:04.747+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - result : 0
+15:58:11.076+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+15:58:11.076+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+15:58:31.399+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+15:58:31.399+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+15:58:34.362+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+15:58:34.362+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+15:59:23.712+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+15:59:23.712+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+15:59:26.013+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+15:59:26.013+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+15:59:35.732+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+15:59:35.732+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+15:59:46.707+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+15:59:46.719+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - regionSelect
+15:59:46.720+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - way_2005@naver.com
+15:59:46.720+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 1
+15:59:46.720+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 2023-01-20
+15:59:46.720+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 2023-01-21
+15:59:46.720+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - am
+15:59:46.720+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - am
+15:59:47.465+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+15:59:47.477+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - way_2005@naver.com
+15:59:47.477+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+15:59:47.478+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderService - selectReview
+15:59:49.488+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+15:59:49.488+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:00:00.374+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+16:00:00.385+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+16:00:00.385+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - way_2005@naver.com
+16:00:00.385+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 1
+16:00:00.385+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-20
+16:00:00.386+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-21
+16:00:00.386+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+16:00:00.386+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+16:00:01.190+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - purchaseCheck
+16:00:01.197+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - way_2005@naver.com
+16:00:01.197+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 1
+16:00:01.197+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderService - selectReview
+16:00:12.045+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+16:00:12.056+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - way_2005@naver.com
+16:00:12.056+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+16:00:12.056+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderService - selectReview
+16:05:29.295+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s833ms).
+16:07:19.721+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:07:19.721+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:07:26.764+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+16:07:26.764+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+16:08:38.556+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:08:38.556+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:13:58.605+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s229ms).
+16:21:51.978+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:21:51.978+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:25:05.229+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+16:25:05.229+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+16:25:06.802+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:25:06.802+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:25:20.270+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+16:25:20.270+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+16:25:27.153+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+16:25:27.153+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+16:26:46.710+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+16:26:46.710+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+16:27:09.222+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+16:27:09.222+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+16:27:12.777+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+16:27:12.777+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+16:27:31.959+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+16:27:31.959+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+16:27:33.922+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:27:33.922+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:27:48.498+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:27:48.498+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:27:55.082+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:27:55.082+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:28:07.141+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+16:28:07.141+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+16:28:09.962+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+16:28:09.962+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+16:28:57.991+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+16:28:57.991+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+16:28:59.368+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+16:28:59.368+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+16:31:56.419+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:31:56.526+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:31:56.559+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:31:56.850+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 14532 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+16:31:56.850+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+16:31:56.987+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16:31:56.992+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+16:31:57.174+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+16:31:57.300+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 447 ms
+16:31:57.543+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+16:31:57.578+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+16:31:57.617+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+16:31:57.645+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:31:57.677+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+16:31:57.686+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.062 seconds (JVM running for 3001.166)
+16:31:57.692+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:32:12.358+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:32:12.416+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+16:32:12.427+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+16:32:12.566+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 14532 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+16:32:12.567+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+16:32:12.721+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16:32:12.723+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+16:32:12.777+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+16:32:12.827+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 258 ms
+16:32:12.981+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+16:32:13.029+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+16:32:13.057+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+16:32:13.079+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:32:13.088+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+16:32:13.090+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.563 seconds (JVM running for 3016.57)
+16:32:13.091+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:32:22.677+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+16:32:22.724+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+16:32:22.753+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+16:32:22.866+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 14532 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+16:32:22.867+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+16:32:22.998+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16:32:23.002+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+16:32:23.082+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+16:32:23.244+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 375 ms
+16:32:23.468+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+16:32:23.501+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+16:32:23.524+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+16:32:23.540+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:32:23.552+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+16:32:23.555+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.723 seconds (JVM running for 3027.034)
+16:32:23.556+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:32:40.651+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:32:40.656+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+16:32:52.107+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - callCallBack
+16:32:52.107+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - callCallBack
+16:32:52.278+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - naverCheck
+16:32:52.278+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - naverCheck
+16:32:52.286+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:32:52.286+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:32:52.307+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - registered
+16:32:52.307+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - registered
+16:37:42.694+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - regionSelect
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - way_2005@naver.com
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 2023-01-20
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 2023-01-21
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - am
+16:37:42.764+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - am
+16:45:27.298+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+16:45:27.298+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+16:45:27.398+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+16:45:27.398+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+16:45:27.400+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:45:27.400+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:47:40.095+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - callCallBack
+16:47:40.095+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - callCallBack
+16:47:40.168+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - naverCheck
+16:47:40.168+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - naverCheck
+16:47:40.170+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:47:40.170+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:47:40.180+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - notRegistered
+16:47:40.180+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - notRegistered
+16:47:40.189+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:47:40.189+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:48:02.216+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - UserAdd
+16:48:02.216+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - UserAdd
+16:48:02.241+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberService - InsertMember
+16:48:02.241+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberService - InsertMember
+16:48:02.242+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:48:02.242+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:48:19.511+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:48:19.511+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+16:48:21.415+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:48:21.415+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+16:48:25.845+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+16:48:25.845+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+16:49:08.179+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+16:49:08.179+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+16:49:08.252+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - naverCheck
+16:49:08.252+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - naverCheck
+16:49:08.254+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:49:08.254+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberService - serviceNaverCheck
+16:49:08.259+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - notRegistered
+16:49:08.259+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - notRegistered
+16:49:08.268+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+16:49:08.268+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+16:49:16.752+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - UserAdd
+16:49:16.752+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - UserAdd
+16:49:16.756+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - InsertMember
+16:49:16.756+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - InsertMember
+16:49:16.765+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:49:16.765+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+16:50:05.053+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+16:50:05.072+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - regionSelect
+16:50:05.073+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - way_2005@naver.com
+16:50:05.073+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+16:50:05.073+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 2023-01-20
+16:50:05.073+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 2023-01-21
+16:50:05.073+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - am
+16:50:05.073+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - am
+16:51:37.306+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - purchaseCheck
+16:51:47.191+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+17:04:27.136+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+17:04:27.136+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+17:04:28.738+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+17:04:28.738+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+17:04:29.995+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+17:04:29.995+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+17:04:31.171+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - callCallBack
+17:04:31.171+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - callCallBack
+17:04:31.566+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+17:04:31.566+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+17:04:31.640+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - naverCheck
+17:04:31.640+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - naverCheck
+17:04:31.643+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberService - serviceNaverCheck
+17:04:31.643+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberService - serviceNaverCheck
+17:04:31.654+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - registered
+17:04:31.654+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - registered
+17:04:31.925+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+17:04:31.925+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+17:04:40.630+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+17:04:40.644+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+17:04:40.644+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - way_2005@naver.com
+17:04:40.647+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 1
+17:04:40.648+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 2023-01-20
+17:04:40.648+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 2023-01-21
+17:04:40.648+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - am
+17:04:40.648+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - am
+17:04:41.810+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - purchaseCheck
+17:04:41.817+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - way_2005@naver.com
+17:04:41.817+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 1
+17:04:41.818+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - selectReview
+17:05:19.117+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchasedTicketA
+17:05:19.121+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - servicePurchaseTicket
+17:05:19.121+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - way_2005@naver.com
+17:05:19.121+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - 1
+17:05:19.121+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - people : 1
+17:05:19.124+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - region : 강원도

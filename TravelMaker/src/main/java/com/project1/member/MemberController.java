@@ -123,6 +123,7 @@ public class MemberController {
         log.info("memberUpdateWithImage");
         log.info("email: " + session.getAttribute("email"));
         MemberDto memberDto = memberService.findMember((String) session.getAttribute("email"));
+        String delFile = memberDto.getSysUserPhoto();
         log.info("nickname: " + memberDto.getNickname());
         memberDto.setUserComment(intro);
         memberDto.setNickname(nickname);
@@ -137,6 +138,12 @@ public class MemberController {
         if(attVo != null) {
             memberDto.setOriUserPhoto(attVo.getOriFile());
             memberDto.setSysUserPhoto(attVo.getSysFile());
+            if(delFile != null) {
+                File file = new File(path + delFile);
+                if(file.exists()) {
+                    file.delete();
+                }
+            }
         }
         else{
         memberDto.setOriUserPhoto(null);
