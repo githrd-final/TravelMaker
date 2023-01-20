@@ -34,9 +34,20 @@ public class MemberService{
         return result;
     }
 
-    public void naverSignUp(MemberDto memberDto) {
-        log.info("serviceNaverSignUp");
-        memberMapper.naverSignUp(memberDto);
+    public void newSignUp(MemberDto memberDto) {
+        log.info("serviceNewSignUp");
+        memberMapper.newSignUp(memberDto);
+    }
+
+    public MemberDto findMember(String email) {
+        log.info("serviceFindMember");
+        MemberDto memberDto = memberMapper.findMember(email);
+        return memberDto;
+    }
+
+    public void memberUpdate(MemberDto memberDto) {
+        log.info("serviceMemberUpdate");
+        memberMapper.memberUpdate(memberDto);
     }
     
     public void insertMember(MemberDto memberDto) {

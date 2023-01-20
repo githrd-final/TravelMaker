@@ -1,10 +1,13 @@
 package com.project1.mybatis;
 
+import com.project1.order.PurchaseDto;
 import com.project1.planner.PlanVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 @Mapper
@@ -13,6 +16,12 @@ public interface PlanMapper {
     public String findMapX(String region);
 
     public String findMapY(String region);
+
+    public int checkAdded(String planbucketSerial);
+
+    public void insertPlanBucket(HashMap map);
+
+   public void deletePlanBucket(HashMap map);
 
    //로드시 날짜 필요함
    public int selectDate(String purchaseSerial);

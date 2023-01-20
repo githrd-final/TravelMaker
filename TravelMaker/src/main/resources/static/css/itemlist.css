@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
-#item{
+#item {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 3vh;
-    grid-template-rows: repeat(7, 1fr);
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+
+#item:hover{
+	cursor:pointer;
+	background-color:#E49082;
+	color:#fff;
 }
 
 .item-name{
@@ -42,13 +49,14 @@ input[type="checkbox"]{
     cursor: pointer;
     margin : 5px;
 }
-label{
-    font-size : 1.2rem;
-    font-weight : bold;
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 3px;
 }
 .check{
-    float : right;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
 }
 
 #modal.modal-overlay {
@@ -92,35 +100,43 @@ label{
     margin-bottom : 10vh;
 }
 
-.item-name{
-    margin-top : 3vh;
-    font-size: 2.5em;
+.item-name {
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.item-image {
+    background-size: cover;
+    width: 65%;
+    height: 80%;
+    margin: auto;
+}
+
+.item-address {
+    margin-top: 1vh;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-.item-image{
-    margin: 3vh auto 0 auto;
-    background-size: cover;
-    width: 50%;
-    height: 50%;
-}
-
-.item-address{
-    margin-top : 3vh;
-    font-size: 1.5em;
-}
-
 .item-tel{
-    margin-top : 3vh;
+    margin-top : 1vh;
 }
 
 .item-homepage{
-    margin-top : 3vh;
+    margin-top : 1vh;
 }
 
 .item-homepage a{
     color: black;
 
+}
+
+.item-overview {
+    display: inline-block;
+    margin-top: 2vh;
+    height: 30%;
+    width: 85%;
+    overflow-y: scroll;
 }
 
 .item-detailBtnGroup-modal{
@@ -130,13 +146,24 @@ label{
     margin : auto;
 }
 
-.item-detailBtnGroup-modal input{
+.item-detailBtnGroup-modal input {
     text-align: center;
-    background-color: #ff6347;
-    font-size: 1.5em;
-    padding : 10px;
-    color : white;
+    font-size: 1.2rem;
+    font-weight:bold;
+    background-color: rgb(255, 99, 71);
+    color: white;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 8px;
     border-radius: 10px;
+    margin-top: 110px;
+}
+
+.item-detailBtnGroup-modal input:hover{
+	cursor:pointer;
 }
 
 .koreap{
@@ -191,9 +218,10 @@ label{
     label{
         font-size : 1.2rem;
         font-weight : bold;
+        position: relative;
+   	    bottom: 3px;
     }
     .check{
-        float : right;
         margin-bottom: 8%;
     }
 

@@ -13,20 +13,20 @@ import com.project1.review.UserVo;
 public class MyInfoController {
 	@Autowired 
 	MyInfoService service;
-	@RequestMapping("/myInfo/myInfo")
+	@RequestMapping("/myInfo/myInfoView")
 	public ModelAndView view(HttpSession session) {
 		ModelAndView mv = new ModelAndView();
 		String email = (String)session.getAttribute("email");
 		UserVo uVo = service.view(email);
 		mv.addObject("uVo", uVo);
-		mv.setViewName("myInfo/myInfo");
+		mv.setViewName("myInfo/myInfoView");
 		return mv; 
 	}
 	
-	@RequestMapping("/myInfo/myInfoModify")
+	/*@RequestMapping("/myInfo/myInfoModify")
 	public ModelAndView Modify() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("myInfo/myInfo");
 		return mv;
-	}
+	}*/
 }
