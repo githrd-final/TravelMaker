@@ -5,6 +5,10 @@
 		SELECT DATEDIFF((SELECT endDate FROM purchase WHERE purchaseSerial = '${_parameter}'), (SELECT startDate FROM purchase WHERE purchaseSerial='${_parameter}'));	
 	</select>
 	
+	<select id="recommendSelect" parameterType="String" resultType="String">
+		select city from purchase where purchaseSerial='${_parameter}';
+	</select>
+	
 	<select id="InsertCountPlan" parameterType="String" resultType="int">
 		SELECT COUNT(planDate) FROM plan WHERE planbucketSerial = '${_parameter}'; 
 	</select>
@@ -16,7 +20,9 @@
 	</select>
 	
 	<select id="bucketDetailSelect" parameterType="com.project1.planner.BucketVo" resultType="com.project1.planner.BucketVo">
-		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId , locationName, mapX, mapY, locationPhoto, addr, overview from planBucket where purchaseSerial = #{purchaseSerial} and contenttypeId = #{contenttypeId}
+		Select planbucketSerial, purchaseSerial, if(contenttypeId="12","관광지",if(contenttypeId="32","숙박",if(contenttypeId="39","음식점","기타"))) as contenttypeId , locationName, mapX, mapY, locationPhoto, addr, overview 
+		from planBucket 
+		where purchaseSerial = #{purchaseSerial} and contenttypeId = #{contenttypeId}
 	</select>
 	
 	
@@ -30,7 +36,4 @@
 	</delete>
 	
 	
-<!-- 	<select id="bucketDeletePlanSelect" parameterType="String" resultType="Integer"> -->
-<!-- 		Select count(*) from plan where planBucketSerial = ${_parameter} -->
-<!-- 	</select> -->
 </mapper>

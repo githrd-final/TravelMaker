@@ -17,6 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.project1.order.PurchaseDto;
 
 @RestController
 public class mPlannerController {
@@ -33,9 +34,9 @@ public class mPlannerController {
 	public ModelAndView mPlannerSelect() {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
 
-		travelDay = service.TravelDay("1201100A106001121A11happilyah@naver.com");
+		travelDay = service.TravelDay("123456simgokin@naver.com");
 
-		mv.addObject("purchaseSerial", "1201100A106001121A11happilyah@naver.com");
+		mv.addObject("purchaseSerial", "123456simgokin@naver.com");
 
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
@@ -43,10 +44,10 @@ public class mPlannerController {
 	}
 	@RequestMapping("/mplan/mPlanBucketList")
 	public ModelAndView mPlanBucketListSelect(String purchaseSerial) {
-		ModelAndView mv = new ModelAndView();	//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
+		ModelAndView mv = new ModelAndView();	
 		List<BucketVo> list = service.bucketselect(purchaseSerial);
 		mv.addObject("list", list);
-		mv.setViewName("mplan/mPlanBucketList");	//응답할 view(페이지)이름 설정
+		mv.setViewName("mplan/mPlanBucketList");
 		return mv;
 	}
 	
@@ -207,7 +208,7 @@ public class mPlannerController {
 		
 		mv.addObject("list",list);
 		mv.addObject("totalTravelDay",travelDay);
-		
+		System.out.println("Controller Travel:"+travelDay);
 		//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
 		mv.setViewName("mplan/mPlanList");	//응답할 view(페이지)이름 설정
 		return mv;
@@ -251,4 +252,15 @@ public class mPlannerController {
 		
 	}
 
+	@RequestMapping("/mplan/goRecommend")
+	public ModelAndView goRecommend(String purchaseSerial) {
+		String city = service.recommendSelect(purchaseSerial);
+		
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("city", city);
+		mv.addObject("purchaseSerial", purchaseSerial);
+		mv.setViewName("/plan/itemlist");
+		
+		return mv;
+	}
 }
