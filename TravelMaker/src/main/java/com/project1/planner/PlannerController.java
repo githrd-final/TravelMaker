@@ -26,9 +26,16 @@ public class PlannerController {
 	@Autowired
 	PlanBucketService bucketService;
 	
+	int travelDay;
+	
 	@RequestMapping("/planner/planner")
 	public ModelAndView planner() {
 		ModelAndView mv = new ModelAndView();
+		travelDay = bucketService.TravelDay("1201100A106001121A11happilyah@naver.com");
+		
+		mv.addObject("purchaseSerial", "1201100A106001121A11happilyah@naver.com");
+		
+		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("planner/planner");
 		return mv;
 	}
@@ -123,8 +130,15 @@ public class PlannerController {
 	}
 	
 	@RequestMapping("/planner/bucketInsert")
-	public void bucketInsert(BucketVo bucketVo) {
-		bucketService.bucketToPlanInsert(bucketVo);
+	public String bucketInsert(BucketVo bucketVo) {
+		String msg = bucketService.bucketToPlanInsert(bucketVo);
+		return msg;
+	}
+	
+	@RequestMapping("/planner/bucketDelete")
+	public void bucketDelete(BucketVo bucketVo) {
+		bucketService.planBucketDelete(bucketVo);
+		
 	}
 	
 	// -------------- plan 부분 ------------------ //
@@ -134,6 +148,7 @@ public class PlannerController {
 	public ModelAndView planList(@RequestParam("purchaseSerial") String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();
 		List<PlanVo> list = planService.selectAllPlan(purchaseSerial);
+		
 		mv.addObject("list",list);
 		mv.setViewName("planner/planList");
 		return mv;

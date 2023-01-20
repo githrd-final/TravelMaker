@@ -10,6 +10,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
+
 @Service
 @Transactional
 @Slf4j
@@ -35,5 +37,22 @@ public class PlanService {
         String mapY = planMapper.findMapY(city);
         log.info("mapY : " + mapY);
         return mapY;
+    }
+
+    public int checkAdded(String planbucketSerial) throws Exception {
+    	log.info("serviceCheckAdded");
+    	int checkAdded = planMapper.checkAdded(planbucketSerial);
+    	log.info("checkAdded : " + checkAdded);
+    	return checkAdded;
+    }
+
+    public void insertPlanBucket(HashMap map){
+        log.info("serviceInsertPlanBucket");
+        planMapper.insertPlanBucket(map);
+    }
+
+    public void deletePlanBucket(HashMap map){
+        log.info("serviceDeletePlanBucket");
+        planMapper.deletePlanBucket(map);
     }
 }

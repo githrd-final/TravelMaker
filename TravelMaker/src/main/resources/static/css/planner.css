@@ -104,6 +104,7 @@ body{
 	height:60px;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 	padding-left:20px;
+	position:relative;
 }
 
 #planBucketList>div.planBucketItem:hover{
@@ -112,33 +113,41 @@ body{
 	color:#fff;
 }
 
-.planBucketItem>span{
+.planBukcetItem>div{
+	display:inline-block;
+}
+
+.planBucketItem span{
 	display:inline-block;
 	padding:3px;
 }
 
-.planBucketItem>span.planBucketItemTitle{
+
+.bucketDataZone{
+	width:85%;
+	
+}
+
+.planBucketItemIcon{
+	width:5%;
+}
+
+.bucketDataZone span.planBucketItemTitle{
 	font-size:1.5rem;
 	font-weight:bold;
 }
-.planBucketItem>span.planBucketItemType{
-	
-}
-.planBucketItem>span.planBucketItemAddr{
-}
 .planBucketItem>span.planBucketItemIcon{
-	float:right;
+	position:relative;
+	bottom:45px;
+	right:10px;
+ 	float:right;
 }
 
 .planBucketItem>span.planBucketItemIcon:hover{
 	color:tomato;
 }
 
-#planBucketXicon {
-	position:relative;
-	right:15px;
-	bottom:15px;
-}
+
 
 
 /* Right Side */
@@ -533,10 +542,21 @@ body{
 	font-weight:bold;
 	padding-top:6px;
 	positions:relative;
+	
 }
 
 .customOverlay>div{
 	font-size:1rem;
+	font-weight:bold;
+}
+
+
+/* totalDistance */
+
+.totalDistance{
+	background-color:#fff;
+	padding:5px;
+	border-radius:10px;
 	font-weight:bold;
 }
 
@@ -557,3 +577,6 @@ body{
 	color:#fff;
 	background-color:tomato;
 }
+
+
+

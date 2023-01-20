@@ -13,7 +13,7 @@ public class OrderDto {
     private String startDateTime;
     private String endDateTime;
     private String email;
-    private String region;
+    private int region;
     private String selectedRegion;
     private int peopleInt;
 }

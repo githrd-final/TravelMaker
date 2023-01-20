@@ -16,7 +16,14 @@
 					<span class="planItemOrder">
 						<input type="hidden" name="planOrder" value="${planVo.planOrder}"/>${planVo.planOrder}
 					</span>
-					<span class="planItemName">${planVo.locationName}</span>
+						<c:if test="${planVo.locationName.length() > 10}">
+						<span class="planItemName">${planVo.locationName.split(" ")[0] 
+													  += " " += planVo.locationName.split(" ")[1]}
+						</span>
+						</c:if>
+						<c:if test="${planVo.locationName.length() <= 10}">
+						<span class="planItemName">${planVo.locationName}</span>
+						</c:if>
 					<span class="planItemDate">
 						<input type="hidden" name="planDate" value="${planVo.planDate}"/>${planVo.planDate}
 					</span>

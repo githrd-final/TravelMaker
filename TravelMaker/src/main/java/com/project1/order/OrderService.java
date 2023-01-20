@@ -1,6 +1,7 @@
 package com.project1.order;
 
 import com.project1.mybatis.OrderMapper;
+import com.project1.review.ReviewVo;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,19 @@ public class OrderService {
     @Autowired
     OrderMapper orderMapper;
 
+    public List<ReviewVo> selectReview(OrderDto orderDto) throws Exception {
+        log.info("selectReview");
+        List<ReviewVo> reviewVoList = new ArrayList<>();
+        int region = orderDto.getRegion();
+        if(region == 7){
+            reviewVoList = orderMapper.selectReviewAll();
+        }
+        else {
+            reviewVoList = orderMapper.selectReview(orderDto);
+        }
+        return reviewVoList;
+    }
+
     public PurchaseDto purchaseTicket(OrderDto orderDto) throws Exception {
         String purchaseSerial = "";
         List<String> ticketSerialListA = new ArrayList<String>();
@@ -38,7 +52,7 @@ public class OrderService {
         int people = (Integer.parseInt(orderDto.getPeople()));
         orderDto.setPeopleInt(people);
         log.info("people : " + people);
-        String region = orderDto.getRegion();
+        int region = orderDto.getRegion();
         String startDate = orderDto.getStartDate();
         String endDate = orderDto.getEndDate();
         String startDateTime = orderDto.getStartDateTime();
@@ -48,17 +62,17 @@ public class OrderService {
         ticketDto.setRegion(region);
         log.info("region : " + ticketDto.getRegion());
         int price = 0;
-        if(region.equals("전국")) {
+        if(region == 7) {
             price = 30000;
-        } else if(region.equals("강원도") || region.equals("충청도")) {
+        } else if(region == 1 || region == 5) {
             price = 35000;
-        } else if(region.equals("전라도") || region.equals("경상도")) {
+        } else if(region == 3 || region == 4) {
             price = 40000;
         }
 
         int totalPrice = price * people;
         String selectedRegion;
-        if(region.equals("전국")){
+        if(region == 7){
             selectedRegion = orderMapper.selectRegionA(orderDto);
             orderDto.setSelectedRegion(selectedRegion);
             boolean checkTicketA = false;
@@ -111,21 +125,10 @@ public class OrderService {
             }
         }
 
+        String purchasedTicketSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0);
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
-        int regionInt = 0;
-
-        if(region.equals("전국")) {
-            regionInt = 1;
-        } else if(region.equals("강원도")) {
-            regionInt = 2;
-        } else if(region.equals("경상도")) {
-            regionInt = 3;
-        } else if(region.equals("전라도")) {
-            regionInt = 4;
-        } else if(region.equals("충청도")) {
-            regionInt = 5;
-        }
-
+        String ticketSerialA = ticketSerialListA.get(0);
+        String ticketSerialB = ticketSerialListB.get(0);
 
         purchaseDto.setPurchaseSerial(purchaseSerial);
         purchaseDto.setEmail(email);
@@ -136,14 +139,26 @@ public class OrderService {
         purchaseDto.setEndDate(endDate);
         purchaseDto.setStartDateTime(startDateTime);
         purchaseDto.setEndDateTime(endDateTime);
-        log.info("regionInt : " + regionInt);
-        purchaseDto.setRegionInt(regionInt);
         purchaseDto.setCity(selectedRegion);
 
         orderMapper.insertPurchase(purchaseDto);
         orderMapper.updateTicketStatusA(ticketSerialListA.get(0));
         orderMapper.updateTicketStatusB(ticketSerialListB.get(0));
+        orderMapper.makePurchasedTicket(purchasedTicketSerial, purchaseSerial, ticketSerialA, ticketSerialB);
 
         return purchaseDto;
+    }
+    
+    public List<ReviewVo> purchaseCheckReview(String region){
+    	List<ReviewVo> list = null;
+    	System.out.println("order서비스 지역:"+region);
+    	if(region.equals("7")) {
+    		list = orderMapper.purchaseCheckReviewAll();
+    		System.out.println("order서비스 전국 list:"+list.toString());
+    	}else {
+    		list = orderMapper.purchaseCheckReview(region);
+    		System.out.println("order서비스 지역 list:"+list.toString());
+    	}
+    	return list;
     }
 }

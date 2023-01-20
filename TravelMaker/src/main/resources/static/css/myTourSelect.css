@@ -40,7 +40,9 @@
   overflow: hidden;
   margin: 10px auto;
 }
-
+.TicketClick:hover{
+	cursor: pointer;
+}
 .myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
   float: left;
   padding: 20px; 
@@ -82,11 +84,8 @@
 }
 .myTourSelectContainer .item-left {
   width: 71%;
-  padding: 34px 0px 19px 46px;
+      padding: 4.3vh 0px 8vh 4.5vw;
   border-left: 3px dotted #999;
-}
-.TicketClick:hover{
-	cursor: pointer;
 }
 .myTourSelectContainer .item-left .title {
   color: #111;
@@ -112,7 +111,32 @@
 }
 .myTourSelectContainer .item-left .loc {display: block}
 .fix {clear: both}
+
 .myTourSelectContainer .myTourSelectItem .btnReview1{
+	width: 360px;
+	background-color: #fff;
+	border: 0 solid #e2e8f0;
+	border-radius: 1.5rem;
+	box-sizing: border-box;
+	color: tomato;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1.1rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 1rem 1.6rem;
+	text-align: center;
+	text-decoration: none #697c89 solid;
+	text-decoration-thickness: auto;
+	transition: all .1s cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.myTourSelectContainer .myTourSelectItem .btnMyReview{
 	width: 360px;
 	background-color: #fff;
 	border: 0 solid #e2e8f0;
@@ -135,11 +159,11 @@
 	-webkit-user-select: none;
 	touch-action: manipulation;
 }
-
-.myTourSelectContainer .myTourSelectItem .btnReview1:hover {
+.myTourSelectContainer .myTourSelectItem .btnReview1:hover,.btnMyReview:hover {
 	background-color:tomato;
 	color: #fff;
 }
+
 
 /*페이징처리부분*/
 #ri_page_btn{

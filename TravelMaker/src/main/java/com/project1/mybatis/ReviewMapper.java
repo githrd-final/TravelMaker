@@ -48,4 +48,5 @@ public interface ReviewMapper {
 	public int thumbsDownR(int reviewSerial);
 	
 	public UserVo userDetailView(String nickName);
+	public List<ReviewVo> selectUserReview(String nickName);
 }

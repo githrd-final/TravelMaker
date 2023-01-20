@@ -3,6 +3,7 @@
 		 pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="var" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,13 +24,13 @@
 <div class = 'one'>
 <div id = 'two' style = "background-image: url('/images/${orderDto.region}.jpeg')"></div>
 <form action = 'purchaseCheck' method = 'post' id="frm" hidden>
-	<input type="text" name="email" id="email" value="${orderDto.email}" style="display:none">
-	<input type="text" name="region" id="region" value="${orderDto.region}" style="display:none">
-	<input type="text" name="people" id="people" value="${orderDto.people}" style="display:none">
-	<input type="text" name="startDate" value="${orderDto.startDate}" style="display:none">
-	<input type="text" name="endDate" value="${orderDto.endDate}" style="display:none">
-	<input type="text" name="startDateTime" value="${orderDto.startDateTime}" style="display:none">
-	<input type="text" name="endDateTime" value="${orderDto.endDateTime}" style="display:none">
+	<input type="text" name="email" id="email" value="${orderDto.email}" style="display:none"/>
+	<input type="text" name="region" id="region" value="${orderDto.region}" style="display:none"/>
+	<input type="text" name="people" id="people" value="${orderDto.people}" style="display:none"/>
+	<input type="text" name="startDate" value="${orderDto.startDate}" style="display:none"/>
+	<input type="text" name="endDate" value="${orderDto.endDate}" style="display:none"/>
+	<input type="text" name="startDateTime" value="${orderDto.startDateTime}" style="display:none"/>
+	<input type="text" name="endDateTime" value="${orderDto.endDateTime}" style="display:none"/>
 </form>
 	<!-- if문으로 체크 비활성화 항목에 onclick="return(false)"-->
 <div id = 'three'>
@@ -73,34 +74,24 @@
 <div id = 'four'>
 	<div class=reviewList>
 		<p class='preReviewTitleP'>이 지역을 다녀온 사람들</p>
-		<div class = 'preReview'>
-			<span class='preReviewUser'>NAME</span>
-			<span class='preReviewTitle'>TITLE</span>
-			<br/>
-			<span class='preReviewUserName'>채찌</span>
-			<span class='preReviewDoc'>두번째 구매(●'◡'●)</span>
-		</div>
-	
-		<div class = 'preReview'>
-			<span class='preReviewUserName'>지1</span>
-			<span class='preReviewDoc'>누가 노잼지역이라고 했지 여길</span>
-		</div>
-	
-		<div class = 'preReview'>
-			<span class='preReviewUserName'>OVOIN</span>
-			<span class='preReviewDoc'>내돈내산 솔직후기</span>
-		</div>
-	
-		<div class = 'preReview'>
-			<span class='preReviewUserName'>전..아현인데요</span>
-			<span class='preReviewDoc'>이게 되네요? </span>
-		</div>
-		
-		<div class = 'preReview'>
-			<span class='preReviewUserName'>야생의진우몬</span>
-			<span class='preReviewDoc'>흰 천과 트레블메이커만 있다면 어디든 갈 수 있어</span>
-		</div>
-
+		<c:forEach var='vo' items='${list }'>
+			<div class = 'preReview'>
+				<span class='preReviewStar'>
+					<p class="star_rating">
+					    <c:forEach var='i' begin='1' end='${vo.reviewStar }'>
+					    	<a href="#" class='on'>⭐</a>
+					    </c:forEach>
+					    <c:forEach var='j' begin='1' end='${5-vo.reviewStar }'>
+					    	<a href="#">⭐</a>
+					    </c:forEach>
+					    <input type='text' name='reviewStar' class='reviewStar' value='${fn:substring(vo.reviewStar,0,1)}' readonly="readonly"/>
+					</p>
+				</span>
+				<span class='preReviewUserName'>${vo.nickName }</span>
+				<span class='preReviewDate'>${vo.postingDate }</span>
+				<span class='preReviewDoc'>${vo.reviewTitle }</span>
+			</div>
+		</c:forEach>
 	</div>
 </div>
 

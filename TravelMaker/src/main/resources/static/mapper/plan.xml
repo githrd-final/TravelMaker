@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project1.mybatis.PlanMapper">
-
     <select id="findMapX" resultType="String" parameterType="com.project1.order.PurchaseDto">
         SELECT mapX FROM station where city = #{city};
     </select>
@@ -9,6 +8,18 @@
     <select id="findMapY" resultType="String" parameterType="com.project1.order.PurchaseDto">
         SELECT mapY FROM station where city = #{city};
     </select>
+
+	<select id="checkAdded" resultType="Integer" parameterType="String">
+		SELECT count(planbucketSerial) FROM planbucket where planbucketSerial = #{planBucketSerial};
+	</select>
+
+	<insert id="insertPlanBucket" parameterType="java.util.HashMap">
+		insert into planbucket values (#{planbucketSerial}, #{purchaseDto.purchaseSerial}, #{result.contentTypeId}, #{result.title}, #{result.mapX}, #{result.mapY}, #{result.firstImage}, #{result.overView}, #{result.addr1});
+	</insert>
+
+	<delete id="deletePlanBucket" parameterType="java.util.HashMap">
+		delete from planbucket where planbucketSerial = #{planbucketSerial};
+	</delete>
 
 <!-- 	<select id = "selectDate" paremeterType="String" resultType="Integer"> -->
 <!-- 		SELECT DATEDIFF(#{endDate},#{startDate}) FROM purchase WHERE purchaseSerial = #{_parameter} -->
@@ -22,7 +33,7 @@
 	<select id = "selectPlanByDate" parameterType="com.project1.planner.PlanVo" resultType="com.project1.planner.PlanVo"> 
 		SELECT planDate,contentTypeId,planOrder,planbucketSerial,locationName,mapX,mapY,planNote,purchaseSerial FROM plan
 		WHERE planDate = #{planDate} AND purchaseSerial = #{purchaseSerial} ORDER BY planOrder
-		
+
 	</select>
 	
 	
@@ -64,6 +75,9 @@
 	<!--  update -->
 	
 	<!--  delete   -->
+	<select id="deleteCheck" parameterType="com.project1.planner.PlanVo" resultType="Integer">
+		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{planDate}
+	</select>
 	<delete id="deletePlan" parameterType="com.project1.planner.PlanVo">
 		DELETE FROM plan WHERE planbucketSerial = #{planbucketSerial}
 	</delete>

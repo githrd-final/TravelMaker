@@ -18,10 +18,10 @@
 <%
     PurchaseDto purchaseDto = (PurchaseDto)request.getAttribute("purchaseDto");
 %>
-<form action = 'purchasedTicket' method = 'post' id="frm" hidden>
-    <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none>
-	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none>
-    <input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">
+<form action = 'purchasedTicket' method = 'post' id="frm" hidden/>
+    <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none"/>
+	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none"/>
+    <input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none"/>
     <input type="text" name="people" id="people" value="${purchaseDto.people}" style="display:none">
     <input type="text" name="region" id="region" value="${purchaseDto.region}" style="display:none">
     <input type="text" name="startDate" value="${purchaseDto.startDate}" style="display:none">
@@ -42,16 +42,20 @@
     <c:forEach var='item' items='${result}' varStatus="status">
         <form class="item" id="item" onclick="openModal(this)">
             <div class="item-name">${item.title}</div>
-            <input type="text" class="item-contentId" name=abc value="${item.contentID}" style="display: none"></input>
+            <input type="text" name="purchaseSerial" id="purchaseSerialModal" value="${purchaseDto.purchaseSerial}" style="display:none">
+            <input type="text" class="item-contentId" name="contentID" value="${item.contentID}" style="display: none"></input>
+            <input type="text" class="item-contentTypeId" name="contentTypeId" value="${item.contentTypeId}" style="display: none"></input>
             <div class="item-image" style="background-image: url('${item.firstImage}')"></div>
             <div class="item-address">${item.addr1}</div>
             <div class="item-tel">${item.tel}</div>
             <div class="item-homepage">${item.homepage}</div>
+            <input type="text" class="item-mapx" name=mapx value="${item.mapX}" style="display: none"></input>
+            <input type="text" class="item-mapy" name=mapy value="${item.mapY}" style="display: none"></input>
         </form>
     </c:forEach>
     <div id="modal" class="modal-overlay">
     </div>
-    </main>
+</main>
 </body>
 <!--
 <script>

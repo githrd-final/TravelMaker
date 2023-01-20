@@ -1,6 +1,10 @@
 /**
  * 
  */
+
+$(".ci_ticket_purchase").on('click', function(){
+	$('#content').load('/review/reviewSelect');
+})
  
  var obs1 = new IntersectionObserver((e)=>{
 	e.forEach((divBox)=>{
@@ -13,7 +17,8 @@
 })
 var div = document.querySelectorAll('div')
 
-for(i=4; i<50; i++){
+for(i=0; i<50; i++){
 	obs1.observe(div[i]);
 }
+
 
