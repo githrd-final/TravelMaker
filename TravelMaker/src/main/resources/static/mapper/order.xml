@@ -46,7 +46,7 @@
 
     <insert id="insertPurchase" parameterType="com.project1.order.PurchaseDto">
         insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime)
-        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{regionInt}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime})
+        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime})
     </insert>
 
     <update id="updateTicketStatusA" parameterType="String">
@@ -58,6 +58,11 @@
         update ticket set ticketStatus = 1
         where ticketSerial = #{ticketSerialListB}
     </update>
+
+    <insert id="makePurchasedTicket" parameterType="String">
+        insert into purchasedTicket
+        values (#{purchasedTicketSerial}, #{purchaseSerial}, #{ticketSerialListA}, #{ticketSerialListB})
+    </insert>
 
 	<select id="purchaseCheckReview" parameterType="String" resultType="com.project1.review.ReviewVo">
 		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review where region=#{_parameter} order by reviewStar DESC limit 5;
