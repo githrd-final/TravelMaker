@@ -11,6 +11,8 @@ function requestPay() {
 var IMP = window.IMP; // 생략 가능
 IMP.init("imp84346376"); // 예: imp00000000
     // IMP.request_pay(param, callback) 결제창 호출
+    
+    const rand = Math.floor(Math.random() * 1000);
     IMP.request_pay({ // param
         pg: "html5_inicis",
         pay_method: "card",
