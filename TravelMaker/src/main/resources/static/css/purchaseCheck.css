@@ -8,7 +8,8 @@ margin : 10vh auto;
 display: grid;
 grid-template-areas:
 		"two three"
-		"four four";
+		"four four"
+		"five five";
 gap:5.5vh;
 border: #000000;
 }
@@ -17,7 +18,8 @@ border: #000000;
 #two{
 grid-area: two;
 box-sizing: border-box;
-width: 27vw;
+width: 25vw;
+height: 55vh;
 justify-self: end;
 /* 
 height: 356px;
@@ -34,6 +36,7 @@ background-size: 100% 100%;
 	grid-area: three;
 	justify-self: start;
 box-sizing: border-box;
+align-self: center;
 
 /* width: 375px;
 height: 356px;
@@ -69,6 +72,8 @@ font-weight : bold;
 	top: 398px; */
 	font-size : 1rem;
 	border: 1px solid #fff;
+	margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 .star_rating {
 	font-size:0; 
@@ -202,6 +207,23 @@ li{
 	justify-self: start;
 	}
 	
+.moveTopBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background: tomato;
+  color: #fff;
+  font-weight: bold;
+  padding: 1.5vh;
+  border-radius: 5vw;
+  z-index: 20;
+ }
+ 
+#five{
+	grid-area: five;
+}
 
 @media (max-width: 450px){
 	.one{
@@ -280,6 +302,7 @@ li{
 	grid-area: preReviewStar;
 	text-align : center;
 	color : #ccc;
+	width: 32vw;
 	}
 	.preReviewUserName{
 	grid-area: preReviewUserName;
@@ -294,6 +317,7 @@ li{
 	width : 25vw;
 	text-align : center;
 	color : #bbb;
+	justify-self: end;
 	}
 	.preReviewDoc{
 	grid-area: preReviewDoc;
@@ -309,10 +333,25 @@ li{
 	margin-left: 1vh;
 	font-size: 1vh;
 	}
-	
-	
-/*footer 위 여백------------------------*/	
-	.blank{
-	height:400px;
+	.moveTopBtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background: tomato;
+    color: #fff;
+    font-weight: bold;
+    padding: 1.5vh;
+    border-radius: 5vw;
+    z-index: 20;
+	}
+	#five{
+	width: 100vw;
+	height: 100vh;
+	}
+	#five img{
+	object-fit: cover;
+	width: 100vw;
 	}
 }

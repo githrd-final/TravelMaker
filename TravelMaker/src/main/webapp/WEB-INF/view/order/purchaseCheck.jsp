@@ -69,7 +69,7 @@
 	</div>
 	
 </div>
-
+<div class='moveTopBtn'>Top</div>
 <!-- 후기 -->
 <div id = 'four'>
 	<div class=reviewList>
@@ -93,6 +93,37 @@
 			</div>
 		</c:forEach>
 	</div>
+</div>
+<div id='five'>
+	<c:choose>
+		<c:when test="${orderDto.region eq '강원도'}">
+			<img src="../images/강원도리스트1.png">
+			<img src="../images/강원도리스트2.png">
+		</c:when>
+		<c:when test="${orderDto.region eq '경상도'}">
+			<img src="../images/경상도리스트1.png">
+			<img src="../images/경상도리스트2.png">
+		</c:when>
+		<c:when test="${orderDto.region eq '전라도'}">
+			<img src="../images/전라도리스트1.png">
+			<img src="../images/전라도리스트2.png">
+		</c:when>
+		<c:when test="${orderDto.region eq '충청도'}">
+			<img src="../images/충청도리스트1.png">
+			<img src="../images/충청도리스트2.png">
+		</c:when>
+		<c:when test="${orderDto.region eq '전국'}">
+			<img src="../images/경기도리스트.png">
+			<img src="../images/강원도리스트1.png">
+			<img src="../images/강원도리스트2.png">
+			<img src="../images/경상도리스트1.png">
+			<img src="../images/경상도리스트2.png">
+			<img src="../images/전라도리스트1.png">
+			<img src="../images/전라도리스트2.png">
+			<img src="../images/충청도리스트1.png">
+			<img src="../images/충청도리스트2.png">
+		</c:when>
+	</c:choose>
 </div>
 
 </div> <!-- end of one -->
