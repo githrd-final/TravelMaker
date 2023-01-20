@@ -4,6 +4,7 @@ import com.project1.order.OrderDto;
 import com.project1.order.PurchaseDto;
 import com.project1.review.ReviewVo;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -28,6 +29,8 @@ public interface OrderMapper {
 
     public void updateTicketStatusA(String ticketSerialListA);
     public void updateTicketStatusB(String ticketSerialListB);
+
+    public void makePurchasedTicket(@Param("purchasedTicketSerial") String purchasedTicketSerial,  @Param("purchaseSerial") String purchaseSerial, @Param("ticketSerialA") String ticketSerialA, @Param("ticketSerialB") String ticketSerialB);
     //베스트후기
     public List<ReviewVo> purchaseCheckReview(String region);
     public List<ReviewVo> purchaseCheckReviewAll();

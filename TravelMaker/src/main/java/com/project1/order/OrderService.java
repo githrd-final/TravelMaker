@@ -125,8 +125,10 @@ public class OrderService {
             }
         }
 
+        String purchasedTicketSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0);
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
-
+        String ticketSerialA = ticketSerialListA.get(0);
+        String ticketSerialB = ticketSerialListB.get(0);
 
         purchaseDto.setPurchaseSerial(purchaseSerial);
         purchaseDto.setEmail(email);
@@ -142,6 +144,7 @@ public class OrderService {
         orderMapper.insertPurchase(purchaseDto);
         orderMapper.updateTicketStatusA(ticketSerialListA.get(0));
         orderMapper.updateTicketStatusB(ticketSerialListB.get(0));
+        orderMapper.makePurchasedTicket(purchasedTicketSerial, purchaseSerial, ticketSerialA, ticketSerialB);
 
         return purchaseDto;
     }
