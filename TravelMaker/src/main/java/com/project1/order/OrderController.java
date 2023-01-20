@@ -57,7 +57,7 @@ public class OrderController {
     @RequestMapping("/order/purchaseCheck")
     public ModelAndView purchaseCheck(HttpServletRequest request, OrderDto orderDto, ModelAndView mv) throws Exception {
         log.info("purchaseCheck");
-        orderDto.setRegion(request.getParameter("region"));
+        orderDto.setRegion(Integer.parseInt(request.getParameter("region")));
         request.setAttribute("orderDto", orderDto);
         List<ReviewVo> list = orderService.purchaseCheckReview(request.getParameter("region"));
         mv.addObject("list",list);
