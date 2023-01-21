@@ -7,61 +7,14 @@
 	</select>
 	
 	<select id='select' parameterType="com.project1.myTour.MyTourPageVo" resultType="com.project1.myTour.MyTourVo">
-		select r.reviewSerial, p.startDate, p.endDate, p.people, p.purchaseSerial, p.myReview, 
+		select r.reviewSerial, p.startDate, p.endDate, p.people, p.purchaseSerial, p.myReview, p.city,
 		case
 			when p.region="1" then '강원도' 
 			when p.region="2" then '경기도' 
 			when p.region="3" then '경상도' 
 			when p.region="4" then '전라도' 
 			when p.region="5" then '충청도' 
-		end as region,
-		case
-			when left(p.purchaseSerial,2)="10" then '춘천'
-			when left(p.purchaseSerial,2)="11" then '강릉'
-			when left(p.purchaseSerial,2)="12" then '진부'
-			when left(p.purchaseSerial,2)="13" then '원주'
-			when left(p.purchaseSerial,2)="14" then '영월'
-			when left(p.purchaseSerial,2)="15" then '정동진'
-			when left(p.purchaseSerial,2)="16" then '사북'
-			when left(p.purchaseSerial,2)="17" then '강촌'
-			when left(p.purchaseSerial,2)="18" then '평창'
-			when left(p.purchaseSerial,2)="19" then '횡성'
-			when left(p.purchaseSerial,2)="20" then '가평'
-			when left(p.purchaseSerial,2)="21" then '양평'
-			when left(p.purchaseSerial,2)="22" then '평택'
-			when left(p.purchaseSerial,2)="23" then '수원'
-			when left(p.purchaseSerial,2)="24" then '양동'
-			when left(p.purchaseSerial,2)="30" then '점촌'
-			when left(p.purchaseSerial,2)="31" then '창원'
-			when left(p.purchaseSerial,2)="32" then '하동'
-			when left(p.purchaseSerial,2)="33" then '영덕'
-			when left(p.purchaseSerial,2)="34" then '신경주'
-			when left(p.purchaseSerial,2)="35" then '진주'
-			when left(p.purchaseSerial,2)="36" then '안동'
-			when left(p.purchaseSerial,2)="37" then '마산'
-			when left(p.purchaseSerial,2)="38" then '구미'
-			when left(p.purchaseSerial,2)="39" then '부산'
-			when left(p.purchaseSerial,2)="40" then '군산'
-			when left(p.purchaseSerial,2)="41" then '전주'
-			when left(p.purchaseSerial,2)="42" then '광주송정'
-			when left(p.purchaseSerial,2)="43" then '여수'
-			when left(p.purchaseSerial,2)="44" then '화순'
-			when left(p.purchaseSerial,2)="45" then '보성'
-			when left(p.purchaseSerial,2)="46" then '무안'
-			when left(p.purchaseSerial,2)="47" then '정읍'
-			when left(p.purchaseSerial,2)="48" then '임실'
-			when left(p.purchaseSerial,2)="49" then '목포'
-			when left(p.purchaseSerial,2)="50" then '조치원'
-			when left(p.purchaseSerial,2)="51" then '대전'
-			when left(p.purchaseSerial,2)="52" then '단양'
-			when left(p.purchaseSerial,2)="53" then '천안'
-			when left(p.purchaseSerial,2)="54" then '홍성'
-			when left(p.purchaseSerial,2)="55" then '대천'
-			when left(p.purchaseSerial,2)="56" then '영동'
-			when left(p.purchaseSerial,2)="57" then '논산'
-			when left(p.purchaseSerial,2)="58" then '충주'
-			when left(p.purchaseSerial,2)="59" then '제천'
-		end as city
+		end as region
 		from purchase p left join review r
 		on p.purchaseSerial=r.purchaseSerial
 		WHERE p.email=#{email}
@@ -69,7 +22,11 @@
 		limit #{startNo}, #{listSize}
 	</select>
 	<select id='TicketView' parameterType="String" resultType="com.project1.myTour.MyTourTicketVo">
-        select t.ticketSerial,t.ticketStartPoint,t.ticketEndPoint,t.ticketDate,t.ticketStartTime,t.ticketEndTime,t.ticketSeat,t.region, pt.purchaseSerial 
+        select t.ticketSerial,t.ticketStartPoint,t.ticketEndPoint,t.ticketDate,t.ticketSeat,t.region, pt.purchaseSerial,
+        case
+        	when t.ticketStartTime="am" then "10:00"
+        	when t.ticketStartTime="pm" then "16:00" 
+        end as ticketStartTime
 		from ticket t left join purchasedticket pt
 		on t.ticketSerial=pt.ticketSerialStart or t.ticketSerial=pt.ticketSerialEnd
 		where pt.purchaseSerial=#{_parameter};
@@ -78,61 +35,14 @@
     	select myReview from purchase where purchaseSerial=#{_parameter};
     </select>
 	<select id='insertView' parameterType="String" resultType="com.project1.myTour.MyTourVo">
-        select purchaseSerial, 
+        select purchaseSerial, city,
 		case
 			when region="1" then '강원도' 
 			when region="2" then '경기도' 
 			when region="3" then '경상도' 
 			when region="4" then '전라도' 
 			when region="5" then '충청도' 
-		end as region,
-		case
-			when left(purchaseSerial,2)="10" then '춘천'
-			when left(purchaseSerial,2)="11" then '강릉'
-			when left(purchaseSerial,2)="12" then '진부'
-			when left(purchaseSerial,2)="13" then '원주'
-			when left(purchaseSerial,2)="14" then '영월'
-			when left(purchaseSerial,2)="15" then '정동진'
-			when left(purchaseSerial,2)="16" then '사북'
-			when left(purchaseSerial,2)="17" then '강촌'
-			when left(purchaseSerial,2)="18" then '평창'
-			when left(purchaseSerial,2)="19" then '횡성'
-			when left(purchaseSerial,2)="20" then '가평'
-			when left(purchaseSerial,2)="21" then '양평'
-			when left(purchaseSerial,2)="22" then '평택'
-			when left(purchaseSerial,2)="23" then '수원'
-			when left(purchaseSerial,2)="24" then '양동'
-			when left(purchaseSerial,2)="30" then '점촌'
-			when left(purchaseSerial,2)="31" then '창원'
-			when left(purchaseSerial,2)="32" then '하동'
-			when left(purchaseSerial,2)="33" then '영덕'
-			when left(purchaseSerial,2)="34" then '신경주'
-			when left(purchaseSerial,2)="35" then '진주'
-			when left(purchaseSerial,2)="36" then '안동'
-			when left(purchaseSerial,2)="37" then '마산'
-			when left(purchaseSerial,2)="38" then '구미'
-			when left(purchaseSerial,2)="39" then '부산'
-			when left(purchaseSerial,2)="40" then '군산'
-			when left(purchaseSerial,2)="41" then '전주'
-			when left(purchaseSerial,2)="42" then '광주송정'
-			when left(purchaseSerial,2)="43" then '여수'
-			when left(purchaseSerial,2)="44" then '화순'
-			when left(purchaseSerial,2)="45" then '보성'
-			when left(purchaseSerial,2)="46" then '무안'
-			when left(purchaseSerial,2)="47" then '정읍'
-			when left(purchaseSerial,2)="48" then '임실'
-			when left(purchaseSerial,2)="49" then '목포'
-			when left(purchaseSerial,2)="50" then '조치원'
-			when left(purchaseSerial,2)="51" then '대전'
-			when left(purchaseSerial,2)="52" then '단양'
-			when left(purchaseSerial,2)="53" then '천안'
-			when left(purchaseSerial,2)="54" then '홍성'
-			when left(purchaseSerial,2)="55" then '대천'
-			when left(purchaseSerial,2)="56" then '영동'
-			when left(purchaseSerial,2)="57" then '논산'
-			when left(purchaseSerial,2)="58" then '충주'
-			when left(purchaseSerial,2)="59" then '제천'
-		end as city
+		end as region
 		from purchase 
 		WHERE purchaseSerial='${_parameter}'
     </select>

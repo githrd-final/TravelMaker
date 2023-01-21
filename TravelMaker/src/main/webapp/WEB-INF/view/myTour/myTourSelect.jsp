@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,6 @@
 <link rel='stylesheet' media='screen and (max-width : 450px)' href='../css/mobileMyTourSelect.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
 <script defer src='../js/myTourSelect.js'></script>
-
 </head>
 <body>
 <main id='myTourSelectMain'>
@@ -54,11 +54,17 @@
 					</div>
 					<c:choose>
 						<c:when test="${vo.myReview ne false}">
-							<input type='button' class='btnMyReview' value='내 후기' onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
+								<input type='button' class='btnMyReview' value='내 후기' 
+									onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
 						</c:when>
 						<c:otherwise>
-							<input type='button' class="btnReview1" value='후기 작성' onclick="myTour.insert('${vo.purchaseSerial}')"/>
-						</c:otherwise>			
+								<jsp:useBean id="now" class="java.util.Date"/>
+								<fmt:parseDate value="${vo.endDate }" pattern="yyyy-MM-dd" var="Date"/>
+								<fmt:formatDate value="${now }" pattern="yyyyMMdd" var="nowDate"/>
+								<fmt:formatDate value="${Date }" pattern="yyyyMMdd" var="endDate"/>
+								<input type='button' class="btnReview1" value='후기 작성' onclick="myTour.insert('${vo.purchaseSerial}')" 
+												<c:if test="${nowDate<endDate }">disabled="disabled"</c:if>/>
+						</c:otherwise>
 					</c:choose>
 				</div> <!-- end item-left -->
 			</div> <!-- end item -->
