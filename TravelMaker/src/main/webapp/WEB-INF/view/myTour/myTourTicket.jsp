@@ -15,8 +15,8 @@
 <main id='myTourSelectMain'>
 	<div class="myTourSelectContainer">
 		<form class='myTourTicketFrm' method='post'>
-	      	<input type='hidden' name='purchaseSerial' class='purchaseSerial' value='${purchaseSerial }'/>
-	      	<input type='hidden' name='reviewSerial' class='reviewSerial' value='${reviewSerial }'/>
+	      	<input type='text' name='purchaseSerial' class='purchaseSerial' value='${purchaseSerial }'/>
+	      	<input type='text' name='reviewSerial' class='reviewSerial' value='${reviewSerial }'/>
 	     </form>
 		<h1 class="upcomming">왕복티켓 구매 내역</h1>
 		<c:forEach var='vo' items='${list }'>

@@ -29,11 +29,11 @@ public class PlannerController {
 	int travelDay;
 	
 	@RequestMapping("/planner/planner")
-	public ModelAndView planner() {
+	public ModelAndView planner(String purchaseSerial) {
 		ModelAndView mv = new ModelAndView();
-		travelDay = bucketService.TravelDay("1201100A106001121A11happilyah@naver.com");
+		travelDay = bucketService.TravelDay(purchaseSerial);
 		
-		mv.addObject("purchaseSerial", "1201100A106001121A11happilyah@naver.com");
+		mv.addObject("purchaseSerial", purchaseSerial);
 		
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("planner/planner");

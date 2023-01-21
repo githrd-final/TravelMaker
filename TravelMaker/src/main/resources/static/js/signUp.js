@@ -3,7 +3,7 @@
  */
 
 $('.btnProfileSelect').on('click',function(){
-    $('#content').load('/member/');
+    $('#content').load('/member/login');
 })
 
 $('.btnSubmit').on('click',function(){

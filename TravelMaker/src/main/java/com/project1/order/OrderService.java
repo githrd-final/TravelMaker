@@ -78,7 +78,7 @@ public class OrderService {
             boolean checkTicketA = false;
             boolean checkTicketB = false;
             while(checkTicketA == false || checkTicketB == false) {
-                log.info(selectedRegion);
+                log.info("jkjkjk" + selectedRegion);
                 orderMapper.checkTicketA(orderDto);
                 orderMapper.checkTicketB(orderDto);
                 if(orderMapper.checkTicketA(orderDto)>=people){
@@ -104,7 +104,7 @@ public class OrderService {
             boolean checkTicketA = false;
             boolean checkTicketB = false;
             while(checkTicketA == false || checkTicketB == false) {
-                log.info(selectedRegion);
+                log.info("hihhi"+selectedRegion);
                 orderMapper.checkTicketA(orderDto);
                 orderMapper.checkTicketB(orderDto);
                 if(orderMapper.checkTicketA(orderDto)>=people){

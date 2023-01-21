@@ -32,7 +32,7 @@ import java.util.UUID;
 @Slf4j
 public class MemberController {
 
-    static String path ="/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/src/main/resources/static/upload/";
+    static String path ="/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/src/main/resources/static/upload//";
 
     @Resource(name = "memberService")
     MemberService memberService;
@@ -107,7 +107,7 @@ public class MemberController {
     }
 
     @RequestMapping(value = "/member/memberUpdate", method = RequestMethod.POST)
-    public @ResponseBody String memberUpdate(@RequestParam("email") String email, @RequestParam("nickName") String nickname, @RequestParam("intro") String intro, HttpSession session) {
+    public @ResponseBody String memberUpdate(@RequestParam("email") String email, @RequestParam("nickname") String nickname, @RequestParam("intro") String intro, HttpSession session) {
 
         log.info("newSignUp");
         MemberDto memberDto = memberService.findMember(email);
@@ -183,11 +183,13 @@ public class MemberController {
         log.info("UserAdd");
         ModelAndView mv = new ModelAndView();
         String email = (String)session.getAttribute("email");
+        System.out.println("유저 에드 : " + email);
         
     	dto.setEmail(email);
     	memberService.insertMember(dto);
     	
-        mv.setViewName("/index");
+        mv.setViewName("/review/reviewSelect");
+        System.out.println(mv.getViewName());
         return mv;
     }
 
