@@ -32,7 +32,7 @@ import java.util.UUID;
 @Slf4j
 public class MemberController {
 
-    static String path ="/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/src/main/resources/static/upload//";
+    static String path ="/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/src/main/resources/static/upload/";
 
     @Resource(name = "memberService")
     MemberService memberService;
@@ -144,10 +144,6 @@ public class MemberController {
                     file.delete();
                 }
             }
-        }
-        else{
-        memberDto.setOriUserPhoto(null);
-        memberDto.setSysUserPhoto(null);
         }
         log.info("nickname: " + memberDto.getNickname());
         memberService.memberUpdate(memberDto);

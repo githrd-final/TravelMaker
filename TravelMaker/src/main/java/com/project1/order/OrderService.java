@@ -144,6 +144,7 @@ public class OrderService {
         purchaseDto.setEndDateTime(endDateTime);
         purchaseDto.setCity(selectedRegion);
         log.info("selectedRegion : " + purchaseDto.getCity());
+        log.info("purchaseDto : " + purchaseDto);
 
         orderMapper.insertPurchase(purchaseDto);
         orderMapper.updateTicketStatusA(ticketSerialListA.get(0));

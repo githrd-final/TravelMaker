@@ -25,12 +25,12 @@
 	</main>
 
 	<input type="text" id="orderDto" style="display:none" value="<%=orderDto%>">
-	<input type="text" id="people" style="display:none" value="${orderDto.people}">${orderDto.people}</input>
-	<input type="text" class="startDate" style="display:none" value="${orderDto.startDate}">${orderDto.startDate}</input>
-	<input type="text" class="endDate" style="display:none" value="${orderDto.endDate}">${orderDto.endDate}</input>
-	<input type="text" class="startDateTime" style="display:none" value="${orderDto.startDateTime}">${orderDto.startDateTime}</input>
-	<input type="text" class="endDateTime" style="display:none" value="${orderDto.endDateTime}">${orderDto.endDateTime}</input>
-	<input type="text" class="email" style="display:none" value="${orderDto.email}">${orderDto.email}</input>
+	<input type="text" id="people" style="display:none" value="${orderDto.people}"></input>
+	<input type="text" class="startDate" style="display:none" value="${orderDto.startDate}"></input>
+	<input type="text" class="endDate" style="display:none" value="${orderDto.endDate}"></input>
+	<input type="text" class="startDateTime" style="display:none" value="${orderDto.startDateTime}"></input>
+	<input type="text" class="endDateTime" style="display:none" value="${orderDto.endDateTime}"></input>
+	<input type="text" class="email" style="display:none" value="${orderDto.email}"></input>
 </body>
 
 </html>
