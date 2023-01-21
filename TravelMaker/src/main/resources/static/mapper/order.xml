@@ -45,8 +45,8 @@
     </select>
 
     <insert id="insertPurchase" parameterType="com.project1.order.PurchaseDto">
-        insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime)
-        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime})
+        insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime, city, myReview)
+        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime}, #{city}, 0)
     </insert>
 
     <update id="updateTicketStatusA" parameterType="String">
@@ -61,7 +61,7 @@
 
     <insert id="makePurchasedTicket" parameterType="String">
         insert into purchasedTicket
-        values (#{purchasedTicketSerial}, #{purchaseSerial}, #{ticketSerialListA}, #{ticketSerialListB})
+        values (#{purchasedTicketSerial}, #{purchaseSerial}, #{ticketSerialA}, #{ticketSerialB})
     </insert>
 
 	<select id="purchaseCheckReview" parameterType="String" resultType="com.project1.review.ReviewVo">
