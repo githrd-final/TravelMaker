@@ -46,17 +46,17 @@
     </select>
 
     <insert id="insertPurchase" parameterType="com.project1.order.PurchaseDto">
-        insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime)
-        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime})
+        insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime, city, myReview)
+        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime}, #{city}, 0)
     </insert>
 
     <update id="updateTicketStatusA" parameterType="String">
-        update ticket set ticketStatus = 1
+        update ticket set ticketStatus = 2
         where ticketSerial = #{ticketSerialListA}
     </update>
 
     <update id="updateTicketStatusB" parameterType="String">
-        update ticket set ticketStatus = 1
+        update ticket set ticketStatus = 2
         where ticketSerial = #{ticketSerialListB}
     </update>
 

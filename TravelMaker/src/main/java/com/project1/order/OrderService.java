@@ -47,25 +47,16 @@ public class OrderService {
         List<String> ticketSerialListB = new ArrayList<String>();
         String email = orderDto.getEmail();
         log.info("servicePurchaseTicket");
-        log.info(orderDto.getEmail());
-        log.info(orderDto.getPeople());
         int people = (Integer.parseInt(orderDto.getPeople()));
         orderDto.setPeopleInt(people);
-        log.info("people : " + people);
         int region = orderDto.getRegion();
-        log.info("orderdtoregion : " + region);
         String startDate = orderDto.getStartDate();
-        log.info("startDate : " + startDate);
-        String startDateForTicket = startDate.replace("-", "");
         String endDate = orderDto.getEndDate();
-        log.info("endDate : " + endDate);
-        String endDateForTicket = endDate.replace("-", "");
         String startDateTime = orderDto.getStartDateTime();
         String endDateTime = orderDto.getEndDateTime();
         TicketDto ticketDto = new TicketDto();
         PurchaseDto purchaseDto = new PurchaseDto();
         ticketDto.setRegion(region);
-        log.info("ticketdtoregion : " + ticketDto.getRegion());
         int price = 0;
         if(region == 7) {
             price = 30000;
@@ -84,7 +75,6 @@ public class OrderService {
             boolean checkTicketB = false;
             while(checkTicketA == false || checkTicketB == false) {
                 selectedRegion = orderMapper.selectRegionA(orderDto);
-                log.info(selectedRegion);
                 orderMapper.checkTicketA(orderDto);
                 orderMapper.checkTicketB(orderDto);
                 if(orderMapper.checkTicketA(orderDto)>=people){
@@ -95,12 +85,13 @@ public class OrderService {
                 }
                 if(checkTicketA == true && checkTicketB == true) {
                     orderDto.setSelectedRegion(selectedRegion);
-                    log.info("selectedRegion : " + selectedRegion);
                 }
             }
             if(checkTicketA && checkTicketB) {
                 ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
+                log.info("ticketSerialListA : " + ticketSerialListA);
                 ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
+                log.info("ticketSerialListB : " + ticketSerialListB);
             }
         }
         else{
@@ -110,7 +101,7 @@ public class OrderService {
             boolean checkTicketB = false;
             while(checkTicketA == false || checkTicketB == false) {
                 selectedRegion = orderMapper.selectRegionB(orderDto);
-                log.info(selectedRegion);
+                log.info("selectedRegion : " + selectedRegion);
                 orderMapper.checkTicketA(orderDto);
                 orderMapper.checkTicketB(orderDto);
                 if(orderMapper.checkTicketA(orderDto)>=people){
@@ -121,21 +112,28 @@ public class OrderService {
                 }
                 if(checkTicketA == true && checkTicketB == true) {
                     orderDto.setSelectedRegion(selectedRegion);
-                    log.info("selectedRegion : " + selectedRegion);
+                    log.info("selectedRegion : " + orderDto.getSelectedRegion());
                 }
             }
             if(checkTicketA && checkTicketB) {
                 ticketSerialListA = orderMapper.purchaseTicketA(orderDto);
+                log.info("ticketSerialListA : " + ticketSerialListA);
                 ticketSerialListB = orderMapper.purchaseTicketB(orderDto);
+                log.info("ticketSerialListB : " + ticketSerialListB);
             }
         }
 
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
+        log.info("purchaseSerial : " + purchaseSerial);
         String purchasedTicketSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0);
+        log.info("purchasedTicketSerial : " + purchasedTicketSerial);
         String ticketSerialA = ticketSerialListA.get(0);
+        log.info("ticketSerialA : " + ticketSerialA);
         String ticketSerialB = ticketSerialListB.get(0);
+        log.info("ticketSerialB : " + ticketSerialB);
 
         purchaseDto.setPurchaseSerial(purchaseSerial);
+        log.info("purchaseSerial : " + purchaseDto.getPurchaseSerial());
         purchaseDto.setEmail(email);
         purchaseDto.setPrice(price);
         purchaseDto.setPeople(people);
@@ -145,6 +143,7 @@ public class OrderService {
         purchaseDto.setStartDateTime(startDateTime);
         purchaseDto.setEndDateTime(endDateTime);
         purchaseDto.setCity(selectedRegion);
+        log.info("selectedRegion : " + purchaseDto.getCity());
 
         orderMapper.insertPurchase(purchaseDto);
         orderMapper.updateTicketStatusA(ticketSerialListA.get(0));
