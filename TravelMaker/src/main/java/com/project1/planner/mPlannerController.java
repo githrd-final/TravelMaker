@@ -260,7 +260,7 @@ public class mPlannerController {
 		pDto.setCity(city);
 		pDto.setPurchaseSerial(purchaseSerial);
 		mv.addObject("purchaseDto", pDto);
-		mv.setViewName("/plan/itemlist");
+		mv.setViewName("/plan/recommendListMain");
 		
 		return mv;
 	}

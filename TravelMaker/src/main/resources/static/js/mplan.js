@@ -454,7 +454,7 @@ $( document ).ready(function() {
 	
 	$('#goRecommend').on('click',function(){
 		$.post("/mplan/goRecommend", purchaseSerial, function(data){            
-			$('#content').load('/plan/ItemList');
+			$('#content').html(data);
  		}) 
 	})
 	

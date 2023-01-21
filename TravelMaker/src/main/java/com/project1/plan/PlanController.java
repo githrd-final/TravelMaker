@@ -37,6 +37,7 @@ public class PlanController {
 		ModelAndView mv = new ModelAndView();
 		TourAPIGetData tourAPIGetData = new TourAPIGetData();
 		TourAPIJsonParsing tourAPIJsonParsing = new TourAPIJsonParsing();
+		System.out.println("채찌가 보낸 정보가 갈까? "+ purchaseDto.getCity());
 		String mapX = planService.findMapX(purchaseDto.getCity());
 		String mapY = planService.findMapY(purchaseDto.getCity());
 		String a = tourAPIGetData.getLocationCategoryJsonData(mapX, mapY, contentTypeId);

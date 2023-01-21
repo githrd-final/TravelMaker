@@ -21,7 +21,7 @@
 	PurchaseDto purchaseDto = (PurchaseDto)request.getAttribute("purchaseDto");
 %>
 
-<form action = 'purchasedTicket' method = 'post' id="frm" hidden>
+<form action = 'purchasedTicket' method = 'post' id="frm" >
 	<input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none"/>
 	<input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none">
 	<input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">
@@ -31,7 +31,7 @@
 	<input type="text" name="endDate" value="${purchaseDto.endDate}" style="display:none">
 	<input type="text" name="startDateTime" value="${purchaseDto.startDateTime}" style="display:none">
 	<input type="text" name="endDateTime" value="${purchaseDto.endDateTime}" style="display:none">
-	<input type="text" name="city" value="${purchaseDto.city}" style="display:none">
+	<input type="text" name="city" value="${purchaseDto.city}" >
 </form>
 
 <div id='listBack'>
