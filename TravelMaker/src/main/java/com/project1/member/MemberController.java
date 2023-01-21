@@ -183,11 +183,13 @@ public class MemberController {
         log.info("UserAdd");
         ModelAndView mv = new ModelAndView();
         String email = (String)session.getAttribute("email");
+        System.out.println("유저 에드 : " + email);
         
     	dto.setEmail(email);
     	memberService.insertMember(dto);
     	
-        mv.setViewName("/index");
+        mv.setViewName("/review/reviewSelect");
+        System.out.println(mv.getViewName());
         return mv;
     }
 

@@ -34,19 +34,19 @@
 
     <select id="purchaseTicketA" resultType="String" parameterType="com.project1.order.OrderDto">
         select ticketSerial from ticket where ticketEndPoint = #{selectedRegion}
-                                          and ticketDate = #{startDate} and ticketStatus = 0
+                                          and ticketDate = #{startDate} and ticketStatus = 1
                                           and ticketStartTime = #{startDateTime} limit #{peopleInt}
     </select>
 
     <select id="purchaseTicketB" resultType="String" parameterType="com.project1.order.OrderDto">
         select ticketSerial from ticket where ticketStartPoint = #{selectedRegion}
-                                           and ticketDate = #{endDate} and ticketStatus = 0
+                                           and ticketDate = #{endDate} and ticketStatus = 1
                                            and ticketStartTime = #{endDateTime} limit #{peopleInt}
     </select>
 
     <insert id="insertPurchase" parameterType="com.project1.order.PurchaseDto">
         insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime)
-        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{regionInt}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime})
+        values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime})
     </insert>
 
     <update id="updateTicketStatusA" parameterType="String">

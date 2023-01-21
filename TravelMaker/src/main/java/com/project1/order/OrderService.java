@@ -31,8 +31,8 @@ public class OrderService {
     public List<ReviewVo> selectReview(OrderDto orderDto) throws Exception {
         log.info("selectReview");
         List<ReviewVo> reviewVoList = new ArrayList<>();
-        String region = orderDto.getRegion();
-        if(region.equals("전국")){
+        int region = orderDto.getRegion();
+        if(region == 7){
             reviewVoList = orderMapper.selectReviewAll();
         }
         else {
@@ -52,7 +52,7 @@ public class OrderService {
         int people = (Integer.parseInt(orderDto.getPeople()));
         orderDto.setPeopleInt(people);
         log.info("people : " + people);
-        String region = orderDto.getRegion();
+        int region = orderDto.getRegion();
         String startDate = orderDto.getStartDate();
         String endDate = orderDto.getEndDate();
         String startDateTime = orderDto.getStartDateTime();
@@ -62,23 +62,23 @@ public class OrderService {
         ticketDto.setRegion(region);
         log.info("region : " + ticketDto.getRegion());
         int price = 0;
-        if(region.equals("전국")) {
+        if(region == 7) {
             price = 30000;
-        } else if(region.equals("강원도") || region.equals("충청도")) {
+        } else if(region == 1 || region == 5) {
             price = 35000;
-        } else if(region.equals("전라도") || region.equals("경상도")) {
+        } else if(region == 3 || region == 4) {
             price = 40000;
         }
 
         int totalPrice = price * people;
         String selectedRegion;
-        if(region.equals("전국")){
+        if(region == 7){
             selectedRegion = orderMapper.selectRegionA(orderDto);
             orderDto.setSelectedRegion(selectedRegion);
             boolean checkTicketA = false;
             boolean checkTicketB = false;
             while(checkTicketA == false || checkTicketB == false) {
-                log.info(selectedRegion);
+                log.info("jkjkjk" + selectedRegion);
                 orderMapper.checkTicketA(orderDto);
                 orderMapper.checkTicketB(orderDto);
                 if(orderMapper.checkTicketA(orderDto)>=people){
@@ -104,7 +104,7 @@ public class OrderService {
             boolean checkTicketA = false;
             boolean checkTicketB = false;
             while(checkTicketA == false || checkTicketB == false) {
-                log.info(selectedRegion);
+                log.info("hihhi"+selectedRegion);
                 orderMapper.checkTicketA(orderDto);
                 orderMapper.checkTicketB(orderDto);
                 if(orderMapper.checkTicketA(orderDto)>=people){
@@ -126,19 +126,6 @@ public class OrderService {
         }
 
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
-        int regionInt = 0;
-
-        if(region.equals("전국")) {
-            regionInt = 1;
-        } else if(region.equals("강원도")) {
-            regionInt = 2;
-        } else if(region.equals("경상도")) {
-            regionInt = 3;
-        } else if(region.equals("전라도")) {
-            regionInt = 4;
-        } else if(region.equals("충청도")) {
-            regionInt = 5;
-        }
 
 
         purchaseDto.setPurchaseSerial(purchaseSerial);
@@ -150,8 +137,6 @@ public class OrderService {
         purchaseDto.setEndDate(endDate);
         purchaseDto.setStartDateTime(startDateTime);
         purchaseDto.setEndDateTime(endDateTime);
-        log.info("regionInt : " + regionInt);
-        purchaseDto.setRegionInt(regionInt);
         purchaseDto.setCity(selectedRegion);
 
         orderMapper.insertPurchase(purchaseDto);
@@ -164,7 +149,7 @@ public class OrderService {
     public List<ReviewVo> purchaseCheckReview(String region){
     	List<ReviewVo> list = null;
     	System.out.println("order서비스 지역:"+region);
-    	if(region.equals("전국")) {
+    	if(region.equals("7")) {
     		list = orderMapper.purchaseCheckReviewAll();
     		System.out.println("order서비스 전국 list:"+list.toString());
     	}else {

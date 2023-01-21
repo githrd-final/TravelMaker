@@ -11,8 +11,8 @@
     PurchaseDto purchaseDto = (PurchaseDto)request.getAttribute("purchaseDto");
 %>
 <form action = 'purchasedTicket' method = 'post' id="frm" hidden>
-    <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none>
-    <input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none>
+    <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none">
+    <input type="text" name="email" id="email" value="${purchaseDto.email}" style="display:none">
     <input type="text" name="price" id="price" value="${purchaseDto.price}" style="display:none">
     <input type="text" name="people" id="people" value="${purchaseDto.people}" style="display:none">
     <input type="text" name="region" id="region" value="${purchaseDto.region}" style="display:none">
@@ -25,7 +25,7 @@
 
         <c:set var="item" value="${result}"/>
         <div class="modal-window">
-            <form class="item-detail-modal">
+            <form class="item-detail-modal" onclick="insertIntoBucket(this)">
                 <input type="text" class="item-contentId" name=abc value="${item.contentID}" style="display: none"></input>
                 <div class="item-name">${item.title}</div>
                 <div class="item-image" style="background-image: url('${item.firstImage}')"></div>
@@ -33,10 +33,10 @@
                 <div class="item-tel">${item.tel}</div>
                 <div class="item-homepage">${item.homepage}</div>
                 <div class="item-overview">${item.overView}</div>
-            </form>
-            <div class="item-detailBtnGroup-modal">
                 <input type="button" class= "itemModaltoMyPlan" value="내 일정 보기" />
                 <input type="button" id= "insertPlanBucket" value="일정에 추가" />
+            </form>
+            <div class="item-detailBtnGroup-modal">
             </div>
         </div>
 </main>

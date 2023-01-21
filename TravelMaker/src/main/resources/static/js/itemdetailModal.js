@@ -18,23 +18,23 @@ if(width_size<=450){
         });
     })}
 
-$('#insertPlanBucket').on('click',
-    function (frm) {
+
+    function insertIntoBucket(frm) {
         $.ajax({
-            type : "POST",
-            url : "plan/insertPlanBucket/"+contentId,
-            data : purchaseDto,
-            success : function(msg) {
-                $('#modal').load('/plan/itemDetailModal/' + contentId);
-                if(msg!="") {
+            type: "POST",
+            url: "plan/insertPlanBucket/" + frm.abc.value,
+            data: purchaseDto,
+            success: function (msg) {
+                $('#modal').load('/plan/itemDetailModal/' + frm.abc.value);
+                if (msg != "") {
                     alert(msg);
                 }
             },
-            error: function(data) {
+            error: function (data) {
                 alert("오류가 발생했습니다");
             }
         });
-    })
+    }
 
 $('#deletePlanBucket').on('click',function (frm) {
     $.post('plan/deletePlanBucket/' + frm.abc.value, purchaseDto, function(data){

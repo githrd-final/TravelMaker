@@ -10,11 +10,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
-    <% String email = (String)request.getAttribute("email"); %>
 	<main class='signUpMain'>
 		<h1 class='signUpH'>회원정보</h1>
         <form class="signupContainer" method="post" enctype="multipart/form-data">
-            <input type="text" name="email" value="${email}" style="display: none">
             <div class="input-container ic1">
               <input id="nickname" name="nickname" class="input" type="text" placeholder="닉네임" onfocus="this.placeholder=''" onblur="this.placeholder='닉네임'"/>
             </div>

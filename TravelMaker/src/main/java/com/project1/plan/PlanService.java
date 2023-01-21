@@ -42,7 +42,7 @@ public class PlanService {
     public int checkAdded(String planbucketSerial) throws Exception {
     	log.info("serviceCheckAdded");
     	int checkAdded = planMapper.checkAdded(planbucketSerial);
-    	log.info("result : " + checkAdded);
+    	log.info("checkAdded : " + checkAdded);
     	return checkAdded;
     }
 
