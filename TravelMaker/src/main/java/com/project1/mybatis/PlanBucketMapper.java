@@ -14,6 +14,9 @@ public interface PlanBucketMapper {
 	//처음 로드시 날짜 출력
 	public int TravelDay(String purchaseSerial);
 	
+	//추천리스트 이동시 도시 찾기
+	public String recommendSelect(String purchaseSerial);
+	
 	//plan에 insert할때 plan갯수 버킷리스트
 	public int InsertCountPlan(String planbucketSerial);
 	

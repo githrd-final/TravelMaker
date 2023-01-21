@@ -31,7 +31,6 @@ public class PlanBucketService {
 
 	public List<BucketVo> bucketselect(String purchaseSerial){
 		List<BucketVo> list = pbmapper.bucketSelect(purchaseSerial);
-		
 		return list;
 	}
 	public List<BucketVo> bucketDetailSelect(BucketVo bVo){
@@ -66,5 +65,10 @@ public class PlanBucketService {
 		}else {
 			status.rollbackToSavepoint(savePoint);
 		}
+	}
+	
+	public String recommendSelect(String purchase) {
+		String city = pbmapper.recommendSelect(purchase);
+		return city;
 	}
 }
