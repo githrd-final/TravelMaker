@@ -74,7 +74,7 @@
 						<div class='rs_content_blank'></div>
 						<div class='rs_content_1'>
 							<div class='rs_content_user'>
-								<img id="rs_content_user_photo" src = '/images/${vo.sysUserPhoto }'/>
+								<img id="rs_content_user_photo" src = '/upload/${vo.sysUserPhoto }'/>
 								<div id='rs_content_user_name'>${vo.nickName }</div>
 							</div>
 							<div class='rs_content_date'>${vo.postingDate }</div>

@@ -34,7 +34,7 @@
 		<div id='rv_content'>
 			<div id='rv_content_detail'>
 				<div id='rv_content_detail_1'>
-					<div id='rv_content_user_photo'></div>
+					<div id='rv_content_user_photo' style="background-image:url('/upload/${uVo.sysUserPhoto}')"></div>
 					<div id='rv_content_user_name'>${rVo.nickName }</div>
 					<div id='rv_content_date'>${rVo.postingDate }</div>				
 				</div>

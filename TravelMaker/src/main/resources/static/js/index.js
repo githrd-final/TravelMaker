@@ -22,7 +22,7 @@ $('.btnCompanyInfo').on('click',function(){
 })
 /* 마이페이지-기본정보 연결 */
 $('.btnMyInfo').on('click',function(){
-		$('#content').load('/myInfo/myInfo');
+		$('#content').load('/myInfo/myInfoView');
 })
 /* 마이페이지-내여행 연결 */
 $('.btnMyTour').on('click',function(){

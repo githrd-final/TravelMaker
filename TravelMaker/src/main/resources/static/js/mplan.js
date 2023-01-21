@@ -5,14 +5,15 @@ var purchaseSerial = "purchaseSerial="+$('#purchaseSerial')[0].value;
 var totalTravelDay = $('#totalTravelDay')[0].value;
 var pSerial = $('#purchaseSerial')[0].value;
 var map;
-
-		var planPositions = [];
-		var planPositionDayOne = [];
-		var planPositionDayTwo = [];
-		var planPositionDayThree = [];
-		var planPositionDays = [];
-		var customoverlays=[];
-		var polylines = [];
+var markers=[];
+var planPositions = [];
+var planPositionDayOne = [];
+var planPositionDayTwo = [];
+var planPositionDayThree = [];
+var planPositionDays = [];
+var customoverlays=[]
+var infowindow;
+var polylines = [];
 		
 
 $.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
@@ -32,7 +33,7 @@ $( document ).ready(function() {
 			
 		// 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
 		var bounds;
-		var markers=[];    
+		markers=[];    
 		var linepath = [];
 		var polyline;
 		customoverlays=[];
@@ -47,6 +48,11 @@ $( document ).ready(function() {
 		
 		// 버킷버튼 클릭, 커스텀 출력 및 지도 범위 설정
 		BucketBtnClicked= function(positions){
+			
+			
+			if(infowindow!=null){
+      			infowindow.close();  
+      		}
 			if(positions==null){
 				$.ajax({
 					type:'post',
@@ -74,6 +80,7 @@ $( document ).ready(function() {
 					}
 				}
 				
+				
 				if(polylines.length != 0){
 					for(var i=0; i<polylines.length; i++){
 						polylines[i].setMap(null);
@@ -82,21 +89,53 @@ $( document ).ready(function() {
 				if(polyline!= null){
 					polyline.setMap(null);
 				}
+				markers=[];
+				polylines=[];
+				customoverlays=[];
 				for (var i = 0; i < positions.length; i ++) {
-					var json = JSON.parse(positions[i]);
-					 // 마커를 생성합니다
+					var json = JSON.parse(positions[i]);					 // 마커를 생성합니다
 					 var p=new kakao.maps.LatLng(json.mapY, json.mapX);
+					 
 					 
 					 var marker = new kakao.maps.Marker({
 					     map: map, // 마커를 표시할 지도
 					     position: p, // 마커를 표시할 위치
-					     title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+					     title : json.locationName, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+					     clickable: true, // 마커를 클릭했을 때 지도의 클릭 이벤트가 발생하지 않도록 설정합니다
 					 });
-					
+					 
 				    bounds.extend(p);
+					marker.setZIndex(1);
 				    map.setBounds(bounds);
 				    linepath.push(p);
 				    markers.push(marker);
+				    
+				    // 마커에 클릭이벤트를 등록합니다
+					kakao.maps.event.addListener(marker, 'click', function() {
+						if(infowindow!=null){
+      						infowindow.close();  
+      					}  
+						var iwContent = '<div style="padding:5px;">'+this.getTitle()+'</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+				    
+						// 인포윈도우를 생성합니다
+						infowindow = new kakao.maps.InfoWindow({
+						    content : iwContent,
+						    zIndex : 10
+						});
+					    
+					    // 이동할 위도 경도 위치를 생성합니다 
+						var moveLatLon = this.getPosition();
+		    
+		    			map.setLevel(8);
+		    			map.panTo(moveLatLon);
+					      
+					    // 마커 위에 인포윈도우를 표시합니다
+      					infowindow.open(map, this);      
+					});
+					if($('#mPlanList').hasClass("clickbtn") === true){
+						
+						$('#mPlanList').click();
+					}
 				} // for문의 끝
 
 		}
@@ -118,15 +157,15 @@ $( document ).ready(function() {
 		})		
 		// 리스트 클릭시
 		ListClicked = function(x, y){
-			
+			if(infowindow!=null){
+      			infowindow.close();  
+      		}
 			// 이동할 위도 경도 위치를 생성합니다 
 		    var moveLatLon = new kakao.maps.LatLng(y, x);
 		    
-		    map.setLevel(3);
+		    map.setLevel(5);
 		    map.panTo(moveLatLon);   
 		}
-		
-		
 		
 		
 	$('#mPlanSerial').value = "0"
@@ -135,6 +174,9 @@ $( document ).ready(function() {
 		
 		
 	var bucketFilterBtnClicked = function(filterbtn){
+		if(infowindow!=null){
+      		infowindow.close();  
+      	}
 		var filterSerial;
 		if(filterbtn.value=="숙소"){
 			filterSerial="32";
@@ -187,6 +229,23 @@ $( document ).ready(function() {
 	$('#mPlanBucketList').on('click', function(){
 		$('#mPlanBucketList').attr("class","clickbtn");
 		$('#mPlanList').attr("class","nonclickbtn");
+		
+		if(customoverlays.length!=0){
+					for(var i =0; i< customoverlays.length;i++){
+						customoverlays[i].setMap(null);	
+					}
+				}
+				
+				
+				if(polylines.length != 0){
+					for(var i=0; i<polylines.length; i++){
+						polylines[i].setMap(null);
+					}
+				}
+				markers=[];
+				polylines=[];
+				customoverlays=[];
+				
 		$.post("/mplan/mPlanBucketList", purchaseSerial, function(data){
             $('.mList').html(data);
  		}) 
@@ -195,6 +254,9 @@ $( document ).ready(function() {
 
 	
 	$('#mPlanList').on('click', function(){
+		if(infowindow!=null){
+      		infowindow.close();  
+      	}
 		$('#mPlanList').attr("class","clickbtn");
 		$('#mPlanBucketList').attr("class","nonclickbtn");
 		$.post("/mplan/mPlanList", purchaseSerial, function(data){
@@ -267,7 +329,9 @@ $( document ).ready(function() {
 		
 	} //setPlanPositions
 	
-	function setCustomOverlays(){
+	var setCustomOverlays = function(){
+		bounds = new kakao.maps.LatLngBounds();    
+
 		if(customoverlays.length != 0){
 			for(var i=0; i<customoverlays.length; i++){
 				customoverlays[i].setMap(null);
@@ -279,13 +343,24 @@ $( document ).ready(function() {
 				polylines[i].setMap(null);
 			}
 		}
-		
+		customoverlays=[];
+		polylines=[];
 		var customColor = ['tomato','blue','green'];
 		for(var i=0; i<planPositionDays.length; i++){
 			if(planPositionDays[i].length != 0){
 				linePath = [];
 				for(var j=0; j<planPositionDays[i].length; j++){
 					linePath.push(planPositionDays[i][j].latlng);
+					bounds.extend(planPositionDays[i][j].latlng);
+					//같은 xy축 좌표가 존재하면 makers의 그 부분을 찾아서 map에서 지워버리기
+					for(var k=0; k<markers.length;k++){
+						if(markers[k].getPosition().getLat().toFixed(10)==planPositionDays[i][j].latlng.getLat().toFixed(10)){
+							if(markers[k].getPosition().getLng().toFixed(10)==planPositionDays[i][j].latlng.getLng().toFixed(10)){
+								
+								markers[k].setMap(null);							
+							}
+						}
+					}
 					var customOverlay = new kakao.maps.CustomOverlay({
 					    position: planPositionDays[i][j].latlng,
 					    content: '<div class="customOverlay" style="border : 7px outset '+customColor[i]+'">' +
@@ -293,7 +368,9 @@ $( document ).ready(function() {
 					    			'<div> DAY' + (i+1) + '</div>' +
 					    		 '</div>' 
 					});
+					customOverlay.setZIndex(10);
 					customOverlay.setMap(map);
+					
 					customoverlays.push(customOverlay);
 				}
 				
@@ -302,12 +379,14 @@ $( document ).ready(function() {
 				    strokeWeight: 8, // 선의 두께 입니다
 				    strokeColor: customColor[i], // 선의 색깔입니다
 				    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
-				    strokeStyle: 'solid' // 선의 스타일입니다
+				    strokeStyle: 'solid', // 선의 스타일입니다
+				    zIndex: 20
 				});
 				
 				
 				polyline.setMap(map);
 				polylines.push(polyline);
+				map.setBounds(bounds);
 				
 			}
 	  }
@@ -316,8 +395,6 @@ $( document ).ready(function() {
 	
 	
 	function setCustomView(bucketPositions){
-		customViews = [];
-		polylines=[];
 		
 		for(var i=0; i<bucketPositions.length; i++){
 			
@@ -373,6 +450,12 @@ $( document ).ready(function() {
 	
 	$('#goReview').on('click',function(){
 		$('#content').load('/myTour/myTourSelect');
+	})
+	
+	$('#goRecommend').on('click',function(){
+		$.post("/mplan/goRecommend", purchaseSerial, function(data){            
+			$('#content').load('/plan/ItemList');
+ 		}) 
 	})
 	
 	//modal - +btn
@@ -508,7 +591,7 @@ $( document ).ready(function() {
 		
 	modalView2 = function(th){
 		if(memo==1){
-			$('#UpdateModallocationItem').val(th.querySelector('#planListLocationName').value);
+			$('#UpdateModallocationItem').text(th.querySelector('#planListLocationName').value);
 			$('.UpdatePlanOrder').val(th.querySelector('#planListPlanOrder').value);
 			$('.UpdatePlanDate option[value='+th.querySelector('#planListPlanDate').value+']').prop('selected', true);
 			$('#UpdatePurchaseSerial').val(pSerial);
@@ -537,7 +620,7 @@ $( document ).ready(function() {
 		
 	})		
 	modalView3 = function(memoTag){
-		memo=0;
+		memo=0;		
 		this.memoTag = memoTag;
 		$('.MemoArea').val(memoTag.value);
 		$('#modal3').css('display', 'block');	

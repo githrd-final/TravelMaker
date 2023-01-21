@@ -46,7 +46,6 @@ public class ReviewController {
 		rVo = service.view(rVo.getReviewSerial(),rVo.purchaseSerial,"up");
 		uVo = service.userDetailView(rVo.nickName);
 		List<ReviewPlanVo> rpList = service.getRpList();
-		int datePlan = Integer.parseInt(service.getDatePlan());
 		
 		System.out.println("컨트롤 구고번호2: "+ rVo.getPurchaseSerial());
 		mv.addObject("uVo", uVo);

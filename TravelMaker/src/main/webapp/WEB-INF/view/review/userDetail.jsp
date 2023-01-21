@@ -26,7 +26,7 @@
 		</form>
 		<div id="ud_user_info">
 			<div id='ud_user_info_1'>
-				<img id='ud_user_info_photo' src='images/${uVo.sysUserPhoto }' />
+				<img id='ud_user_info_photo' src='/upload/${uVo.sysUserPhoto }' />
 				<div id='ud_user_info_nickName'>${uVo.nickName }</div>
 			</div>
 			<div id='ud_user_info_2'>
@@ -44,7 +44,7 @@
 				<div class='ud_content_blank'></div>
 				<div class='ud_content_1'>
 					<div class='ud_content_user'>
-						<img id="ud_content_user_photo" src='/images/${vo.sysUserPhoto }' />
+						<img id="ud_content_user_photo" src='/upload/${vo.sysUserPhoto }' />
 						<div id='ud_content_user_name'>${vo.nickName }</div>
 					</div>
 					<div class='ud_content_date'>${vo.postingDate }</div>
