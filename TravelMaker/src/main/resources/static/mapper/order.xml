@@ -3,7 +3,8 @@
 <mapper namespace="com.project1.mybatis.OrderMapper">
 
     <select id="selectRegionA" resultType="String" parameterType="com.project1.order.OrderDto">
-        SELECT ticketEndPoint FROM ticket where ticketDate = #{startDate}
+        SELECT ticketEndPoint FROM ticket where (region = 1 or region = 2 or region = 3 or region = 4 or region = 5)
+                                            and ticketDate = #{startDate}
                                             and ticketStartTime = #{startDateTime} order by rand() limit 1;
     </select>
 
@@ -34,13 +35,13 @@
 
     <select id="purchaseTicketA" resultType="String" parameterType="com.project1.order.OrderDto">
         select ticketSerial from ticket where ticketEndPoint = #{selectedRegion}
-                                          and ticketDate = #{startDate} and ticketStatus = 0
+                                          and ticketDate = #{startDate} and ticketStatus = 1
                                           and ticketStartTime = #{startDateTime} limit #{peopleInt}
     </select>
 
     <select id="purchaseTicketB" resultType="String" parameterType="com.project1.order.OrderDto">
         select ticketSerial from ticket where ticketStartPoint = #{selectedRegion}
-                                           and ticketDate = #{endDate} and ticketStatus = 0
+                                           and ticketDate = #{endDate} and ticketStatus = 1
                                            and ticketStartTime = #{endDateTime} limit #{peopleInt}
     </select>
 
@@ -61,10 +62,10 @@
 
     <insert id="makePurchasedTicket" parameterType="String">
         insert into purchasedTicket
-        values (#{purchasedTicketSerial}, #{purchaseSerial}, #{ticketSerialListA}, #{ticketSerialListB})
+        values (#{purchasedTicketSerial}, #{purchaseSerial}, #{ticketSerialA}, #{ticketSerialB})
     </insert>
 
-	<select id="purchaseCheckReview" parameterType="String" resultType="com.project1.review.ReviewVo">
+	<select id="purchaseCheckReview" parameterType="Integer" resultType="com.project1.review.ReviewVo">
 		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review where region=#{_parameter} order by reviewStar DESC limit 5;
 	</select>
 	<select id="purchaseCheckReviewAll" resultType="com.project1.review.ReviewVo">
