@@ -84,8 +84,6 @@ public class OrderController {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        log.info(purchaseDto.getPurchaseSerial());
-        log.info(orderDto.getEmail());
         request.setAttribute("orderDto", orderDto);
         request.setAttribute("purchaseDto", purchaseDto);
         mv.setViewName("order/purchaseDtoPage");

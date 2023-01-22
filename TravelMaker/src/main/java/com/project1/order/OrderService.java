@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -146,6 +147,10 @@ public class OrderService {
         log.info("selectedRegion : " + purchaseDto.getCity());
         log.info("purchaseDto : " + purchaseDto);
 
+        purchaseDto.setPurchasedTicketSerial(purchasedTicketSerial);
+        purchaseDto.setTicketSerialA(ticketSerialA);
+        purchaseDto.setTicketSerialB(ticketSerialB);
+
         orderMapper.insertPurchase(purchaseDto);
         orderMapper.updateTicketStatusA(ticketSerialListA.get(0));
         orderMapper.updateTicketStatusB(ticketSerialListB.get(0));
@@ -153,7 +158,7 @@ public class OrderService {
 
         return purchaseDto;
     }
-    
+
     public List<ReviewVo> purchaseCheckReview(int region){
     	List<ReviewVo> list = null;
     	System.out.println("order서비스 지역:"+region);
