@@ -256,12 +256,14 @@ var kakaoMap = (function(){
 			}
 		}
 		
-		if(polylines.length != 0){
-			for(var i=0; i<polylines.length; i++){
-				polylines[i].setMap(null);
-			}
-		}
-		
+		var lineDayOne;
+		var lineDayTwo;
+		var lineDayThree;
+		var dstDayOne;
+		var dstDayTwo;
+		var dstDayThree;
+		var polylines = [lineDayOne,lineDayTwo,lineDayThree];
+		var totalDistance = [dstDayOne,dstDayTwo,dstDayThree];
 		var customColor = ['tomato','blue','green'];
 		
 		for(var i=0; i<planPositionDays.length; i++){
@@ -283,44 +285,55 @@ var kakaoMap = (function(){
 					customOverlays.push(customOverlay);
 				}
 				
-				var polyline = new kakao.maps.Polyline({
+					polylines[i] = new kakao.maps.Polyline({
 				    path: linePath, // 선을 구성하는 좌표배열 입니다
 				    strokeWeight: 8, // 선의 두께 입니다
 				    strokeColor: customColor[i], // 선의 색깔입니다
 				    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 				    strokeStyle: 'solid' // 선의 스타일입니다
 				});
-				
-				var totalDistance = null;
-				
-				// polyline을 클릭했을떄 총거리 customOverlay생성해주는 함수
-				kakao.maps.event.addListener(polyline,'mouseover',function(mouseEvent){
-					console.log(linePath[linePath.length-1]);
 					
-					totalDistance = new kakao.maps.CustomOverlay({
-					    position: linePath[linePath.length-1],
-					    content: '<div class="totalDistance">' +
-					    			'총 거리 : ' + Math.round(polyline.getLength())  + 'M' + 
-					    		 '</div>' ,
-					    zIndex: 3,
-					    xAnchor:-0.3,
-					    yAnchor:1
-					});
+
+					totalDistance[i] = new kakao.maps.CustomOverlay({
+						position: linePath[linePath.length-1],
+						content: '<div class="totalDistance">' +
+						    			'총 거리 : <span>' + Math.round(polylines[i].getLength())  + 'M</span>' + 
+						    		 '</div>' ,
+						 xAnchor:-0.1,
+						 yAnchor:1,
+						 zIndex:100
+				});
+				
+				
+				polylines[i].setMap(map);
+				
 					
-					totalDistance.setMap(map);
+					 //polyline을 클릭했을떄 총거리 customOverlay생성해주는 함수
+				kakao.maps.event.addListener(polylines[i] ,'mouseover',function(ev){
+					for(var i=0; i<totalDistance.length; i++){
+						if(totalDistance[i] != undefined){
+							totalDistance[i].setMap(map);
+						}
+					}
+					
+				})
+					
+				kakao.maps.event.addListener(polylines[i],'mouseout',function(ev){
+					for(var i=0; i<totalDistance.length; i++){
+						if(totalDistance[i] != undefined){
+							totalDistance[i].setMap(null);
+						}
+					}
 				})
 				
-				kakao.maps.event.addListener(polyline,'mouseout',function(mouseEvent){
-					totalDistance.setMap(null);
-				})
 				
-				polyline.setMap(map);
-				polylines.push(polyline);
-				
-			}
-		}
+			} // end of if
+			
+		}// for of planPositions
 		
 	} //setCustomOverlays
+	
+	
 	
 	$('#goReview').on('click',function(){
 		$('#content').load('/myTour/myTourSelect');
