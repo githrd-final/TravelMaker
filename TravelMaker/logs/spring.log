@@ -1,0 +1,43 @@
+21:42:21.130+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16 on DESKTOP-M6PH0H2 with PID 31084 (C:\Users\junah\eclipse-workspace\TravelMaker\TravelMaker\target\classes started by junah in C:\Users\junah\eclipse-workspace\TravelMaker\TravelMaker)
+21:42:21.137+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+21:42:21.172+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21:42:21.172+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21:42:21.633+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+21:42:21.647+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+21:42:22.063+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+21:42:22.320+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1139 ms
+21:42:22.765+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+21:42:22.860+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:42:23.077+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:42:23.245+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21:42:23.281+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+21:42:23.289+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 2.425 seconds (JVM running for 3.561)
+21:42:26.708+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:42:26.709+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+21:42:27.458+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+21:42:27.458+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+21:42:43.984+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+21:42:43.984+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+21:42:45.581+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+21:42:45.581+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+21:42:46.935+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+21:42:46.935+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+21:42:47.163+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+21:42:47.163+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+21:42:47.425+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - naverCheck
+21:42:47.425+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - naverCheck
+21:42:47.449+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberService - serviceNaverCheck
+21:42:47.449+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberService - serviceNaverCheck
+21:42:47.689+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+21:42:47.689+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+21:42:57.013+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - happilyah@naver.com
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 3
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-22
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-24
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+21:42:57.209+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - pm
+21:43:23.525+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - purchaseCheck
+21:43:23.533+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - happilyah@naver.com
+21:43:23.533+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 3
