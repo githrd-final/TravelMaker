@@ -27,7 +27,7 @@ if(width_size<=450){
             success: function (msg) {
                 $('#modal').load('/plan/itemDetailModal/' + frm.abc.value);
                 if (msg != "") {
-                    alert("플랜 버켓에 추가되었습니다!");
+                    alert(msg);
                 }
             },
             error: function (data) {

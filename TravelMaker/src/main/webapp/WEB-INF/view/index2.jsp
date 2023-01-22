@@ -15,6 +15,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	38fcbbc356cdd719e19ce18e5b27584d"></script>
 <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script defer src='../js/index2.js'></script>
 <meta name ="google-signin-scope" content="profile email">
 <meta name ="google-signin-client_id" content="1073520954501-tqj85u21s3lftdforl8ikb220sbg1qn1.apps.googleusercontent.com">
