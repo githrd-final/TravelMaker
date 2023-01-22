@@ -246,8 +246,10 @@ var kakaoMap = (function(){
 		}
 	} //setMarkers
 	
-	
-	
+	var lineDayOne;
+	var lineDayTwo;
+	var lineDayThree;
+	var polylines = [lineDayOne,lineDayTwo,lineDayThree];
 	
 	function setCustomOverlays(planPositions){
 		if(customOverlays.length != 0){
@@ -256,17 +258,20 @@ var kakaoMap = (function(){
 			}
 		}
 		
-		var lineDayOne;
-		var lineDayTwo;
-		var lineDayThree;
 		var dstDayOne;
 		var dstDayTwo;
 		var dstDayThree;
-		var polylines = [lineDayOne,lineDayTwo,lineDayThree];
 		var totalDistance = [dstDayOne,dstDayTwo,dstDayThree];
 		var customColor = ['tomato','blue','green'];
 		
+		for(var i=0; i<polylines.length; i++){
+			if(polylines[i]!=undefined){
+				polylines[i].setMap(null);
+			}
+		}
+		
 		for(var i=0; i<planPositionDays.length; i++){
+			
 			
 			if(planPositionDays[i].length != 0){
 				linePath = [];
@@ -291,9 +296,10 @@ var kakaoMap = (function(){
 				    strokeColor: customColor[i], // 선의 색깔입니다
 				    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
 				    strokeStyle: 'solid' // 선의 스타일입니다
-				});
+					});
 					
-
+					
+					
 					totalDistance[i] = new kakao.maps.CustomOverlay({
 						position: linePath[linePath.length-1],
 						content: '<div class="totalDistance">' +
@@ -302,20 +308,19 @@ var kakaoMap = (function(){
 						 xAnchor:-0.1,
 						 yAnchor:1,
 						 zIndex:100
-				});
-				
-				
-				polylines[i].setMap(map);
+					});
 				
 					
-					 //polyline을 클릭했을떄 총거리 customOverlay생성해주는 함수
+					polylines[i].setMap(map);
+					
+					
+				//polyline을 클릭했을떄 총거리 customOverlay생성해주는 함수
 				kakao.maps.event.addListener(polylines[i] ,'mouseover',function(ev){
 					for(var i=0; i<totalDistance.length; i++){
 						if(totalDistance[i] != undefined){
 							totalDistance[i].setMap(map);
 						}
 					}
-					
 				})
 					
 				kakao.maps.event.addListener(polylines[i],'mouseout',function(ev){
@@ -328,6 +333,7 @@ var kakaoMap = (function(){
 				
 				
 			} // end of if
+			
 			
 		}// for of planPositions
 		
@@ -503,6 +509,9 @@ var kakaoMap = (function(){
 			if(outerText != ""){
 				showPlan(param);
 			}
+			
+			
+			
 			
 			$('.planListMenuItemAll').on('click',function(ev){
 				bounds = new kakao.maps.LatLngBounds();
