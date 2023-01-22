@@ -129,6 +129,7 @@ public class PlanController {
 		map.put("result", result2);
 		if (checkAdded == 0) {
 			planService.insertPlanBucket(map);
+			msg = "플랜 버켓에 추가되었습니다.";
 		}
 		else{
 			msg = "이미 추가된 항목입니다.";

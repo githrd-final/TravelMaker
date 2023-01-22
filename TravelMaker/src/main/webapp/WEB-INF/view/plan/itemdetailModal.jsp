@@ -33,8 +33,9 @@
                 <div class="item-tel">${item.tel}</div>
                 <div class="item-homepage">${item.homepage}</div>
                 <div class="item-overview">${item.overView}</div>
-                <input type="button" class= "itemModaltoMyPlan" value="내 일정 보기" />
-                <input type="button" id= "insertPlanBucket" value="일정에 추가" />
+                <br/>
+                <input type="button" class = "itemModaltoMyPlan" value="내 일정 보기" />
+                <input type="button" id = "insertPlanBucket" value="일정에 추가" />
             </form>
             <div class="item-detailBtnGroup-modal">
             </div>

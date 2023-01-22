@@ -86,6 +86,21 @@ public class MemberController {
         return result;
     }
 
+    @RequestMapping(value = "/member/kakaoCheck", method = RequestMethod.POST)
+    public @ResponseBody String kakaoCheck(@RequestParam("kakao_email") String email, HttpSession session) {
+
+        log.info("kakaoCheck");
+        MemberDto memberDto = new MemberDto();
+        memberDto.setEmail(email);
+
+        String result = memberService.naverCheck(memberDto);
+
+        if(result == "registered") {
+            session.setAttribute("email", email);
+        }
+        return result;
+    }
+
     @RequestMapping(value = "/member/newSignUp", method = RequestMethod.POST)
     public @ResponseBody String memberSignUp(@RequestParam("email") String email, @RequestParam("nickName") String nickname, @RequestParam("intro") String intro, HttpSession session) {
 
