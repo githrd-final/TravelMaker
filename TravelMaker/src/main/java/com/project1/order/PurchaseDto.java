@@ -17,4 +17,7 @@ public class PurchaseDto {
     private String startDateTime;
     private String endDateTime;
     private String city;
+    private String ticketSerialA;
+    private String ticketSerialB;
+    private String purchasedTicketSerial;
 }

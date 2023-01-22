@@ -32,6 +32,6 @@ public interface OrderMapper {
 
     public void makePurchasedTicket(@Param("purchasedTicketSerial") String purchasedTicketSerial,  @Param("purchaseSerial") String purchaseSerial, @Param("ticketSerialA") String ticketSerialA, @Param("ticketSerialB") String ticketSerialB);
     //베스트후기
-    public List<ReviewVo> purchaseCheckReview(String region);
+    public List<ReviewVo> purchaseCheckReview(int region);
     public List<ReviewVo> purchaseCheckReviewAll();
 }

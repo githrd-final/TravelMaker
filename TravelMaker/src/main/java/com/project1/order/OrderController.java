@@ -59,8 +59,9 @@ public class OrderController {
         log.info("purchaseCheck");
         System.out.println("hihihihi"+ Integer.parseInt(request.getParameter("region")));
         orderDto.setRegion(Integer.parseInt(request.getParameter("region")));
+        log.info("orderdtoregion : " + orderDto.getRegion());
         request.setAttribute("orderDto", orderDto);
-        List<ReviewVo> list = orderService.purchaseCheckReview(request.getParameter("region"));
+        List<ReviewVo> list = orderService.purchaseCheckReview(Integer.parseInt(request.getParameter("region")));
         mv.addObject("list",list);
         mv.addObject("orderDto", orderDto);
         log.info(orderDto.getEmail());
@@ -83,8 +84,6 @@ public class OrderController {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        log.info(purchaseDto.getPurchaseSerial());
-        log.info(orderDto.getEmail());
         request.setAttribute("orderDto", orderDto);
         request.setAttribute("purchaseDto", purchaseDto);
         mv.setViewName("order/purchaseDtoPage");

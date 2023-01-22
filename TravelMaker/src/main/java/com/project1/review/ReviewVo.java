@@ -8,7 +8,7 @@ public class ReviewVo {
 	String reviewTitle;	//제목
 	String nickName;	//닉네임
 	Double reviewStar;	//별점
-	String region;		//전국 or 도
+	int region;		//전국 or 도
 	String city;		//상세지역명
 	String text;		//작성글
 	String postingDate;	//작성날짜
@@ -59,11 +59,11 @@ public class ReviewVo {
 		this.reviewStar = reviewStar;
 	}
 
-	public String getRegion() {
+	public int getRegion() {
 		return region;
 	}
 
-	public void setRegion(String region) {
+	public void setRegion(int region) {
 		this.region = region;
 	}
 

@@ -16,7 +16,7 @@ $('.regionSelectGang').on('click',function(){
 })
 
 $('.regionSelectGyeong').on('click',function(){
-    $('#content').load('/order/purchaseCheck?region=2&startDate='+startDate+'&endDate='+endDate+'&people='+people+'&startDateTime='+startDateTime+'&endDateTime='+endDateTime+'&email='+email);
+    $('#content').load('/order/purchaseCheck?region=3&startDate='+startDate+'&endDate='+endDate+'&people='+people+'&startDateTime='+startDateTime+'&endDateTime='+endDateTime+'&email='+email);
 })
 
 $('.regionSelectJeolla').on('click',function(){
