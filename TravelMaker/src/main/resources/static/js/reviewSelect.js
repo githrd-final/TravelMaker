@@ -2,14 +2,16 @@
  * 
  */
  (review = function(){
-
-	/**하트 1이상이면 빨간 하트  */
+	if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+ 		window.scrollBy(0,-150);
+	}
+	/**하트 1이상이면 빨간 하트 
 	for(i=0; i<10; i++){
 		if(Math.abs($('.rs_content_heart_num').text()[i])!=0){
 			$('.rs_content_heart_icon').eq(i).css('background-image','url("../images/heart-icon-clicked.png")');
 		}
 		
-	}
+	}*/
 	/**필터 체크박스 처리(잘못한 것) */
 	/*
 	$('#rs_filter_period').on('click', function(){
@@ -253,4 +255,10 @@
 		    })
 		review.filter();
 	},200)
+	
+	/**리프레시 누를 때, 모든 필터 초기화 */
+	$('#rs_refresh').on('click', function(){
+		$('#content').load('/review/reviewSelect')
+	})
+	
 })();

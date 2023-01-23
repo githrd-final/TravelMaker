@@ -11,11 +11,13 @@ public class PurchaseDto {
     private String email;
     private int price;
     private int people;
-    private String region;
+    private int region;
     private String startDate;
     private String endDate;
     private String startDateTime;
     private String endDateTime;
-    private int regionInt;
     private String city;
+    private String ticketSerialA;
+    private String ticketSerialB;
+    private String purchasedTicketSerial;
 }

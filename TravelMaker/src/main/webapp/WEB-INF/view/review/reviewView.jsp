@@ -34,7 +34,7 @@
 		<div id='rv_content'>
 			<div id='rv_content_detail'>
 				<div id='rv_content_detail_1'>
-					<div id='rv_content_user_photo'></div>
+					<div id='rv_content_user_photo' style="background-image:url('/upload/${uVo.sysUserPhoto}')"></div>
 					<div id='rv_content_user_name'>${rVo.nickName }</div>
 					<div id='rv_content_date'>${rVo.postingDate }</div>				
 				</div>
@@ -45,12 +45,16 @@
 					<div id='rv_heart_num'>${rVo.thumbsUp }</div>
 					<div id='rv_copy_icon'></div>
 					<div id='rv_to_list'>목록으로</div>
+					<c:set var="userEmail" value="${userEmail }"/>
+					<c:set var="uVo.email" value="${uVo.email}"/>
+					<c:if test='${userEmail eq uVo.email }'>
 					<div id='rv_content_crud'>
 						<div id= 'rv_content_crud_list'>
 								<div id='rv_content_crud_modify'>수정하기</div>
 								<div id='rv_content_crud_delete'>삭제하기</div>
 						</div>
 					</div>
+					</c:if>
 				</div>
 				<div id='rv_content_detail_2_blank'></div>
 			</div>	

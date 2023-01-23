@@ -59,7 +59,7 @@
 					<span class="locationTitle">일정수정</span>
 					<input type='button' id='btnClose2' value='X'/>
 				</div>
-				<input class="locationName" id="UpdateModallocationItem" name="locationName"/><br/>
+				<div class="locationName" id="UpdateModallocationItem"/>섬진강</div><br/>
 				<span class="UpdateSubTitle">순번</span>
 				<input type="text" value="1" class="UpdatePlanOrder" name="planOrder"><br/>
 				<select name="planDate" class="UpdatePlanDate">
@@ -91,7 +91,7 @@
 		<input type="hidden" name="planbucketSerial" id="MemoUpdatePlanbucketSerial" value="">
 		</form>
 	</div>
-	
+	<a href="#" id="goRecommend"><span>추천</span><span>리스트</span></a>
 	<a href="#" id="goReview"><span>여행</span><span>목록</span></a>
 </body>
 </html>

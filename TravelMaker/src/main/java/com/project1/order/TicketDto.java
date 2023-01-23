@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class TicketDto {
 
-    String region;
+    int region;
     String ticketSerial;
     String ticketStartPoint;
     String ticketEndPoint;

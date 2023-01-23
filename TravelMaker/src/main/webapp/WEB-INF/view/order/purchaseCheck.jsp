@@ -36,7 +36,24 @@
 <div id = 'three'>
 	<div>
 		<label>선택지역 : </label>
-		<span name="region" value="${orderDto.region}">${orderDto.region}</span>
+		<c:choose>
+			<c:when test="${orderDto.region eq 7}">
+				<span name="region" value="${orderDto.region}">전국</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 1}">
+				<span name="region" value="${orderDto.region}">강원도</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 3}">
+				<span name="region" value="${orderDto.region}">경상도</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 4}">
+				<span name="region" value="${orderDto.region}">전라도</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 5}">
+				<span name="region" value="${orderDto.region}">충청도</span>
+			</c:when>
+		</c:choose>
+		<!-- <span name="region" value="${orderDto.region}">${orderDto.region}</span> -->
 	</div>
 	<div>
 		<label>인원수 : </label>
@@ -61,7 +78,28 @@
 	</div>
 	<div>
 		<label>총 금액 : </label>
-		<span>${orderDto.people}*30000 원</span>
+		<c:choose>
+			<c:when test="${orderDto.region eq 7}">
+				<c:set var="total" value="${orderDto.people * 30000}" />
+				<span name="region" value="${orderDto.region}">${total}원</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 1}">
+				<c:set var="total" value="${orderDto.people * 35000}" />
+				<span name="region" value="${orderDto.region}">${total}원</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 3}">
+				<c:set var="total" value="${orderDto.people * 40000}" />
+				<span name="region" value="${orderDto.region}">${total}원</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 4}">
+				<c:set var="total" value="${orderDto.people * 40000}" />
+				<span name="region" value="${orderDto.region}">${total}원</span>
+			</c:when>
+			<c:when test="${orderDto.region eq 5}">
+				<c:set var="total" value="${orderDto.people * 35000}" />
+				<span name="region" value="${orderDto.region}">${total}원</span>
+			</c:when>
+		</c:choose>
 	</div>
 	
 	<div id='btnZone'>
@@ -96,23 +134,23 @@
 </div>
 <div id='five'>
 	<c:choose>
-		<c:when test="${orderDto.region eq '강원도'}">
+		<c:when test="${orderDto.region eq 1}">
 			<img src="../images/강원도리스트1.png">
 			<img src="../images/강원도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '경상도'}">
+		<c:when test="${orderDto.region eq 3}">
 			<img src="../images/경상도리스트1.png">
 			<img src="../images/경상도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '전라도'}">
+		<c:when test="${orderDto.region eq 4}">
 			<img src="../images/전라도리스트1.png">
 			<img src="../images/전라도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '충청도'}">
+		<c:when test="${orderDto.region eq 5}">
 			<img src="../images/충청도리스트1.png">
 			<img src="../images/충청도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '전국'}">
+		<c:when test="${orderDto.region eq 7}">
 			<img src="../images/경기도리스트.png">
 			<img src="../images/강원도리스트1.png">
 			<img src="../images/강원도리스트2.png">

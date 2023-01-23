@@ -23,7 +23,7 @@
                 <div class='img-box'></div>
                 <input type='file' class='btnProfileSelect' name="sysUserPhoto" value='파일 선택'>
                 <br/>
-                <input type='button' class='btnSubmit' value='가입 완료'>
+                <input type='submit' class='btnSubmit' value='가입 완료'>
             </div>
         </form>
 	</main>

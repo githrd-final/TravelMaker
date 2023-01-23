@@ -1,5 +1,6 @@
 package com.project1.order;
 
+import com.project1.review.ReviewVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @RestController
 @Slf4j
@@ -55,13 +57,11 @@ public class OrderController {
     @RequestMapping("/order/purchaseCheck")
     public ModelAndView purchaseCheck(HttpServletRequest request, OrderDto orderDto, ModelAndView mv) throws Exception {
         log.info("purchaseCheck");
-        orderDto.setRegion(request.getParameter("region"));
+        orderDto.setRegion(Integer.parseInt(request.getParameter("region")));
         request.setAttribute("orderDto", orderDto);
-        List<ReviewVo> list = orderService.purchaseCheckReview(request.getParameter("region"));
+        List<ReviewVo> list = orderService.purchaseCheckReview(Integer.parseInt(request.getParameter("region")));
         mv.addObject("list",list);
         mv.addObject("orderDto", orderDto);
-        log.info(orderDto.getEmail());
-        log.info(orderDto.getPeople());
         mv.setViewName("order/purchaseCheck");
         return mv;
     }
@@ -78,8 +78,6 @@ public class OrderController {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        log.info(purchaseDto.getPurchaseSerial());
-        log.info(orderDto.getEmail());
         request.setAttribute("orderDto", orderDto);
         request.setAttribute("purchaseDto", purchaseDto);
         mv.setViewName("order/purchaseDtoPage");
