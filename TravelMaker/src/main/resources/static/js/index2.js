@@ -13,7 +13,7 @@ $( document ).ready(function() {
  })
 /**FAQ 연결 */
 $('.btnFAQ').on('click',function(){
-	$('#content').load('/member/FAQ')
+	$('#content').load('/faq/faqView')
 })
 
 /**회사소개 연결  */
