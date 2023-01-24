@@ -37,7 +37,6 @@ public class PlanController {
 		ModelAndView mv = new ModelAndView();
 		TourAPIGetData tourAPIGetData = new TourAPIGetData();
 		TourAPIJsonParsing tourAPIJsonParsing = new TourAPIJsonParsing();
-		System.out.println("채찌가 보낸 정보가 갈까? "+ purchaseDto.getCity());
 		String mapX = planService.findMapX(purchaseDto.getCity());
 		String mapY = planService.findMapY(purchaseDto.getCity());
 		String a = tourAPIGetData.getLocationCategoryJsonData(mapX, mapY, contentTypeId);
@@ -101,6 +100,7 @@ public class PlanController {
 		TourAPIGetData tourAPIGetData = new TourAPIGetData();
 		TourAPIJsonParsing tourAPIJsonParsing = new TourAPIJsonParsing();
 		String result1 = tourAPIGetData.getMoreDetailJsonData(contentId);
+		log.info("result1 : " + result1);
 		testVo result2 = tourAPIJsonParsing.getDetailItem(result1);
 		log.info(contentId);
 		int checkAdded = planService.checkAdded(contentId);
@@ -123,10 +123,9 @@ public class PlanController {
 	@RequestMapping("/plan/itemModalToPlan")
 	public ModelAndView itemModalToPlan(String purchaseSerial) throws Exception {
 		ModelAndView mv = new ModelAndView();
-		System.out.println(purchaseSerial);
 		mv.addObject("purchaseSerial", purchaseSerial);
 		log.info(purchaseSerial);
-		mv.setViewName("plan/planner");
+		mv.setViewName("planner/planner");
 		return mv;
 	}
 

@@ -12,6 +12,6 @@
     <link rel="stylesheet" href="css/loadingPage.css"/>
 </head>
 <body id="loadingBody">
-<h2 id="loading">페이지를 불러오는 중입니다.</h2>
+<h2 id="loading">페이지를 불러오는 중입니다...</h2>
 </body>
 </html>
