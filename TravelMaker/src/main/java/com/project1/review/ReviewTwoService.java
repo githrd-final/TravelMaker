@@ -46,5 +46,13 @@ public class ReviewTwoService {
 		return rVo;
 	}
 	
+	public UserVo userDetailView(String nickName) {
+		UserVo uVo = null;
+		uVo = mapper.userDetailView(nickName);
+		System.out.println(uVo);
+	return uVo;
+}
+
+	
 }
 

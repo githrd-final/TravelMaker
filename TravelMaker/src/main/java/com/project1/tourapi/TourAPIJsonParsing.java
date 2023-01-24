@@ -117,6 +117,7 @@ public class TourAPIJsonParsing {
 					
 					for(Object item : itemArr) {
 						JSONObject itemObj = (JSONObject)item;
+						
 						vo.setContentID((String)itemObj.get("contentid"));
 						vo.setTitle((String)itemObj.get("title"));
 						vo.setOverView((String)itemObj.get("overview"));

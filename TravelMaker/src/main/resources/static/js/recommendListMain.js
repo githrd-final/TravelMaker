@@ -5,10 +5,6 @@
 /*window.onload=function(){
 	document.querySelector('.btnAccommodation').click();
 }*/
-/*$(document).ready(function(){
-    var a = $( '.btnAccommodation');
-    a.click();
-  }); */
 
 var purchaseSerial = $("#purchaseSerial").val();
 var load = $("#load");
@@ -77,6 +73,24 @@ if(width_size<=450){
     })
 }else{
     $('#btnMyTravel').on('click',function(){
+        $('#content').load('/planner/planner');
+    })}
+    
+//검색------------------------------------
+$('.search-btn').on('click', function() {
+purchaseDto += "&searchTxt="+$(".searchTxt").val();
+console.log(purchaseDto);
+	$.post('plan/itemList/searchList', purchaseDto, function(data) {
+		$('.recommandList').html(data);
+	});
+})
+
+//로드 완료 시 숙소 클릭되게---------------------
+$(document).ready(function(){
+   $('.btnAccommodation').click();
+  }); 
+
+    
         var p = "purchaseSerial="+purchaseSerial;
         $.post('/plan/itemModalToPlan/', p, function(data){
             $('#content').html(data);
