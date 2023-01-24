@@ -28,21 +28,18 @@ public class PlanService {
     public String findMapX(String city) throws Exception {
         log.info("serviceFindMapX");
         String mapX = planMapper.findMapX(city);
-        log.info("mapX : " + mapX);
         return mapX;
     }
 
     public String findMapY(String city) throws Exception {
         log.info("serviceFindMapY");
         String mapY = planMapper.findMapY(city);
-        log.info("mapY : " + mapY);
         return mapY;
     }
 
     public int checkAdded(String planbucketSerial) throws Exception {
     	log.info("serviceCheckAdded");
     	int checkAdded = planMapper.checkAdded(planbucketSerial);
-    	log.info("checkAdded : " + checkAdded);
     	return checkAdded;
     }
 
