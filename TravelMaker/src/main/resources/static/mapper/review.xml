@@ -49,7 +49,7 @@
 	
 	<select id='selectUserReview' parameterType='String' resultType='com.project1.review.ReviewVo'>
 		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, u.sysUserPhoto from review r join user u on r.nickName = u.nickName 
-		where r.nickName = #{_parameter} limit 1,3
+		where r.nickName = #{_parameter} limit 3
 	</select> 
 	
 	

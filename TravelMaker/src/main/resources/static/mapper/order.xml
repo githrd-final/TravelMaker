@@ -12,14 +12,6 @@
                                             and ticketStartTime = #{startDateTime} order by rand() limit 1;
     </select>
 
-    <select id="selectReviewAll" resultType="java.util.List" parameterType="com.project1.order.OrderDto">
-        SELECT * FROM review order by reviewStar desc limit 5;
-    </select>
-
-    <select id="selectReview" resultType="java.util.List" parameterType="com.project1.order.OrderDto">
-        SELECT * FROM review where region = #{region} order by reviewStar desc limit 5;
-    </select>
-
     <select id="checkTicketA" resultType="Integer" parameterType="com.project1.order.OrderDto">
         SELECT count(ticketSerial) FROM ticket where ticketEndPoint = #{selectedRegion}
                                                  and ticketDate = #{startDate}

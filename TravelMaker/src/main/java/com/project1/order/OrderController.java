@@ -65,8 +65,6 @@ public class OrderController {
         mv.addObject("orderDto", orderDto);
         log.info(orderDto.getEmail());
         log.info(orderDto.getPeople());
-        List<ReviewVo> listReviewVo = orderService.selectReview(orderDto);
-        mv.addObject("listReviewVo", listReviewVo);
         mv.setViewName("order/purchaseCheck");
         return mv;
     }
@@ -77,7 +75,7 @@ public class OrderController {
         ModelAndView mv = new ModelAndView();
         PurchaseDto purchaseDto;
         log.info("purchasedTicketA");
-
+        
         try {
             purchaseDto = orderService.purchaseTicket(orderDto);
         } catch (Exception e) {

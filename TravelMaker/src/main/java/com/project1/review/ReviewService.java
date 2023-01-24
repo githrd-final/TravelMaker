@@ -202,7 +202,9 @@ public class ReviewService {
 	}
 	
 	public List<ReviewVo> selectUserReview(ReviewVo rVo){
+		System.out.println("셀렉트유저리뷰에서 닉네임 : " + rVo.nickName);
 		List<ReviewVo> list = mapper.selectUserReview(rVo.nickName);
+		System.out.println("셀렉트유저리뷰에서 리스트 : " + list.toString());
 		
 		return list;
 	}

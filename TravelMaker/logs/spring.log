@@ -1,0 +1,161 @@
+00:51:11.060+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m30s538ms).
+01:55:50.515+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m39s455ms).
+03:15:44.144+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m53s629ms).
+04:20:50.635+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m6s491ms).
+05:26:58.016+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m7s381ms).
+05:38:33.134+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m35s118ms).
+06:11:56.306+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m23s171ms).
+07:19:28.719+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m32s414ms).
+07:36:04.990+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m36s271ms).
+07:39:55.985+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+07:39:57.756+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+07:39:57.756+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+07:39:59.043+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+07:39:59.043+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+07:40:01.564+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+07:40:01.564+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+07:40:01.628+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+07:40:01.628+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+07:40:01.701+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+07:40:01.701+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+07:40:01.722+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+07:40:01.722+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+07:40:01.736+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - registered
+07:40:01.736+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - registered
+07:40:01.810+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+07:40:01.810+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+07:40:04.557+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+07:40:04.557+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+08:56:24.147+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:56:24.147+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:56:24.157+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+08:56:24.157+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+08:56:49.870+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:56:49.870+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:57:08.543+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - regionSelect
+08:57:10.907+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - regionSelect
+08:57:12.778+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+08:57:19.660+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+08:57:31.374+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+08:57:39.798+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+08:58:41.058+0900 [http-nio-9282-exec-12] INFO  com.project1.member.MemberController - goSignUp
+08:58:41.058+0900 [http-nio-9282-exec-12] INFO  com.project1.member.MemberController - goSignUp
+08:58:50.311+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+08:59:02.776+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:59:02.776+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+08:59:04.098+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:59:04.098+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+08:59:05.093+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+08:59:05.093+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+08:59:05.151+0900 [http-nio-9282-exec-12] INFO  com.project1.member.MemberController - goSignUp
+08:59:05.151+0900 [http-nio-9282-exec-12] INFO  com.project1.member.MemberController - goSignUp
+08:59:05.252+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+08:59:05.252+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - naverCheck
+08:59:05.269+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+08:59:05.269+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberService - serviceNaverCheck
+08:59:05.302+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - registered
+08:59:05.302+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - registered
+08:59:05.379+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+08:59:05.379+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+08:59:14.547+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - regionSelect
+08:59:14.571+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - regionSelect
+08:59:14.572+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - way_2005@naver.com
+08:59:14.572+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - 2
+08:59:14.572+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - 2023-01-24
+08:59:14.572+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - 2023-01-25
+08:59:14.572+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - am
+08:59:14.572+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - am
+08:59:15.464+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchaseCheck
+08:59:15.480+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - way_2005@naver.com
+08:59:15.480+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 2
+08:59:32.641+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - purchasedTicketA
+08:59:32.642+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - servicePurchaseTicket
+08:59:32.642+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - way_2005@naver.com
+08:59:32.642+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - 2
+08:59:32.642+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - people : 2
+08:59:32.642+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - region : 1
+08:59:32.676+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - hihhi춘천
+08:59:32.709+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderService - selectedRegion : 춘천
+08:59:32.728+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - 1001240A0111001250A011way_2005@naver.com
+08:59:32.729+0900 [http-nio-9282-exec-12] INFO  com.project1.order.OrderController - way_2005@naver.com
+08:59:33.967+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - purchasedTicketB
+08:59:33.968+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1001240A0111001250A011way_2005@naver.com
+08:59:37.511+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceFindMapX
+08:59:37.520+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - mapX : 127.716971
+08:59:37.522+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceFindMapY
+08:59:37.525+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - mapY : 37.884658
+09:04:15.389+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m39s166ms).
+09:06:07.633+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanController - 125462
+09:06:07.658+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:07.674+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:10.784+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - insertPlanBucket
+09:06:10.786+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:10.789+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:11.173+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - insertPlanBucket
+09:06:11.173+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:11.174+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:11.525+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+09:06:11.657+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 125462
+09:06:11.658+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:11.661+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:13.168+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 1104176
+09:06:13.170+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:13.173+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:13.870+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - insertPlanBucket
+09:06:13.872+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:13.875+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:13.958+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+09:06:14.145+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanController - 1104176
+09:06:14.147+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:14.149+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:17.454+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+09:06:21.893+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - insertPlanBucket
+09:06:21.897+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:21.901+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - checkAdded : 1
+09:06:23.281+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanController - insertPlanBucket
+09:06:23.283+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:23.286+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - checkAdded : 1
+09:06:23.475+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 1104176
+09:06:23.475+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:23.478+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:27.474+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceFindMapX
+09:06:27.479+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - mapX : 127.716971
+09:06:27.484+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - serviceFindMapY
+09:06:27.488+0900 [http-nio-9282-exec-12] INFO  com.project1.plan.PlanService - mapY : 37.884658
+09:06:28.075+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapX
+09:06:28.078+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapX : 127.716971
+09:06:28.080+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceFindMapY
+09:06:28.082+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - mapY : 37.884658
+09:06:28.088+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 128778
+09:06:28.088+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:28.090+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:28.713+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - 1104176
+09:06:28.715+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:28.717+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:34.072+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapX
+09:06:34.075+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapX : 127.716971
+09:06:34.076+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceFindMapY
+09:06:34.078+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - mapY : 37.884658
+09:06:43.849+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 2913433
+09:06:43.853+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:06:43.857+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:06:47.533+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapX
+09:06:47.538+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapX : 127.716971
+09:06:47.541+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapY
+09:06:47.543+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapY : 37.884658
+09:07:01.367+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+09:07:01.367+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+09:07:15.390+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 2852445
+09:07:15.393+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+09:07:15.399+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - checkAdded : 0
+09:11:36.081+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m50s630ms).
+09:30:08.783+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m2s694ms).
+10:22:05.470+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m26s682ms).
+10:24:36.290+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m865ms).
+10:29:17.485+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s158ms).
+10:30:52.810+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s317ms).
+10:34:32.018+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m39s207ms).
+10:37:36.088+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s200ms).
+10:40:47.357+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s698ms).
+10:58:51.685+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m4s328ms).
+11:04:37.518+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m45s833ms).

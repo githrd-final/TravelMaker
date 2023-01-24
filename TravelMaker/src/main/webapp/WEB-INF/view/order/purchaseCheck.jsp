@@ -96,23 +96,23 @@
 </div>
 <div id='five'>
 	<c:choose>
-		<c:when test="${orderDto.region eq '강원도'}">
+		<c:when test="${orderDto.region eq 1}">
 			<img src="../images/강원도리스트1.png">
 			<img src="../images/강원도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '경상도'}">
+		<c:when test="${orderDto.region eq 3}">
 			<img src="../images/경상도리스트1.png">
 			<img src="../images/경상도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '전라도'}">
+		<c:when test="${orderDto.region eq 4}">
 			<img src="../images/전라도리스트1.png">
 			<img src="../images/전라도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '충청도'}">
+		<c:when test="${orderDto.region eq 5}">
 			<img src="../images/충청도리스트1.png">
 			<img src="../images/충청도리스트2.png">
 		</c:when>
-		<c:when test="${orderDto.region eq '전국'}">
+		<c:when test="${orderDto.region eq 6}">
 			<img src="../images/경기도리스트.png">
 			<img src="../images/강원도리스트1.png">
 			<img src="../images/강원도리스트2.png">

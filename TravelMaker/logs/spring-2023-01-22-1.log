@@ -1,0 +1,698 @@
+00:17:20.344+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m2s270ms).
+01:26:53.694+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m33s350ms).
+02:48:07.918+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m14s225ms).
+03:52:22.905+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m14s987ms).
+04:02:26.045+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m3s139ms).
+04:34:35.245+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m9s200ms).
+05:40:29.393+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m54s148ms).
+06:35:46.380+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m16s988ms).
+07:10:23.978+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m37s598ms).
+08:01:01.381+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m37s403ms).
+08:10:10.503+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m39s111ms).
+08:20:46.403+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m35s902ms).
+09:04:06.289+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m19s886ms).
+09:28:21.697+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m15s407ms).
+09:45:06.346+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m14s647ms).
+10:00:40.647+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m34s301ms).
+10:34:13.674+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m3s15ms).
+11:43:40.549+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m26s874ms).
+12:01:10.003+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m59s442ms).
+12:15:15.920+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m5s883ms).
+12:34:42.839+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+12:34:42.839+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+12:34:44.520+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+12:34:44.520+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+12:37:26.679+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:37:26.679+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:37:28.612+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+12:37:28.612+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+12:37:30.661+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+12:37:30.661+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+12:37:31.768+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - callCallBack
+12:37:31.768+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - callCallBack
+12:37:31.843+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+12:37:31.843+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+12:37:31.904+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - naverCheck
+12:37:31.904+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - naverCheck
+12:37:31.909+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberService - serviceNaverCheck
+12:37:31.909+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberService - serviceNaverCheck
+12:37:31.913+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - registered
+12:37:31.913+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - registered
+12:37:31.982+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:37:31.982+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:37:34.322+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+12:37:34.322+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+12:37:39.768+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+12:37:39.768+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+12:37:55.757+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+12:37:55.767+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - regionSelect
+12:37:55.767+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - way_2005@naver.com
+12:37:55.767+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+12:37:55.767+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 2023-02-10
+12:37:55.768+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 2023-02-11
+12:37:55.768+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - am
+12:37:55.768+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - pm
+12:37:58.010+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchaseCheck
+12:37:58.017+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - way_2005@naver.com
+12:37:58.017+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+12:37:58.018+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - selectReview
+12:40:38.236+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+12:40:38.236+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+12:40:54.823+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+12:40:54.823+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+12:42:44.096+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+12:42:44.096+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+12:42:45.221+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:42:45.221+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+12:42:48.637+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+12:42:48.637+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+13:05:40.510+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+13:05:40.510+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+13:05:52.178+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+13:05:52.200+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+13:05:52.200+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - way_2005@naver.com
+13:05:52.200+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 1
+13:05:52.200+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-27
+13:05:52.201+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-29
+13:05:52.201+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+13:05:52.201+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+13:05:53.636+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchaseCheck
+13:05:53.690+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - way_2005@naver.com
+13:05:53.690+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 1
+13:05:53.690+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - selectReview
+13:06:01.451+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+13:06:01.457+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - way_2005@naver.com
+13:06:01.457+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+13:06:01.458+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderService - selectReview
+13:08:09.308+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+13:08:09.308+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+13:08:49.619+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+13:08:49.619+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+13:29:27.338+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m21s459ms).
+14:58:13.074+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m14s576ms).
+15:15:43.900+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m798ms).
+15:33:56.921+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m43s12ms).
+18:49:45.248+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m45s686ms).
+18:53:32.949+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m47s679ms).
+18:59:14.083+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s86ms).
+19:03:28.527+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 63477 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+19:03:28.530+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+19:03:28.547+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:03:28.547+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:03:28.782+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+19:03:28.788+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+19:03:29.008+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+19:03:29.132+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 585 ms
+19:03:29.382+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+19:03:29.444+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:03:29.605+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:03:29.670+0900 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+19:03:29.680+0900 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9282 is already in use
+19:03:29.682+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:03:29.684+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:03:29.692+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:03:29.700+0900 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9282 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9282 or configure this application to listen on another port.
+
+19:03:47.739+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+19:03:53.622+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - regionSelect
+19:03:54.692+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - regionSelect
+19:04:05.103+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:04:05.103+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:04:06.391+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+19:04:06.391+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+19:04:07.918+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+19:04:07.918+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - callCallBack
+19:04:07.985+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+19:04:07.985+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+19:04:08.052+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - naverCheck
+19:04:08.052+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - naverCheck
+19:04:08.057+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberService - serviceNaverCheck
+19:04:08.057+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberService - serviceNaverCheck
+19:04:08.073+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - registered
+19:04:08.073+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - registered
+19:04:08.168+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:04:08.168+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:04:18.330+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+19:04:18.345+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+19:04:18.346+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:04:18.346+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 1
+19:04:18.346+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-27
+19:04:18.346+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-28
+19:04:18.346+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - am
+19:04:18.346+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - am
+19:04:20.938+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - purchaseCheck
+19:04:20.945+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:04:20.945+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 1
+19:04:20.945+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - selectReview
+19:04:52.367+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchaseCheck
+19:04:52.379+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:04:52.379+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+19:04:52.380+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - selectReview
+19:07:15.831+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:07:15.831+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:07:17.335+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:07:17.335+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:07:28.203+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - regionSelect
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 1
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 2023-01-26
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 2023-01-27
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - am
+19:07:28.213+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - am
+19:07:29.809+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchaseCheck
+19:07:29.818+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:07:29.818+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+19:07:29.819+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - selectReview
+19:07:32.473+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:07:32.473+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:08:01.000+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - regionSelect
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - regionSelect
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 1
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-27
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 2023-01-28
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+19:08:01.013+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - am
+19:08:02.732+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+19:08:02.744+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:08:02.745+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 1
+19:08:02.745+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderService - selectReview
+19:08:09.933+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - purchaseCheck
+19:08:09.941+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:08:09.941+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderController - 1
+19:08:09.942+0900 [http-nio-9282-exec-10] INFO  com.project1.order.OrderService - selectReview
+19:08:42.071+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - purchasedTicketA
+19:08:42.074+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - servicePurchaseTicket
+19:08:42.074+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - way_2005@naver.com
+19:08:42.074+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - 1
+19:08:42.074+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - people : 1
+19:08:42.074+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - region : 4
+19:08:42.127+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - hihhi정읍
+19:08:42.157+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - selectedRegion : 정읍
+19:08:42.196+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 4701270A0104701280A011way_2005@naver.com
+19:08:42.196+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:08:44.092+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - purchasedTicketB
+19:08:44.093+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 4701270A0104701280A011way_2005@naver.com
+19:08:47.556+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapX
+19:08:47.560+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapX : 126.842765
+19:08:47.560+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceFindMapY
+19:08:47.561+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - mapY : 35.5753623
+19:08:54.838+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapX
+19:08:54.842+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapX : 126.842765
+19:08:54.843+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapY
+19:08:54.845+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapY : 35.5753623
+19:08:59.522+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 2923326
+19:08:59.524+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:08:59.527+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:09:04.795+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:09:04.799+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:09:04.803+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:09:04.918+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+19:09:05.032+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 2923326
+19:09:05.033+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:09:05.035+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:09:35.189+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:09:35.193+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:09:35.209+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - checkAdded : 1
+19:09:35.391+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 2923326
+19:09:35.392+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:09:35.394+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:09:40.696+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:09:40.696+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:09:42.531+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:09:42.531+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:11:43.818+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:11:43.818+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:11:56.974+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:11:56.974+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:12:21.367+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:12:21.367+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:12:25.010+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:12:25.010+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:13:21.880+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:13:21.880+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:13:24.336+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:13:24.336+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:13:33.474+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+19:13:33.474+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+19:13:36.248+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+19:13:36.248+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+19:13:46.821+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+19:13:46.821+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+19:13:47.771+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:13:47.771+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:13:49.329+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+19:13:49.329+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+19:13:55.094+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+19:13:55.094+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+19:14:16.118+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:14:16.118+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:14:29.087+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - regionSelect
+19:14:29.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+19:14:29.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:14:29.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 3
+19:14:29.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-28
+19:14:29.098+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-29
+19:14:29.099+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - pm
+19:14:29.099+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - pm
+19:14:30.413+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - purchaseCheck
+19:14:30.427+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:14:30.427+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - 3
+19:14:30.428+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderService - selectReview
+19:15:16.086+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - purchaseCheck
+19:15:16.100+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:15:16.100+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 3
+19:15:16.100+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderService - selectReview
+19:15:46.818+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - purchasedTicketA
+19:15:46.819+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - servicePurchaseTicket
+19:15:46.819+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - way_2005@naver.com
+19:15:46.819+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - 3
+19:15:46.819+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - people : 3
+19:15:46.819+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - region : 4
+19:15:46.856+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - hihhi군산
+19:15:46.887+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderService - selectedRegion : 군산
+19:15:46.910+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - 4001281A0104001291A011way_2005@naver.com
+19:15:46.910+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - way_2005@naver.com
+19:15:48.234+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - purchasedTicketB
+19:15:48.234+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 4001281A0104001291A011way_2005@naver.com
+19:16:04.086+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceFindMapX
+19:16:04.088+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - mapX : 126.759818
+19:16:04.089+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceFindMapY
+19:16:04.089+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - mapY : 35.9983111
+19:16:17.598+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 136954
+19:16:17.604+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:17.611+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:19.303+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:16:19.305+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:19.307+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:19.409+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+19:16:19.510+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanController - 136954
+19:16:19.512+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:19.514+0900 [http-nio-9282-exec-2] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:22.246+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanController - 2570676
+19:16:22.248+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:22.250+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:23.669+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:16:23.671+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:23.673+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:23.781+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+19:16:23.888+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanController - 2570676
+19:16:23.890+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:23.892+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:26.666+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanController - 136954
+19:16:26.668+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:26.670+0900 [http-nio-9282-exec-9] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:29.420+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:16:29.421+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:29.422+0900 [http-nio-9282-exec-6] INFO  com.project1.plan.PlanService - checkAdded : 1
+19:16:31.724+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - 136954
+19:16:31.726+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:31.728+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:38.813+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapX
+19:16:38.817+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapX : 126.759818
+19:16:38.818+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - serviceFindMapY
+19:16:38.819+0900 [http-nio-9282-exec-8] INFO  com.project1.plan.PlanService - mapY : 35.9983111
+19:16:39.589+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapX
+19:16:39.591+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapX : 126.759818
+19:16:39.592+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - serviceFindMapY
+19:16:39.593+0900 [http-nio-9282-exec-3] INFO  com.project1.plan.PlanService - mapY : 35.9983111
+19:16:42.492+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanController - 2647939
+19:16:42.494+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:42.496+0900 [http-nio-9282-exec-7] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:43.628+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:16:43.629+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:43.633+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:43.709+0900 [http-nio-9282-exec-5] INFO  com.project1.plan.PlanService - serviceInsertPlanBucket
+19:16:43.797+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanController - 2647939
+19:16:43.798+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:43.801+0900 [http-nio-9282-exec-4] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:51.233+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanController - insertPlanBucket
+19:16:51.239+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:51.240+0900 [http-nio-9282-exec-10] INFO  com.project1.plan.PlanService - checkAdded : 1
+19:16:51.431+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanController - 2647939
+19:16:51.431+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - serviceCheckAdded
+19:16:51.433+0900 [http-nio-9282-exec-1] INFO  com.project1.plan.PlanService - checkAdded : 0
+19:16:54.139+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:16:54.139+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:20:33.993+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+19:20:33.993+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+19:22:01.061+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:22:01.061+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:23:11.799+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:23:11.799+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:09:03.043+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m39s902ms).
+20:14:57.178+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+20:14:57.178+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+20:15:11.518+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:15:11.518+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:15:12.874+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:15:12.874+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:15:14.383+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - callCallBack
+20:15:14.383+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - callCallBack
+20:15:14.445+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:15:14.445+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:15:14.511+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - naverCheck
+20:15:14.511+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - naverCheck
+20:15:14.514+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberService - serviceNaverCheck
+20:15:14.514+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberService - serviceNaverCheck
+20:15:14.520+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - registered
+20:15:14.520+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - registered
+20:15:14.620+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:15:14.620+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:15:16.842+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:15:16.842+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:15:19.378+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:15:19.378+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:17:10.061+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:17:10.061+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:17:21.858+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 1
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 2023-01-27
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 2023-01-28
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - am
+20:17:21.862+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - am
+20:17:22.748+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - purchaseCheck
+20:17:22.756+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:17:22.756+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 1
+20:17:22.757+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderService - selectReview
+20:17:37.044+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:17:37.044+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:17:56.766+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:17:56.766+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:22:25.891+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:22:25.891+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:22:28.599+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:22:28.599+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:22:29.810+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:22:29.810+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:24:06.386+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:24:06.517+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:24:06.542+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:24:06.875+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:24:06.875+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:24:07.091+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:24:07.093+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+20:24:07.212+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:24:07.340+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 463 ms
+20:24:07.850+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:24:07.954+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+20:24:07.994+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+20:24:08.036+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:24:08.055+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:24:08.059+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.392 seconds (JVM running for 23531.959)
+20:24:08.061+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:24:24.851+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:24:24.886+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+20:24:24.900+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+20:24:25.002+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:24:25.002+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:24:25.084+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:24:25.086+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+20:24:25.131+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:24:25.183+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 180 ms
+20:24:25.273+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:24:25.293+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+20:24:25.306+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+20:24:25.313+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:24:25.321+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:24:25.322+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.339 seconds (JVM running for 23549.223)
+20:24:25.323+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:24:27.798+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:24:27.882+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+20:24:28.042+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+20:24:28.218+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:24:28.219+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:24:28.468+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:24:28.493+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+20:24:28.589+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:24:28.677+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 456 ms
+20:24:28.834+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:24:28.927+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+20:24:28.966+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+20:24:28.982+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:24:29.001+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:24:29.006+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.861 seconds (JVM running for 23552.907)
+20:24:29.008+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:24:33.833+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:24:33.837+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+20:29:34.135+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:29:34.268+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+20:29:34.287+0900 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+20:29:34.506+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:29:34.507+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:29:34.680+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:29:34.684+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+20:29:34.806+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:29:34.959+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 451 ms
+20:29:35.330+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:29:35.393+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+20:29:35.435+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+20:29:35.446+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:29:35.457+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:29:35.459+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.977 seconds (JVM running for 23859.365)
+20:29:35.460+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:29:49.259+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:29:49.323+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+20:29:49.385+0900 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+20:29:49.635+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:29:49.636+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:29:49.765+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:29:49.771+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+20:29:49.960+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:29:50.089+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 450 ms
+20:29:50.494+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:29:50.523+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+20:29:50.544+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+20:29:50.559+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:29:50.579+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:29:50.585+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.999 seconds (JVM running for 23874.491)
+20:29:50.587+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:29:51.907+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:29:51.929+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+20:30:26.875+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:30:26.939+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+20:30:26.944+0900 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+20:30:27.127+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:30:27.127+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:30:27.324+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:30:27.328+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+20:30:27.387+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:30:27.484+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 355 ms
+20:30:27.688+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:30:27.744+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+20:30:27.781+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+20:30:27.804+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:30:27.820+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:30:27.823+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.744 seconds (JVM running for 23911.73)
+20:30:27.825+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:30:50.740+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:30:50.816+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+20:30:50.852+0900 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+20:30:51.034+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 42664 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:30:51.034+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:30:51.582+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:30:51.680+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 0 JDBC repository interfaces.
+20:30:51.926+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:30:52.026+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 990 ms
+20:30:52.246+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:30:52.324+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+20:30:52.359+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+20:30:52.380+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:30:52.406+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:30:52.413+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.441 seconds (JVM running for 23936.32)
+20:30:52.419+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:30:52.871+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:30:52.875+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+20:32:55.609+0900 [RMI TCP Connection(445)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+20:32:55.639+0900 [RMI TCP Connection(445)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+20:32:55.646+0900 [RMI TCP Connection(445)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+20:32:57.308+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 65910 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:32:57.311+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:32:57.327+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:32:57.327+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:32:57.603+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:32:57.609+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+20:32:57.888+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:32:58.013+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 686 ms
+20:32:58.284+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:32:58.340+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:32:58.495+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:32:58.560+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:32:58.579+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:32:58.584+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.407 seconds (JVM running for 2.119)
+20:32:59.138+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:32:59.139+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+20:44:10.561+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:44:10.561+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:44:12.165+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:44:12.165+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:47:43.718+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:47:43.718+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:47:58.163+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - regionSelect
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - regionSelect
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-27
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 2023-01-28
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+20:47:58.226+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - am
+20:48:00.270+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - purchaseCheck
+20:48:00.278+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:48:00.278+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 1
+20:48:00.279+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderService - selectReview
+20:48:20.152+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:48:20.152+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:48:30.904+0900 [http-nio-9282-exec-5] INFO  com.project1.order.OrderController - regionSelect
+20:48:30.932+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - regionSelect
+20:48:30.933+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:48:30.933+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 1
+20:48:30.933+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 2023-01-27
+20:48:30.933+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - 2023-01-28
+20:48:30.933+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - am
+20:48:30.933+0900 [http-nio-9282-exec-3] INFO  com.project1.order.OrderController - am
+20:48:32.531+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - purchaseCheck
+20:48:32.540+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:48:32.540+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+20:48:32.540+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderService - selectReview
+20:50:26.977+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:50:26.977+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:50:31.226+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:50:31.226+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:50:40.899+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - regionSelect
+20:50:40.930+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - regionSelect
+20:50:40.930+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:50:40.930+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 1
+20:50:40.930+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 2023-01-27
+20:50:40.930+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - 2023-01-28
+20:50:40.931+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - am
+20:50:40.931+0900 [http-nio-9282-exec-2] INFO  com.project1.order.OrderController - am
+20:50:42.545+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - purchaseCheck
+20:50:42.551+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:50:42.551+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderController - 1
+20:50:42.551+0900 [http-nio-9282-exec-4] INFO  com.project1.order.OrderService - selectReview
+20:52:29.690+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:52:29.794+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:52:29.858+0900 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:52:30.155+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 65910 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:52:30.156+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:52:30.413+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:52:30.418+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+20:52:30.520+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:52:30.651+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 493 ms
+20:52:31.119+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:52:31.148+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+20:52:31.206+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+20:52:31.219+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:52:31.236+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:52:31.241+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.294 seconds (JVM running for 1174.711)
+20:52:31.243+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:56:19.412+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:56:19.511+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+20:56:19.535+0900 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+20:56:19.850+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 65910 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:56:19.850+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:56:19.969+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:56:19.972+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+20:56:20.024+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:56:20.087+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 236 ms
+20:56:20.299+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:56:20.340+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+20:56:20.424+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+20:56:20.458+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:56:20.468+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:56:20.473+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.851 seconds (JVM running for 1403.939)
+20:56:20.474+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:56:40.344+0900 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:56:40.417+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+20:56:40.430+0900 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+20:56:40.595+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 65910 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:56:40.595+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:56:40.727+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:56:40.732+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+20:56:40.811+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:56:40.921+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 323 ms
+20:56:41.203+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:56:41.229+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+20:56:41.250+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+20:56:41.269+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:56:41.282+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:56:41.284+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 0.723 seconds (JVM running for 1424.751)
+20:56:41.285+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:56:57.865+0900 [RMI TCP Connection(38)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+20:56:57.879+0900 [RMI TCP Connection(38)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+20:56:57.891+0900 [RMI TCP Connection(38)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+20:56:59.247+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Starting TravelMakerApplication using Java 11.0.16.1 on hwangjiwon-ui-MacBookAir.local with PID 67340 (/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/target/classes started by hwangjiwon in /Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker)
+20:56:59.250+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - No active profile set, falling back to 1 default profile: "default"
+20:56:59.266+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:56:59.266+0900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:56:59.500+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+20:56:59.510+0900 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+20:56:59.765+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9282 (http)
+20:56:59.926+0900 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 659 ms
+20:57:00.197+0900 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+20:57:00.256+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:57:00.407+0900 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:57:00.470+0900 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:57:00.488+0900 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9282 (http) with context path ''
+20:57:00.493+0900 [restartedMain] INFO  com.project1.TravelMakerApplication - Started TravelMakerApplication in 1.381 seconds (JVM running for 1.854)
+20:57:01.484+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:57:01.485+0900 [http-nio-9282-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+20:57:01.829+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:57:01.829+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:57:12.767+0900 [http-nio-9282-exec-8] INFO  com.project1.order.OrderController - regionSelect
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - regionSelect
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 1
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-27
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - 2023-01-28
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - am
+20:57:12.850+0900 [http-nio-9282-exec-9] INFO  com.project1.order.OrderController - am
+20:57:13.866+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - purchaseCheck
+20:57:13.951+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:57:13.952+0900 [http-nio-9282-exec-7] INFO  com.project1.order.OrderController - 1
+20:57:37.082+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - purchasedTicketA
+20:57:37.088+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - servicePurchaseTicket
+20:57:37.088+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - way_2005@naver.com
+20:57:37.088+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - 1
+20:57:37.088+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - people : 1
+20:57:37.090+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - region : 7
+20:57:37.149+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - jkjkjk서울
+20:57:37.180+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderService - selectedRegion : 서울
+20:57:37.196+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - 1001270A0111001280A010way_2005@naver.com
+20:57:37.196+0900 [http-nio-9282-exec-1] INFO  com.project1.order.OrderController - way_2005@naver.com
+20:57:38.468+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - purchasedTicketB
+20:57:38.469+0900 [http-nio-9282-exec-6] INFO  com.project1.order.OrderController - 1001270A0111001280A010way_2005@naver.com
+20:57:51.594+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+20:57:51.594+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+20:57:53.465+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:57:53.465+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:58:05.656+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:58:05.656+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+21:01:38.681+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s129ms).
+21:09:28.299+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m19s605ms).
+21:15:07.978+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m39s679ms).
+21:29:45.913+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m37s935ms).
+22:15:39.081+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m23s160ms).
+22:16:59.998+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s904ms).
+22:18:39.927+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m39s929ms).
+22:21:43.823+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s889ms).
+22:34:27.252+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m43s430ms).
+23:07:36.044+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m8s791ms).
+23:39:23.753+0900 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m17s635ms).

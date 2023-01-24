@@ -154,8 +154,10 @@ public class ReviewController {
 		pVo = service.getpVo();
 		List<ReviewPlanVo> rpList = service.getRpList();
 		int datePlan = Integer.parseInt(service.getDatePlan());
+		UserVo uVo = service.userDetailView(rVo.nickName);
 		
 		System.out.println(pVo.chkUserLike);
+		mv.addObject("uVo",uVo);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
 		mv.addObject("rpList", rpList);
