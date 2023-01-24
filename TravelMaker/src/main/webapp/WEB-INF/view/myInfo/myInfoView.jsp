@@ -21,7 +21,7 @@
         </div>
         <div class='profileImage'>
             <img id='miv_img_box' src='/upload/${uVo.sysUserPhoto}'>
-            <input type='file' class='btnProfileSelect' name="attFile" value='파일 선택' onchange="att(this)" style="display : none;">
+            <input type='file' class='btnProfileSelect' name="attFile" value='파일 선택' onchange="att(this)" accept="image/*" style="display : none;">
             <br/>
             <input type='button' class='btnSubmit' value='수정'>
         </div>

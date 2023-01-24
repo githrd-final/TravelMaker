@@ -104,13 +104,25 @@ public class PlanController {
 		return mv;
 	}
 
-	@RequestMapping("/plan/itemModaltoMyPlan")
-	public ModelAndView itemModaltoMyPlan(PurchaseDto purchaseDto) throws Exception {
+	@RequestMapping("/plan/itemModalToMPlan")
+	public ModelAndView itemModalToMPlan(String purchaseSerial) throws Exception {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("purchaseDto", purchaseDto);
-		mv.setViewName("plan/itemdetailModal");
+		mv.addObject("purchaseSerial", purchaseSerial);
+		log.info(purchaseSerial);
+		mv.setViewName("mplan/mPlanner");
 		return mv;
 	}
+
+	@RequestMapping("/plan/itemModalToPlan")
+	public ModelAndView itemModalToPlan(String purchaseSerial) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		System.out.println(purchaseSerial);
+		mv.addObject("purchaseSerial", purchaseSerial);
+		log.info(purchaseSerial);
+		mv.setViewName("plan/planner");
+		return mv;
+	}
+
 
 	@RequestMapping("/plan/insertPlanBucket/{contentId}")
 	public String insertPlanBucket(@PathVariable String contentId, PurchaseDto purchaseDto) throws Exception {
@@ -129,6 +141,7 @@ public class PlanController {
 		map.put("result", result2);
 		if (checkAdded == 0) {
 			planService.insertPlanBucket(map);
+			msg = "플랜 버켓에 추가되었습니다.";
 		}
 		else{
 			msg = "이미 추가된 항목입니다.";

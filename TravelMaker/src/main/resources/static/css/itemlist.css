@@ -160,7 +160,9 @@ label {
     border-image: initial;
     padding: 8px;
     border-radius: 10px;
+
     margin-top: 4vh;
+
 }
 .item-detailBtnGroup-modal input:hover{
 	cursor:pointer;

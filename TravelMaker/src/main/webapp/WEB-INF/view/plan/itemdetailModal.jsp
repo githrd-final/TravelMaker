@@ -25,7 +25,7 @@
 
         <c:set var="item" value="${result}"/>
         <div class="modal-window">
-            <form class="item-detail-modal" onclick="insertIntoBucket(this)">
+            <form class="item-detail-modal" >
                 <input type="text" class="item-contentId" name=abc value="${item.contentID}" style="display: none"></input>
                 <div class="item-name">${item.title}</div>
                 <div class="item-image" style="background-image: url('${item.firstImage}')"></div>
@@ -33,11 +33,12 @@
                 <div class="item-tel">${item.tel}</div>
                 <div class="item-homepage">${item.homepage}</div>
                 <div class="item-overview">${item.overView}</div>
-                <input type="button" class= "itemModaltoMyPlan" value="내 일정 보기" />
-                <input type="button" id= "insertPlanBucket" value="일정에 추가" />
+                <br/>
+                <div class="item-detailBtnGroup-modal">
+                    <input type="button" class = "itemModalToMyPlan" value="내 일정 보기" />
+                    <input type="button" id = "insertPlanBucket" value="일정에 추가" onclick="insertIntoBucket(this.form)"/>
+                </div>
             </form>
-            <div class="item-detailBtnGroup-modal">
-            </div>
         </div>
 </main>
 </body>

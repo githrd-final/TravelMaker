@@ -3,21 +3,14 @@
 <mapper namespace="com.project1.mybatis.OrderMapper">
 
     <select id="selectRegionA" resultType="String" parameterType="com.project1.order.OrderDto">
-        SELECT ticketEndPoint FROM ticket where ticketDate = #{startDate}
+        SELECT ticketEndPoint FROM ticket where (region = 1 or region = 2 or region = 3 or region = 4 or region = 5)
+                                            and ticketDate = #{startDate}
                                             and ticketStartTime = #{startDateTime} order by rand() limit 1;
     </select>
 
     <select id="selectRegionB" resultType="String" parameterType="com.project1.order.OrderDto">
         SELECT ticketEndPoint FROM ticket where region = #{region} and ticketDate = #{startDate}
                                             and ticketStartTime = #{startDateTime} order by rand() limit 1;
-    </select>
-
-    <select id="selectReviewAll" resultType="java.util.List" parameterType="com.project1.order.OrderDto">
-        SELECT * FROM review order by reviewStar desc limit 5;
-    </select>
-
-    <select id="selectReview" resultType="java.util.List" parameterType="com.project1.order.OrderDto">
-        SELECT * FROM review where region = #{region} order by reviewStar desc limit 5;
     </select>
 
     <select id="checkTicketA" resultType="Integer" parameterType="com.project1.order.OrderDto">
@@ -50,12 +43,12 @@
     </insert>
 
     <update id="updateTicketStatusA" parameterType="String">
-        update ticket set ticketStatus = 1
+        update ticket set ticketStatus = 2
         where ticketSerial = #{ticketSerialListA}
     </update>
 
     <update id="updateTicketStatusB" parameterType="String">
-        update ticket set ticketStatus = 1
+        update ticket set ticketStatus = 2
         where ticketSerial = #{ticketSerialListB}
     </update>
 
@@ -64,10 +57,11 @@
         values (#{purchasedTicketSerial}, #{purchaseSerial}, #{ticketSerialA}, #{ticketSerialB})
     </insert>
 
-	<select id="purchaseCheckReview" parameterType="String" resultType="com.project1.review.ReviewVo">
+	<select id="purchaseCheckReview" parameterType="Integer" resultType="com.project1.review.ReviewVo">
 		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review where region=#{_parameter} order by reviewStar DESC limit 5;
 	</select>
 	<select id="purchaseCheckReviewAll" resultType="com.project1.review.ReviewVo">
 		select reviewSerial,reviewTitle,nickName,reviewStar,purchaseSerial,postingDate from review order by reviewStar DESC limit 5;
 	</select>
+
 </mapper>

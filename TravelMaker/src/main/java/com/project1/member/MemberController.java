@@ -32,7 +32,7 @@ import java.util.UUID;
 @Slf4j
 public class MemberController {
 
-    static String path ="/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/src/main/resources/static/upload//";
+    static String path ="/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/src/main/resources/static/upload/";
 
     @Resource(name = "memberService")
     MemberService memberService;
@@ -83,6 +83,21 @@ public class MemberController {
         session.setAttribute("email", email);
            
         
+        return result;
+    }
+
+    @RequestMapping(value = "/member/kakaoCheck", method = RequestMethod.POST)
+    public @ResponseBody String kakaoCheck(@RequestParam("kakao_email") String email, HttpSession session) {
+
+        log.info("kakaoCheck");
+        MemberDto memberDto = new MemberDto();
+        memberDto.setEmail(email);
+
+        String result = memberService.naverCheck(memberDto);
+
+        if(result == "registered") {
+            session.setAttribute("email", email);
+        }
         return result;
     }
 
@@ -144,10 +159,6 @@ public class MemberController {
                     file.delete();
                 }
             }
-        }
-        else{
-        memberDto.setOriUserPhoto(null);
-        memberDto.setSysUserPhoto(null);
         }
         log.info("nickname: " + memberDto.getNickname());
         memberService.memberUpdate(memberDto);

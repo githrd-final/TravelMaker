@@ -57,16 +57,11 @@ public class OrderController {
     @RequestMapping("/order/purchaseCheck")
     public ModelAndView purchaseCheck(HttpServletRequest request, OrderDto orderDto, ModelAndView mv) throws Exception {
         log.info("purchaseCheck");
-        System.out.println("hihihihi"+ Integer.parseInt(request.getParameter("region")));
         orderDto.setRegion(Integer.parseInt(request.getParameter("region")));
         request.setAttribute("orderDto", orderDto);
-        List<ReviewVo> list = orderService.purchaseCheckReview(request.getParameter("region"));
+        List<ReviewVo> list = orderService.purchaseCheckReview(Integer.parseInt(request.getParameter("region")));
         mv.addObject("list",list);
         mv.addObject("orderDto", orderDto);
-        log.info(orderDto.getEmail());
-        log.info(orderDto.getPeople());
-        List<ReviewVo> listReviewVo = orderService.selectReview(orderDto);
-        mv.addObject("listReviewVo", listReviewVo);
         mv.setViewName("order/purchaseCheck");
         return mv;
     }
@@ -83,8 +78,6 @@ public class OrderController {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        log.info(purchaseDto.getPurchaseSerial());
-        log.info(orderDto.getEmail());
         request.setAttribute("orderDto", orderDto);
         request.setAttribute("purchaseDto", purchaseDto);
         mv.setViewName("order/purchaseDtoPage");
