@@ -17,7 +17,7 @@ if(width_size<=450){
 }else{
     $('.itemModalToMyPlan').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan', purchaseSerial, function(data){
+        $.post('/plan/itemModalToPlan', p, function(data){
             $('#content').html(data);
         });
 })}
