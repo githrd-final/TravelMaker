@@ -5,7 +5,7 @@
 		select count(reviewSerial) totSize from review where (period like '%${period}%' and region like '%${region}%' and city like '%${city}%') and (reviewTitle like '%${findStr}%' or nickName like '%${findStr}%')
 	</select>
 	
-	<select id='select' parameterType='com.project1.review.ReviewPageVo' resultType='com.project1.review.ReviewVo'>
+	<select id='select' parameterType='com.project1.review.ReviewPageVo' resultType='com.project1.review.ReviewVo2'>
 		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, u.sysUserPhoto from review r join user u on r.nickName = u.nickName 
 		where (r.period like '%${period}%' and r.region like '%${region}%' and r.city like '%${city}%') and (r.reviewTitle like '%${findStr}%' or r.nickName like '%${findStr}%') 
 			
@@ -40,16 +40,16 @@
 	<select id='selectRegion' parameterType='String' resultType="String">
 		select city from regionCity where region like '%${_parameter}%' order by city
 	</select>
-	<select id='view' parameterType="Integer" resultType="com.project1.review.ReviewVo">
+	<select id='view' parameterType="Integer" resultType="com.project1.review.ReviewVo2">
 		select reviewSerial, city, nickName, postingDate, view, thumbsUp, reviewTitle, text, purchaseSerial from review where reviewSerial = #{_parameter}
 	</select>
 	<select id='chkUserLike' resultType='int'>
 		select count(*) from reviewLike where userEmail = #{userEmail} and reviewSerial = #{reviewSerial}
 	</select>
 	
-	<select id='selectUserReview' parameterType='String' resultType='com.project1.review.ReviewVo'>
+	<select id='selectUserReview' parameterType='String' resultType='com.project1.review.ReviewVo2'>
 		select r.reviewSerial, r.reviewTitle, r.nickName, r.postingDate, r.city, r.purchaseSerial, r.view, r.thumbsUp, u.sysUserPhoto from review r join user u on r.nickName = u.nickName 
-		where r.nickName = #{_parameter} limit 1,3
+		where r.nickName = #{_parameter} limit 3
 	</select> 
 	
 	
@@ -57,7 +57,7 @@
 		update review set view = view + 1 where reviewSerial = #{_parameter}
 	</update>
 	
-	<select id='reviewModifyView' parameterType="Integer" resultType="com.project1.review.ReviewVo">
+	<select id='reviewModifyView' parameterType="Integer" resultType="com.project1.review.ReviewVo2">
 		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, text, postingDate, period, purchaseSerial, view, thumbsUp 
 		from review where reviewSerial='${_parameter}'
 	</select>
@@ -77,15 +77,15 @@
     	select email, nickName, userComment, oriUserPhoto, sysUserPhoto from user where nickName = #{_parameter}
     </select>
     
-    <update id="modify" parameterType="com.project1.review.ReviewVo">
+    <update id="modify" parameterType="com.project1.review.ReviewVo2">
     	update review set reviewTitle=#{reviewTitle}, reviewStar=${reviewStar}, text=#{text}
     	where reviewSerial=${reviewSerial}
     </update>
 	
-	<delete id="delete" parameterType="com.project1.review.ReviewVo">
+	<delete id="delete" parameterType="com.project1.review.ReviewVo2">
 		delete from review where reviewSerial=#{reviewSerial}
 	</delete>
-	<delete id='myReviewLikeDelete' parameterType="com.project1.review.ReviewVo">
+	<delete id='myReviewLikeDelete' parameterType="com.project1.review.ReviewVo2">
 		delete from reviewlike where reviewSerial=#{reviewSerial}
 	</delete>
 	<update id="myReviewUpdate" parameterType="String">

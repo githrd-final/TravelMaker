@@ -25,7 +25,7 @@
 			<span class='reviewInsertSpanDate'>작성날짜</span>
 			<input type='text' class='reviewInsertDate' name='postingDate' value='<%=now %>' readonly="readonly"/>
 			<span class='reviewInsertSpanRegion'>지 역</span>
-			<input type='text' class='reviewInsertRegion' name='region' value='${vo.region}' readonly="readonly"/>
+			<input type='hidden' class='reviewInsertRegion' name='region' value='${vo.region}' readonly="readonly"/>
 			<input type='text' class='reviewInsertRegion' name='city' value='${vo.city}' readonly="readonly"/>
 			<div id='starForm'>
 				<span>평가하기</span>
@@ -39,7 +39,7 @@
 				</p>
 			</div>
 			<span class='reviewInsertSpanSubject'>제  목</span>
-			<input type='text' size='90' class='reviewInsertSubject' name='reviewTitle' value='진부여행 후기입니다~'>
+			<input type='text' size='90' class='reviewInsertSubject' name='reviewTitle' >
 				<div id='ri_content_plan'>
 				<c:set var="chk" value=""/><div id='blank_div'>
 				<c:forEach var='i' items="${list }">
@@ -51,7 +51,7 @@
 						<span>-</span></span><span id='ri_content_plan_locationName'>${i.locationName}</span>
 				</c:forEach>
 				</div>
-			<textarea id='summernote' name='text'>hello</textarea>
+			<textarea id='summernote' name='text'></textarea>
 
 			<!-- <a class='reviewInsertA' href='myTourSelect.jsp'>목록으로</a> -->
 		</form>
