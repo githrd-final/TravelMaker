@@ -32,7 +32,7 @@ import java.util.UUID;
 @Slf4j
 public class MemberController {
 
-    static String path ="/Users/jerry/Desktop/workplace/IntelliJ/TravelMaker/TravelMaker/src/main/resources/static/upload/";
+    static String path ="/Users/hwangjiwon/eclipse-workspace/TravelMaker/TravelMaker/src/main/resources/static/upload/";
 
     @Resource(name = "memberService")
     MemberService memberService;
@@ -95,9 +95,9 @@ public class MemberController {
 
         String result = memberService.naverCheck(memberDto);
 
-        if(result == "registered") {
+        //if(result == "registered") {
             session.setAttribute("email", email);
-        }
+        //}
         return result;
     }
 

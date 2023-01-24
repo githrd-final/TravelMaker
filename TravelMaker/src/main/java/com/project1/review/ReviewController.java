@@ -23,7 +23,7 @@ public class ReviewController {
 	public ModelAndView reviewSelect(ReviewPageVo pVo) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("order : " + pVo.order);
-		List<ReviewVo> list = service.select(pVo);
+		List<ReviewVo2> list = service.select(pVo);
 		pVo = service.getpVo();
 		mv.addObject("list", list);
 		mv.addObject("pVo", pVo);
@@ -35,7 +35,7 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/reviewView")
-	public ModelAndView reviewView(ReviewVo rVo, ReviewPageVo pVo, HttpSession session) {
+	public ModelAndView reviewView(ReviewVo2 rVo, ReviewPageVo pVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
 		String userEmail = (String)session.getAttribute("email");
 		UserVo uVo = new UserVo();
@@ -67,10 +67,10 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/userDetail")
-	public ModelAndView userDetailView(ReviewVo rVo, ReviewPageVo pVo, UserVo uVo) {
+	public ModelAndView userDetailView(ReviewVo2 rVo, ReviewPageVo pVo, UserVo uVo) {
 		ModelAndView mv = new ModelAndView();
 		uVo = service.userDetailView(uVo.nickName);
-		List<ReviewVo> list = service.selectUserReview(rVo);
+		List<ReviewVo2> list = service.selectUserReview(rVo);
 		System.out.println("유저 디테일 리뷰시리얼 " +rVo.reviewSerial);
 		System.out.println("유저 디테일 리스트 "+ list.toString());
 		
@@ -83,7 +83,7 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/reviewModifyView")
-	public ModelAndView reviewModifyView(ReviewVo rVo) {
+	public ModelAndView reviewModifyView(ReviewVo2 rVo) {
 		ModelAndView mv = new ModelAndView();
 		rVo = service.reviewModifyView(rVo.getReviewSerial(), rVo.getPurchaseSerial());
 		System.out.println("컨트롤러 구고번호: "+rVo.getPurchaseSerial());
@@ -98,12 +98,13 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/reviewModify")
-	public ModelAndView reviewModify(ReviewVo rVo, HttpServletResponse resp) {
+	public ModelAndView reviewModify(ReviewVo2 rVo, HttpServletResponse resp, HttpSession session) {
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=utf-8");
 		ReviewPageVo pVo = new ReviewPageVo();
 		ModelAndView mv = new ModelAndView();
-		
+		String userEmail = (String)session.getAttribute("email");
+		pVo.setChkUserLike(service.chkUserLike(userEmail, rVo.getReviewSerial()));
 		System.out.println("컨트롤러 실행! 리뷰번호:"+rVo.getReviewSerial());
 		boolean b = service.modify(rVo);
 		System.out.println("컨트롤러 실행! 구고번호:"+rVo.getPurchaseSerial());
@@ -117,6 +118,9 @@ public class ReviewController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		UserVo uVo = service.userDetailView(rVo.nickName);
+		mv.addObject("uVo", uVo);
 		mv.addObject("pVo", pVo);
 		mv.addObject("rVo", rVo);
 		mv.setViewName("/review/reviewView");
@@ -125,7 +129,7 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/reviewDelete")
-	public MyTourPageVo reviewDelete(ReviewVo rVo, HttpServletResponse resp) {
+	public MyTourPageVo reviewDelete(ReviewVo2 rVo, HttpServletResponse resp) {
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=utf-8");
 		ModelAndView mv = new ModelAndView();
@@ -139,7 +143,7 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/reviewThumbsUp")
-	public ModelAndView thumbsUp(ReviewVo rVo, ReviewPageVo pVo, HttpSession session){
+	public ModelAndView thumbsUp(ReviewVo2 rVo, ReviewPageVo pVo, HttpSession session){
 		ModelAndView mv = new ModelAndView();
 		String userEmail = (String)session.getAttribute("email");
 		System.out.println("chkUserLike : " + pVo.chkUserLike);
@@ -156,6 +160,9 @@ public class ReviewController {
 		int datePlan = Integer.parseInt(service.getDatePlan());
 		
 		System.out.println(pVo.chkUserLike);
+		UserVo uVo = service.userDetailView(rVo.nickName);
+		
+		mv.addObject("uVo", uVo);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
 		mv.addObject("rpList", rpList);

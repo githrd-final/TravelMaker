@@ -15,7 +15,7 @@ $('.reviewInsertBtn').on('click',function(){
 	frm.reviewStar.value=$(".on").length;
     var param = $(frm).serialize();
     console.log(param);
-    $.post("/review/reviewInsert", param, function(data){
+    $.post("review/reviewInsert", param, function(data){
 		$('#content').html(data);
     })
 }) 
