@@ -65,7 +65,7 @@
 					<fmt:formatDate value="${now }" pattern="yyyyMMdd" var="nowDate"/>
 					<fmt:formatDate value="${Date }" pattern="yyyyMMdd" var="endDate"/>
 					<input type='button' class="btnReview1" value='후기 작성' onclick="myTicket.insert('${purchaseSerial}')"
-										 <c:if test="${nowDate<endDate }">style="visibility:hidden;"</c:if>/>
+										 <c:if test="${nowDate<endDate }">style="display:none;"</c:if>/>
 				</c:otherwise>
 			</c:choose>
 			<input type='button' class='btnMyTourTicketPlan' value='내 일정' onclick="myTicket.view('${purchaseSerial}')">
