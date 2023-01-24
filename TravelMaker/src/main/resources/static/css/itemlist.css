@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 #item {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+   display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(8, minmax(0, auto));
     box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
     padding: 15px 20px;
     margin-bottom: 10px;
@@ -20,7 +21,7 @@
 }
 
 .item-image{
-    grid-column: 4 / 5;
+    grid-column: 2;
     grid-row: 1 / 8;
 }
 
@@ -107,7 +108,7 @@ label {
 }
 .item-image {
     background-size: cover;
-    width: 65%;
+    width: 50%;
     height: 80%;
     margin: auto;
 }
@@ -149,7 +150,7 @@ label {
 .item-detailBtnGroup-modal input {
     text-align: center;
     font-size: 1.2rem;
-    font-weight:bold;
+    font-weight: bold;
     background-color: rgb(255, 99, 71);
     color: white;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
@@ -159,9 +160,8 @@ label {
     border-image: initial;
     padding: 8px;
     border-radius: 10px;
-    margin-top: 110px;
+    margin-top: 4vh;
 }
-
 .item-detailBtnGroup-modal input:hover{
 	cursor:pointer;
 }

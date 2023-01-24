@@ -4,7 +4,7 @@
     <select id="findMapX" resultType="String" parameterType="com.project1.order.PurchaseDto">
         SELECT mapX FROM station where city = #{city};
     </select>
-
+	
     <select id="findMapY" resultType="String" parameterType="com.project1.order.PurchaseDto">
         SELECT mapY FROM station where city = #{city};
     </select>
@@ -24,7 +24,9 @@
 <!-- 	<select id = "selectDate" paremeterType="String" resultType="Integer"> -->
 <!-- 		SELECT DATEDIFF(#{endDate},#{startDate}) FROM purchase WHERE purchaseSerial = #{_parameter} -->
 <!-- 	</select> -->
-	
+	<select id="selectPurchase" parameterType="String" resultType="com.project1.order.PurchaseDto">
+		SELECT * FROM purchase WHERE purchaseSerial = #{_parameter}
+	</select>
 	<select id = "selectAllPlan" parameterType = "String" resultType="com.project1.planner.PlanVo"> 
 		SELECT planDate,contentTypeId,planOrder,planbucketSerial,locationName,mapX,mapY,planNote,purchaseSerial FROM plan 
 		WHERE purchaseSerial = #{purchaseSerial} ORDER BY planDate,planOrder

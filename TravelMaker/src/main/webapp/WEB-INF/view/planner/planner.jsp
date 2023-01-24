@@ -15,7 +15,7 @@
 	<div id='planner_title'>
 		<div>여행일정</div>
 		<div>여러분만의 일정을 계획해보세요.</div>
-		<div><input type="hidden" id="purchaseSerial" value="${purchaseSerial }"/></div>
+		<div><input type="hidden" id="purchaseSerial" value="${purchaseSerial}"/></div>
 	</div>
 	<div id="plannerZone">
 		<div id="MapBucketZone">
@@ -30,9 +30,9 @@
 					<span>일정을 추가할 날을 입력하세요.</span></br>
 					<span>
 						<select id="planInsertDate">
-							<option	value="1일자">1일차</option>
-							<option value="2일자">2일차</option>
-							<option value="3일자">3일차</option>
+							<c:forEach var="i" begin="1" end="${travelDay+1}">
+							<option	value="${i}일자">${i}일차</option>
+							</c:forEach>
 						</select>
 					</span>
 				</div>
@@ -53,15 +53,15 @@
 					<span>날짜</span></br>
 					<span>
 						<select id="modifyPlanDate" name="planDate">
-							<option value="1일자">1일차</option>
-							<option value="2일자">2일차</option>
-							<option value="3일자">3일차</option>
+							<c:forEach var="i" begin="1" end="${travelDay+1}">
+							<option	value="${i}일자">${i}일차</option>
+							</c:forEach>
 						</select>
 					</span>
 					<input type="hidden" name="prePlanOrder"/>
 					<input type="hidden" name="prePlanDate"/>
 					<input type="hidden" name="planbucketSerial"/>
-					<input type="hidden" name="purchaseSerial" value="${purchaseSerial }"/>
+					<input type="hidden" name="purchaseSerial" value="${purchaseSerial}"/>
 				</form>
 				</div>
 				<div class="modalFooter">
@@ -111,7 +111,7 @@
 		<div id="planListZone">
 			<div id="planListMenu">
 				<div class="planListMenuItemAll" id="PlanMenuActive">전체</div>
-				<c:forEach var="i" begin="1" end="3">
+				<c:forEach var="i" begin="1" end="${travelDay+1}">
 				<div class="planListMenuItem" onclick="planMenuClick(this)">
 					<form class="planListByDateForm">
 						<input type="hidden" name="planDate" value="${i}일자"/>DAY${i}
@@ -123,6 +123,7 @@
 			</div>
 		</div>
 		<a href="#" id="goReview">여행목록</a>
+		<a href="#" id="goTourlist">추천목록</a>
 	</div>
 	<script>
 		

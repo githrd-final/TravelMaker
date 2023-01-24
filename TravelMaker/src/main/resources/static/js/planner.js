@@ -340,13 +340,18 @@ var kakaoMap = (function(){
 	} //setCustomOverlays
 	
 	
-	
+	// 여행목록으로 돌아가기
 	$('#goReview').on('click',function(){
 		$('#content').load('/myTour/myTourSelect');
 	})
 	
+	// 추천목록으로 돌아가기
+	$('#goTourlist').on('click',function(){
+		$('#content').load('/planner/recommendListMain',{'purchaseSerial':purchaseSerial});
+	})
 	
 	$(document).ready(function(){
+		
 		
 		initMap(container,options);
 		
@@ -371,11 +376,14 @@ var kakaoMap = (function(){
 		} // showBucket()
 		
 		function showBucketList(param){
-			$('#planBucketList').load('/planner/bucketList',param);
+			var bucketList = $('#planBucketList').load('/planner/bucketList',param);
+			return bucketList[0].outerText;
+			
 		}
 		
+		
+		
 		$('#planBucketList').load('/planner/bucketList',{"purchaseSerial" : purchaseSerial},function(data){
-			
 			var param = {"purchaseSerial" : purchaseSerial};
 			showBucket(param);
 			
@@ -509,9 +517,6 @@ var kakaoMap = (function(){
 			if(outerText != ""){
 				showPlan(param);
 			}
-			
-			
-			
 			
 			$('.planListMenuItemAll').on('click',function(ev){
 				bounds = new kakao.maps.LatLngBounds();

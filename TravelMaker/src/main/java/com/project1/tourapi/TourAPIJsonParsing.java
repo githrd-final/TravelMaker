@@ -101,6 +101,7 @@ public class TourAPIJsonParsing {
 	public List<testVo> getOutputList(List<String> detailJsonDataList) {
 		List<testVo> list = new ArrayList<>();
 		JSONParser parser = new JSONParser();
+		String homePage;
 		
 		for(String obj : detailJsonDataList) {
 			testVo vo = new testVo();
@@ -122,7 +123,14 @@ public class TourAPIJsonParsing {
 						vo.setFirstImage((String)itemObj.get("firstimage"));
 						vo.setAddr1((String)itemObj.get("addr1"));
 						vo.setTel((String)itemObj.get("tel"));
-						vo.setHomepage((String)itemObj.get("homepage"));
+						homePage = (String)itemObj.get("homepage");
+						if(!(homePage.equals("")) && homePage.contains("<a")) {
+							String homePageA = homePage.substring(homePage.indexOf("<"));
+							if(!(homePageA.contains("</a>"))) {
+								homePageA += "</a>";
+							}
+							vo.setHomepage(homePageA);
+						}
 						vo.setMapX((String)itemObj.get("mapx"));
 						vo.setMapY((String)itemObj.get("mapy"));
 						vo.setContentTypeId((String)itemObj.get("contenttypeid"));
