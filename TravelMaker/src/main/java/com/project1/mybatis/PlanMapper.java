@@ -16,6 +16,10 @@ public interface PlanMapper {
     public String findMapX(String region);
 
     public String findMapY(String region);
+    
+    public String findAreaCode(String city);
+
+    public String findSigunguCode(String city);
 
     public int checkAdded(String planbucketSerial);
 

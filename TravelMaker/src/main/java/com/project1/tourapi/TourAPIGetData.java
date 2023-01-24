@@ -59,8 +59,8 @@ public class TourAPIGetData {
 		List<String> detailJsonFoodList = tourAPIParsingData.getDetailJsonDataListByType(contentIdList, foodContentTypeId);
 		System.out.println("[detailJsonFoodList by locationJson] : " + detailJsonFoodList.toString());
 		
-		
-		List<testVo> list = tourAPIJsonParsing.getOutputList(detailJsonFoodList);
+		String json = tourAPIParsingData.getKeywordJsonData("김치", "1", "23");
+		System.out.println("keywordjson:" + json);
 		
 	}
 	
@@ -179,24 +179,27 @@ public class TourAPIGetData {
 	}
 	
 	// 키워드 검색 조회
-	public String getKeywordJsonData(String region) {
+	public String getKeywordJsonData(String keyword,String areaCode,String sigunguCode) {
 			StringBuffer json = new StringBuffer();
 		
-			String EncodedRegion;
+			String Encodedkeyword;
 			
 			try {
-				EncodedRegion = URLEncoder.encode(region,"UTF-8");
+				Encodedkeyword = URLEncoder.encode(keyword,"UTF-8");
 				String url = "http://apis.data.go.kr/B551011/KorService/searchKeyword?serviceKey=" + APIkey
 						+"&pageNo="+pageNo
 						+"&numOfRows="+numOfRows
 					    +"&MobileOS="+ MobileOS
 					    +"&MobileApp="+ MobileApp
 					    +"&_type="+type
-					    +"&keyword="+EncodedRegion;
+					    +"&areaCode="+areaCode
+					    +"&arrange=R"
+					    +"&sigunguCode="+sigunguCode
+					    +"&keyword="+Encodedkeyword;
 				
 				json = readURL(url);
 				
-			} catch (UnsupportedEncodingException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 			

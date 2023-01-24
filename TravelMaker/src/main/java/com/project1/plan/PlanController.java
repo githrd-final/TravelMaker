@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import com.project1.tourapi.TourAPIGetData;
@@ -49,6 +50,28 @@ public class PlanController {
 		return mv;
 	}
 
+	//검색결과
+	@RequestMapping(value="plan/itemList/searchList", method=RequestMethod.POST)
+	public ModelAndView searchList(PurchaseDto purchaseDto, HttpServletRequest request) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		String keyWord = request.getParameter("searchTxt");
+		System.out.println(keyWord);
+		TourAPIGetData tourAPIGetData = new TourAPIGetData();
+		TourAPIJsonParsing tourAPIJsonParsing = new TourAPIJsonParsing();
+		String city = purchaseDto.getCity();
+		String areaCode = planService.findAreaCode(city);
+		String sigunguCode = planService.findSigunguCode(city);
+		System.out.println("area : " + areaCode);
+		System.out.println("si : " +sigunguCode);
+		String a = tourAPIGetData.getKeywordJsonData(keyWord,areaCode,sigunguCode);
+		List<String> b = tourAPIJsonParsing.getContentIdList(a);
+		List<String> c = tourAPIGetData.getDetailJsonDataList(b);
+		List<testVo> result = tourAPIJsonParsing.getOutputList(c);
+		mv.addObject("result", result);
+		mv.setViewName("plan/itemlist");
+		return mv;
+	}
+	
 	/*@RequestMapping("/plan/itemList/{region}")
 	public ModelAndView itemList(@PathVariable String region) {
 		ModelAndView mv = new ModelAndView();

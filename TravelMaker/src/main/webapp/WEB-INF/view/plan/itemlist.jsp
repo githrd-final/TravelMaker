@@ -30,6 +30,7 @@
     <input type="text" name="endDateTime" value="${purchaseDto.endDateTime}" style="display:none">
     <input type="text" name="city" value="${purchaseDto.city}" style="display:none">
 </form>
+<!-- 
 <div class='check'>
     <input type="checkbox" id="cb1" name='cb' onclick='checkOnlyOne(this)'>
     <label for="cb1" >거리순(역 기준)</label>
@@ -37,7 +38,7 @@
     <input type="checkbox" id="cb2" name='cb' onclick='checkOnlyOne(this)'>
     <label for="cb2" >추천순</label>
 </div>
-
+-->
 <main class="show list">
     <c:forEach var='item' items='${result}' varStatus="status">
         <form class="item" id="item" onclick="openModal(this)">

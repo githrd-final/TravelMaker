@@ -39,6 +39,20 @@ public class PlanService {
         return mapY;
     }
 
+    public String findAreaCode(String city) throws Exception {
+        log.info("findAreaCode");
+        String areaCode = planMapper.findAreaCode(city);
+        log.info("areaCode : " + areaCode);
+        return areaCode;
+    }
+    
+    public String findSigunguCode(String city) throws Exception {
+        log.info("findSigunguCode");
+        String sigunguCode = planMapper.findSigunguCode(city);
+        log.info("sigunguCode : " + sigunguCode);
+        return sigunguCode;
+    }
+    
     public int checkAdded(String planbucketSerial) throws Exception {
     	log.info("serviceCheckAdded");
     	int checkAdded = planMapper.checkAdded(planbucketSerial);

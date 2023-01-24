@@ -43,8 +43,9 @@
 	</div>
 	
 	<div>
+
 	  <input type='text' class='searchTxt' placeholder="검색어를 입력해 주세요"/>
-	 
+	
 	  <button class="search-btn" type="submit" >
 		  <i class="fas fa-search"></i>
 	  </button>
@@ -53,11 +54,14 @@
 	 <br/>
 	 
 <br/>
+
+
 <div class="recommandList">
 
 	<p>추천 리스트</p>
 
 </div>
+	 
 	 
 	 
 </div> <!-- end of listBack -->
