@@ -459,7 +459,6 @@ body{
 
 /* customView */
 .customView{
-	
 }
 
 .customView:after{
@@ -485,8 +484,14 @@ body{
 	color:#fff;
 }
 
+.customViewHeader>span.cvXIcon{
+	display: inline-block;
+    float: right;
+}
+
 
 .customViewBody{
+	max-width:400px;
 	display: flex;
 	flex-direction:row;
 	background-color:#fff;

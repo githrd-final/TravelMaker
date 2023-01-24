@@ -184,7 +184,7 @@ var kakaoMap = (function(){
 						  '             <img class="cvImg" src="' + locationPhoto + '">' +
 						  '         </div>' + 
 						  '         <div class="cvOverView">' + 
-						                overview + 
+						                overview + "." +
 						  '         </div>' + 
 						  '    </div>' + 
 						  '    <div class="customViewFooter">'+
@@ -203,7 +203,8 @@ var kakaoMap = (function(){
 			var customView = new kakao.maps.CustomOverlay({
 			    position: new kakao.maps.LatLng(mapY, mapX),
 			    content: content,
-			    yAnchor: 1.3
+			    yAnchor: 1.3,
+			    zIndex: 10
 			});
 			customViews.push(customView);
 		}
@@ -461,11 +462,16 @@ var kakaoMap = (function(){
 						customViews[i].setMap(null);
 					}
 				}
-				
+				console.log("mapY : " + mapY);
+				var mapYdotLength = mapY.split(".")[1].length;
 				for(var i=0; i<customViews.length; i++){
 					var customMapX = customViews[i].getPosition().La;
-					var customMapY = customViews[i].getPosition().Ma;
-					if(customMapY.toFixed(10) == mapY){
+					var customMapY = customViews[i].getPosition().Ma.toString();
+					var dotIndex = customMapY.indexOf(".");
+					var customSubstr = customMapY.substr(dotIndex+1,mapYdotLength-1);
+					console.log("customMapY :  " + customMapY);
+					console.log("customMapY.substr() " + customSubstr);
+					if(mapY.includes(customSubstr)){
 						customViews[i].setMap(map);
 						map.setCenter(new kakao.maps.LatLng(parseFloat(mapY)+0.001, mapX));
 						map.setLevel(3);
@@ -474,13 +480,13 @@ var kakaoMap = (function(){
 						break;
 					};
 				}
+				
+				window.scrollBy(0,-150);
 			}
 			
 			customClose = function(){
-				for(var i = 0; i<customViews.length; i++){
-					if(customViews[i] == targetCustom){
-						customViews[i].setMap(null);
-					}
+				for(var i = 0; i<targetCustoms.length; i++){
+					targetCustoms[i].setMap(null);
 				}
 			}
 		}); // end of planBucket load
