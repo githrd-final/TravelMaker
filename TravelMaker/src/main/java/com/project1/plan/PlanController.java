@@ -126,7 +126,7 @@ public class PlanController {
 		System.out.println(purchaseSerial);
 		mv.addObject("purchaseSerial", purchaseSerial);
 		log.info(purchaseSerial);
-		mv.setViewName("plan/planner");
+		mv.setViewName("planner/planner");
 		return mv;
 	}
 
