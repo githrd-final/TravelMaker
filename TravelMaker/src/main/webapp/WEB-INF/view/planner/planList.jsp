@@ -10,22 +10,15 @@
 </head>
 <body>
 	<c:forEach var = 'planVo' items='${list}'>
-		<div class="planItem">
+		<div class="planItem" draggable="true" >
 			<div class='planItemDataZone' onclick="openModifyModal(this)">
 				<form>
 					<span class="planItemOrder">
-						<input type="hidden" name="planOrder" value="${planVo.planOrder}"/>${planVo.planOrder}
+					<input type="hidden" name="planOrder" value="${planVo.planOrder}"/>${planVo.planOrder}
 					</span>
-						<c:if test="${planVo.locationName.length() > 10}">
-						<span class="planItemName">${planVo.locationName.split(" ")[0] 
-													  += " " += planVo.locationName.split(" ")[1]}
-						</span>
-						</c:if>
-						<c:if test="${planVo.locationName.length() <= 10}">
-						<span class="planItemName">${planVo.locationName}</span>
-						</c:if>
+					<span class="planItemName">${planVo.locationName}</span>
 					<span class="planItemDate">
-						<input type="hidden" name="planDate" value="${planVo.planDate}"/>${planVo.planDate}
+					<input type="hidden" name="planDate" value="${planVo.planDate}"/>${planVo.planDate}
 					</span>
 					<input type="hidden" name="planbucketSerial" value="${planVo.planbucketSerial}"/>
 					<input type="hidden" name="purchaseSerial" value="${planVo.purchaseSerial}"/>
@@ -33,20 +26,12 @@
 			</div>
 			<div class="planItemMemoZone" >
 				<c:if test="${empty planVo.planNote}">
-				<span class="planItemIcon" 
-					  onclick = "openMemoModal('${planVo.planbucketSerial}')">
-				<i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i>
-				</span>
 				<span>
 					<input type="button" value="메모 작성" id="writeMemo${planVo.planbucketSerial}" 
 						   onclick="openMemoModal('${planVo.planbucketSerial}')"/>
 				</span>
 				</c:if>
 				<c:if test="${!empty planVo.planNote}">
-				<span class="planItemIcon" 
-					  onclick = "ShowMemo('${planVo.planbucketSerial}')">
-				<i class="fa-regular fa-pen-to-square fa-2xl" class="planMemoIcon"></i>
-				</span>
 				<span>
 					<input type="button" value="메모 보기" class = "btnShowMemo" onclick = "ShowMemo('${planVo.planbucketSerial}')" 
 						   id="showMemo${planVo.planbucketSerial}" style="background-color : #0080FF"/>
