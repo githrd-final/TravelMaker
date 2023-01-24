@@ -20,8 +20,8 @@
               <input id="intro" class="input" name="userComment" type="text" placeholder="한 줄 소개" onfocus="this.placeholder=''" onblur="this.placeholder='한 줄 소개'"/>
             </div>
             <div class='profileImage'>
-                <div class='img-box'></div>
-                <input type='file' class='btnProfileSelect' name="sysUserPhoto" value='파일 선택'>
+                <div id='img-box' src='/upload/${uVo.sysUserPhoto}'></div>
+                <input type='file' class='btnProfileSelect' name="sysUserPhoto" value='파일 선택' value='파일 선택' onchange="att(this)" accept="image/*">
                 <br/>
                 <input type='submit' class='btnSubmit' value='가입 완료'>
             </div>
