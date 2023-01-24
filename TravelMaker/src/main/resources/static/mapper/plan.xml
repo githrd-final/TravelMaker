@@ -9,6 +9,13 @@
         SELECT mapY FROM station where city = #{city};
     </select>
 
+	<select id="findAreaCode" resultType="String" parameterType="String">
+        SELECT areaCode FROM regioncity where city = #{_parameter};
+    </select>
+	
+    <select id="findSigunguCode" resultType="String" parameterType="String">
+        SELECT sigunguCode FROM regioncity where city = #{_parameter};
+    </select>
 	<select id="checkAdded" resultType="Integer" parameterType="String">
 		SELECT count(planbucketSerial) FROM planbucket where planbucketSerial = #{planBucketSerial};
 	</select>

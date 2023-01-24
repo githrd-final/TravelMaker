@@ -65,7 +65,11 @@
   justify-content: center;
   margin : 10px;
 }
-
+.search-btn:hover {
+	cursor : pointer;
+	background: #EDEDED;
+	color: tomato;
+}
 
 /*퀵 버튼--------------------------------------*/
 #Quick{
