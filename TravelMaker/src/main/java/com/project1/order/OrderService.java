@@ -125,16 +125,18 @@ public class OrderService {
         }
 
         purchaseSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0) + email;
-        log.info("purchaseSerial : " + purchaseSerial);
+        List<String> purchasedTicketSerialList = new ArrayList<String>();
+        for(int i = 0; i < ticketSerialListA.size(); i++){
+            purchasedTicketSerialList.add(ticketSerialListA.get(i) + ticketSerialListB.get(i));
+        }
         String purchasedTicketSerial = ticketSerialListA.get(0) + ticketSerialListB.get(0);
-        log.info("purchasedTicketSerial : " + purchasedTicketSerial);
+
         String ticketSerialA = ticketSerialListA.get(0);
-        log.info("ticketSerialA : " + ticketSerialA);
         String ticketSerialB = ticketSerialListB.get(0);
-        log.info("ticketSerialB : " + ticketSerialB);
+
+        region = orderMapper.getRegion(selectedRegion);
 
         purchaseDto.setPurchaseSerial(purchaseSerial);
-        log.info("purchaseSerial : " + purchaseDto.getPurchaseSerial());
         purchaseDto.setEmail(email);
         purchaseDto.setPrice(price);
         purchaseDto.setPeople(people);
@@ -144,17 +146,20 @@ public class OrderService {
         purchaseDto.setStartDateTime(startDateTime);
         purchaseDto.setEndDateTime(endDateTime);
         purchaseDto.setCity(selectedRegion);
-        log.info("selectedRegion : " + purchaseDto.getCity());
-        log.info("purchaseDto : " + purchaseDto);
 
         purchaseDto.setPurchasedTicketSerial(purchasedTicketSerial);
         purchaseDto.setTicketSerialA(ticketSerialA);
         purchaseDto.setTicketSerialB(ticketSerialB);
 
         orderMapper.insertPurchase(purchaseDto);
-        orderMapper.updateTicketStatusA(ticketSerialListA.get(0));
-        orderMapper.updateTicketStatusB(ticketSerialListB.get(0));
+        for(int i = 0; i < purchasedTicketSerialList.size(); i++){
+        orderMapper.updateTicketStatusA(ticketSerialListA.get(i));
+        orderMapper.updateTicketStatusB(ticketSerialListB.get(i));
+        purchasedTicketSerial = purchasedTicketSerialList.get(i);
+        ticketSerialA = ticketSerialListA.get(i);
+        ticketSerialB = ticketSerialListB.get(i);
         orderMapper.makePurchasedTicket(purchasedTicketSerial, purchaseSerial, ticketSerialA, ticketSerialB);
+        }
 
         return purchaseDto;
     }

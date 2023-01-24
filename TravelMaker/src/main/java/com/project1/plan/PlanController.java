@@ -49,6 +49,13 @@ public class PlanController {
 		return mv;
 	}
 
+	@RequestMapping("/plan/loading")
+	public ModelAndView loading(PurchaseDto purchaseDto) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("plan/loadingPage");
+		return mv;
+	}
+
 	/*@RequestMapping("/plan/itemList/{region}")
 	public ModelAndView itemList(@PathVariable String region) {
 		ModelAndView mv = new ModelAndView();

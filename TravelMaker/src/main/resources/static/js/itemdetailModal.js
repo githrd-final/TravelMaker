@@ -5,7 +5,6 @@ var frm = $("#frm");
 var purchaseDto = frm.serialize();
 var purchaseSerial = $("#purchaseSerial").val();
 var contentId = document.querySelector('.item-contentId').value;
-console.log(purchaseSerial);
 
 if(width_size<=450){
     $('.itemModalToMyPlan').on('click',function(){
@@ -17,7 +16,7 @@ if(width_size<=450){
 }else{
     $('.itemModalToMyPlan').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan', p, function(data){
+        $.post('/plan/itemModalToPlan/', p, function(data){
             $('#content').html(data);
         });
 })}
