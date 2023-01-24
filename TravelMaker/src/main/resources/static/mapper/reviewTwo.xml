@@ -6,8 +6,11 @@
 		values(#{reviewTitle}, #{nickName}, #{reviewStar}, #{region}, #{city}, #{postingDate}, #{purchaseSerial}, #{period}, #{text}, 0, 0)
 	</insert>
 	<select id="myReviewView" parameterType="String" resultType="com.project1.review.ReviewVo">
-		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, postingDate, purchaseSerial, period, text, view, thumbsUp from review where purchaseSerial=#{_parameter};
+		select reviewSerial, reviewTitle, nickName, reviewStar, region, city, postingDate, purchaseSerial, period, text, view, thumbsUp from review where purchaseSerial=#{_parameter} limit 1;
 	</select>
+	<select id ="userDetailView" parameterType="String" resultType="com.project1.review.UserVo">
+    	select email, nickName, userComment, oriUserPhoto, sysUserPhoto from user where nickName = #{_parameter}
+    </select>
 	<update id="myReviewUpdate" parameterType="String">
 		update purchase set myReview=1 where purchaseSerial=#{_parameter}; 
 	</update>

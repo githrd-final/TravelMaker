@@ -2547,3 +2547,459 @@ Caused by: java.net.SocketException: Socket closed
 19:31:22.692+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
 19:33:37.988+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
 19:33:37.988+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:38:38.290+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:38:38.290+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:38:43.158+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:38:43.158+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:39:12.060+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:39:12.060+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:39:13.825+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:39:13.825+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:40:25.645+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:40:25.645+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+19:40:27.248+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:40:27.248+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+19:48:51.530+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:49:06.570+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:49:27.779+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:49:43.752+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:49:59.765+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:50:18.888+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:50:32.946+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:50:49.115+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:50:55.070+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo2 cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:53:31.676+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:53:53.758+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:54:03.202+0900 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.Error: Unresolved compilation problem: 
+	ReviewVo cannot be resolved to a type
+
+	at com.project1.mybatis.ReviewTwoMapper.<clinit>(ReviewTwoMapper.java:11) ~[classes/:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:243) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:215) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:381) ~[mybatis-spring-2.1.0.jar:2.1.0]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) [spring-boot-2.7.6.jar:2.7.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) [spring-boot-2.7.6.jar:2.7.6]
+	at com.project1.TravelMakerApplication.main(TravelMakerApplication.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.6.jar:2.7.6]
+19:55:39.961+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:55:39.961+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+19:55:59.641+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:55:59.641+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:57:36.904+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:57:36.904+0900 [http-nio-9282-exec-2] INFO  com.project1.member.MemberController - goSignUp
+19:57:38.633+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+19:57:38.633+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+19:57:47.280+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:57:47.280+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+19:57:51.471+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+19:57:51.471+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:04:56.663+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:04:56.663+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:05:07.847+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:05:07.847+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:05:09.604+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:05:09.604+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:05:11.470+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - callCallBack
+20:05:11.470+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - callCallBack
+20:05:11.981+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+20:05:11.981+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+20:05:12.100+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - naverCheck
+20:05:12.100+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - naverCheck
+20:05:12.111+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberService - serviceNaverCheck
+20:05:12.111+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberService - serviceNaverCheck
+20:05:12.117+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - registered
+20:05:12.117+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - registered
+20:05:12.969+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:05:12.969+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:05:14.452+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:05:14.452+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:05:16.483+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:05:16.483+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:05:21.664+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:05:21.664+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:05:25.108+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:05:25.108+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:05:26.234+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:05:26.234+0900 [http-nio-9282-exec-1] INFO  com.project1.member.MemberController - goSignUp
+20:05:37.923+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:05:37.923+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:06:22.665+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:06:22.665+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:06:24.140+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+20:06:24.140+0900 [http-nio-9282-exec-3] INFO  com.project1.member.MemberController - goSignUp
+20:08:58.115+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:08:58.115+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:10:17.259+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:10:17.259+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:10:19.285+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:10:19.285+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:12:28.551+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:12:28.551+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:12:30.486+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:12:30.486+0900 [http-nio-9282-exec-7] INFO  com.project1.member.MemberController - goSignUp
+20:12:30.964+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:12:30.964+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:12:34.895+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+20:12:34.895+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - callCallBack
+20:12:34.981+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:12:34.981+0900 [http-nio-9282-exec-5] INFO  com.project1.member.MemberController - goSignUp
+20:12:35.061+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - naverCheck
+20:12:35.061+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - naverCheck
+20:12:35.075+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberService - serviceNaverCheck
+20:12:35.075+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberService - serviceNaverCheck
+20:12:35.117+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - registered
+20:12:35.117+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - registered
+20:12:35.198+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:12:35.198+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:12:36.697+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:12:36.697+0900 [http-nio-9282-exec-6] INFO  com.project1.member.MemberController - goSignUp
+20:32:18.508+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:32:18.508+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:32:20.671+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:32:20.671+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:32:27.465+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:32:27.465+0900 [http-nio-9282-exec-4] INFO  com.project1.member.MemberController - goSignUp
+20:35:00.604+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:35:00.604+0900 [http-nio-9282-exec-9] INFO  com.project1.member.MemberController - goSignUp
+20:43:13.930+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:43:13.930+0900 [http-nio-9282-exec-8] INFO  com.project1.member.MemberController - goSignUp
+20:43:16.094+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp
+20:43:16.094+0900 [http-nio-9282-exec-10] INFO  com.project1.member.MemberController - goSignUp

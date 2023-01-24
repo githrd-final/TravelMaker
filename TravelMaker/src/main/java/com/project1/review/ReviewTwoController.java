@@ -40,6 +40,11 @@ public class ReviewTwoController {
 		rVo = service.getrVo();
 		
 		System.out.println("rVo.serial: " + rVo.getReviewSerial());
+		System.out.println(rVo.nickName);
+		
+		UserVo uVo = service.userDetailView(rVo.nickName);
+		System.out.println("uVo=" + uVo.toString());
+		mv.addObject("uVo", uVo);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
 		mv.setViewName("review/reviewView");
