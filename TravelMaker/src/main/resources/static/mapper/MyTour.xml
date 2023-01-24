@@ -36,13 +36,7 @@
     </select>
 	<select id='insertView' parameterType="String" resultType="com.project1.myTour.MyTourVo">
         select purchaseSerial, city,
-		case
-			when region="1" then '강원도' 
-			when region="2" then '경기도' 
-			when region="3" then '경상도' 
-			when region="4" then '전라도' 
-			when region="5" then '충청도' 
-		end as region
+		region
 		from purchase 
 		WHERE purchaseSerial='${_parameter}'
     </select>

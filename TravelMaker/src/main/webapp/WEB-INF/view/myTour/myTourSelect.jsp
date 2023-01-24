@@ -33,7 +33,7 @@
 				
 				<div class="item-left">
 					<div class='TicketClick' onclick="myTour.myTourTicket('${vo.purchaseSerial}', '${vo.reviewSerial }')">
-						<p class="event">예매번호 : ${fn:substring(vo.purchaseSerial,0,20) } (${vo.people}명)</p>
+						<p class="event">예매번호 : ${fn:substring(vo.purchaseSerial,0,22) } (${vo.people}명)</p>
 						<h2 class="title">${vo.city }행</h2>
 						
 						<div class="sce">
@@ -63,7 +63,7 @@
 								<fmt:formatDate value="${now }" pattern="yyyyMMdd" var="nowDate"/>
 								<fmt:formatDate value="${Date }" pattern="yyyyMMdd" var="endDate"/>
 								<input type='button' class="btnReview1" value='후기 작성' onclick="myTour.insert('${vo.purchaseSerial}')" 
-												<c:if test="${nowDate<endDate }">disabled="disabled"</c:if>/>
+												<c:if test="${nowDate<endDate }">style="display:none;"</c:if>/>
 						</c:otherwise>
 					</c:choose>
 				</div> <!-- end item-left -->

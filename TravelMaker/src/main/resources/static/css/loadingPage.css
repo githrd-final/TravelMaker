@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#loadingBody{
+    text-align: center;
+    margin: 0;
+}
+
+#loading{
+    margin-top: 10vh;
+    font-size: 2rem;
+    height: 50vh;
+}

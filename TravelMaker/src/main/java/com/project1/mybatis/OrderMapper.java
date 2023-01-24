@@ -25,6 +25,8 @@ public interface OrderMapper {
     public List<String> purchaseTicketA(OrderDto orderDto);
     public List<String> purchaseTicketB(OrderDto orderDto);
 
+    public int getRegion(String selectedRegion);
+
     public void insertPurchase(PurchaseDto purchaseDto);
 
     public void updateTicketStatusA(String ticketSerialListA);

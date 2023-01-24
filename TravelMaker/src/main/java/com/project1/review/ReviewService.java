@@ -20,7 +20,7 @@ public class ReviewService {
 	ReviewPageVo pVo;
 	List<ReviewPlanVo> rpList = null;;
 	String datePlan;
-	ReviewVo rVo;
+	ReviewVo2 rVo;
 	
 	@Autowired
 	PlatformTransactionManager manager;
@@ -30,13 +30,13 @@ public class ReviewService {
 	@Autowired
 	ReviewMapper mapper;
 	
-	public List<ReviewVo> select(ReviewPageVo pVo){
+	public List<ReviewVo2> select(ReviewPageVo pVo){
 		int totSize = mapper.totList(pVo);
 		pVo.setTotSize(totSize);
 		this.pVo = pVo;
 		System.out.println("service order =" + pVo.order);
 		System.out.println("service totSize =" + totSize);
-		List<ReviewVo> list = mapper.select(pVo);
+		List<ReviewVo2> list = mapper.select(pVo);
 		
 		System.out.println("service list : "+ list.toString());
 		return list;
@@ -49,8 +49,8 @@ public class ReviewService {
 	public ReviewPageVo getpVo() {
 		return pVo;
 	}
-	public ReviewVo view(int reviewSerial, String purchaseSerial, String up) {
-		ReviewVo rVo = null;
+	public ReviewVo2 view(int reviewSerial, String purchaseSerial, String up) {
+		ReviewVo2 rVo = null;
 		System.out.println("리뷰시리얼 " + reviewSerial);
 		if(up != null && up.equals("up")) {
 			mapper.viewUp(reviewSerial);
@@ -71,15 +71,15 @@ public class ReviewService {
 		return chkUserLike;
 	}
 	
-	public ReviewVo reviewModifyView(int reviewSerial, String purchaseSerial) {
-		ReviewVo rVo = mapper.reviewModifyView(reviewSerial);
+	public ReviewVo2 reviewModifyView(int reviewSerial, String purchaseSerial) {
+		ReviewVo2 rVo = mapper.reviewModifyView(reviewSerial);
 		rpList = mapper.reviewPlan(purchaseSerial);
 		datePlan = mapper.datePlan(purchaseSerial);
 		
 		return rVo;
 	}
 	
-	public boolean modify(ReviewVo rVo){
+	public boolean modify(ReviewVo2 rVo){
 		boolean b = false;
 		status = manager.getTransaction(new DefaultTransactionDefinition());
 		savePoint = status.createSavepoint();
@@ -99,7 +99,7 @@ public class ReviewService {
 		return b;
 	}
 	
-	public boolean delete(ReviewVo rVo) {
+	public boolean delete(ReviewVo2 rVo) {
 		status = manager.getTransaction(new DefaultTransactionDefinition());
 		savePoint = status.createSavepoint();
 		boolean b = false;
@@ -191,7 +191,7 @@ public class ReviewService {
 		}
 		return flag;
 	}
-	public ReviewVo getrVo() {
+	public ReviewVo2 getrVo() {
 		return rVo;
 	}
 	public UserVo userDetailView(String nickName) {
@@ -201,8 +201,8 @@ public class ReviewService {
 		return uVo;
 	}
 	
-	public List<ReviewVo> selectUserReview(ReviewVo rVo){
-		List<ReviewVo> list = mapper.selectUserReview(rVo.nickName);
+	public List<ReviewVo2> selectUserReview(ReviewVo2 rVo){
+		List<ReviewVo2> list = mapper.selectUserReview(rVo.nickName);
 		
 		return list;
 	}

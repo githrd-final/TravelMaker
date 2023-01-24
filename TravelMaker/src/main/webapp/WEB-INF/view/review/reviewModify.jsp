@@ -25,6 +25,7 @@
 			<span class='reviewInsertSpanRegion'>지  역</span>
 			<input type='text' class='reviewInsertRegion' name='region' value='${rVo.region }' readonly="readonly"/>
 			<input type='text' class='reviewInsertRegion' name='city' value='${rVo.city }' readonly="readonly"/>
+			<input type='hidden' name='nickName' value='${rVo.nickName }' readonly="readonly"/>
 			<div id='starForm'>
 				<span>별점</span>
 				<p class="star_rating">
