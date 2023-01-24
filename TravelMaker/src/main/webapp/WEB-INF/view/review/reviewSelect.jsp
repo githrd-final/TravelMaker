@@ -32,10 +32,10 @@
 						<select name='region' id='rs_filter_region_combo'>
 							<option value="">티켓별</option>
 							<option value="">전국</option>
-							<option value='강원도' >강원도</option>
-							<option value='경상도'>경상도</option>
-							<option value='전라도' >전라도</option>
-							<option value='충청도' >충청도</option>
+							<option value='1' >강원도</option>
+							<option value='3'>경상도</option>
+							<option value='4' >전라도</option>
+							<option value='5' >충청도</option>
 						</select>
 						<input list ='region' id='tempRegion' value='${pVo.region }' style='display:none;'>
 					</div>
