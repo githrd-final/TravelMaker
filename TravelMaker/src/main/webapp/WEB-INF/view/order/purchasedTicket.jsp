@@ -50,7 +50,7 @@
 							<div class="icon">
 								<i class="fa fa-table"></i>
 							</div>
-							<p>2023-01-01</p>
+							<p>${purchaseDto.startDate}</p>
 						</div>
 						<div class="fix"></div>
 						<div class="loc">
@@ -80,7 +80,7 @@
 							<div class="icon">
 								<i class="fa fa-table"></i>
 							</div>
-							<p>2023-01-03</p>
+							<p>${purchaseDto.endDate}</p>
 						</div>
 						<div class="fix"></div>
 						<div class="loc">

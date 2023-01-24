@@ -3,21 +3,24 @@
  */
 var frm = $("#frm");
 var purchaseDto = frm.serialize();
+var purchaseSerial = $("#purchaseSerial").val();
 var contentId = document.querySelector('.item-contentId').value;
+console.log(purchaseSerial);
 
 if(width_size<=450){
-    $('.itemModaltoMyPlan').on('click',function(){
-        $.post('plan/itemModaltoMyPlan/', purchaseDto, function(data){
-            $('#content').load('/mplan/mPlanner');
+    $('.itemModalToMyPlan').on('click',function(){
+        var p = "purchaseSerial="+purchaseSerial;
+        $.post('/plan/itemModalToMPlan/', p, function(data){
+            $('#content').html(data);
         });
     })
 }else{
-    $('.itemModaltoMyPlan').on('click',function(){
-        $.post('plan/itemModaltoMyPlan/', purchaseDto, function(data){
-            $('#content').load('/planner/planner');
+    $('.itemModalToMyPlan').on('click',function(){
+        var p = "purchaseSerial="+purchaseSerial;
+        $.post('/plan/itemModalToPlan', purchaseSerial, function(data){
+            $('#content').html(data);
         });
-    })}
-
+})}
 
     function insertIntoBucket(frm) {
         $.ajax({

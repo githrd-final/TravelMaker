@@ -2,7 +2,8 @@
  *
  */
 
-const modal = document.getElementById("modal");
+// const modal = document.getElementById("modal");
+var modal = document.querySelector(".modal-overlay");
 
 modal.addEventListener("click", e => {
     const evTarget = e.target

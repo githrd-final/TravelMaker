@@ -92,7 +92,7 @@ $('#btnSearch').on('click', function(){
 	var endArrDate = endDate.split('-');
 	var startDateD = new Date(startArrDate[0], startArrDate[1], startArrDate[2]);
 	var endDateD = new Date(endArrDate[0], endArrDate[1], endArrDate[2]);
-	var btMs = endDateD.getTime() - startDateD.getTime();
+	var btMs = startDateD.getTime() - endDateD.getTime();
 	var btDay = btMs / (1000 * 60 * 60 * 24);
 
 	if(startTimeCheck == false || endTimeCheck == false){
@@ -119,7 +119,7 @@ $('#btnSearch').on('click', function(){
 		alert('종료일이 시작일보다 빠릅니다!');
 		return false;
 	}
-	if(btDay == 1 || btDay == 2) {
+	if(btDay == 1 || btDay == 2 || btDay == -2 || btDay == -1){
 		$.ajax({
 			type: 'get',
 			url: '/order/regionSelect',
