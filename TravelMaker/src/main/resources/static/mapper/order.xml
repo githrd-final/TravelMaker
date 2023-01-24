@@ -37,6 +37,10 @@
                                            and ticketStartTime = #{endDateTime} limit #{peopleInt}
     </select>
 
+    <select id="getRegion" resultType="Integer" parameterType="String">
+        select region from ticket where ticketEndPoint = #{_parameter} limit 1
+    </select>
+
     <insert id="insertPurchase" parameterType="com.project1.order.PurchaseDto">
         insert into purchase (purchaseSerial, email, price, people, region, startDate, endDate, startDateTime, endDateTime, city, myReview)
         values (#{purchaseSerial}, #{email}, #{price}, #{people}, #{region}, #{startDate}, #{endDate}, #{startDateTime}, #{endDateTime}, #{city}, 0)

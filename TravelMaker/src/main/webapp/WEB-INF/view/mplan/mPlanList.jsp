@@ -33,10 +33,10 @@
 				<div class="planMemoWrapper">
 					<div class="PlanMemo">
 						<c:if test="${empty vo.planNote }">
-							<input type="image" value="${vo.planNote}" name="planNote" src="img/edit.png" class="PlanMemoItem" onclick='modalView3(this); memoUpdate(${vo.planbucketSerial})'>
+							<input type="image" value="${vo.planNote}" name="planNote" src="img/edit.png" class="PlanMemoItem" onclick='modalView3(this); memoUpdate("${vo.planbucketSerial}");'>
 						</c:if>
 						<c:if test="${!empty vo.planNote }">
-							<input type="image" value="${vo.planNote}" name="planNote" src="img/memo.png" class="PlanMemoItem" onclick='modalView3(this); memoUpdate(${vo.planbucketSerial})'>
+							<input type="image" value="${vo.planNote}" name="planNote" src="img/memo.png" class="PlanMemoItem" onclick='modalView3(this); memoUpdate("${vo.planbucketSerial}");'>
 						</c:if>
 					</div>
 					<input type="hidden" value="${vo.planbucketSerial }" name="planbucketSerial" id="planListPlanbucketSerial">
@@ -76,7 +76,7 @@
 	
 
 	})
-
+	
 	</script>	
 </body>
 </html>

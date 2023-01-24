@@ -618,17 +618,21 @@ $( document ).ready(function() {
 		memo=1;
 		$('#modal3').css('display', 'none');
 		
-	})		
-	modalView3 = function(memoTag){
+	})
+	
+	var modalView3 = function(memoTag){
 		memo=0;		
 		this.memoTag = memoTag;
 		$('.MemoArea').val(memoTag.value);
 		$('#modal3').css('display', 'block');	
 	}
-
-	memoUpdate= function(planbucketSerial){
-		$('#MemoUpdatePlanbucketSerial').val(planbucketSerial);
+			
+	var memoUpdate= function(pbSerial){
+		memo=0;	
+		console.log(pbSerial);
+		$('#MemoUpdatePlanbucketSerial').val(pbSerial);
 	}
+
 	
 	memoInsert = function(){
 		memo=1;

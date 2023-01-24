@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.json.simple.JSONArray;
@@ -15,6 +16,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.project1.mybatis.PlanMapper;
+import com.project1.order.PurchaseDto;
 
 
 @RestController
@@ -26,7 +29,20 @@ public class PlannerController {
 	@Autowired
 	PlanBucketService bucketService;
 	
+	@Autowired
+	PlanMapper planMapper;
+	
 	int travelDay;
+	
+	
+	@RequestMapping("/planner/recommendListMain")
+	public ModelAndView selectPurchase(String purchaseSerial, HttpServletRequest request) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		PurchaseDto purchaseDto = planMapper.selectPurchase(purchaseSerial);
+		request.setAttribute("purchaseDto", purchaseDto);
+		mv.setViewName("plan/recommendListMain");
+		return mv;
+	}
 	
 	@RequestMapping("/planner/planner")
 	public ModelAndView planner(String purchaseSerial) {
@@ -35,7 +51,7 @@ public class PlannerController {
 		
 		mv.addObject("purchaseSerial", purchaseSerial);
 		
-		mv.addObject("totalTravelDay",travelDay);
+		mv.addObject("travelDay",travelDay);
 		mv.setViewName("planner/planner");
 		return mv;
 	}

@@ -241,14 +241,14 @@ body{
 }
 
 .planItem>div.planItemDataZone{
-	width:70%;
+	width:75%;
 	padding-left:20px;
 	position:relative;
 	
 }
 .planItem>div.planItemMemoZone{
-	width:30%;
-	padding-right:20px;
+	width:25%;
+	padding-right:10px;
 	position:relative;
 }
 
@@ -269,15 +269,21 @@ body{
 	border-radius:50%;
 	color:#fff;
 	position:relative;
-	bottom:5px;
+	bottom:15px;
 	
 }
-.planItemDataZone span.planItemName{
-	font-size:1.5rem;
-	font-weight:bold;
+.planItemDataZone span.planItemName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width:70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
 .planItemDataZone span.planItemDate{
-	
+	position:relative;
+	bottom:15px;
 }
 
 .planItemMemoZone span{
@@ -294,6 +300,7 @@ body{
 	border:none;
 	color:#fff;
 }
+
 
 .planItemMemoZone span.planItemIcon:hover{
 	color:tomato;
@@ -555,9 +562,14 @@ body{
 
 .totalDistance{
 	background-color:#fff;
-	padding:5px;
+	padding:10px;
 	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	font-weight:bold;
+	
+}
+.totalDistance>span{
+	color:tomato;
 }
 
 /* 후기목록으로 가기 */
@@ -573,6 +585,23 @@ body{
 	position :fixed;
 	z-index:500;
 	right:5%;
+	bottom:5%;
+	color:#fff;
+	background-color:tomato;
+}
+
+#goTourlist{
+	text-decoration:none;
+	border-radius:50%;
+	line-height:4;
+	width:100px;
+	height:100px;
+	text-align:center;
+	font-weight:bold;
+	font-size:1.5rem;
+	position :fixed;
+	z-index:500;
+	right:13%;
 	bottom:5%;
 	color:#fff;
 	background-color:tomato;

@@ -22,6 +22,9 @@ public interface PlanMapper {
     public void insertPlanBucket(HashMap map);
 
    public void deletePlanBucket(HashMap map);
+   
+   // 추천목록으로 돌아갈때 필요한 purchaseDto
+   public PurchaseDto selectPurchase(String purchaseSerial); 
 
    //로드시 날짜 필요함
    public int selectDate(String purchaseSerial);

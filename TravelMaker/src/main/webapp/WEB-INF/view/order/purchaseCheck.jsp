@@ -62,17 +62,17 @@
 	<div>
 		<label>가는날</label>	
 		 <label>
-		    <input type="radio" name="startTime" value="오전" ${(orderDto.startDateTime eq 'am')? 'checked' : ''}/>
+		    <input type="radio" name="startTime" onclick="return(false);" value="오전" ${(orderDto.startDateTime eq 'am')? 'checked' : ''}/>
 		    <span>오전</span>
-		    <input type="radio" name="startTime" value="오후" ${(orderDto.startDateTime eq 'pm')? 'checked' : ''}/>
+		    <input type="radio" name="startTime" onclick="return(false);" value="오후" ${(orderDto.startDateTime eq 'pm')? 'checked' : ''}/>
 		    <span>오후</span>
 	  	</label>
 	  	<br/>
 	  	<label>오는날</label>	
 		 <label>
-		    <input type="radio" name="endTime" value="오전" ${(orderDto.endDateTime eq 'am')? 'checked' : ''}/>
+		    <input type="radio" name="endTime" onclick="return(false);" value="오전" ${(orderDto.endDateTime eq 'am')? 'checked' : ''}/>
 		    <span>오전</span>
-		    <input type="radio" name="endTime" value="오후" ${(orderDto.endDateTime eq 'pm')? 'checked' : ''}/>
+		    <input type="radio" name="endTime" onclick="return(false);" value="오후" ${(orderDto.endDateTime eq 'pm')? 'checked' : ''}/>
 		    <span>오후</span>
 	  	</label>
 	</div>
