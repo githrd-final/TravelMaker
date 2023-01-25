@@ -17,44 +17,44 @@
     margin-top:0;
 }
 .upcomming {
-  justify-self: start;
-  padding:20px;
-  margin: 2vh 1vh;
-  font-size: 1.5rem;
+    justify-self: start;
+    padding:20px;
+    margin: 2vh 1vh;
+    font-size: 1.5rem;
 }
 .logo{
     width: 100%;
     height: 100%;
 }
-.myTourSelectContainer .myTourSelectItem {
-  width: 650px;
-  height: 250px;
-  display:grid;
-  grid-template-columns : 1fr 2fr;
-  /* background: #ECE9E6; */
-  background: #fff;
-  overflow: hidden;
-  margin: 10px auto;
+.myTourSelectContainer #myTourSelectItem {
+    width: 650px;
+    height: 250px;
+    display:grid;
+    grid-template-columns : 1fr 2fr;
+    /* background: #ECE9E6; */
+    background: #fff;
+    overflow: hidden;
+    margin: 10px auto;
 }
 .TicketClick:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
 .TicketClick{
-	display : grid;
-	height: 100%;
-	width : 95%;
+    display : grid;
+    height: 100%;
+    width : 95%;
 }
 .TicketClick>div, .TicketClick>p, .TicketClick>h2{
-	margin-left : 10%;
-	align-self: end;
+    margin-left : 10%;
+    align-self: end;
 }
 .myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
-  padding: 20px; 
+    padding: 20px;
 }
 .myTourSelectContainer .item-right {
-  width: 100%;
-  position: relative;
-  height: 100%;
+    width: 100%;
+    position: relative;
+    height: 100%;
 
 }
 .myTourSelectContainer .item-right .up-border, .myTourSelectContainer .item-right .down-border {
@@ -64,12 +64,12 @@
     position: absolute;
 }
 .myTourSelectContainer .item-right .up-border {
-  top: -5%;
-  right: -7.5%;
+    top: -5%;
+    right: -7.5%;
 }
 .myTourSelectContainer .item-right .down-border {
-  bottom: 20%;
-  right: -7.5%;
+    bottom: 20%;
+    right: -7.5%;
 }
 .myTourSelectContainer .item-right .num {
     font-size: 60px;
@@ -77,21 +77,22 @@
     color: #111;
 }
 .myTourSelectContainer .item-right .day, .myTourSelectContainer .item-left .event {
-  color: #555;
-  font-size: 16px;
+    color: #555;
+    font-size: 16px;
 }
 .myTourSelectContainer .item-right .day {
     text-align: center;
     font-size: 25px;
 }
 .myTourSelectContainer .item-left {
-  width: 100%;
-  border-left: 3px dotted #999;
-  box-sizing: border-box;
+    width: 100%;
+    border-left: 3px dotted #999;
+    box-sizing: border-box;
 }
 .myTourSelectContainer .item-left .title {
-  color: #111;
-  font-size: 34px;
+
+    color: #111;
+    font-size: 34px;
 }
 .TicketClick:hover{
     cursor: pointer;

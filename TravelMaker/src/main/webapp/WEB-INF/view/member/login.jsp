@@ -75,7 +75,6 @@
 		Kakao.Auth.login({
 			scope: "account_email",
 			success: function (response) {
-				kakaoLogin();
 				Kakao.API.request({
 					url: '/v2/user/me',
 					success: function (res) {
@@ -90,10 +89,12 @@
 							dataType: 'text',
 							success: function(result) {
 								if(result=='registered') {
-									location.replace("http://192.168.219.103:9282/");
+									sessionStorage.setItem("email", email);
+									location.replace("http://localhost:9282/");
 								}
 								else if(result=='notRegistered') {
-									location.replace("http://192.168.219.103:9282/{result}");
+									sessionStorage.setItem("email", email);
+									location.replace("http://localhost:9282/{result}");
 								}
 								else {
 									alert("오류가 발생했습니다. 다시 시도해주세요.");

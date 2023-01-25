@@ -133,6 +133,32 @@ public class MemberController {
         return "success";
     }
 
+    @RequestMapping(value = "/member/signUpWithImage", method = RequestMethod.POST)
+    public String signUpWithImage(HttpSession session, @RequestParam("nickname") String nickname, @RequestParam(value = "intro", required = false) String intro, @RequestParam(value = "attFile", required = false) MultipartFile img) throws IOException, ServletException {
+        log.info("signUpWithImage");
+        log.info("email: " + session.getAttribute("email"));
+        MemberDto memberDto = new MemberDto();
+        log.info("nickname: " + memberDto.getNickname());
+        memberDto.setEmail((String)session.getAttribute("email"));
+        memberDto.setUserComment(intro);
+        memberDto.setNickname(nickname);
+        log.info("intro: " + memberDto.getUserComment());
+        log.info("nickname: " + memberDto.getNickname());
+        AttVo attVo = new AttVo();
+        try {
+            attVo = fileupload(img);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if(attVo != null) {
+            memberDto.setOriUserPhoto(attVo.getOriFile());
+            memberDto.setSysUserPhoto(attVo.getSysFile());
+        }
+        log.info("nickname: " + memberDto.getNickname());
+        memberService.insertMember(memberDto);
+        return null;
+    }
+
     @RequestMapping(value = "/member/memberUpdateWithImage", method = RequestMethod.POST)
     public String memberUpdateWithImage(HttpSession session, @RequestParam("nickname") String nickname, @RequestParam("intro") String intro, @RequestParam("attFile") MultipartFile img) throws IOException, ServletException {
         log.info("memberUpdateWithImage");
