@@ -43,7 +43,7 @@
 -->
 <main class="show list">
     <c:if test="${message != null}">
-        <div class="message"><h2>${message}</h2></div>
+        <div class="message"><h2>${message}</h2><br/><img id="cat" src="images/cat.gif"> </div>
     </c:if>
     <c:forEach var='item' items='${result}' varStatus="status">
         <form class="item" id="item" onclick="openModal(this)">

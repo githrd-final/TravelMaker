@@ -79,8 +79,7 @@
   position: relative;
 }
 
-.img-box{
-	background-image: url("/images/zha.jpeg");
+#img_box{
 	background-position : center;
 	background-size : cover;
 	border-radius: 50%;

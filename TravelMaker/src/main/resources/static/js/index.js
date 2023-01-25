@@ -1,12 +1,10 @@
 /**
  *
  */
+
+/** 로그인 상태*/
+
 /**후기게시판 연결  */
-$( document ).ready(function() {
-	if(sessionStorage.getItem('email')!=null){
-		location.replace('/index');
-	}
-});
  $('.btnReviewBoard').on('click', function(){
 	 $('#content').load('/review/reviewSelect')
  })

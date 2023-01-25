@@ -82,6 +82,7 @@ if(width_size<=450){
 $('.search-btn').on('click', function() {
 purchaseDto += "&searchTxt="+$(".searchTxt").val();
 console.log(purchaseDto);
+    $('.recommandList').load("/plan/loading");
 	$.post('plan/itemList/searchList', purchaseDto, function(data) {
 		$('.recommandList').html(data);
 	});
