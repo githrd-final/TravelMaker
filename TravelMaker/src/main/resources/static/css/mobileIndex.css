@@ -99,7 +99,11 @@ section {
 	align-items:center;
 	padding: 6vh 8vw;
 }
-
+.btnLogout{
+	text-decoration:none;
+	color:white;
+	opacity:0.75;
+}
 
 
 .btn {
@@ -130,7 +134,7 @@ section {
 	animation: fadeIn 1s  0.5s forwards ease-in;
 	display: grid;
 	grid-template-areas:
-	". start ." "startDate date1 date1"
+	"start start start" "startDate date1 date1"
 	". amPm1 amPm1" "endDate date2 date2" ". amPm2 amPm2" "people su ." "button button button";
 	gap:10px;
 }
