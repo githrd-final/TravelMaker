@@ -3,11 +3,13 @@ package com.project1.tourapi;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+@Slf4j
 public class TourAPIJsonParsing {
 	JSONParser parser;
 	JSONObject obj;
@@ -25,8 +27,14 @@ public class TourAPIJsonParsing {
 			JSONObject respObj = (JSONObject)obj.get("response");
 			
 			JSONObject bodyObj = (JSONObject)respObj.get("body");
-			System.out.println("바디오브제"+ bodyObj);
+			log.info("bodyObj: " + bodyObj);
+			log.info("bodyObj.get(\"items\"): " + bodyObj.get("items"));
+			if(bodyObj.get("items") == "") {
+				log.info("bodyObj.get(\"items\") == null");
+				return null;
+			}
 			JSONObject itemsObj = (JSONObject)bodyObj.get("items");
+			log.info("itemsObj: {}", itemsObj);
 			JSONArray itemArr = (JSONArray)itemsObj.get("item");
 			for(Object item : itemArr) {
 				JSONObject itemObj = (JSONObject)item;
