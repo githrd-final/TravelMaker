@@ -8,6 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel='stylesheet' media='screen and (min-width : 450px)' href='../css/purchasedTicket.css'>
 <link rel='stylesheet' media='screen and (max-width : 450px)' href='../css/mobilePurchasedTicket.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>

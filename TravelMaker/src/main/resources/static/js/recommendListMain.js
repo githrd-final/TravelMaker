@@ -74,7 +74,7 @@ if(width_size<=450){
 }else{
     $('#btnMyTravel').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan/', p, function(data){
+        $.post('/planner/planner/', p, function(data){
             $('#content').html(data);
     })})}
     
