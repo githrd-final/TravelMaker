@@ -3,6 +3,7 @@
 		 pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="var" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
@@ -81,23 +82,23 @@
 		<c:choose>
 			<c:when test="${orderDto.region eq 7}">
 				<c:set var="total" value="${orderDto.people * 30000}" />
-				<span name="region" value="${orderDto.region}">${total}원</span>
+				<span id="price" name="price" value="${total}"><fmt:formatNumber value="${total}" pattern="#,###"/>원</span>
 			</c:when>
 			<c:when test="${orderDto.region eq 1}">
 				<c:set var="total" value="${orderDto.people * 35000}" />
-				<span name="region" value="${orderDto.region}">${total}원</span>
+				<span id="price" name="price" value="${total}"><fmt:formatNumber value="${total}" pattern="#,###"/>원</span>
 			</c:when>
 			<c:when test="${orderDto.region eq 3}">
 				<c:set var="total" value="${orderDto.people * 40000}" />
-				<span name="region" value="${orderDto.region}">${total}원</span>
+				<span id="price" name="price" value="${total}"><fmt:formatNumber value="${total}" pattern="#,###"/>원</span>
 			</c:when>
 			<c:when test="${orderDto.region eq 4}">
 				<c:set var="total" value="${orderDto.people * 40000}" />
-				<span name="region" value="${orderDto.region}">${total}원</span>
+				<span id="price" name="price" value="${total}"><fmt:formatNumber value="${total}" pattern="#,###"/>원</span>
 			</c:when>
 			<c:when test="${orderDto.region eq 5}">
 				<c:set var="total" value="${orderDto.people * 35000}" />
-				<span name="region" value="${orderDto.region}">${total}원</span>
+				<span id="price" name="price" value="${total}"><fmt:formatNumber value="${total}" pattern="#,###"/>원</span>
 			</c:when>
 		</c:choose>
 	</div>
