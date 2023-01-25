@@ -417,7 +417,11 @@ var kakaoMap = (function(){
 					success : function(data){
 						setBucketPositions(data);
 						setMarkers(bucketPositions);
-						setBounds(bounds,linePath);
+						if(linePath.length != 0){
+							setBounds(bounds,linePath);
+						} else {
+							showBucket(param);
+						}
 					},
 					error : function(request,status,error){
 						alert("error : " + error);

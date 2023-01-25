@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /* myTour/M_myTourSelect.jsp 내여행 페이지(모바일용!!) */
 
 #myTourSelectMain {
@@ -23,15 +23,12 @@
     font-size: 1.5rem;
 }
 .logo{
-    float: left;
-    width: 18vh;
-    height: 27vh;
-    position: absolute;
-    top: 2vh;
-    left: -2vh;
+    width: 100%;
+    height: 100%;
 }
 .myTourSelectContainer .myTourSelectItem {
-  width: 90%;
+  width: 90vw;
+  height: 45vw;
   display:inline-block;
   padding: 0 2vw;
   /* background: #ECE9E6; */
@@ -44,16 +41,19 @@
 .TicketClick:hover{
 	cursor: pointer;
 }
-.myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
-  /* float: left; */
-  padding: 2vh; 
+.TicketClick{
+	display : grid;
+	height: 100%;
+	width : 95%;
+}
+.TicketClick>div, .TicketClick>p, .TicketClick>h2{
+	margin-left : 10%;
+	align-self: end;
 }
 .myTourSelectContainer .item-right {
-  padding: 7.9vh 5vh;
-  margin-left: 1vh;
-  width: 25%;
+  width: 100%;
   position: relative;
-  height: 15vh;
+  height: 100%;
 }
 .myTourSelectContainer .item-right .up-border, .myTourSelectContainer .item-right .down-border {
     padding: 14px 15px;
@@ -62,12 +62,12 @@
     position: absolute;
 }
 .myTourSelectContainer .item-right .up-border {
-  top: -1vh;
-  right: -7vh;
+  top: -5%;
+  right: -4.3vw;
 }
 .myTourSelectContainer .item-right .down-border {
-  bottom: -3.3vh;
-  right: -7vh;
+  bottom: 20%;
+  right: -4.3vw;
 }
 .myTourSelectContainer .item-right .num {
   font-size: 60px;
@@ -76,7 +76,7 @@
 }
 .myTourSelectContainer .item-right .day, .myTourSelectContainer .item-left .event {
   color: #555;
-  margin-bottom: 0.5vh;
+  font-size: 1.2rem;
 }
 .myTourSelectContainer .item-right .day {
   text-align: center;
@@ -84,24 +84,22 @@
 }
 .myTourSelectContainer .item-left {
   width: 100%;
-  padding: 4vh 0vw 1.8vh 8vw;
+  padding: 4vh 0vw 1.8vh 0vw;
   border-left: 3px dotted #999;
 }
 
 .myTourSelectContainer .item-left .title {
   color: #111;
   font-size: 2rem;
-  margin-bottom: 12px;
 }
 .myTourSelectContainer .item-left .sce {
-  margin-top: 5px;
   display: block;
 }
 .myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .sce p,
 .myTourSelectContainer .item-left .loc .icon, .myTourSelectContainer .item-left .loc p{
     float:left;
     color: #888;
-    margin-bottom: 0.8vh;
+    line-height: 20px;
 }
 .myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .loc .icon {
   margin-right: 10px;
@@ -111,7 +109,7 @@
 .myTourSelectContainer .item-left .loc {display: block}
 .fix {clear: both}
 .myTourSelectContainer .myTourSelectItem .btnReview1{
-	width: 43vw;
+	width: 90%;
 	background-color: #fff;
 	border: 0 solid #e2e8f0;
 	border-radius: 1.5rem;
@@ -132,9 +130,10 @@
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
+	justify-self : center;
 }
 .myTourSelectContainer .myTourSelectItem .btnMyReview{
-	width: 43vw;
+	width: 90%;
 	background-color: #fff;
 	border: 0 solid #e2e8f0;
 	border-radius: 1.5rem;
@@ -155,6 +154,7 @@
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
+	justify-self : center;
 }
 .myTourSelectContainer .myTourSelectItem .btnReview1:hover,.btnMyReview:hover {
 	background-color: tomato;
@@ -168,8 +168,8 @@
 	width: 30vw;
 	justify-items : center;
 	gap : 2px;
-	margin-top: 15vh;
-	margin-bottom: 15vh;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 #ri_page_btn div{
 	width : 100%;

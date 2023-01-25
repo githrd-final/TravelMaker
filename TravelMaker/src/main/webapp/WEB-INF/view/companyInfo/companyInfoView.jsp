@@ -42,7 +42,7 @@
 				여행을 떠나 보세요.
 			</div>
 			<div id='ci_blank_10vh'></div>
-			<div class='ci_ticket_purchase'>티켓 구매하러 가기</div>
+			<div class='ci_ticket_purchase ci_ticket_go'>티켓 구매하러 가기</div>
 			<div id='ci_blank_50vh'></div>
 			<div class='ci_recommend'>
 				어떤 여행을 해야 할 지 망설여진다면?<br>
@@ -50,7 +50,7 @@
 				
 			</div>
 			<div id='ci_blank_10vh'></div>
-			<div class='ci_ticket_purchase'>여행 후기 보러 가기</div>
+			<div class='ci_ticket_purchase ci_review_go'>여행 후기 보러 가기</div>
 			<div id='ci_blank_50vh'></div>
 		</main>
 	</body>
