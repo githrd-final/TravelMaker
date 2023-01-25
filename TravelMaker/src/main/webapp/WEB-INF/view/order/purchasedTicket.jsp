@@ -68,7 +68,7 @@
          </div> <!-- end item-left -->
       </div> <!-- end item -->
 
-      <div id="myTourSelectItem" >
+      <div id="myTourSelectItem"  >
          <div class="item-right">
             <img class="logo" src='./images/LOGO5.png'/>
             <span class="up-border"></span>
