@@ -246,7 +246,7 @@ public class TourAPIGetData {
 					+"&numOfRows="+numOfRows
 					+"&MobileOS="+ MobileOS
 					+"&MobileApp="+ MobileApp
-					+"&arrange=O"
+					+"&arrange=R"
 					+"&_type="+type
 					+"&contentTypeId="+contentTypeId
 					+"&mapX="+mapX
