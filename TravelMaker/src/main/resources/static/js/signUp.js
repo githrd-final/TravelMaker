@@ -2,7 +2,7 @@
  *
  */
 
-$('#miv_img_box').on('click',function(){
+$('#img_box').on('click',function(){
 	var file = $('.btnProfileSelect')
 	file.click();
 })
