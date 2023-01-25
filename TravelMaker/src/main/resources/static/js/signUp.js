@@ -27,8 +27,12 @@ var att = function(file) {
 */
 
 $('.btnSubmit').on('click',function(){
-	var frm = $('#frm')[0];
+	var frm = $('.signupContainer')[0];
+	var email = sessionStorage.getItem("email");
+	console.log("email subi"+email);
 	var param = new FormData(frm);
+	console.log()
+	console.log("subi 가입 param"+param);
 	if(frm.nickname.value == ""){
 		alert("닉네임을 입력해주세요.");
 		frm.nickname.focus();

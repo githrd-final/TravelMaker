@@ -92,9 +92,9 @@
 .myTourSelectContainer .item-left .title {
   color: #111;
   font-size: 34px;
+}
 .TicketClick:hover{
     cursor: pointer;
-}
 }
 .myTourSelectContainer .item-left .sce {
     margin-top: 5px;
