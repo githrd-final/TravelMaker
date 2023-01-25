@@ -51,21 +51,21 @@
 
 						</div>
 						<div class="fix"></div>
+						<c:choose>
+							<c:when test="${vo.myReview ne false}">
+									<input type='button' class='btnMyReview' value='내 후기' 
+										onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
+							</c:when>
+							<c:otherwise>
+									<jsp:useBean id="now" class="java.util.Date"/>
+									<fmt:parseDate value="${vo.endDate }" pattern="yyyy-MM-dd" var="Date"/>
+									<fmt:formatDate value="${now }" pattern="yyyyMMdd" var="nowDate"/>
+									<fmt:formatDate value="${Date }" pattern="yyyyMMdd" var="endDate"/>
+									<input type='button' class="btnReview1" value='후기 작성' onclick="myTour.insert('${vo.purchaseSerial}')" 
+													<c:if test="${nowDate<endDate }">style="display:none;"</c:if>/>
+							</c:otherwise>
+						</c:choose>
 					</div>
-					<c:choose>
-						<c:when test="${vo.myReview ne false}">
-								<input type='button' class='btnMyReview' value='내 후기' 
-									onclick="myTour.reviewView('${vo.purchaseSerial}', '${vo.reviewSerial }')"/>
-						</c:when>
-						<c:otherwise>
-								<jsp:useBean id="now" class="java.util.Date"/>
-								<fmt:parseDate value="${vo.endDate }" pattern="yyyy-MM-dd" var="Date"/>
-								<fmt:formatDate value="${now }" pattern="yyyyMMdd" var="nowDate"/>
-								<fmt:formatDate value="${Date }" pattern="yyyyMMdd" var="endDate"/>
-								<input type='button' class="btnReview1" value='후기 작성' onclick="myTour.insert('${vo.purchaseSerial}')" 
-												<c:if test="${nowDate<endDate }">style="display:none;"</c:if>/>
-						</c:otherwise>
-					</c:choose>
 				</div> <!-- end item-left -->
 			</div> <!-- end item -->
 		</c:forEach>
