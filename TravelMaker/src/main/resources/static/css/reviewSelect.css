@@ -122,7 +122,7 @@
 	justify-self : end;
 }
 #rs_contents_filter_list{
-	width : 40px;
+	width : 12vw;
 	display: grid;
 	grid-template-rows: repeat(4,1fr);
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -203,6 +203,12 @@
 }
 .rs_content_title{
 	grid-column : 2/3;
+	width : 80vw;
+	height: fit-content;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space: nowrap;
+	display: block;
 }
 .rs_content_3{
 	display : grid;

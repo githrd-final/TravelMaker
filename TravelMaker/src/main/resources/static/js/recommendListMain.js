@@ -44,6 +44,7 @@ var purchaseDto = frm.serialize();
         
 /*관광지 추천 리스트 */
    $('.btnTouristAttractions').on('click', function(){
+		console.log("관광지누름 ~");
        $('.recommandList').load("/plan/loading");
        $.post('plan/itemList/12', purchaseDto, function(data) {
            $('.recommandList').html(data);
@@ -73,7 +74,11 @@ if(width_size<=450){
     })
 }else{
     $('#btnMyTravel').on('click',function(){
-        $('#content').load('/planner/planner');
+		var p = "purchaseSerial="+purchaseSerial;
+		$.post('/plan/itemModalToPlan/', p, function(data){
+		    $('#content').html(data);
+	});
+
     })}
     
 //검색------------------------------------
@@ -91,8 +96,5 @@ $(document).ready(function(){
   }); 
 
     
-        var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan/', p, function(data){
-            $('#content').html(data);
-        });
-})}
+
+
