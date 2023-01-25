@@ -73,8 +73,10 @@ if(width_size<=450){
     })
 }else{
     $('#btnMyTravel').on('click',function(){
-        $('#content').load('/planner/planner');
-    })}
+        var p = "purchaseSerial="+purchaseSerial;
+        $.post('/plan/itemModalToPlan/', p, function(data){
+            $('#content').html(data);
+    })})}
     
 //검색------------------------------------
 $('.search-btn').on('click', function() {
@@ -88,11 +90,4 @@ console.log(purchaseDto);
 //로드 완료 시 숙소 클릭되게---------------------
 $(document).ready(function(){
    $('.btnAccommodation').click();
-  }); 
-
-    
-        var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan/', p, function(data){
-            $('#content').html(data);
-        });
-})}
+  });
