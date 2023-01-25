@@ -1,56 +1,57 @@
 @charset "UTF-8";
 
 #myTourSelectMain {
-  background: #ECE9E6;
-  width:100%;
-  height:100%;
-  margin:0;
-} 
+    background: #ECE9E6;
+    width:100%;
+    height:100%;
+    margin:0;
+}
 
 .myTourSelectContainer {
-  width: 70%;
-  margin: 0 auto;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr ;
-  gap:10px;
-  margin-top:0;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap:10px;
+    margin-top:0;
 }
 .upcomming {
-  justify-self: start;
-  padding:20px;
-  margin: 18px 8px;
-  font-size: 1.5rem;
+    justify-self: start;
+    padding:20px;
+    margin: 18px 8px;
+    font-size: 1.5rem;
 }
 .logo{
-   float : left;
+    float : left;
     width: 26vh;
     height: 32vh;
     position : absolute;
     top: 3vh;
     left: -1.9vh;
 }
-.myTourSelectContainer .myTourSelectItem {
-  width: 650px;
-  height: 250px;
-  display:inline-block;
-  padding: 0 20px;
-  /* background: #ECE9E6; */
-  background: #fff;
-  overflow: hidden;
-  margin: 10px auto;
+.myTourSelectContainer #myTourSelectItem {
+    width: 650px;
+    height: 250px;
+    display:inline-block;
+    padding: 0 20px;
+    /* background: #ECE9E6; */
+    background: #fff;
+    overflow: hidden;
+    margin: 10px auto;
 }
 
+
 .myTourSelectContainer .item-right, .myTourSelectContainer .item-left {
-  float: left;
-  padding: 20px; 
+    float: left;
+    padding: 20px;
 }
 .myTourSelectContainer .item-right {
-  padding: 79px 50px;
-  margin-right: 20px;
-  width: 25%;
-  position: relative;
-  height: 150px;
+    padding: 79px 50px;
+    margin-right: 20px;
+    width: 25%;
+    position: relative;
+    height: 150px;
 }
 .myTourSelectContainer .item-right .up-border, .myTourSelectContainer .item-right .down-border {
     padding: 14px 15px;
@@ -59,43 +60,43 @@
     position: absolute;
 }
 .myTourSelectContainer .item-right .up-border {
-  top: -8px;
-  right: -35px;
+    top: -8px;
+    right: -35px;
 }
 .myTourSelectContainer .item-right .down-border {
-  bottom: -13px;
-  right: -35px;
+    bottom: -13px;
+    right: -35px;
 }
 .myTourSelectContainer .item-right .num {
-  font-size: 60px;
-  text-align: center;
-  color: #111;
+    font-size: 60px;
+    text-align: center;
+    color: #111;
 }
 .myTourSelectContainer .item-right .day, .myTourSelectContainer .item-left .event {
-  color: #555;
-  font-size: 16px;
-  margin-bottom: 9px;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 9px;
 }
 .myTourSelectContainer .item-right .day {
-  text-align: center;
-  font-size: 25px;
+    text-align: center;
+    font-size: 25px;
 }
 .myTourSelectContainer .item-left {
-  width: 71%;
-  padding: 7vh 0px 7vh 46px;
-  border-left: 3px dotted #999;
+    width: 71%;
+    padding: 7vh 0px 7vh 46px;
+    border-left: 3px dotted #999;
 }
 .TicketClick:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
-.myTourSelectContainer .item-left .title {
-  color: #111;
-  font-size: 34px;
-  margin-bottom: 12px;
+.myTourSelectContainer .item-left #title {
+    color: #111;
+    font-size: 34px;
+    margin-bottom: 12px;
 }
 .myTourSelectContainer .item-left .sce {
-  margin-top: 5px;
-  display: block;
+    margin-top: 5px;
+    display: block;
 }
 .myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .sce p,
 .myTourSelectContainer .item-left .loc .icon, .myTourSelectContainer .item-left .loc p{
@@ -106,34 +107,40 @@
     margin-bottom: 10px;
 }
 .myTourSelectContainer .item-left .sce .icon, .myTourSelectContainer .item-left .loc .icon {
-  margin-right: 10px;
-  font-size: 20px;
-  color: tomato;
+    margin-right: 10px;
+    font-size: 20px;
+    color: tomato;
 }
 .myTourSelectContainer .item-left .loc {display: block}
 .fix {clear: both}
 
 /*버튼------------------------------------*/
 #divBtnPlan{
-	margin:auto;
+    margin:auto;
 }
 
 #btnPlan{
-	height : 100px;
-	background-color : #fff;
-	border : 4px solid rgb(234, 175, 166);
-	border-radius : 5px;
-	font-size : 3vh;
-	font-weight : bold;
-	color : rgb(234, 175, 166);
-	text-align : center;
-	margin : 4vh auto;
-	padding : 1vw;
+    height : 100px;
+    background-color : #fff;
+    border : 4px solid rgb(234, 175, 166);
+    border-radius : 5px;
+    font-size : 3vh;
+    font-weight : bold;
+    color : rgb(234, 175, 166);
+    text-align : center;
+    margin : 4vh auto;
+    padding : 1vw;
 }
 
 #btnPlan:hover{
-	background-color : rgb(234, 175, 166);
-	color : #fff;
-	cursor : pointer;
-	font-size : 3vh;
+    background-color : rgb(234, 175, 166);
+    color : #fff;
+    cursor : pointer;
+    font-size : 3vh;
+}
+
+
+.animate__animated.animate__bounceIn {
+    --animate-duration: 2.5s;
+    --animate-delay: 2s;
 }
