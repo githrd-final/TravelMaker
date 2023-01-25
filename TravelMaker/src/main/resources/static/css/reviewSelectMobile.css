@@ -211,6 +211,13 @@ html{
 }
 .rs_content_title{
 	grid-column : 2/3;
+	width : 80vw;
+	height: fit-content;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space: nowrap;
+	display: block;
+	
 }
 .rs_content_3{
 	display : grid;
@@ -226,7 +233,7 @@ html{
 	font-size: 1.3rem;
 	background-color : #FECCBE;
 	width: 10vw;
-	height: 2vh;
+	height: 3vh;
 	padding : 0.2vh;
 	color: #ff6347;
 	border-radius : 20%;

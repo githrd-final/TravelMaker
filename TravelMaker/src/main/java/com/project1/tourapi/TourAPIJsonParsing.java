@@ -19,11 +19,13 @@ public class TourAPIJsonParsing {
 	// 조회 데이터의 contentid 가져오기
 	public List<String> getContentIdList(String json) {
 		List<String> contentIdList = new ArrayList<>();
-			
+		System.out.println("뭐가 넘어왓니" + json);
 		parser = new JSONParser();
 		try {
 			obj = (JSONObject)parser.parse(json);
+			System.out.println("subi obj : "+obj);
 			JSONObject respObj = (JSONObject)obj.get("response");
+			
 			JSONObject bodyObj = (JSONObject)respObj.get("body");
 			log.info("bodyObj: " + bodyObj);
 			log.info("bodyObj.get(\"items\"): " + bodyObj.get("items"));
