@@ -118,13 +118,15 @@
 }
 .reviewInsertBtn{
 	grid-area: button;
-	justify-self: end;
+	justify-self: end !important;
 	height: 50px;
 	width:120px;
 	background-color: tomato;
 	color:#fff;
 	border:none;
 	border-radius:10px;
+	margin: 4vh;
+	float: right; 
 }
 .reviewInsertBtn:hover {
   opacity: 0.57;
