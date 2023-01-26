@@ -21,7 +21,7 @@
 	}
 	
 	.regionSelectAll{
-		height : 80vh;
+		height : 100vh;
 		margin-top : 1em;
 		grid-column: 1 / 2;
 		grid-row: 2 / 4;
