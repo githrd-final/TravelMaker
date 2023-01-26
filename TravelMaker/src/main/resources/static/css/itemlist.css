@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+.message{
+    text-align: center;
+}
+
+#cat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    height : 60%;
+}
+
 #item {
    display: grid;
     grid-template-columns: 3fr 1fr;

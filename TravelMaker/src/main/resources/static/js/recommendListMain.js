@@ -7,7 +7,6 @@
 }*/
 
 var purchaseSerial = $("#purchaseSerial").val();
-
 var load = $("#load");
 
 function checkOnlyOne(element) {
@@ -68,8 +67,6 @@ var width_size = window.outerWidth;
 if(width_size<=450){
     $('#btnMyTravel').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial+"&flag="+$("#flag").val();
-        
-		console.log(p);
         $.post('/plan/itemModalToMPlan/', p, function(data){
             $('#content').html(data);
         });
@@ -77,15 +74,15 @@ if(width_size<=450){
 }else{
     $('#btnMyTravel').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan/', p, function(data){
+        $.post('/planner/planner/', p, function(data){
             $('#content').html(data);
-        });
-})}
+    })})}
     
 //검색------------------------------------
 $('.search-btn').on('click', function() {
 purchaseDto += "&searchTxt="+$(".searchTxt").val();
 console.log(purchaseDto);
+    $('.recommandList').load("/plan/loading");
 	$.post('plan/itemList/searchList', purchaseDto, function(data) {
 		$('.recommandList').html(data);
 	});
@@ -94,7 +91,4 @@ console.log(purchaseDto);
 //로드 완료 시 숙소 클릭되게---------------------
 $(document).ready(function(){
    $('.btnAccommodation').click();
-  }); 
-
-    
-
+  });

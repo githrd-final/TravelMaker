@@ -21,7 +21,7 @@ public class TourAPIGetData {
 	BufferedReader br;
 	
 	// APIkey 는 본인의 것을 입력
-	public String APIkey = "qh4CfQ%2Bggb52uK85r%2FArSAHHQVK1HnB88uiOLllZJl6VDh42fLJ8j1s5%2FjlhAcuW9iXT5ZEicRAXjqT1FV2KWQ%3D%3D";
+	public String APIkey = "Fqd8%2BHKkArEPTxQGOP%2FX7ZbbAmG2D7Lu1K0dDiShmyOx9wOG0rq%2BwzD7CpKMCQOsCO36RthiCyIqnug6aIUnow%3D%3D";
 	public String MobileOS = "ETC";
 	public String MobileApp = "APPTest";
 	public String type = "json";
@@ -186,6 +186,7 @@ public class TourAPIGetData {
 			
 			try {
 				Encodedkeyword = URLEncoder.encode(keyword,"UTF-8");
+				System.out.println("제발"+Encodedkeyword);
 				String url = "http://apis.data.go.kr/B551011/KorService/searchKeyword?serviceKey=" + APIkey
 						+"&pageNo="+pageNo
 						+"&numOfRows="+numOfRows
@@ -196,14 +197,14 @@ public class TourAPIGetData {
 					    +"&arrange=R"
 					    +"&sigunguCode="+sigunguCode
 					    +"&keyword="+Encodedkeyword;
-				
+				System.out.println("url:"+url);
 				json = readURL(url);
 				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 			
-			
+			System.out.println("jsontostring"+json.toString());
 			
 		
 		return json.toString();
@@ -246,7 +247,7 @@ public class TourAPIGetData {
 					+"&numOfRows="+numOfRows
 					+"&MobileOS="+ MobileOS
 					+"&MobileApp="+ MobileApp
-					+"&arrange=O"
+					+"&arrange=R"
 					+"&_type="+type
 					+"&contentTypeId="+contentTypeId
 					+"&mapX="+mapX

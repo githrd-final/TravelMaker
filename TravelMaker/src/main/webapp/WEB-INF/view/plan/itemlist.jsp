@@ -1,4 +1,5 @@
-<%@ page import="com.project1.order.PurchaseDto" %><%--
+<%@ page import="com.project1.order.PurchaseDto" %>
+<%--
   Created by IntelliJ IDEA.
   User: jerry
   Date: 2023/01/05
@@ -17,6 +18,7 @@
 
 <%
     PurchaseDto purchaseDto = (PurchaseDto)request.getAttribute("purchaseDto");
+    String message = (String)request.getAttribute("message");
 %>
 <form action = 'purchasedTicket' method = 'post' id="frm" hidden/>
     <input type="text" name="purchaseSerial" id="purchaseSerial" value="${purchaseDto.purchaseSerial}" style="display:none"/>
@@ -40,6 +42,9 @@
 </div>
 -->
 <main class="show list">
+    <c:if test="${message != null}">
+        <div class="message"><h2>${message}</h2><br/><img id="cat" src="images/cat.gif"> </div>
+    </c:if>
     <c:forEach var='item' items='${result}' varStatus="status">
         <form class="item" id="item" onclick="openModal(this)">
             <div class="item-name">${item.title}</div>

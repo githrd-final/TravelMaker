@@ -3,11 +3,13 @@ package com.project1.tourapi;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+@Slf4j
 public class TourAPIJsonParsing {
 	JSONParser parser;
 	JSONObject obj;
@@ -17,13 +19,22 @@ public class TourAPIJsonParsing {
 	// 조회 데이터의 contentid 가져오기
 	public List<String> getContentIdList(String json) {
 		List<String> contentIdList = new ArrayList<>();
-			
+		System.out.println("뭐가 넘어왓니" + json);
 		parser = new JSONParser();
 		try {
 			obj = (JSONObject)parser.parse(json);
+			System.out.println("subi obj : "+obj);
 			JSONObject respObj = (JSONObject)obj.get("response");
+			
 			JSONObject bodyObj = (JSONObject)respObj.get("body");
+			log.info("bodyObj: " + bodyObj);
+			log.info("bodyObj.get(\"items\"): " + bodyObj.get("items"));
+			if(bodyObj.get("items") == "") {
+				log.info("bodyObj.get(\"items\") == null");
+				return null;
+			}
 			JSONObject itemsObj = (JSONObject)bodyObj.get("items");
+			log.info("itemsObj: {}", itemsObj);
 			JSONArray itemArr = (JSONArray)itemsObj.get("item");
 			for(Object item : itemArr) {
 				JSONObject itemObj = (JSONObject)item;

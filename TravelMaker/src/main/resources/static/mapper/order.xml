@@ -38,7 +38,7 @@
     </select>
 
     <select id="getRegion" resultType="Integer" parameterType="String">
-        select region from ticket where ticketEndPoint = #{_parameter} limit 1
+        select region from regioncity where city = #{_parameter}
     </select>
 
     <insert id="insertPurchase" parameterType="com.project1.order.PurchaseDto">

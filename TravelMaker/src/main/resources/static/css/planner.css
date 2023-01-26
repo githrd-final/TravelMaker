@@ -119,7 +119,6 @@ body{
 
 .planBucketItem span{
 	display:inline-block;
-	padding:3px;
 }
 
 
@@ -135,10 +134,17 @@ body{
 .bucketDataZone span.planBucketItemTitle{
 	font-size:1.5rem;
 	font-weight:bold;
+	width:70%;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.bucketDataZone span.planBucketItemType{
+	vertical-align: sub;
 }
 .planBucketItem>span.planBucketItemIcon{
 	position:relative;
-	bottom:45px;
+	bottom:38px;
 	right:10px;
  	float:right;
 }
@@ -476,12 +482,22 @@ body{
 	border-radius: 15px 15px 0 0;
 	padding:10px;
 	text-align:center;
+	
 }
 
 .customViewHeader>span{
+	display:inline-block;
 	font-size:1.2rem;
 	font-weight:bold;
 	color:#fff;
+	
+}
+
+.customViewHeader>span.cvTitle{
+	width:70%;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .customViewHeader>span.cvXIcon{
@@ -491,7 +507,7 @@ body{
 
 
 .customViewBody{
-	max-width:400px;
+	max-width:500px;
 	display: flex;
 	flex-direction:row;
 	background-color:#fff;

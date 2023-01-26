@@ -60,10 +60,19 @@ public class PlanController {
 		String city = purchaseDto.getCity();
 		String areaCode = planService.findAreaCode(city);
 		String sigunguCode = planService.findSigunguCode(city);
+		
 		System.out.println("area : " + areaCode);
 		System.out.println("si : " +sigunguCode);
+		System.out.println("keyword : "+keyWord);
 		String a = tourAPIGetData.getKeywordJsonData(keyWord,areaCode,sigunguCode);
+		System.out.println("a"+a);
 		List<String> b = tourAPIJsonParsing.getContentIdList(a);
+		if(b == null) {
+			log.info("검색결과 없음");
+			request.setAttribute("message", "검색결과가 없습니다.");
+			mv.setViewName("plan/itemlist");
+			return mv;
+		}
 		List<String> c = tourAPIGetData.getDetailJsonDataList(b);
 		List<testVo> result = tourAPIJsonParsing.getOutputList(c);
 		mv.addObject("result", result);

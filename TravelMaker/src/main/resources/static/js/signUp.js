@@ -2,6 +2,11 @@
  *
  */
 
+$('#img_box').on('click',function(){
+	var file = $('.btnProfileSelect')
+	file.click();
+})
+
 var att = function(file) {
 	if (file.files && file.files[0]) {
 		var reader = new FileReader();
@@ -28,7 +33,9 @@ var att = function(file) {
 
 $('.btnSubmit').on('click',function(){
 	var frm = $('#frm')[0];
+	var email = sessionStorage.getItem("email");
 	var param = new FormData(frm);
+	console.log(param);
 	if(frm.nickname.value == ""){
 		alert("닉네임을 입력해주세요.");
 		frm.nickname.focus();
@@ -37,7 +44,7 @@ $('.btnSubmit').on('click',function(){
 	else {
 		$.ajax({
 			type: 'POST',
-			url: '/member/memberUpdateWithImage',
+			url: '/member/signUpWithImage',
 			contentType: false,
 			processData: false,
 			data: param,

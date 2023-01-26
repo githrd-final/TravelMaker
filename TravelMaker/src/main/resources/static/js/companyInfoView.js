@@ -2,8 +2,11 @@
  * 
  */
 
-$(".ci_ticket_purchase").on('click', function(){
+$(".ci_review_go").on('click', function(){
 	$('#content').load('/review/reviewSelect');
+})
+$(".ci_ticket_go").on('click', function(){
+	location.replace('/');
 })
  
  var obs1 = new IntersectionObserver((e)=>{
