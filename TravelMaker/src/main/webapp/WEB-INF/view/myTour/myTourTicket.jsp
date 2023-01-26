@@ -17,6 +17,7 @@
 <main id='myTourSelectMain'>
 	<div class="myTourSelectContainer">
 		<form class='myTourTicketFrm' method='post'>
+			<input type='hidden' name='flag' class='flag' value='1'/>
 	      	<input type='hidden' name='purchaseSerial' class='purchaseSerial' value='${purchaseSerial }'/>
 	      	<input type='hidden' name='reviewSerial' class='reviewSerial' value='${reviewSerial }'/>
 	     </form>

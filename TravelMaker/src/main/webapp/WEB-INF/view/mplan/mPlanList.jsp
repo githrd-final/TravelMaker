@@ -52,6 +52,7 @@
 				</div>
 		</div>
 	</c:forEach>
+	<div id="listFooter"></div>
 	<script>
 
 	$('#TotalplanListFilter').on('click', function(){

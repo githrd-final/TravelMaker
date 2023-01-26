@@ -36,6 +36,7 @@
 				</div>
 		</div>
 	</c:forEach>
+	<div id="listFooter"></div>
 	<script>
 	
 	$('.bucketToPlan').on('click', function(){

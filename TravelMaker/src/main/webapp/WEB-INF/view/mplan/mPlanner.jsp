@@ -12,6 +12,7 @@
 </head>
 <body>
 <c:set var="totalTravelDay" value="${totalTravelDay}" />
+<c:set var="flag" value="${flag}" />
 <div id="map"></div>
 
 	<div id="mplanner">
@@ -91,7 +92,9 @@
 		<input type="hidden" name="planbucketSerial" id="MemoUpdatePlanbucketSerial" value="">
 		</form>
 	</div>
-	<a href="#" id="goRecommend"><span>추천</span><span>리스트</span></a>
-	<a href="#" id="goReview"><span>여행</span><span>목록</span></a>
+	<a href="#" id="goRecommend" class="goPageBtn"><span>추천</span><span>리스트</span></a>
+	<c:if test="${flag eq 1}">
+		<a href="#" id="goReview" class="goPageBtn"><span>여행</span><span>목록</span></a>
+	</c:if>
 </body>
 </html>

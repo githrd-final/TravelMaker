@@ -235,7 +235,9 @@
 		background-color:white;
 		border:none;
 	}
-	
+	#listFooter{
+		min-height:5vh;
+	}
 	.Planitem{
 		padding:1%;
 		display:grid;
@@ -304,7 +306,7 @@
 		text-align:center;
 		padding: 10px;
 	}
-	#goRecommend{
+	#goReview{
 		border-radius:50%;
 		line-height:4;
 		width:13vw;
@@ -320,7 +322,7 @@
 		color:#fff;
 		background-color:tomato;
 	}
-	#goReview{
+	#goRecommend{
 	border-radius:50%;
 	line-height:4;
 	width:13vw;

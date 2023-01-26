@@ -66,7 +66,9 @@ $(window).scroll(function(){  //스크롤이 움직일때마다 이벤트 발생
 var width_size = window.outerWidth;
 if(width_size<=450){
     $('#btnMyTravel').on('click',function(){
-        var p = "purchaseSerial="+purchaseSerial;
+        var p = "purchaseSerial="+purchaseSerial+"&flag="+$("#flag").val();
+        console.log(p);
+        
         $.post('/plan/itemModalToMPlan/', p, function(data){
             $('#content').html(data);
         });

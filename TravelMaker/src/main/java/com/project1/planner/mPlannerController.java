@@ -29,15 +29,16 @@ public class mPlannerController {
 	PlanListService planService;
 	
 	int travelDay;
+	int flag;
 	
 	@RequestMapping("/mplan/mPlanner")
-	public ModelAndView mPlannerSelect(String purchaseSerial) {
+	public ModelAndView mPlannerSelect(String purchaseSerial, String flag) {
 		ModelAndView mv = new ModelAndView();//컨트롤러 처리 결과 후 응답할 view와 view에 전달할 값을 저장 및 전달하는 클래스
-
+		
 		travelDay = service.TravelDay(purchaseSerial);
-
+		this.flag = Integer.parseInt(flag);
 		mv.addObject("purchaseSerial", purchaseSerial);
-
+		mv.addObject("flag",flag);
 		mv.addObject("totalTravelDay",travelDay);
 		mv.setViewName("mplan/mPlanner");	//응답할 view(페이지)이름 설정
 		return mv;
@@ -260,6 +261,7 @@ public class mPlannerController {
 		pDto.setCity(city);
 		pDto.setPurchaseSerial(purchaseSerial);
 		mv.addObject("purchaseDto", pDto);
+		mv.addObject("flag",flag);
 		mv.setViewName("/plan/recommendListMain");
 		
 		return mv;
