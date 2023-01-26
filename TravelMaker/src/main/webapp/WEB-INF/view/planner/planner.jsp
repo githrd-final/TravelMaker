@@ -15,7 +15,10 @@
 	<div id='planner_title'>
 		<div>여행일정</div>
 		<div>여러분만의 일정을 계획해보세요.</div>
-		<div><input type="hidden" id="purchaseSerial" value="${purchaseSerial}"/></div>
+		<div>
+			<input type="hidden" id="purchaseSerial" value="${purchaseSerial}"/>
+			<c:set var="flag" value="${flag}" />
+		</div>
 	</div>
 	<div id="plannerZone">
 		<div id="MapBucketZone">
@@ -122,7 +125,9 @@
 			<div id="planList">
 			</div>
 		</div>
-		<a href="#" id="goReview">여행목록</a>
+		<c:if test="${flag eq 1}">
+			<a href="#" id="goReview">여행목록</a>
+		</c:if>
 		<a href="#" id="goTourlist">추천목록</a>
 	</div>
 	<script>
