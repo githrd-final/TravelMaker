@@ -7,6 +7,7 @@
 }*/
 
 var purchaseSerial = $("#purchaseSerial").val();
+
 var load = $("#load");
 
 function checkOnlyOne(element) {
@@ -66,15 +67,20 @@ $(window).scroll(function(){  //스크롤이 움직일때마다 이벤트 발생
 var width_size = window.outerWidth;
 if(width_size<=450){
     $('#btnMyTravel').on('click',function(){
-        var p = "purchaseSerial="+purchaseSerial;
+        var p = "purchaseSerial="+purchaseSerial+"&flag="+$("#flag").val();
+        
+		console.log(p);
         $.post('/plan/itemModalToMPlan/', p, function(data){
             $('#content').html(data);
         });
     })
 }else{
     $('#btnMyTravel').on('click',function(){
-        $('#content').load('/planner/planner');
-    })}
+        var p = "purchaseSerial="+purchaseSerial;
+        $.post('/plan/itemModalToPlan/', p, function(data){
+            $('#content').html(data);
+        });
+})}
     
 //검색------------------------------------
 $('.search-btn').on('click', function() {
@@ -91,8 +97,4 @@ $(document).ready(function(){
   }); 
 
     
-        var p = "purchaseSerial="+purchaseSerial;
-        $.post('/plan/itemModalToPlan/', p, function(data){
-            $('#content').html(data);
-        });
-})}
+
