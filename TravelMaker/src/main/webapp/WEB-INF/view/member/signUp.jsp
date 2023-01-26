@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>signUp</title>
-<link rel='stylesheet' href='css/signUp.css'/>
+<link rel='stylesheet' href='../../../css/signUp.css'/>
 <script src='../../../js/signUp.js' defer></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
@@ -23,7 +23,7 @@
                 <img id='img_box' src='/images/cat.gif'>
                 <input type='file' class='btnProfileSelect' name="attFile" value='파일 선택' onchange="att(this)" accept="image/*" style="display : none;">
                 <br/>
-                <input type='button' class='btnSubmit' value='가입 완료'>
+                <input type='button' class='btnSubmit2' value='가입 완료'>
             </div>
         </form>
 	</main>
