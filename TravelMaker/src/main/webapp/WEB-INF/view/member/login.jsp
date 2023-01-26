@@ -90,11 +90,11 @@
 							success: function(result) {
 								if(result=='registered') {
 									sessionStorage.setItem("email", email);
-									location.replace("http://localhost:9282/");
+									location.replace("http://192.168.219.116:9282/");
 								}
 								else if(result=='notRegistered') {
 									sessionStorage.setItem("email", email);
-									location.replace("http://localhost:9282/{result}");
+									location.replace("http://192.168.219.116:9282/{result}");
 								}
 								else {
 									alert("오류가 발생했습니다. 다시 시도해주세요.");

@@ -19,6 +19,7 @@
 		<form class='myTourTicketFrm' method='post'>
 	      	<input type='hidden' name='purchaseSerial' class='purchaseSerial' value='${purchaseSerial }'/>
 	      	<input type='hidden' name='reviewSerial' class='reviewSerial' value='${reviewSerial }'/>
+	      	<input type='hidden' name='nowPage' value='${pVo.nowPage }'/>
 	     </form>
 		<h1 class="upcomming">왕복티켓 구매 내역</h1>
 		<c:forEach var='vo' items='${list }'>

@@ -29,13 +29,15 @@ public class MyTourController {
 	} 
 	
 	@RequestMapping("/myTour/myTourTicket")
-	public ModelAndView myTourTicket(MyTourVo vo) {
+	public ModelAndView myTourTicket(MyTourVo vo, MyTourPageVo pVo) {
 		ModelAndView mv = new ModelAndView();
 		List<MyTourTicketVo> list = service.TicketView(vo.getPurchaseSerial());
 		int reviewSerial = vo.getReviewSerial();
 		String purchaseSerial = vo.getPurchaseSerial();
+		pVo.setNowPage(pVo.nowPage);
 		mv.addObject("list", list);
 		mv.addObject("reviewSerial", reviewSerial);
+		mv.addObject("pVo", pVo);
 		System.out.println("reviewSerial:"+reviewSerial);
 		mv.addObject("purchaseSerial",purchaseSerial);
 		mv.setViewName("myTour/myTourTicket");
