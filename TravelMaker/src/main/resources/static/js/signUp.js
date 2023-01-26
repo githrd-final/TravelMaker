@@ -31,7 +31,7 @@ var att = function(file) {
 })
 */
 
-$('.btnSubmit').on('click',function(){
+$('.btnSubmit2').on('click',function(){
 	var frm = $('#frm')[0];
 	var email = sessionStorage.getItem("email");
 	var param = new FormData(frm);

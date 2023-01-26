@@ -139,6 +139,32 @@
   color: #dc2f55;
 }
 
+#btnSubmit2{
+    font-family: sans-serif;
+    margin-top : 16vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    border: 0;
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background-color : #bbbbbb;
+    font-size: 4vh;
+    border-radius: 12px;
+}
+
+#btnSubmit2:hover{
+    cursor : pointer;
+    color: yellow;
+    background: rgb(30,25,33);
+    background: linear-gradient(90deg, rgba(30,25,33,1) 0%, rgba(179,167,167,1) 61%, rgba(149,146,142,1) 100%);
+}
+
+
 @media screen and (max-width: 450px) {
 
     .signUpMain{
@@ -190,29 +216,12 @@
         height : 3vh;
     }
 
-    .btnSubmit2{
-        font-family: sans-serif;
-        margin-top : 16vh;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        position: relative;
-        border: 0;
-        padding: 15px 25px;
-        display: inline-block;
-        text-align: center;
-        color: black;
-        background-color : #bbbbbb;
-        font-size: 4vh;
-        border-radius: 12px;
+    .btnSubmit{
+        font-size: 1.7rem;
+        width: 80%;
+        padding : 1vw;
     }
 
-    .btnSubmit2:hover{
-        cursor : pointer;
-        background: rgb(30,25,33);
-        background: linear-gradient(90deg, rgba(30,25,33,1) 0%, rgba(179,167,167,1) 61%, rgba(149,146,142,1) 100%);
-    }
 }
 /*
 @media screen and (min-width: 451px) and (max-width: 800px) {

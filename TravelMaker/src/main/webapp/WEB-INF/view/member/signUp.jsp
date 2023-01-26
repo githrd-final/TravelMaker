@@ -23,7 +23,7 @@
                 <img id='img_box' src='/images/cat.gif'>
                 <input type='file' class='btnProfileSelect' name="attFile" value='파일 선택' onchange="att(this)" accept="image/*" style="display : none;">
                 <br/>
-                <input type='button' class='btnSubmit2' value='가입 완료'>
+                <input type='button' id="btnSubmit2" class='btnSubmit2' value='가입 완료'>
             </div>
         </form>
 	</main>
