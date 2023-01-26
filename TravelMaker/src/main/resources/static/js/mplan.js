@@ -115,8 +115,9 @@ $( document ).ready(function() {
 						if(infowindow!=null){
       						infowindow.close();  
       					}  
-						var iwContent = '<div style="padding:5px;">'+this.getTitle()+'</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-				    
+						var iwContent = '<span class="MarkerGetTitle">'+this.getTitle()+'</span>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+				        
+
 						// 인포윈도우를 생성합니다
 						infowindow = new kakao.maps.InfoWindow({
 						    content : iwContent,
