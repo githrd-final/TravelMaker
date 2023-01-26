@@ -235,7 +235,9 @@
 		background-color:white;
 		border:none;
 	}
-	
+	#listFooter{
+		min-height:5vh;
+	}
 	.Planitem{
 		padding:1%;
 		display:grid;
