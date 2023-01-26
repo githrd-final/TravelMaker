@@ -33,7 +33,10 @@
 	 	myTicket.view = function(purchaseSerial){
 		    frm = $('.myTourTicketFrm')[0];
 		    frm.purchaseSerial.value = purchaseSerial;
+		    
 		    param = $(frm).serialize();
+		    
+		    console.log(param);
 		    $.post("/mplan/mPlanner", param, function(data){
 		        $('#content').html(data);
 		    })
