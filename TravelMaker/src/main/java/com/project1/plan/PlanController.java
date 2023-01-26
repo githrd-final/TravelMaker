@@ -144,9 +144,10 @@ public class PlanController {
 	}
 
 	@RequestMapping("/plan/itemModalToMPlan")
-	public ModelAndView itemModalToMPlan(String purchaseSerial) throws Exception {
+	public ModelAndView itemModalToMPlan(String purchaseSerial, String flag) throws Exception {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("purchaseSerial", purchaseSerial);
+		mv.addObject("flag", flag);
 		log.info(purchaseSerial);
 		mv.setViewName("mplan/mPlanner");
 		return mv;
