@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index.jsp</title>
-<link rel="stylesheet" media="screen and (min-width :450px)" href="css/index.css"/>
+<title>TravelMaker</title>
+<link rel="stylesheet" media="screen and (min-width :450px)" href="css/index.css"/> 
+<link rel="TravelMaker Icon" href="../img/TroubleMakerFavicon.png">
 <link rel="stylesheet" media="screen and (max-width :450px)" href="css/mobileIndex.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
