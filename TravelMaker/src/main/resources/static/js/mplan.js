@@ -549,7 +549,6 @@ $( document ).ready(function() {
 		$('#modal3').css('display', 'none');
 		$.post('/mplan/memoUpdate', param, function(){ 
 			$('.mList').load('/mplan/mPlanList', purchaseSerial);
-			this.memoTag.src="img/memo.png";
 		});
 	})	
 	

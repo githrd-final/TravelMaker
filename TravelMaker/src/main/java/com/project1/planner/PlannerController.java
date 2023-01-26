@@ -33,6 +33,7 @@ public class PlannerController {
 	PlanMapper planMapper;
 	
 	int travelDay;
+	int flag;
 	
 	
 	@RequestMapping("/planner/recommendListMain")
@@ -40,17 +41,23 @@ public class PlannerController {
 		ModelAndView mv = new ModelAndView();
 		PurchaseDto purchaseDto = planMapper.selectPurchase(purchaseSerial);
 		request.setAttribute("purchaseDto", purchaseDto);
+		System.out.println(flag+"flag");
+		
+		mv.addObject("flag",flag);
 		mv.setViewName("plan/recommendListMain");
 		return mv;
 	}
 	
 	@RequestMapping("/planner/planner")
-	public ModelAndView planner(String purchaseSerial) {
+	public ModelAndView planner(String purchaseSerial, String flag) {
 		ModelAndView mv = new ModelAndView();
+		
 		travelDay = bucketService.TravelDay(purchaseSerial);
-		
+		if(flag!=null) {
+			this.flag = Integer.parseInt(flag);
+		}
 		mv.addObject("purchaseSerial", purchaseSerial);
-		
+		mv.addObject("flag", flag);
 		mv.addObject("travelDay",travelDay);
 		mv.setViewName("planner/planner");
 		return mv;

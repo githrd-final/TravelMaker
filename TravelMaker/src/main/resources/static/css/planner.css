@@ -594,7 +594,7 @@ body{
 }
 
 /* 후기목록으로 가기 */
-#goReview{
+#goTourlist{
 	text-decoration:none;
 	border-radius:50%;
 	line-height:4;
@@ -611,7 +611,7 @@ body{
 	background-color:tomato;
 }
 
-#goTourlist{
+#goReview{
 	text-decoration:none;
 	border-radius:50%;
 	line-height:4;

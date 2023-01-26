@@ -67,15 +67,18 @@ var width_size = window.outerWidth;
 if(width_size<=450){
     $('#btnMyTravel').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial+"&flag="+$("#flag").val();
-        console.log(p);
-        
         $.post('/plan/itemModalToMPlan/', p, function(data){
             $('#content').html(data);
         });
     })
 }else{
     $('#btnMyTravel').on('click',function(){
-        var p = "purchaseSerial="+purchaseSerial;
+        var p = "purchaseSerial="+purchaseSerial+"&flag="+$("#flag").val();
+        console.log(p);
+        console.log($("#flag").val());
+        if($("#flag").val()==null || $("#flag").val()==""){
+			p = "purchaseSerial="+purchaseSerial+"&flag=2";
+		}
         $.post('/planner/planner/', p, function(data){
             $('#content').html(data);
     })})}
