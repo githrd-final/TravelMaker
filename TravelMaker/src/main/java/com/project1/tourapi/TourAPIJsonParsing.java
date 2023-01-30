@@ -29,7 +29,7 @@ public class TourAPIJsonParsing {
 			JSONObject bodyObj = (JSONObject)respObj.get("body");
 			log.info("bodyObj: " + bodyObj);
 			log.info("bodyObj.get(\"items\"): " + bodyObj.get("items"));
-			if(bodyObj.get("items") == "") {
+			if(bodyObj.get("items").equals("")) {
 				log.info("bodyObj.get(\"items\") == null");
 				return null;
 			}

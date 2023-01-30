@@ -41,7 +41,7 @@ IMP.init("imp84346376"); // 예: imp00000000
         pay_method: "card",
         merchant_uid: "ORD20230125123-" + rand,
         name: "랜덤 기차 여행 - " + regionString,
-        amount: 100, // if
+        amount: totalPrice, // if
         buyer_email: email,
         buyer_name: "양수비",
         buyer_tel: "010-4242-4242",

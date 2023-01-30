@@ -33,7 +33,7 @@ $( document ).ready(function() {
 			
 		// 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
 		var bounds;
-		markers=[];    
+		markers=[];   
 		var linepath = [];
 		var polyline;
 		customoverlays=[];
@@ -137,10 +137,11 @@ $( document ).ready(function() {
 						$('#mPlanList').click();
 					}
 				} // for문의 끝
+				
 
 		}
 		
-		
+	
 		// 리스트 지도에 출력
 		$.ajax({
 			type:'post',
@@ -638,3 +639,4 @@ $( document ).ready(function() {
 		$('#modal3').css('display', 'none');
 		this.memoTag.src="img/memo.png";
 	}
+	

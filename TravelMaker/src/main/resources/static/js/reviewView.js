@@ -57,7 +57,8 @@
 			var frm = $('.rv_form')[0];
 			var param = $(frm).serialize();
 			$.post("/review/reviewDelete", param, function(data){
-				$("#content").load("/myTour/myTourSelect", data); 
+				alert()
+				$("#content").load("/review/reviewSelect", data); 
 			});
 		}else{
 			return;

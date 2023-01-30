@@ -53,10 +53,10 @@
 		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{planDate} AND planOrder = #{planOrder} AND purchaseSerial = #{purchaseSerial}
 	</select>
 	<select id="countPreDate" parameterType="com.project1.planner.PlanVo" resultType="Integer">
-		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{prePlanDate}
+		SELECT count(planbucketSerial) FROM plan WHERE planDate = #{prePlanDate} and purchaseSerial = #{purchaseSerial}
 	</select>
 	<update id="updateToLastOrder" parameterType="com.project1.planner.PlanVo">
-		UPDATE plan SET planDate = #{planDate}, planOrder = countTarget(#{planDate}) WHERE planbucketSerial = #{planbucketSerial}
+		UPDATE plan SET planDate = #{planDate}, planOrder = countTarget(#{planDate}, #{purchaseSerial}) WHERE planbucketSerial = #{planbucketSerial}
 	</update>
 	<update id="updatePreDateOrder" parameterType="com.project1.planner.PlanVo">
 		UPDATE plan SET planOrder = planOrder - 1 WHERE planDate = #{prePlanDate} 

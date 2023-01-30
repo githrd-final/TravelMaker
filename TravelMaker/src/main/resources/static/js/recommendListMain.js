@@ -67,7 +67,7 @@ var width_size = window.outerWidth;
 if(width_size<=450){
     $('#btnMyTravel').on('click',function(){
         var p = "purchaseSerial="+purchaseSerial+"&flag="+$("#flag").val();
-        $.post('/plan/itemModalToMPlan/', p, function(data){
+        $.post('/mplan/mPlanner', p, function(data){
             $('#content').html(data);
         });
     })

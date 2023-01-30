@@ -83,7 +83,7 @@ public class ReviewController {
 	}
 	
 	@RequestMapping("/review/reviewModifyView")
-	public ModelAndView reviewModifyView(ReviewVo2 rVo) {
+	public ModelAndView reviewModifyView(ReviewVo2 rVo, HttpSession session) {
 		ModelAndView mv = new ModelAndView();
 		rVo = service.reviewModifyView(rVo.getReviewSerial(), rVo.getPurchaseSerial());
 		System.out.println("컨트롤러 구고번호: "+rVo.getPurchaseSerial());
@@ -119,6 +119,7 @@ public class ReviewController {
 			e.printStackTrace();
 		}
 		
+		mv.addObject("userEmail", userEmail);
 		UserVo uVo = service.userDetailView(rVo.nickName);
 		mv.addObject("uVo", uVo);
 		mv.addObject("pVo", pVo);
