@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,7 @@ public class ReviewTwoController {
 	ReviewTwoService service;
 	
 	@RequestMapping("/review/reviewInsert")
-	public ModelAndView reviewView(ReviewVo rVo, HttpServletResponse resp) {
+	public ModelAndView reviewView(ReviewVo rVo, HttpServletResponse resp, HttpSession session) {
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=utf-8");
 		ReviewPageVo pVo = new ReviewPageVo();
@@ -44,6 +45,8 @@ public class ReviewTwoController {
 		
 		UserVo uVo = service.userDetailView(rVo.nickName);
 		System.out.println("uVo=" + uVo.toString());
+		String userEmail = (String)session.getAttribute("email");
+		mv.addObject("userEmail", userEmail);
 		mv.addObject("uVo", uVo);
 		mv.addObject("rVo", rVo);
 		mv.addObject("pVo", pVo);
