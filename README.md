@@ -4,6 +4,7 @@
 <ul>
   <li>application.properties username password체크</li>
   <li>upload 폴더 url 체크 - ReviewTwoController, MemberController</li>
+  <li>push시에 upload폴더 안에 있는 이미지들 지우고 올려주기!</li>
 </ul>
 
 이거 일단 쓰시는 workspace경로에 cmd/terminal에서 cd로 들어가시고 나서 
