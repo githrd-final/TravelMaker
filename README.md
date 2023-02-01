@@ -1,5 +1,11 @@
 # TravelMaker
 
+<h3>사용시에 체크할 점</h3>
+<ul>
+  <li>application.properties username password체크</li>
+  <li>upload 폴더 url 체크 - ReviewTwoController, MemberController</li>
+</ul>
+
 이거 일단 쓰시는 workspace경로에 cmd/terminal에서 cd로 들어가시고 나서 
 git clone repo-url 
 하신 다음에 clone 다 되면 한 번 실행시켜 보시는데 실행하실 때 TravelMaker 안에 TravelMaker 폴더가 있는데 그걸 여는게 조으실듯!
