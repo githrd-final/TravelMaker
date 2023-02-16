@@ -1,30 +1,57 @@
 # TravelMaker
-
-<h3>사용시에 체크할 점</h3>
+## Description
+### Summary
+MZ세대를 타겟으로 한 랜덤 기차 티켓 여행 사이트<br/>
+제작 기간 : 2022.12.21 ~ 2023.01.27
+<br/>
+<br/>
+#### 구현 기능
+1. 회원 가입 및 간편 로그인
+2. 랜덤기차 티켓 구매
+3. 추천 여행지 리스트 출력
+4. 버킷 리스트 및 일정 계획
+5. 후기 게시판
+<br/>
+<br/>
+<h3> Usage </h3>
 <ul>
-  <li>application.properties username password체크</li>
+  <li>application.properties에서 username과 password 체크</li>
   <li>upload 폴더 url 체크 - ReviewTwoController, MemberController</li>
-  <li>push시에 upload폴더 안에 있는 이미지들 지우고 올려주기!</li>
+  <li>push시 upload폴더 안에 있는 이미지들 지우고 올려주기!</li>
 </ul>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+<h2> Environment</h2>
+<ul>
+  <li><b>OS</b> : Windows 11 Home</li>
+  <li><b>Language</b><ul>
+      <li>FrontEnd : JavaScript, HTML, CSS</li>
+      <li>BackEnd : JAVA, MySQL</li>
+  </ul></li>
+  <li><b>Skill</b> : JSP</li>
+  <li><b>Library</b> : jQuery, JSTL</li>
+  <li><b>FrameWork</b> : SpringBoot, MyBatis</li>
+  <li><b>Development Tool</b> : Eclipse, QueryBox, GitHub</li>
+ </ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>Result</h2>
+<h3>ERD</h3>
+![image](https://user-images.githubusercontent.com/51295326/219368231-0fe9ea00-20b6-49ac-91bb-b49ea2adce11.png)
+<br/>
+<br/>
+<h3>View</h3>
+![image](https://user-images.githubusercontent.com/51295326/219368510-3f882752-0d88-447e-844e-ab2e24934db6.png)
+![image](https://user-images.githubusercontent.com/51295326/219368547-bf31ce8f-ac67-4e9b-866c-7212cf65949a.png)
+![image](https://user-images.githubusercontent.com/51295326/219368565-cfeb3009-8849-4dc9-85ce-abbdf4ecf960.png)
+![image](https://user-images.githubusercontent.com/51295326/219368593-26f826e7-399c-4ec7-8baf-587bdacb4a40.png)
+![image](https://user-images.githubusercontent.com/51295326/219368615-3e231a83-8a5d-425b-85ef-d2cf3c868626.png)
+![image](https://user-images.githubusercontent.com/51295326/219368635-35821627-cd88-4662-b0ad-bb682790e1cd.png)
+![image](https://user-images.githubusercontent.com/51295326/219368658-0bd4a7c3-e213-4e79-b343-b5b565f3de98.png)
+![image](https://user-images.githubusercontent.com/51295326/219368681-3e87dfe9-7633-4e08-aa9a-eb6e5bb0e39c.png)
 
-이거 일단 쓰시는 workspace경로에 cmd/terminal에서 cd로 들어가시고 나서 
-git clone repo-url 
-하신 다음에 clone 다 되면 한 번 실행시켜 보시는데 실행하실 때 TravelMaker 안에 TravelMaker 폴더가 있는데 그걸 여는게 조으실듯!
-그리고 Import 하실 때 이클립스에 있는 TravelMaker는 삭제하시고 (디스크에는 남겨놓으시는게 조을 듯) projects from folder or archive 누르셔서 경로로 하셔야 합니다
-그 담에 실행 해보시고 Database 뭐시기 나오면 properties 지웠다 저장하고 실행 취소하고 다시 살려서 저장하고 해보시고 롬복 어쩌고는 제가 지우긴 했는데 나오면 tourVo 들어가서 import 된 거 지우시면 되고 아니면 실행 아마 될거에요. 그 담에 실행되시면 
-경로를 readme를 갖고 있는 폴더로 옮기고
-Git checkout -b 원하는 브랜치 이름
-적으셔서 만든 담에
-Git branch
-눌러서 방금 만든 브랜치에 별표 있으면
-Git add .
-Git commit -m "blah blah"
-Git push -u origin 방금 만든 브랜치 이름
-하시면 깃헙 레포에 브랜치 생기고 거기에 올라갈거에요 
-그러면 이제 작업 했는데 반영 안된거나 나중에 작업하신거 계속 푸쉬하시면 됩니다~~
 
-푸쉬하실 때는
-git add 작업한 파일
-git commit -m "변경 내용"
-git push -u origin 내 브랜치
-하시면 됩니다
